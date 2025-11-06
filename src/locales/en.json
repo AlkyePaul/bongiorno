@@ -1,4 +1,12 @@
 {
+
+  "cookies": {
+  "title": "We use cookies",
+  "text": "We use essential cookies and, with your consent, analytics cookies to improve your experience.",
+  "accept": "Accept",
+  "decline": "Decline"
+},
+
   "common": {
     "company": "Bongiorno SRL",
     "preventivo": "Get a Quote",

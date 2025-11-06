@@ -2,6 +2,8 @@ import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
+import CookieConsent from "@/components/common/CookieConsent";
+
 
 export function generateStaticParams() {
   return [{ locale: 'es' }, { locale: 'en' }, { locale: 'it' }];
@@ -19,10 +21,13 @@ export default async function LocaleLayout({ children, params }) {
     <html lang={locale}>
       <body className="max-w-screen overflow-y-hidden">
         <NextIntlClientProvider locale={locale} messages={messages}>
+        
           <Header />
           {children}
           <Footer />
+           <CookieConsent />
         </NextIntlClientProvider>
+        
       </body>
     </html>
   );

@@ -2,9 +2,15 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+import { useLocale } from "next-intl";
 
 export default function SediSection() {
   const t = useTranslations("home.sedi");
+  const cta = useTranslations("cta");
+  const locale = useLocale();
+
+ const BongiornoMap = dynamic(() => import("../maps/BongiornoMap"), { ssr: false });
 
   // 🏢 Each office entry defined in translations
   const sedi = t.raw("locations");
@@ -25,7 +31,7 @@ export default function SediSection() {
 
   return (
     <section className="bg-white dark:bg-gray-950 py-20 border-t border-gray-200 dark:border-gray-800">
-      <div className="container mx-auto px-6 space-y-12">
+      <div className="container mx-auto px-6 space-y-16">
         {/* 🏷️ Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
@@ -40,6 +46,23 @@ export default function SediSection() {
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
             {t("intro3")}
           </p>
+               <div className="mb-6 flex flex-col items-center  justify-center w-full mx-auto">
+                <Link
+                  href={locale +"/contatti"}
+                  className="inline-block px-4 py-2 mb-6 text-sm font-medium rounded-md bg-brand-accent text-white hover:bg-brand-accent/90 transition"
+                >
+                  {t("contactLabel")}
+                </Link>
+
+                <p className="text-gray-600 dark:text-gray-300">{cta("cta.contattaci")}</p>
+                <p className="text-gray-600 dark:text-gray-300">{cta("cta.parliamo")}</p>
+              </div>
+
+        </div>
+         
+
+        <div className="w-full h-[480px] rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800">
+          <BongiornoMap padding={80} />
         </div>
 
         {/* 🗺️ Locations Grid */}
@@ -78,7 +101,7 @@ export default function SediSection() {
                 ))}
               </div>
 
-              {/* Contact link */}
+              {/* Contact link 
               <div className="mt-6">
                 <Link
                   href={sede.contactUrl || "#"}
@@ -86,7 +109,7 @@ export default function SediSection() {
                 >
                   {t("contactLabel")} {sede.name}
                 </Link>
-              </div>
+              </div>*/}
             </div>
           ))}
         </div>

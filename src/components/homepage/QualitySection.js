@@ -18,7 +18,7 @@ export default function QualitySection() {
         </h2>
 
         {/* 🏢 Logos grid */}
-        <LogoGrid />
+        <LogoGrid scale={true} grayscale={false}/>
         {/*
 
         {/* 📝 Text */}

@@ -14,14 +14,14 @@ export default function LogoGrid(grayscale, scale) {
           {logos.map((logo) => (
             <div
               key={logo.src}
-              className={`relative w-32 h-16 md:w-40 md:h-20 transition ${scale ? "hover:scale-125" : ""}`}
+              className={`relative w-32 h-16 md:w-40 md:h-20 transition ${scale ? "" : "hover:scale-115"}`}
             >
               <Image
                 src={logo.src}
                 alt={logo.alt}
                 fill
                 sizes="160px"
-                className={`object-contain ${grayscale ? "grayscale hover:grayscale-0" : ""} ${scale ? "hover:scale-125" : ""}`}
+                className={`object-contain ${grayscale ? "" : "grayscale hover:grayscale-0"} ${scale ? "" : "hover:scale-115"}`}
               />
             </div>
           ))}

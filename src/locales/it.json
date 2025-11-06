@@ -1,4 +1,141 @@
 {
+
+  "privacy": {
+    "title": "Privacy policy",
+    "lastUpdated": "28/04/2024",
+    "controller": {
+      "name": "Bongiorno Srl",
+      "piva": "10408830155",
+      "address": "Via Marsala, 40 – 21013 Gallarate (Varese)",
+      "email": "bongiorno@bongiornosrl.com"
+    },
+    "sections": [
+      {
+        "id": "intro",
+        "heading": "Informativa in materia di protezione dei dati",
+        "subtitle": "Ai sensi degli artt. 13 e 14 del GDPR 2016/679",
+        "content": [
+          "Le società Bongiorno Srl – PIVA 10408830155 – Indirizzo: Via Marsala, 40 – 21013 Gallarate (Varese) La informano che i Suoi dati saranno trattati nelle seguenti modalità."
+        ]
+      },
+      {
+        "id": "object-purpose",
+        "heading": "Oggetto del trattamento e finalità",
+        "content": [
+          "Trattiamo i Suoi dati personali identificativi (ad esempio, nome, cognome ed e-mail) – in seguito “dati” – da Lei comunicati per espletare la Sua richiesta nella sezione del sito “Contattaci” e nella sezione “Preventivi”."
+        ]
+      },
+      {
+        "id": "legal-basis",
+        "heading": "Base giuridica",
+        "list": [
+          "Esecuzione di un contratto o di misure precontrattuali;",
+          "Adempimento di un obbligo di legge;",
+          "Interesse legittimo del Titolare."
+        ]
+      },
+      {
+        "id": "methods-duration",
+        "heading": "Modalità e durata del trattamento",
+        "content": [
+          "Il trattamento dei Suoi dati personali è realizzato secondo le modalità previste dalla normativa vigente in materia di protezione dei dati.",
+          "Può consistere nella raccolta, registrazione, organizzazione, conservazione, consultazione, elaborazione, modificazione, selezione, estrazione, raffronto, utilizzo, interconnessione, blocco, comunicazione, cancellazione e distruzione dei dati.",
+          "I Suoi dati sono sottoposti a trattamento sia cartaceo sia elettronico e/o automatizzato. Saranno oggetto di trattamento improntato ai principi di correttezza, liceità, trasparenza e di tutela della Sua riservatezza e dei Suoi diritti.",
+          "Verranno trattati per tutta la durata del rapporto contrattuale e anche successivamente per l’espletamento di tutti gli adempimenti di legge."
+        ]
+      },
+      {
+        "id": "data-access",
+        "heading": "Accesso ai dati",
+        "content": [
+          "I Suoi dati potranno essere resi accessibili per le finalità descritte precedentemente:"
+        ],
+        "list": [
+          "A dipendenti e collaboratori del Titolare in tutte le sue sedi operative e logistiche, dentro e fuori la UE, nella loro qualità di incaricati e/o responsabili interni del trattamento e/o amministratori di sistema; addetti area amministrativa; addetti area commerciale; addetti area operativa.",
+          "A soggetti esterni alla nostra struttura (ad esempio fornitori dei server che ospitano il sito e le nostre telecomunicazioni), con i quali sono stati stipulati precisi accordi sulle misure da adottare per garantire la sicurezza dei dati a loro affidati; in ogni caso i dati saranno trattati esclusivamente per il perseguimento delle finalità suindicate."
+        ]
+      },
+      {
+        "id": "data-communication",
+        "heading": "Comunicazione dei dati",
+        "content": [
+          "Il Titolare potrà comunicare i Suoi dati per le finalità della presente informativa esclusivamente ai soggetti per i quali la comunicazione sia obbligatoria per legge."
+        ]
+      },
+      {
+        "id": "location-transfer",
+        "heading": "Luogo di trattamento e trasferimento dei dati",
+        "content": [
+          "I Suoi dati sono ubicati presso la sede legale. Eventuali trasferimenti, dovuti a circostanze per le quali sia obbligatorio per legge e/o per l’espletamento delle finalità suddette, saranno eseguiti nella piena tutela dei Suoi interessi."
+        ]
+      },
+      {
+        "id": "retention",
+        "heading": "Tempo di conservazione",
+        "content": [
+          "A meno che Lei non esprima esplicitamente la volontà di rimuoverli, i Suoi dati personali saranno conservati fino a quando necessari rispetto alle legittime finalità per le quali sono stati raccolti e, in ogni caso, per l’adempimento degli obblighi di legge."
+        ]
+      },
+      {
+        "id": "rights",
+        "heading": "Diritti dell’interessato",
+        "content": [
+          "Nella Sua qualità di interessato potrà esercitare i diritti sanciti agli artt. 15–22 GDPR, tra cui:"
+        ],
+        "list": [
+          "Diritto di rettifica;",
+          "Diritto all’oblio;",
+          "Diritto di limitazione del trattamento;",
+          "Diritto alla portabilità dei dati;",
+          "Diritto di opposizione;",
+          "Diritto di proporre reclamo all’Autorità Garante."
+        ],
+        "links": [
+          {
+            "label": "Garante per la protezione dei dati personali",
+            "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/4535524"
+          }
+        ]
+      },
+      {
+        "id": "how-to-exercise",
+        "heading": "Modalità di esercizio dei diritti",
+        "content": [
+          "Potrà in qualsiasi momento esercitare i Suoi diritti inviando una mail all’indirizzo:",
+          "bongiorno@bongiornosrl.com"
+        ]
+      }
+    ]
+  }
+,
+  "cookies": {
+  "title": "Usiamo i cookie 🍪",
+  "text": "Utilizziamo cookie tecnici e, previo consenso, cookie di analisi per migliorare la tua esperienza.",
+  "privacyLink": "Privacy policy",
+  "accept": "Accetta tutto",
+  "decline": "Rifiuta",
+  "customize": "Personalizza",
+  "customizeTitle": "Preferenze cookie",
+  "customizeText": "Scegli quali categorie di cookie vuoi autorizzare.",
+  "cancel": "Annulla",
+  "save": "Salva preferenze",
+  "categories": {
+    "essential": {
+      "title": "Essenziali",
+      "desc": "Cookie necessari per il funzionamento del sito."
+    },
+    "analytics": {
+      "title": "Analitici",
+      "desc": "Cookie che ci aiutano a capire l'utilizzo del sito (Google Analytics)."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "desc": "Cookie usati per campagne pubblicitarie e remarketing."
+    }
+  }
+}
+,
+
 "common": {
 "company": "Bongiorno SRL",
 "preventivo": "Richiedi Preventivo",
@@ -350,7 +487,7 @@
   "privacyLink": "Privacy policy",
 
   "placeholders": {
-    "company": "Inserisci il nome dell’azienda (se applicabile)",
+    "company": "Nome dell’azienda",
     "transport": "Es. groupage, completo, container, ecc.",
     "details": "Inserisci qui i dettagli della spedizione...",
     "otherCountry": "Specifica il paese",
@@ -517,7 +654,9 @@
       "cta_main": "La nostra presenza stabile e di lunga data sul territorio ci rende un partner solido in grado di risolvere ogni imprevisto in tempi rapidi, offrendo velocità, sicurezza e garanzia in tutti i mercati in cui operiamo.",
        "claim":"Questo, unito al personale di grande esperienza e competenza, ci permette di offrite la massima velocità, sicurezza e garanzia in tutti i mercati in cui operiamo grazie a elevati standard operativi.",
       "cta": {
-      "contact": "Scopri di più sui servizi",
+      "ctaservizi": "Scopri di più sui servizi",
+      "contattaci": "Chiama o scrivi e verrai messo in contatto con il nostro commerciale più adatto alla tue esigenze.", 
+      "parliamo": "Parliamo Italiano, Francese, Spagnolo, Inglese e Tedesco ",
       "quote": "Chiedi preventivo"
     }},
 

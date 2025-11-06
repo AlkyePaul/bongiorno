@@ -1,7 +1,7 @@
   import Image from "next/image";
   import { notFound } from "next/navigation";
   import { useTranslations } from "next-intl";
-  import DestinationMap from "@/components/common/DestinationMap";
+  import DestinationMap from "@/components/maps/DestinationMap";
   import { BriefcaseBusiness, MoveRight } from "lucide-react";
   import Link from "next/link";
 

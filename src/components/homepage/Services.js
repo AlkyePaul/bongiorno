@@ -1,24 +1,25 @@
 "use client"; 
 import H2 from "../common/H2";
 import { useMessages } from "next-intl";
-import { Package, Truck, Landmark, ShieldCheck } from "lucide-react";
+import { Package, Truck, Landmark, ShieldCheck, Cog } from "lucide-react";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 
 export default function ServicesSection(props) {
   const messages = useMessages();
   const svc = messages?.home?.services || {};
+  const locale = useLocale();
+
+  const cta = messages?.cta.cta || {};
 
   const title = props?.title ?? svc?.title ?? "";
   const intro = props?.intro ?? (Array.isArray(svc?.intro) ? svc.intro : []);
   const items = props?.services ?? (Array.isArray(svc?.items) ? svc.items : []);
-  const cta = props?.cta ?? {
-    href: "/preventivi",  
-    label: messages?.common?.preventivo ?? "Richiedi Preventivo"
-  };
+
 
   const iconSet = [
     <Package key="i0" size={32} />,
-    <Landmark key="i1" size={32} />,
+    <Cog key="i1" size={32} />,
     <Truck key="i2" size={32} />,
     <ShieldCheck key="i3" size={32} />
   ];
@@ -42,10 +43,10 @@ export default function ServicesSection(props) {
           ))}
         </div>
         <Link
-          href={cta.href}
-          className="inline-block bg-brand-petrol text-white px-6 py-3 rounded-md font-semibold shadow hover:bg-brand-navy"
+          href={locale + "/servizi"}
+          className="inline-block bg-brand-navy text-white px-6 py-3 rounded-md font-semibold shadow hover:bg-brand-petrol"
         >
-          {cta.label}
+          {cta.ctaservizi}
         </Link>
       </div>
 
@@ -54,15 +55,15 @@ export default function ServicesSection(props) {
         {services.map((service, i) => (
           <div
             key={i}
-            className="bg-white rounded-md shadow-md p-6 hover:shadow-lg transition"
+            className="bg-white rounded-md shadow-md text-brand-dark p-6 hover:shadow-lg hover:bg-brand-navy hover:text-white transition"
           >
-            <div className="text-brand-petrol mb-4">
+            <div className="text-brand-accent mb-4">
               {service.icon}
             </div>
-            <h3 className="font-bold text-lg text-brand-dark mb-2">
+            <h3 className="font-bold text-lg  mb-2 ">
               {service.title}
             </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className=" text-sm leading-relaxed ">
               {service.text}
             </p>
           </div>

@@ -1,0 +1,176 @@
+// components/common/CookieConsent.js
+"use client";
+
+import { useState, useEffect } from "react";
+import { getCookie, setCookie } from "cookies-next";
+import { useTranslations, useLocale } from "next-intl";
+import { enableGTag, enableGTM } from "@/lib/analytics";
+
+export default function CookieConsent() {
+  const t = useTranslations("cookies");
+  const locale = useLocale();
+  const [visible, setVisible] = useState(false);
+  const [showCustom, setShowCustom] = useState(false);
+  const [prefs, setPrefs] = useState({
+    essential: true, // always true (non-toggleable)
+    analytics: false,
+    marketing: false,
+  });
+
+  // cookie name
+  const COOKIE_NAME = "siteCookiePrefs";
+  const COOKIE_MAX_AGE = 60 * 60 * 24 * 180; // 6 months
+
+  useEffect(() => {
+    // read cookie preferences
+    const raw = getCookie(COOKIE_NAME);
+    try {
+      if (raw) {
+        const parsed = typeof raw === "string" ? JSON.parse(raw) : raw;
+        setPrefs((p) => ({ ...p, ...parsed }));
+        // if analytics allowed previously, enable analytics right away
+        if (parsed.analytics) {
+          enableGTag().catch(console.error);
+          enableGTM().catch(console.error);
+        }
+        setVisible(false);
+      } else {
+        // no cookie yet -> show banner
+        setVisible(true);
+      }
+    } catch (err) {
+      // malformed cookie -> reset
+      setVisible(true);
+      console.error("cookie parse error", err);
+    }
+  }, []);
+
+  function savePrefs(newPrefs) {
+    const toStore = { ...newPrefs, essential: true };
+    setCookie(COOKIE_NAME, JSON.stringify(toStore), { maxAge: COOKIE_MAX_AGE, path: "/" });
+    setPrefs(toStore);
+    setVisible(false);
+    setShowCustom(false);
+
+    // Activate requested services:
+    if (toStore.analytics) {
+      enableGTag().catch(console.error);
+      enableGTM().catch(console.error);
+    }
+    // marketing would be similarly enabled if you add functions for other pixels
+  }
+
+  const acceptAll = () => savePrefs({ essential: true, analytics: true, marketing: true });
+  const rejectAll = () => savePrefs({ essential: true, analytics: false, marketing: false });
+
+  // toggle a single category in the customize panel
+  const toggleCategory = (key) => {
+    const updated = { ...prefs, [key]: !prefs[key] };
+    setPrefs(updated);
+  };
+
+  if (!visible) return null;
+
+  return (
+    <>
+      {/* Banner */}
+      <div className="fixed bottom-4 inset-x-4 z-50 flex justify-center">
+        <div className="max-w-4xl w-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-lg p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1 text-sm text-gray-700 dark:text-gray-300">
+            <p className="font-semibold">{t("title")}</p>
+            <p className="mt-1">{t("text")}</p>
+            <div className="mt-2 text-xs text-gray-500">
+              <a href={locale + "/privacy"} className="underline">{t("privacyLink")}</a>
+            </div>
+          </div>
+
+          <div className="flex gap-2">
+            <button
+              className="px-3 py-2 rounded-md border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-200"
+              onClick={() => setShowCustom(true)}
+            >
+              {t("customize")}
+            </button>
+
+            <button
+              className="px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-900"
+              onClick={rejectAll}
+            >
+              {t("decline")}
+            </button>
+
+            <button
+              className="px-3 py-2 rounded-md bg-brand-accent text-white"
+              onClick={acceptAll}
+            >
+              {t("accept")}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Customize Drawer */}
+      {showCustom && (
+        <div className="fixed inset-0 z-60 flex items-end sm:items-center justify-center p-4">
+          <div className="absolute inset-0 bg-black/40" onClick={() => setShowCustom(false)} />
+          <div className="relative max-w-2xl w-full bg-white dark:bg-gray-900 rounded-xl shadow-xl p-6 z-10">
+            <h3 className="text-lg font-semibold mb-3">{t("customizeTitle")}</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">{t("customizeText")}</p>
+
+            <div className="space-y-4">
+              <div className="flex items-start justify-between">
+                <div>
+                  <div className="font-medium">{t("categories.essential.title")}</div>
+                  <div className="text-xs text-gray-500">{t("categories.essential.desc")}</div>
+                </div>
+                <div className="text-sm text-gray-500">Required</div>
+              </div>
+
+              <div className="flex items-start justify-between">
+                <div>
+                  <div className="font-medium">{t("categories.analytics.title")}</div>
+                  <div className="text-xs text-gray-500">{t("categories.analytics.desc")}</div>
+                </div>
+                <label className="inline-flex items-center">
+                  <input
+                    type="checkbox"
+                    checked={prefs.analytics}
+                    onChange={() => toggleCategory("analytics")}
+                    className="h-5 w-5"
+                  />
+                </label>
+              </div>
+
+              <div className="flex items-start justify-between">
+                <div>
+                  <div className="font-medium">{t("categories.marketing.title")}</div>
+                  <div className="text-xs text-gray-500">{t("categories.marketing.desc")}</div>
+                </div>
+                <label className="inline-flex items-center">
+                  <input
+                    type="checkbox"
+                    checked={prefs.marketing}
+                    onChange={() => toggleCategory("marketing")}
+                    className="h-5 w-5"
+                  />
+                </label>
+              </div>
+            </div>
+
+            <div className="mt-6 flex justify-end gap-2">
+              <button className="px-3 py-2 rounded-md border" onClick={() => setShowCustom(false)}>
+                {t("cancel")}
+              </button>
+              <button
+                className="px-4 py-2 rounded-md bg-brand-accent text-white"
+                onClick={() => savePrefs(prefs)}
+              >
+                {t("save")}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
