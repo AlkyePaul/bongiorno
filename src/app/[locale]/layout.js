@@ -7,7 +7,7 @@ export function generateStaticParams() {
   return [{ locale: 'es' }, { locale: 'en' }, { locale: 'it' }];
 }
 export default async function LocaleLayout({ children, params }) {
-  const { locale } = params; // ✅ no await here
+  const { locale } = await params; // ✅ no await here
   let messages;
   try {
     messages = (await import(`@/locales/${locale}.json`)).default;

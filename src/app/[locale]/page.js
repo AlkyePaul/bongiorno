@@ -9,11 +9,13 @@ import { Package, Truck, Landmark, ShieldCheck } from "lucide-react";
 import HomepageContent from '@/components/homepage/Content';
 import QualitySection from '@/components/homepage/QualitySection';
 import SediSection from '@/components/homepage/Sedi';
-import FromPreventivi from '@/components/common/FromPreventivi';
+import FromPreventivi from '@/components/common/QuoteForm';
 
 export default function HomePage() {
   const messages = useMessages();
   const home = messages?.home || {};
+    const quote = messages?.quote || {};
+  
 
   const title = home?.hero?.title || '';
   const subtitle = home?.hero?.subtitle || '';
@@ -34,10 +36,8 @@ export default function HomePage() {
     icon: iconSet[i % iconSet.length]
   }));
 
-  const ctas = [
-    { href: "/preventivi", label: "Richiedi Preventivo" },
-    { href: "/contatti", label: "Contattaci" }
-  ];
+  const ctas = home?.hero?.ctas || [];
+  
 
   return (
     <main>
@@ -63,7 +63,15 @@ export default function HomePage() {
       <section className="mx-auto">
         <SediSection/>
       </section>
-      <section className="mx-auto">
+       <section className="grid grid-cols-1 lg:grid-cols-[40%_60%] max-w-4xl mx-auto rounded-2xl bg-gray-50 dark:bg-gray-900 py-20 mb-20 border-t border-gray-200 dark:border-gray-800">
+      <div className="container mx-auto px-6 max-w-4xl">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          {quote.title}
+        </h2>
+        <p className="text-gray-600 dark:text-gray-300 mb-10">
+          {quote.subtitle}
+        </p>
+        </div>
         <FromPreventivi/>
       </section>
     </main>

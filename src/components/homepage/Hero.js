@@ -1,7 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
+import { useLocale } from "next-intl";
 
 
 export default function Hero({ title, subtitle, ctas, claim }) {
+
+  const locale = useLocale();
   return (
     <section className="relative bg-brand-petrol text-white px-6 py-24">
       {/* Imagen de fondo */}
@@ -12,6 +16,7 @@ export default function Hero({ title, subtitle, ctas, claim }) {
           alt="Trasporti"
           className="w-full h-full object-cover"
           priority
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-brand-petrol/70" /> {/* overlay */}
       </div>
@@ -26,17 +31,17 @@ export default function Hero({ title, subtitle, ctas, claim }) {
         {/* Botones CTA */}
         <div className="mt-8 flex flex-col  sm:flex-row justify-start gap-4">
           {ctas.map((cta, i) => (
-            <a
+            <Link
               key={i}
-              href={cta.href}
-              className={
+              href={locale + cta.href}
+                className={
                 i === 0
                   ? "px-6 py-3 rounded-md bg-white w-fit text-brand-dark font-semibold shadow hover:bg-gray-100"
                   : "px-6 py-3 rounded-md bg-brand-navy w-fit text-white font-semibold shadow hover:bg-brand-dark"
               }
             >
               {cta.label}
-            </a>
+            </Link>
           ))}
         </div>
 

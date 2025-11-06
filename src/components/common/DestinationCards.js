@@ -1,12 +1,17 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
+import { useLocale } from "next-intl";
 
 export default function DestinationCards({ items }) {
+  const locale = useLocale();
   return (
     <section className="container mx-auto px-4 py-12 lg:w-[120%]  relative lg:left-[-10%]">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mx-auto">
         {items.map((item, idx) => (
-          <div
+          <Link
             key={idx}
+            href={locale +"/destinazioni" + item.href}
             className="container relative rounded-2xl overflow-hidden shadow-lg h-64 flex items-end hover:scale-105 transition-all duration-300"
           >
             {/* Background image */}
@@ -24,7 +29,7 @@ export default function DestinationCards({ items }) {
               <h3 className="text-xl font-bold mb-2">{item.title}</h3>
               <p className="text-sm">{item.text}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

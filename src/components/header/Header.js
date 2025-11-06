@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useMessages } from "next-intl";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
+import { useLocale } from "next-intl";
 
 export default function Header() {
   const pathname = usePathname();
@@ -32,10 +33,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const currentLocale = useMemo(() => {
-    const seg = (pathname || "/it").split("/")[1] || "it";
-    return locales.some((l) => l.code === seg) ? seg : "it";
-  }, [pathname]);
+  const currentLocale = useLocale();
 
   const basePath = useMemo(() => {
     const parts = (pathname || "/").split("/").filter(Boolean);
@@ -169,7 +167,7 @@ const navLabel = messages?.nav;
      
 
         {/* RIGHT → CTA + Lang */}
-          <Link href="/preventivi" className="px-5 py-2 rounded-md bg-brand-navy text-white font-medium shadow hover:bg-brand-accent transition">
+          <Link href={"/" + currentLocale + "/preventivi"} className="px-5 py-2 rounded-md bg-brand-navy text-white font-medium shadow hover:bg-brand-accent transition">
             {messages?.nav?.quote ?? "Chiedi preventivo"}
           </Link>
 

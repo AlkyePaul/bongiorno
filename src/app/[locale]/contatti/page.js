@@ -12,18 +12,25 @@ export default function ContattiPage() {
   const handleChange = (e) =>
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("sending");
-    try {
-      // simulate sending
-      await new Promise((res) => setTimeout(res, 1500));
-      setStatus("success");
-      setForm({ name: "", email: "", message: "" });
-    } catch {
-      setStatus("error");
-    }
-  };
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setStatus("sending");
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ...form, type: "generale" }),
+    });
+
+    if (!res.ok) throw new Error("Failed to send");
+    setStatus("success");
+    setForm({ name: "", email: "", message: "" });
+  } catch (err) {
+    console.error(err);
+    setStatus("error");
+  }
+};
+
 
   return (
     <main className="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 py-20 px-6">
