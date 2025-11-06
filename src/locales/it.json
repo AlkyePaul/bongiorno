@@ -24,7 +24,6 @@
     "Conosciamo l’importanza della documentazione che consente a tutti gli operatori di portare a buon fine le loro transazioni e consigliamo e suggeriamo, ancor prima che la spedizione abbia inizio, tutte le eventuali specificità che lo rendono possibile."
   ],
   "servicesTitle": "Servizi Marocco",
-  "serviceIcon": "/icons/marocco-icon.svg",
   "services": [
     "Servizi regolari Groupage via mare su Casablanca",
     "Possibilità di imbarco merci pericolose in completi e collettame, di rotabili e di carichi eccezionali",
@@ -51,7 +50,6 @@
     "L’esperienza decennale e la qualità dei nostri servizi, certificata ISO9001, ci permettono di garantire servizi di trasporto completi rapidi ed efficienti."
   ],
   "servicesTitle": "Servizi Libia e Mauritania",
-  "serviceIcon": "/icons/libia-mauritania-icon.svg",
   "services": [
     "Servizi regolari in container completi",
     "Trasporti settimanali verso i porti di Tripoli, Misurata e Bengasi, Nouakchott e Nouadhibou",
@@ -74,7 +72,6 @@
   ],
   "paragraphs": [],
   "servicesTitle": "Servizi Certificati a livello Globale",
-  "serviceIcon": "/icons/world-icon.svg",
   "services": [
     "Garanzia di servizio Network WCA",
     "Qualifica di operatori AEO e di qualità ISO 9001",
@@ -127,7 +124,6 @@
       "Conosciamo l’importanza della documentazione che consente a tutti gli operatori di portare a buon fine le loro transazioni e consigliamo e suggeriamo, ancor prima che la spedizione abbia inizio, tutte le eventuali specificità che lo rendono possibile."
     ],
     "servicesTitle": "Servizi Tunisia",
-    "serviceIcon": "/img/icons/container.webp",
     "services": [
       "Servizi Groupage trisettimanali su Tunisi, Sousse e Sfax",
       "Servizi plurisettimanali in containers e trailers completi su tutti i principali porti tunisini",
