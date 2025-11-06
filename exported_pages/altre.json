@@ -1,0 +1,31 @@
+{
+  "id": 1298,
+  "slug": "altre",
+  "title": "Altre destinazioni",
+  "date": "2023-04-08T18:07:45",
+  "excerpt": "<p>Trasporti GlobaliGrazie all&#8217;esperienza trentennale nel settore siamo in grado di servire in maniera affidabile e con altissime garanzie tutti i mercati e i continenti. Servizi di trasportoOffriamo trasporti da Spagna, Francia e Italia verso i porti di Tunisi, Sousse e Sfax. L&#8217;esperienza decennale e la filiera completa con magazzini di proprietà e personale locale ci permette [&hellip;]</p>\n",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "content": "Trasporti Globali"
+    },
+    {
+      "type": "paragraph",
+      "content": "Grazie all’esperienza trentennale nel settore siamo in grado di servire in maniera affidabile e con altissime garanzie tutti i mercati e i continenti."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "Servizi di trasporto"
+    },
+    {
+      "type": "paragraph",
+      "content": "Offriamo trasporti da Spagna, Francia e Italia verso i porti di Tunisi, Sousse e Sfax."
+    },
+    {
+      "type": "paragraph",
+      "content": "L’esperienza decennale e la filiera completa con magazzini di proprietà e personale locale ci permette di garantire le migliori tempistiche sul mercato tunisino."
+    }
+  ]
+}

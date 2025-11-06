@@ -1,0 +1,10 @@
+{
+  "common": {
+    "hello": "Bonjour",
+    "language": "Français"
+  },
+  "nav": {
+    "home": "Accueil",
+    "news": "Actualités"
+  }
+}

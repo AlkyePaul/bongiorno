@@ -1,0 +1,46 @@
+{
+  "id": 303,
+  "slug": "contatti",
+  "title": "Contatti",
+  "date": "2023-03-18T05:07:43",
+  "excerpt": "<p>ContattiIndirizzoVia Marsala 40, Gallarate, Varese, 21013 ItaliaEmailbongiorno@bongiornosrl.comTelefono+39 0331 776 334Pronto a spedire?</p>\n",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "content": "Contatti"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "content": "Indirizzo"
+    },
+    {
+      "type": "paragraph",
+      "content": "Via Marsala 40, Gallarate, Varese, 21013 Italia"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "content": "Email"
+    },
+    {
+      "type": "paragraph",
+      "content": "bongiorno@bongiornosrl.com"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "content": "Telefono"
+    },
+    {
+      "type": "paragraph",
+      "content": "+39 0331 776 334"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "Pronto a spedire?"
+    }
+  ]
+}

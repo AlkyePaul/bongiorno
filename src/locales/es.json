@@ -1,0 +1,79 @@
+{
+  "wedding": {
+    "hero": {
+      "title": "Marta & Daniel",
+      "subtitle": "¡Nos casamos!"
+    },
+    "intro": {
+      "title": "La Boda",
+      "description": "Queremos compartir este día tan especial contigo. Será el 19 de enero que venir con abrigo! La boda será en San Cugat el pueblo donde nos conocimos. Hemos esperado mucho este momento y estamos muy emocionados, no vemos la hora de que llegue el día, esperamos tu confirmación cuanto antes!"
+      },
+      "info":
+      {"place": "Masía Can Magí, Sant Cugat del Vallès",
+      "location": "Ubicación",
+      "date": "15 de junio de 2025, 18:00",
+      "daysLeft": "días para el gran día",
+        "title": "Informaciónes",
+        "abrirEnGoogle": "Abrir en Google Maps",
+      "items": [
+        {
+          "question": "¿Dónde será la ceremonia?",
+          "answer": "La ceremonia se celebrará en la Masía Can Magí, Sant Cugat del Vallès."
+        },
+        {
+          "question": "¿A qué hora empieza?",
+          "answer": "La ceremonia comenzará a las 18:00, seguida de un cóctel y cena."
+        },
+        {
+          "question": "¿Puedo llevar acompañante?",
+          "answer": "Si tu invitación incluye acompañante, por supuesto. Por favor confírmalo en el form."
+        },
+        {
+          "question": "¿Hay opciones vegetarianas o sin gluten?",
+          "answer": "Sí, indícalo en el formulario  y nos aseguraremos de tenerlo en cuenta 💕"
+        }
+      ]
+    },
+
+    "form": {
+      "title": "Confirma tu asistencia",
+      "name": "Nombre completo",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "nombre@correo.com",
+      "attending": "¿Asistirás?",
+      "attendingOptions": {
+        "yes": "Sí",
+        "no": "No"
+      },
+      "selectPlaceholder": "Selecciona...",
+      "foodAllergy": "Intolerancia o alergia alimentaria",
+      "foodAllergyPlaceholder": "Ej: Celiaquía, alergia a frutos secos...",
+      "submit": "Confirmar asistencia",
+      "success": "form enviado con éxito 💌",
+      "errors": {
+        "nameRequired": "Introduce tu nombre completo",
+        "emailInvalid": "Correo no válido",
+        "attendingRequired": "Selecciona una opción"
+      }
+    },
+    "photos": {
+      "title": "Comparte tus fotos",
+      "subtitle": "Sube tus recuerdos del día 💞"
+    },
+    "gift": {
+      "title": "Regalo de boda",
+      "info": "Si deseas hacernos un regalo, puedes hacerlo aquí o con transferencia bancaria",
+      "subtitle": "Si quieres saber como vamos a invertir tu regalo, las ideas más probable son un viaje a Maldivas (por Marta) o un coche nuevo (por Daniel), y si serán muy generosos puede ser los dos",
+      "button": "Pagar con Stripe",
+      "iban": "IBAN: ES66 2100 0418 4502 0000 0001"
+    },
+  
+    "feedback": {
+      "title": "Déjanos un mensaje 💌",
+      "placeholder": "Tu mensaje para los novios...",
+      "button": "Enviar"
+    },
+    "footer": "Hecho con 💗 por BodasWeb"
+  }
+}

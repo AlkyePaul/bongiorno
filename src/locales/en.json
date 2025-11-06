@@ -1,0 +1,73 @@
+{
+  "wedding": {
+    "hero": {
+      "title": "Marta & Daniel",
+      "subtitle": "We're getting married!"
+    },
+    "info": {
+      "title": "The Wedding",
+      "description": "We want to share this special day with you.",
+      "place": "Masía Can Magí, Sant Cugat del Vallès",
+      "date": "June 15, 2025, 6:00 PM",
+      "daysLeft": "days until the big day"
+    },
+    "rsvp": {
+      "title": "RSVP",
+      "name": "Full Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "name@example.com",
+      "attending": "Will you attend?",
+      "attendingOptions": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "selectPlaceholder": "Select...",
+      "foodAllergy": "Food allergies or dietary restrictions",
+      "foodAllergyPlaceholder": "E.g., Gluten-free, nut allergy...",
+      "submit": "Confirm Attendance",
+      "success": "RSVP sent successfully 💌",
+      "errors": {
+        "nameRequired": "Please enter your full name",
+        "emailInvalid": "Invalid email address",
+        "attendingRequired": "Please select an option"
+      }
+    },
+    "photos": {
+      "title": "Share your photos",
+      "subtitle": "Upload your memories of the day 💞"
+    },
+    "gift": {
+      "title": "Wedding Gift 💝",
+      "subtitle": "If you'd like to give us a gift, you can do so securely here:",
+      "button": "Pay with Stripe"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "Where will the ceremony take place?",
+          "answer": "The ceremony will be held at Masía Can Magí, Sant Cugat del Vallès."
+        },
+        {
+          "question": "What time does it start?",
+          "answer": "The ceremony will begin at 6:00 PM, followed by cocktails and dinner."
+        },
+        {
+          "question": "Can I bring a plus one?",
+          "answer": "If your invitation includes a plus one, of course. Please confirm this in the RSVP form."
+        },
+        {
+          "question": "Are there vegetarian or gluten-free options?",
+          "answer": "Yes, please indicate this in the RSVP form and we'll make sure to accommodate your needs 💕"
+        }
+      ]
+    },
+    "feedback": {
+      "title": "Leave us a message 💌",
+      "placeholder": "Your message for the couple...",
+      "button": "Send"
+    },
+    "footer": "Made with 💗 by BodasWeb"
+  }
+}
