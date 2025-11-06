@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { H1 } from "../components/common/Headers";
+import H1  from "@/components/common/H1";
 
 export default function PrivacyPage() {
   const t = useTranslations("privacy");
