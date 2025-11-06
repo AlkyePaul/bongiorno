@@ -88,6 +88,7 @@ const { content, data } = matter(fileContent);
             Image: (props) => (
               <Image
                 {...props}
+                alt={props.alt ?? ""}
                 width={800}
                 height={500}
                 className="rounded-xl shadow-lg mx-auto my-8"

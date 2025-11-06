@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function QuoteForm() {
   const t = useTranslations("quote");
@@ -337,9 +338,9 @@ export default function QuoteForm() {
             />
             <label htmlFor="consent" className="text-sm text-gray-700 dark:text-gray-300">
               {t("fields.consent")}{" "}
-              <a href="/privacy" className="underline text-brand-accent hover:text-brand-accent/80">
+              <Link href="/privacy" className="underline text-brand-accent hover:text-brand-accent/80">
                 {t("privacyLink")}
-              </a>
+              </Link>
             </label>
           </div>
 

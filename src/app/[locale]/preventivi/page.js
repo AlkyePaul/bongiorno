@@ -14,6 +14,12 @@ export default function Preventivi() {
           </H1> 
 
           <p className="text-lg leading-relaxed mb-8">{t("intro")}</p>
+
+          <ul>{features.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+           
+          </ul>
           </section>
           <section className="max-w-3xl mx-auto">
     <FromPreventivi />

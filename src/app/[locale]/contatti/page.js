@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Mail, Phone, MapPin } from "lucide-react";
 import H1 from "@/components/common/H1";
+import Link from "next/link";
 
 export default function ContattiPage() {
   const t = useTranslations("contact");
@@ -52,9 +53,9 @@ const handleSubmit = async (e) => {
               <Mail className="text-brand-accent w-6 h-6 mt-1" />
               <div>
                 <h3 className="font-semibold">{t("email.label")}</h3>
-                <a href="mailto:bongiorno@bongiornosrl.com" className="text-brand-accent hover:underline">
+                <Link href="mailto:bongiorno@bongiornosrl.com" className="text-brand-accent hover:underline">
                   {t("email.value")}
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -62,9 +63,9 @@ const handleSubmit = async (e) => {
               <Phone className="text-brand-accent w-6 h-6 mt-1" />
               <div>
                 <h3 className="font-semibold">{t("phone.label")}</h3>
-                <a href="tel:+390331776334" className="text-brand-accent hover:underline">
+                <Link href="tel:+390331776334" className="text-brand-accent hover:underline">
                   {t("phone.value")}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

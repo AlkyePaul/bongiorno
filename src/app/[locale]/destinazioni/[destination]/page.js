@@ -3,6 +3,7 @@
   import { useTranslations } from "next-intl";
   import DestinationMap from "@/components/common/DestinationMap";
   import { BriefcaseBusiness, MoveRight } from "lucide-react";
+  import Link from "next/link";
 
   export function generateStaticParams() {
     const destinations = ["tunisia", "algeria", "marocco", "libia", "mauritania"];
@@ -86,12 +87,12 @@
             ))}
           </ul>
 
-          <a
+          <Link
             href={`/${locale}/preventivi`}
             className="mt-6 inline-block px-6 py-3 bg-brand-accent text-white font-medium rounded-md hover:bg-brand-accent/90 transition text-center"
           >
             {t.preventivo}
-          </a>
+          </Link>
         </aside>
       </section>
     </main>

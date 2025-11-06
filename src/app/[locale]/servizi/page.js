@@ -1,13 +1,12 @@
 "use client";
 import { useTranslations } from "next-intl";
 import React from "react";
+import Link from "next/link";
 
 import H1 from "@/components/common/H1";
 import H2 from "@/components/common/H2";
-import * as FaIcons from "react-icons/fa";
-import * as MdIcons from "react-icons/md";
-import * as RiIcons from "react-icons/ri";
-import * as LucideIcons from "lucide-react";
+
+import { Package, Truck,  ShieldCheck, Cog} from "lucide-react";
 import CTABanner from "@/components/common/CTABanner";
 import Image from "next/image";
 
@@ -15,8 +14,8 @@ export default function ServiziPage() {
   const t = useTranslations("services");
   const t2 = useTranslations("cta");
 
-  // combine all libraries into one object
-  const icons = { ...FaIcons, ...MdIcons, ...RiIcons, ...LucideIcons };
+  const icons = { Package, Truck, ShieldCheck, Cog };
+
 
   return (
     <main className="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 py-20 px-6">
@@ -38,14 +37,14 @@ export default function ServiziPage() {
         {t.raw("cards").map((card, i) => {
           const IconComponent = icons[card.icon] || FaIcons.FaBox; // fallback icon
           return (
-           <a href={card.href} key={i} className="border border-gray-200 dark:border-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition bg-white dark:hover:bg-gray-800 cursor-pointer hover:scale-105">
+           <Link href={card.href} key={i} className="border border-gray-200 dark:border-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition bg-white dark:hover:bg-gray-800 cursor-pointer hover:scale-105">
           
               <H2  >
                 <IconComponent className="text-brand-accent text-3xl" />
                 {card.title}
               </H2>
               <p className="leading-relaxed mb-6">{card.text}</p>
-            </a>
+            </Link>
           );
         })}
       </section>

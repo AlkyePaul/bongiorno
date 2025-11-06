@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function SediSection() {
   const t = useTranslations("home.sedi");
@@ -79,12 +80,12 @@ export default function SediSection() {
 
               {/* Contact link */}
               <div className="mt-6">
-                <a
+                <Link
                   href={sede.contactUrl || "#"}
                   className="inline-block px-4 py-2 text-sm font-medium rounded-md bg-brand-accent text-white hover:bg-brand-accent/90 transition"
                 >
                   {t("contactLabel")} {sede.name}
-                </a>
+                </Link>
               </div>
             </div>
           ))}

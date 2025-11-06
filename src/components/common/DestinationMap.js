@@ -26,7 +26,7 @@ export default function DestinationMap({ coordinates = [10.18, 36.8], zoom = 6, 
     );
 
     return () => map.remove();
-  }, [coordinates, markers]);
+  }, [coordinates, markers, zoom]);
 
   return <div ref={mapContainer} className="w-full h-full" />;
 }

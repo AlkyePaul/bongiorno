@@ -29,7 +29,12 @@ export default function HomePage() {
   const destinations = home?.destinations?.items || [];
 
   const serviceItems = Array.isArray(home?.services?.items) ? home.services.items : [];
-  const iconSet = [<Package size={32} />, <Landmark size={32} />, <Truck size={32} />, <ShieldCheck size={32} />];
+  const iconSet = [
+    <Package key="i0" size={32} />, 
+    <Landmark key="i1" size={32} />, 
+    <Truck key="i2" size={32} />, 
+    <ShieldCheck key="i3" size={32} />
+  ];
   const services = serviceItems.map((s, i) => ({
     title: s?.title || '',
     text: s?.description || '',

@@ -2,6 +2,7 @@
 import H2 from "../common/H2";
 import { useMessages } from "next-intl";
 import { Package, Truck, Landmark, ShieldCheck } from "lucide-react";
+import Link from "next/link";
 
 export default function ServicesSection(props) {
   const messages = useMessages();
@@ -40,12 +41,12 @@ export default function ServicesSection(props) {
             <p key={i}>{p}</p>
           ))}
         </div>
-        <a
+        <Link
           href={cta.href}
           className="inline-block bg-brand-petrol text-white px-6 py-3 rounded-md font-semibold shadow hover:bg-brand-navy"
         >
           {cta.label}
-        </a>
+        </Link>
       </div>
 
       {/* Right column: grid 2x2 */}

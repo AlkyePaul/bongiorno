@@ -5,7 +5,7 @@ import Link from "next/link";
 import matter from "gray-matter";
 import H1 from "@/components/common/H1";
 import H2 from "@/components/common/H2";
-import * as LucideIcons from "lucide-react";
+import { User, Calendar, FolderOpen } from "lucide-react";
 
 
 export const dynamic = "force-static";

@@ -36,7 +36,7 @@ export default function ChiSiamoPage() {
       }, 40);
       return () => clearInterval(interval);
     }
-  }, [inView]);
+  }, [inView, controls, yearsActive]);
 
   return (
     <main className="text-gray-800 dark:text-gray-200 overflow-hidden">

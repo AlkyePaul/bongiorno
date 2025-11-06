@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin, Link as LinkIcon } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
+
 export default function Footer() {
   const t = useTranslations("footer");
 
@@ -58,21 +59,21 @@ export default function Footer() {
           <ul className="space-y-4 text-gray-400 text-sm">
             <li className="flex items-start gap-3">
               <Mail size={18} className="text-brand-accent mt-1" />
-              <a
+              <Link
                 href="mailto:bongiorno@bongiornosrl.com"
                 className="hover:text-white transition"
               >
                 {t("contact.email")}
-              </a>
+              </Link>
             </li>
             <li className="flex items-start gap-3">
               <Phone size={18} className="text-brand-accent mt-1" />
-              <a
+              <Link
                 href="tel:+390331776334"
                 className="hover:text-white transition"
               >
                 {t("contact.phone")}
-              </a>
+              </Link>
             </li>
             <li className="flex items-start gap-3">
               <MapPin size={18} className="text-brand-accent mt-1" />

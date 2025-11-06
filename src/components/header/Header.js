@@ -42,7 +42,7 @@ export default function Header() {
       return "/" + parts.slice(1).join("/");
     }
     return "/" + parts.join("/");
-  }, [pathname]);
+  }, [pathname, locales]);
 
   const switchLocale = (code) => {
     const target = `/${code}${basePath === "/" ? "" : basePath}`;
