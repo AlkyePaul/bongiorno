@@ -4,34 +4,53 @@ import { useTranslations } from "next-intl";
 import { Mail, Phone, MapPin } from "lucide-react";
 import H1 from "@/components/common/H1";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function ContattiPage() {
   const t = useTranslations("contact");
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const pathname = usePathname();
+  const locale = pathname.split("/")[1] || "it";
+
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+    consent: false,
+  });
   const [status, setStatus] = useState("idle"); // idle | sending | success | error
 
-  const handleChange = (e) =>
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setForm((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setStatus("sending");
-  try {
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...form, type: "generale" }),
-    });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    if (!res.ok) throw new Error("Failed to send");
-    setStatus("success");
-    setForm({ name: "", email: "", message: "" });
-  } catch (err) {
-    console.error(err);
-    setStatus("error");
-  }
-};
+    if (!form.consent) {
+      alert(t("errors.noConsent"));
+      return;
+    }
 
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, type: "generale" }),
+      });
+
+      if (!res.ok) throw new Error("Failed to send");
+      setStatus("success");
+      setForm({ name: "", email: "", message: "", consent: false });
+    } catch (err) {
+      console.error(err);
+      setStatus("error");
+    }
+  };
 
   return (
     <main className="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 py-20 px-6">
@@ -53,7 +72,10 @@ const handleSubmit = async (e) => {
               <Mail className="text-brand-accent w-6 h-6 mt-1" />
               <div>
                 <h3 className="font-semibold">{t("email.label")}</h3>
-                <Link href="mailto:bongiorno@bongiornosrl.com" className="text-brand-accent hover:underline">
+                <Link
+                  href="mailto:bongiorno@bongiornosrl.com"
+                  className="text-brand-accent hover:underline"
+                >
                   {t("email.value")}
                 </Link>
               </div>
@@ -63,7 +85,10 @@ const handleSubmit = async (e) => {
               <Phone className="text-brand-accent w-6 h-6 mt-1" />
               <div>
                 <h3 className="font-semibold">{t("phone.label")}</h3>
-                <Link href="tel:+390331776334" className="text-brand-accent hover:underline">
+                <Link
+                  href="tel:+390331776334"
+                  className="text-brand-accent hover:underline"
+                >
                   {t("phone.value")}
                 </Link>
               </div>
@@ -76,6 +101,7 @@ const handleSubmit = async (e) => {
           <h2 className="text-2xl font-semibold mb-6">{t("form.title")}</h2>
 
           <form onSubmit={handleSubmit} className="space-y-6">
+            {/* 🧍 Nome */}
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-2">
                 {t("form.name")}
@@ -91,6 +117,7 @@ const handleSubmit = async (e) => {
               />
             </div>
 
+            {/* 📧 Email */}
             <div>
               <label htmlFor="email" className="block text-sm font-medium mb-2">
                 {t("form.email")}
@@ -106,6 +133,7 @@ const handleSubmit = async (e) => {
               />
             </div>
 
+            {/* 💬 Messaggio */}
             <div>
               <label htmlFor="message" className="block text-sm font-medium mb-2">
                 {t("form.message")}
@@ -121,10 +149,36 @@ const handleSubmit = async (e) => {
               />
             </div>
 
+            {/* ✅ Consenso */}
+            <div className="flex items-start gap-3">
+              <input
+                id="consent"
+                type="checkbox"
+                name="consent"
+                checked={form.consent}
+                onChange={handleChange}
+                required
+                className="mt-1 h-5 w-5 rounded border-gray-300 dark:border-gray-700 text-brand-accent focus:ring-brand-accent"
+              />
+              <label
+                htmlFor="consent"
+                className="text-sm text-gray-700 dark:text-gray-300"
+              >
+                {t("fields.consent")}{" "}
+                <Link
+                  href={`/${locale}/privacy`}
+                  className="underline text-brand-accent hover:text-brand-accent/80"
+                >
+                  {t("privacyLink")}
+                </Link>
+              </label>
+            </div>
+
+            {/* Submit Button */}
             <button
               type="submit"
               disabled={status === "sending"}
-              className="w-full bg-brand-accent text-white font-medium py-3 rounded-md hover:bg-brand-accent/90 transition"
+              className="w-full bg-brand-accent text-white font-medium py-3 rounded-md hover:bg-brand-accent/90 transition disabled:opacity-50"
             >
               {status === "sending"
                 ? t("form.sending")
@@ -132,6 +186,18 @@ const handleSubmit = async (e) => {
                 ? t("form.success")
                 : t("form.submit")}
             </button>
+
+            {/* Feedback Messages */}
+            {status === "error" && (
+              <p className="text-red-600 dark:text-red-400 text-sm mt-2">
+                ❌ {t("error")}
+              </p>
+            )}
+            {status === "success" && (
+              <p className="text-green-600 dark:text-green-400 text-sm mt-2">
+                ✅ {t("success")}
+              </p>
+            )}
           </form>
         </div>
       </div>

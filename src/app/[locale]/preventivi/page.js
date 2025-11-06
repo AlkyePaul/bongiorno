@@ -4,6 +4,7 @@ import FromPreventivi from '@/components/common/QuoteForm';
 import H1 from '@/components/common/H1';
 export default function Preventivi() {
    const t = useTranslations("quote");
+   const features = Array.isArray(t.raw("features")) ? t.raw("features") : [];
 
     return (
     <>
@@ -15,10 +16,10 @@ export default function Preventivi() {
 
           <p className="text-lg leading-relaxed mb-8">{t("intro")}</p>
 
-          <ul>{features.map((feature, index) => (
-            <li key={index}>{feature}</li>
-          ))}
-           
+          <ul className="list-disc list-inside space-y-1">
+            {features.map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
           </ul>
           </section>
           <section className="max-w-3xl mx-auto">

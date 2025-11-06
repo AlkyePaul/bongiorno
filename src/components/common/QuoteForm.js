@@ -2,9 +2,11 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 
 export default function QuoteForm() {
   const t = useTranslations("quote");
+  const locale = useLocale();
 
   const [form, setForm] = useState({
     companyName: "",
@@ -110,7 +112,7 @@ export default function QuoteForm() {
 
   return (
     <section>
-      <div className="container mx-auto px-6 max-w-4xl">
+      <div className="mx-auto md:px-6 max-w-4xl">
         <form
           onSubmit={handleSubmit}
           className="space-y-6 bg-white dark:bg-gray-950 p-8 rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm"
@@ -338,7 +340,7 @@ export default function QuoteForm() {
             />
             <label htmlFor="consent" className="text-sm text-gray-700 dark:text-gray-300">
               {t("fields.consent")}{" "}
-              <Link href="/privacy" className="underline text-brand-accent hover:text-brand-accent/80">
+              <Link href="/privacy" locale={locale} className="underline text-brand-accent hover:text-brand-accent/80">
                 {t("privacyLink")}
               </Link>
             </label>

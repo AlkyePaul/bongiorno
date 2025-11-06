@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { H1 } from "../components/common/Headers";
 
 export default function PrivacyPage() {
   const t = useTranslations("privacy");
@@ -12,9 +13,9 @@ export default function PrivacyPage() {
       <section className="max-w-4xl mx-auto space-y-8">
         {/* Header */}
         <header>
-          <h1 className="text-4xl font-bold mb-4">{t("title")}</h1>
+          <H1 >{t("title")}</H1>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            Ultimo aggiornamento: {t("lastUpdated")}
+            {t("lastUpdated")}
           </p>
 
           <div className="mt-4 text-sm">

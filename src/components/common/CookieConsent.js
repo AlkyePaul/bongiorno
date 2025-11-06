@@ -5,12 +5,14 @@ import { useState, useEffect } from "react";
 import { getCookie, setCookie } from "cookies-next";
 import { useTranslations, useLocale } from "next-intl";
 import { enableGTag, enableGTM } from "@/lib/analytics";
+import { Cog } from "lucide-react";
 
 export default function CookieConsent() {
   const t = useTranslations("cookies");
   const locale = useLocale();
   const [visible, setVisible] = useState(false);
   const [showCustom, setShowCustom] = useState(false);
+  const [showFab, setShowFab] = useState(false);
   const [prefs, setPrefs] = useState({
     essential: true, // always true (non-toggleable)
     analytics: false,
@@ -27,6 +29,7 @@ export default function CookieConsent() {
     try {
       if (raw) {
         const parsed = typeof raw === "string" ? JSON.parse(raw) : raw;
+        console.log("[consent] loaded prefs:", parsed);
         setPrefs((p) => ({ ...p, ...parsed }));
         // if analytics allowed previously, enable analytics right away
         if (parsed.analytics) {
@@ -34,13 +37,17 @@ export default function CookieConsent() {
           enableGTM().catch(console.error);
         }
         setVisible(false);
+        setShowFab(true);
       } else {
         // no cookie yet -> show banner
         setVisible(true);
+        setShowFab(false);
+        console.log("[consent] no prefs found -> showing banner");
       }
     } catch (err) {
       // malformed cookie -> reset
       setVisible(true);
+      setShowFab(false);
       console.error("cookie parse error", err);
     }
   }, []);
@@ -51,6 +58,8 @@ export default function CookieConsent() {
     setPrefs(toStore);
     setVisible(false);
     setShowCustom(false);
+    setShowFab(true);
+    console.log("[consent] saved prefs:", toStore);
 
     // Activate requested services:
     if (toStore.analytics) {
@@ -60,8 +69,14 @@ export default function CookieConsent() {
     // marketing would be similarly enabled if you add functions for other pixels
   }
 
-  const acceptAll = () => savePrefs({ essential: true, analytics: true, marketing: true });
-  const rejectAll = () => savePrefs({ essential: true, analytics: false, marketing: false });
+  const acceptAll = () => {
+    console.log("[consent] action: acceptAll");
+    savePrefs({ essential: true, analytics: true, marketing: true });
+  };
+  const rejectAll = () => {
+    console.log("[consent] action: rejectAll");
+    savePrefs({ essential: true, analytics: false, marketing: false });
+  };
 
   // toggle a single category in the customize panel
   const toggleCategory = (key) => {
@@ -69,45 +84,61 @@ export default function CookieConsent() {
     setPrefs(updated);
   };
 
-  if (!visible) return null;
-
   return (
     <>
+      {/* Floating Settings Button (appears after preferences are set) */}
+      {showFab && !visible && (
+        <button
+          type="button"
+          aria-label="Cookie preferences"
+          onClick={() => {
+            console.log("[consent] open customize via FAB");
+            setShowCustom(true);
+          }}
+          className="fixed bottom-4 left-4 z-40 flex items-center gap-2 rounded-full px-3 py-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow hover:shadow-md text-gray-700 dark:text-gray-200"
+        >
+          <Cog className="w-5 h-5" />
+          <span className="text-sm hidden sm:inline">{t("customize")}</span>
+        </button>
+      )}
+
       {/* Banner */}
-      <div className="fixed bottom-4 inset-x-4 z-50 flex justify-center">
-        <div className="max-w-4xl w-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-lg p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <div className="flex-1 text-sm text-gray-700 dark:text-gray-300">
-            <p className="font-semibold">{t("title")}</p>
-            <p className="mt-1">{t("text")}</p>
-            <div className="mt-2 text-xs text-gray-500">
-              <a href={locale + "/privacy"} className="underline">{t("privacyLink")}</a>
+      {visible && (
+        <div className="fixed bottom-4 inset-x-4 z-50 flex justify-center">
+          <div className="max-w-4xl w-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-lg p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex-1 text-sm text-gray-700 dark:text-gray-300">
+              <p className="font-semibold">{t("title")}</p>
+              <p className="mt-1">{t("text")}</p>
+              <div className="mt-2 text-xs text-gray-500">
+                <a href={locale + "/privacy"} className="underline">{t("privacyLink")}</a>
+              </div>
+            </div>
+
+            <div className="flex gap-2">
+              <button
+                className="px-3 py-2 rounded-md border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-200"
+                onClick={() => setShowCustom(true)}
+              >
+                {t("customize")}
+              </button>
+
+              <button
+                className="px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-900"
+                onClick={rejectAll}
+              >
+                {t("decline")}
+              </button>
+
+              <button
+                className="px-3 py-2 rounded-md bg-brand-accent text-white"
+                onClick={acceptAll}
+              >
+                {t("accept")}
+              </button>
             </div>
           </div>
-
-          <div className="flex gap-2">
-            <button
-              className="px-3 py-2 rounded-md border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-200"
-              onClick={() => setShowCustom(true)}
-            >
-              {t("customize")}
-            </button>
-
-            <button
-              className="px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-900"
-              onClick={rejectAll}
-            >
-              {t("decline")}
-            </button>
-
-            <button
-              className="px-3 py-2 rounded-md bg-brand-accent text-white"
-              onClick={acceptAll}
-            >
-              {t("accept")}
-            </button>
-          </div>
         </div>
-      </div>
+      )}
 
       {/* Customize Drawer */}
       {showCustom && (
