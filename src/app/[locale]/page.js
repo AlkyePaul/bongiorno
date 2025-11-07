@@ -44,8 +44,8 @@ export default function HomePage() {
     <main>
       <Hero title={title} subtitle={subtitle} ctas={ctas} claim={claim} />
       
-      <section className=" px-4 lg:px-0 max-w-4xl mx-auto md:py-12 py-8">
-   <section className="homepage">
+      <section className=" homepage px-4 lg:px-0 mx-auto md:py-12 py-8">
+   <section className=" max-w-4xl">
 <Intro>{home.intro}</Intro>
 
       </section>
