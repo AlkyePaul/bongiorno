@@ -1,13 +1,19 @@
 "use client";
 import { useState, useMemo, useEffect } from "react";
-import Link from "next/link";
+import {Link, usePathname, useRouter} from '@/i18n/navigation';
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMessages } from "next-intl";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
 import { useLocale } from "next-intl";
+
+// Keep locales stable across renders to avoid changing useMemo deps
+const locales = [
+  { code: "it", label: "IT" },
+  { code: "en", label: "EN" },
+  { code: "es", label: "ES" }
+];
 
 export default function Header() {
   const pathname = usePathname();
@@ -20,11 +26,6 @@ export default function Header() {
 
   // Country flags via country-flag-icons (language -> representative country)
   // IT -> Italy, EN -> Great Britain, ES -> Spain
-  const locales = [
-    { code: "it", label: "IT" },
-    { code: "en", label: "EN" },
-    { code: "es", label: "ES" }
-  ];
   const messages = useMessages();
 
   useEffect(() => {
@@ -42,37 +43,39 @@ export default function Header() {
       return "/" + parts.slice(1).join("/");
     }
     return "/" + parts.join("/");
-  }, [pathname, locales]);
+  }, [pathname]);
 
-  const switchLocale = (code) => {
-    const target = `/${code}${basePath === "/" ? "" : basePath}`;
-    setLangOpen(false);
-    router.push(target);
-  };
+const switchLocale = (code) => {
+  setLangOpen(false);
+  // just tell the router to change locale; it will translate the path
+  router.push(pathname, {locale: code});
+};
+
 const navLabel = messages?.nav;
+const quoteLabel = messages?.common?.preventivo;
 
 
   const destinations = [
-    { href: `/${currentLocale}/destinazioni/tunisia`, label: navLabel?.tunisia },
-    { href: `/${currentLocale}/destinazioni/algeria`, label: navLabel?.algeria },
-    { href: `/${currentLocale}/destinazioni/marocco`, label: navLabel?.marocco },
-    { href: `/${currentLocale}/destinazioni/libia`, label: navLabel?.libia },
-    { href: `/${currentLocale}/destinazioni/mauritania`, label: navLabel?.mauritania },
-    { href: `/${currentLocale}/destinazioni/mondo`, label: navLabel?.mondo }
+    { href: '/destinazioni/tunisia', label: navLabel?.tunisia },
+    { href: '/destinazioni/algeria', label: navLabel?.algeria },
+    { href: '/destinazioni/marocco', label: navLabel?.marocco },
+    { href: '/destinazioni/libia', label: navLabel?.libia },
+    { href: '/destinazioni/mauritania', label: navLabel?.mauritania },
+    { href: '/destinazioni/mondo', label: navLabel?.mondo }
   ];
 
   const scopri =[
-    {href: `/${currentLocale}/news`, label: navLabel?.news },
-    {href: `/${currentLocale}/chi-siamo`, label: navLabel?.about },
-    {href: `/${currentLocale}/contatti`, label: navLabel?.contacts }
+    {href: '/news', label: navLabel?.news },
+    {href: '/chi-siamo', label: navLabel?.about },
+    {href: '/contatti', label: navLabel?.contacts }
   ]
 
-    const navLinks = [
-    { href: `/${currentLocale}`, label: navLabel?.home },
-    { href: `/${currentLocale}/servizi`, label: navLabel?.services },
-    { key: "destinazioni", label: navLabel?.destinations, array: destinations },
-    { key: `scopri`, label: navLabel?.scopri, array: scopri }
-  ];
+ const navLinks = [
+  { href: '/', label: navLabel?.home },
+  { href: '/servizi', label: navLabel?.services },
+  { key: 'destinazioni', label: navLabel?.destinations, array: destinations },
+  { key: 'scopri', label: navLabel?.scopri, array: scopri }
+];
 
     // 🔹 Utility function to toggle a submenu cleanly
   const handleSubMenuToggle = (key) => {
@@ -96,7 +99,7 @@ const navLabel = messages?.nav;
     >
       <nav className="mx-auto px-6 flex items-center justify-between relative">
         {/* Logo */}
-        <Link href={`/${currentLocale}`} className="flex items-center shrink-0">
+        <Link href="/" className="flex items-center shrink-0">
           <Image src="/img/logo.webp" alt="Logo" width={70} height={70} priority />
         </Link>
 
@@ -167,8 +170,8 @@ const navLabel = messages?.nav;
      
 
         {/* RIGHT → CTA + Lang */}
-          <Link href={"/" + currentLocale + "/preventivi"} className="px-5 py-2 rounded-md bg-brand-navy text-white font-medium shadow hover:bg-brand-accent transition">
-            {messages?.nav?.quote ?? "Chiedi preventivo"}
+          <Link href="/preventivi" className="px-5 py-2 rounded-md bg-brand-navy text-white font-medium shadow hover:bg-brand-accent transition">
+            {quoteLabel}
           </Link>
 
           {/* Language selector */}
@@ -199,7 +202,7 @@ const navLabel = messages?.nav;
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -5 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute right-0 mt-2 bg-gray-800 border border-white/10 rounded-md shadow-lg overflow-hidden"
+                  className="absolute right-0 mt-2 bg-white/90 border border-white/10 rounded-md shadow-lg overflow-hidden"
                 >
                   {locales.map((l) => (
                     <li key={l.code}>
@@ -321,7 +324,7 @@ const navLabel = messages?.nav;
             className="w-4/5 text-center py-3 rounded-md bg-brand-navy text-white font-medium hover:bg-brand-accent transition"
             onClick={() => setMenuOpen(false)}
           >
-            {messages?.nav?.quote ?? "Chiedi preventivo"}
+            {quoteLabel}
           </Link>
         </li>
       </ul>

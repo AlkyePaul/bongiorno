@@ -2,7 +2,7 @@
 import H2 from "../common/H2";
 import { useMessages } from "next-intl";
 import { Package, Truck, Landmark, ShieldCheck, Cog } from "lucide-react";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 
 export default function ServicesSection(props) {
@@ -10,7 +10,7 @@ export default function ServicesSection(props) {
   const svc = messages?.home?.services || {};
   const locale = useLocale();
 
-  const cta = messages?.cta.cta || {};
+  const cta = messages?.ctaBanner.cta || {};
 
   const title = props?.title ?? svc?.title ?? "";
   const intro = props?.intro ?? (Array.isArray(svc?.intro) ? svc.intro : []);
@@ -43,7 +43,7 @@ export default function ServicesSection(props) {
           ))}
         </div>
         <Link
-          href={locale + "/servizi"}
+          href="/servizi"
           className="inline-block bg-brand-navy text-white px-6 py-3 rounded-md font-semibold shadow hover:bg-brand-petrol"
         >
           {cta.ctaservizi}
@@ -55,7 +55,7 @@ export default function ServicesSection(props) {
         {services.map((service, i) => (
           <div
             key={i}
-            className="bg-white rounded-md shadow-md text-brand-dark p-6 hover:shadow-lg hover:bg-brand-navy hover:text-white transition"
+            className="bg-white rounded-md shadow-md text-brand-dark p-6 hover:shadow-lg transition"
           >
             <div className="text-brand-accent mb-4">
               {service.icon}

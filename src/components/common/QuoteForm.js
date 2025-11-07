@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 
 export default function QuoteForm() {
@@ -111,7 +111,7 @@ export default function QuoteForm() {
   ];
 
   return (
-    <section>
+    <section id={t("id")}>
       <div className="mx-auto md:px-6 max-w-4xl">
         <form
           onSubmit={handleSubmit}

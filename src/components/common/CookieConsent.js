@@ -6,6 +6,7 @@ import { getCookie, setCookie } from "cookies-next";
 import { useTranslations, useLocale } from "next-intl";
 import { enableGTag, enableGTM } from "@/lib/analytics";
 import { Cog } from "lucide-react";
+import {Link} from "@/i18n/navigation";
 
 export default function CookieConsent() {
   const t = useTranslations("cookies");
@@ -110,7 +111,7 @@ export default function CookieConsent() {
               <p className="font-semibold">{t("title")}</p>
               <p className="mt-1">{t("text")}</p>
               <div className="mt-2 text-xs text-gray-500">
-                <a href={locale + "/privacy"} className="underline">{t("privacyLink")}</a>
+                <Link href="/privacy" className="underline">{t("privacyLink")}</Link>
               </div>
             </div>
 

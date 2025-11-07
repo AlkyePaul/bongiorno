@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Mail, Phone, MapPin } from "lucide-react";
 import H1 from "@/components/common/H1";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import { usePathname } from "next/navigation";
 
 export default function ContattiPage() {
@@ -166,7 +166,7 @@ export default function ContattiPage() {
               >
                 {t("fields.consent")}{" "}
                 <Link
-                  href={`/${locale}/privacy`}
+                  href="/privacy"
                   className="underline text-brand-accent hover:text-brand-accent/80"
                 >
                   {t("privacyLink")}

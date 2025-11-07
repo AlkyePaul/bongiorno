@@ -1,4 +1,137 @@
 {
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "lastUpdated": " Dernière mise à jour : 28/04/2024",
+    "controller": {
+      "name": "Bongiorno Srl",
+      "piva": "10408830155",
+      "address": "Via Marsala, 40 - 21013 Gallarate (Varese)",
+      "email": "bongiorno@bongiornosrl.com"
+    },
+    "sections": [
+      {
+        "id": "intro",
+        "heading": "Informations sur la protection des données",
+        "subtitle": "Conformément aux articles 13 et 14 du GDPR 2016/679",
+        "content": [
+          "Les sociétés Bongiorno Srl - PIVA 10408830155 - Adresse : Via Marsala, 40 - 21013 Gallarate (Varese) vous informe que vos données seront traitées de la manière suivante."
+        ]
+      },
+      {
+        "id": "objet-objectif",
+        "heading": "Objet du traitement et finalité",
+        "content": [
+          "Nous traitons les données d'identification personnelle (par exemple, le prénom, le nom et l'adresse électronique) - ci-après dénommées \"données\" - que vous nous avez fournies afin de répondre à votre demande dans la section \"Contactez-nous\" du site web et dans la section \"Devis\"."
+        ]
+      },
+      {
+        "id": "base juridique",
+        "heading": "Base juridique",
+        "list": [
+          "Exécution d'un contrat ou de mesures précontractuelles ;",
+          "Exécution d'une obligation légale ;",
+          "Intérêt légitime du titulaire."
+        ]
+      },
+      {
+        "id": "méthodes-durée",
+        "heading": "Modalités et durée du traitement",
+        "content": [
+          "Le traitement de vos données personnelles est effectué conformément aux dispositions de la législation applicable en matière de protection des données.",
+          "Elle peut consister en la collecte, l'enregistrement, l'organisation, le stockage, la consultation, le traitement, la modification, la sélection, l'extraction, la comparaison, l'utilisation, l'interconnexion, le blocage, la communication, l'effacement et la destruction des données.",
+          "Vos données font l'objet d'un traitement sur papier et d'un traitement électronique et/ou automatisé. Elles seront traitées conformément aux principes d'exactitude, de licéité, de transparence et de protection de votre vie privée et de vos droits.",
+          "Elles seront traitées pendant toute la durée de la relation contractuelle et, par la suite, pour l'exécution de toutes les obligations légales."
+        ]
+      },
+      {
+        "id": "accès aux données",
+        "heading": "Accès aux données",
+        "content": [
+          "Vos données peuvent être rendues accessibles aux fins décrites ci-dessus :"
+        ],
+        "list": [
+          "Aux employés et collaborateurs du contrôleur dans tous ses sites opérationnels et logistiques, à l'intérieur et à l'extérieur de l'UE, en leur qualité de responsables et/ou de responsables internes du traitement des données et/ou d'administrateurs de systèmes ; aux employés du secteur administratif ; aux employés du secteur commercial ; aux employés du secteur opérationnel.",
+          "à des sujets extérieurs à notre structure (par exemple les fournisseurs des serveurs qui hébergent le site et nos télécommunications), avec lesquels des accords précis ont été stipulés sur les mesures à prendre pour garantir la sécurité des données qui leur sont confiées ; dans tous les cas, les données seront traitées exclusivement pour la poursuite des finalités susmentionnées."
+        ]
+      },
+      {
+        "id": "communication de données",
+        "heading": "Communication de données",
+        "content": [
+          "Le contrôleur des données ne peut communiquer vos données aux fins de la présente note d'information qu'aux parties pour lesquelles la communication est obligatoire en vertu de la loi."
+        ]
+      },
+      {
+        "id": "localisation-transfert",
+        "heading": "Lieu de traitement et de transfert des données",
+        "content": [
+          "Vos données sont localisées au siège social. Tout transfert, dû à des circonstances pour lesquelles il est obligatoire en vertu de la loi et/ou pour la réalisation des objectifs susmentionnés, sera effectué dans le respect total de vos intérêts."
+        ]
+      },
+      {
+        "id": "rétention",
+        "heading": "Durée de stockage",
+        "content": [
+          "Sauf si vous exprimez explicitement votre souhait de les supprimer, vos données personnelles seront conservées aussi longtemps qu'elles sont nécessaires aux fins légitimes pour lesquelles elles ont été collectées et, en tout état de cause, pour l'exécution d'obligations légales."
+        ]
+      },
+      {
+        "id": "droits",
+        "heading": "Droits de la personne concernée",
+        "content": [
+          "En tant que personne concernée, vous pouvez exercer vos droits en vertu des articles 15 à 22 du GDPR, y compris :"
+        ],
+        "list": [
+          "Droit de rectification ;",
+          "Droit à l'oubli ;",
+          "Droit à la limitation du traitement ;",
+          "Droit à la portabilité des données ;",
+          "Droit d'opposition ;",
+          "Droit de déposer une plainte auprès de l'autorité de surveillance."
+        ],
+        "links": [
+          {
+            "label": "Autorité de protection des données",
+            "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/4535524"
+          }
+        ]
+      },
+      {
+        "id": "comment faire de l'exercice",
+        "heading": "Modalités d'exercice des droits",
+        "content": [
+          "Vous pouvez exercer vos droits à tout moment en envoyant un e-mail à l'adresse :",
+          "bongiorno@bongiornosrl.com"
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Nous utilisons des cookies 🍪",
+    "text": "Nous utilisons des cookies techniques et, sous réserve de consentement, des cookies analytiques pour améliorer votre expérience.",
+    "privacyLink": "Politique de confidentialité",
+    "accept": "Accepter tous",
+    "decline": "Rejeter",
+    "customize": "Personnaliser",
+    "customizeTitle": "Préférences en matière de cookies",
+    "customizeText": "Choisissez les catégories de cookies que vous souhaitez autoriser.",
+    "cancel": "Annuler",
+    "save": "Sauvegarder les préférences",
+    "categories": {
+      "essential": {
+        "title": "L'essentiel",
+        "desc": "Cookies nécessaires au fonctionnement du site."
+      },
+      "analytics": {
+        "title": "Analyse",
+        "desc": "Cookies qui nous aident à comprendre l'utilisation du site (Google Analytics)."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "desc": "Cookies utilisés pour les campagnes publicitaires et le remarketing."
+      }
+    }
+  },
   "common": {
     "company": "Bongiorno SRL",
     "preventivo": "Demande de devis",
@@ -11,212 +144,213 @@
       "claim": "Notre engagement au Maroc est établi depuis des décennies. Nous avons choisi et renforcé au fil du temps un partenariat avec une organisation locale qui voyage sur notre longueur d'onde. Afin d'atteindre l'objectif commun de donner aux clients de plus en plus de raisons de choisir notre service.",
       "intro": "Nous proposons des transports depuis l'Espagne, la France et l'Italie vers les principaux ports du Maroc.",
       "image": "/img/dest-marocco.webp",
-      "mapCoords": {
-        "0": "-6.8326",
-        "1": "31.7917"
-      },
-      "mapMarkers": {
-        "0": {
+      "mapCoords": [
+        -6.8326,
+        31.7917
+      ],
+      "mapMarkers": [
+        {
           "name": "Casablanca",
-          "coords": {
-            "0": "-7.5898",
-            "1": "33.5731"
-          }
+          "coords": [
+            -7.5898,
+            33.5731
+          ]
         },
-        "1": {
+        {
           "name": "Tanger",
-          "coords": {
-            "0": "-5.8127",
-            "1": "35.7595"
-          }
+          "coords": [
+            -5.8127,
+            35.7595
+          ]
         }
-      },
-      "paragraphs": {
-        "0": "Nos décennies d'expérience nous permettent de garantir le meilleur timing sur le marché marocain.",
-        "1": "Nous savons que la rapidité, non seulement dans le transport, mais aussi et surtout dans la prise en compte de toutes les dynamiques locales, est un atout pour donner à nos services d'expédition une garantie de qualité.",
-        "2": "Nous connaissons l'importance de la documentation qui permet à tous les opérateurs de mener à bien leurs transactions, et nous conseillons et suggérons, avant même le début de l'expédition, toutes les spécificités qui le permettent."
-      },
+      ],
+      "paragraphs": [
+        "Nos décennies d'expérience nous permettent de garantir le meilleur timing sur le marché marocain.",
+        "Nous savons que la rapidité, non seulement dans le transport, mais aussi et surtout dans la prise en compte de toutes les dynamiques locales, est un atout pour donner à nos services d'expédition une garantie de qualité.",
+        "Nous connaissons l'importance de la documentation qui permet à tous les opérateurs de mener à bien leurs transactions, et nous conseillons et suggérons, avant même le début de l'expédition, toutes les spécificités qui le permettent."
+      ],
       "servicesTitle": "Services Maroc",
-      "services": {
-        "0": "Services réguliers de groupage par voie maritime vers Casablanca",
-        "1": "Possibilité de charger des marchandises dangereuses en totalité et en groupage, du matériel roulant et des charges exceptionnelles",
-        "2": "Possibilité de livraisons de porte à porte dans tout le Maroc",
-        "3": "Transport hebdomadaire vers les ports de Tanger et de Casablanca",
-        "4": "Temps de transit très rapides",
-        "5": "Assurance tous risques sur demande"
-      }
+      "services": [
+        "Services réguliers de groupage par voie maritime vers Casablanca",
+        "Possibilité de charger des marchandises dangereuses en totalité et en groupage, du matériel roulant et des charges exceptionnelles",
+        "Possibilité de livraisons de porte à porte dans tout le Maroc",
+        "Transport hebdomadaire vers les ports de Tanger et de Casablanca",
+        "Temps de transit très rapides",
+        "Assurance tous risques sur demande"
+      ]
     },
     "libia": {
       "title": "Transport Libye et Mauritanie",
       "claim": "La couverture complète du Maghreb nous amène également ici. Avec le même soin et la même attention, nous assurons des services réguliers de transport de conteneurs complets vers les principaux ports.",
       "intro": "Nous proposons des transports depuis l'Espagne, la France et l'Italie vers les principaux ports libyens et mauritaniens.",
       "image": "/img/dest-libia-mauritania.webp",
-      "mapCoords": {
-        "0": "13",
-        "1": "22"
-      },
-      "mapMarkers": {
-        "0": {
+      "mapCoords": [
+        13,
+        22
+      ],
+      "mapMarkers": [
+        {
           "name": "Tripoli",
-          "coords": {
-            "0": "13.1913",
-            "1": "32.8872"
-          }
+          "coords": [
+            13.1913,
+            32.8872
+          ]
         },
-        "1": {
+        {
           "name": "Mesuré",
-          "coords": {
-            "0": "15.1",
-            "1": "32.37"
-          }
+          "coords": [
+            15.1,
+            32.37
+          ]
         },
-        "2": {
+        {
           "name": "Benghazi",
-          "coords": {
-            "0": "20.0667",
-            "1": "32.1167"
-          }
+          "coords": [
+            20.0667,
+            32.1167
+          ]
         },
-        "3": {
+        {
           "name": "Nouakchott",
-          "coords": {
-            "0": "-15.9785",
-            "1": "18.0858"
-          }
+          "coords": [
+            -15.9785,
+            18.0858
+          ]
         },
-        "4": {
+        {
           "name": "Nouadhibou",
-          "coords": {
-            "0": "-17.0333",
-            "1": "20.9333"
-          }
+          "coords": [
+            -17.0333,
+            20.9333
+          ]
         }
-      },
-      "paragraphs": {
-        "0": "Nos décennies d'expérience et la qualité de nos services, certifiés ISO9001, nous permettent de garantir des services de transport complets, rapides et efficaces."
-      },
+      ],
+      "paragraphs": [
+        "Nos décennies d'expérience et la qualité de nos services, certifiés ISO9001, nous permettent de garantir des services de transport complets, rapides et efficaces."
+      ],
       "servicesTitle": "Services pour la Libye et la Mauritanie",
-      "services": {
-        "0": "Services réguliers en conteneurs complets",
-        "1": "Transport hebdomadaire vers les ports de Tripoli, Misurata et Benghazi, Nouakchott et Nouadhibou.",
-        "2": "Possibilité de charger des marchandises dangereuses et des charges exceptionnelles",
-        "3": "Assurance tous risques sur demande"
-      }
+      "services": [
+        "Services réguliers en conteneurs complets",
+        "Transport hebdomadaire vers les ports de Tripoli, Misurata et Benghazi, Nouakchott et Nouadhibou.",
+        "Possibilité de charger des marchandises dangereuses et des charges exceptionnelles",
+        "Assurance tous risques sur demande"
+      ]
     },
     "mondo": {
       "title": "Les transports dans le monde",
       "claim": "Grâce à nos partenaires WCA, nous arrivons partout avec la qualité garantie par le plus grand et le plus vaste réseau de transitaires internationaux.",
       "intro": "Des services certifiés au niveau mondial, garantis par notre appartenance au réseau WCA.",
       "image": "/img/dest-mondo.webp",
-      "mapCoords": {
-        "0": "10",
-        "1": "20"
-      },
-      "mapMarkers": {
-        "0": {
+      "mapCoords": [
+        8.793,
+        45.66
+      ],
+      "mapMarkers": [
+        {
           "name": "Canal de Panama",
-          "coords": {
-            "0": "-79.8",
-            "1": "9.1"
-          }
+          "coords": [
+            -79.8,
+            9.1
+          ]
         },
-        "1": {
+        {
           "name": "Singapour",
-          "coords": {
-            "0": "103.8",
-            "1": "1.35"
-          }
+          "coords": [
+            103.8,
+            1.35
+          ]
         },
-        "2": {
+        {
           "name": "Rotterdam",
-          "coords": {
-            "0": "4.48",
-            "1": "51.92"
-          }
+          "coords": [
+            4.48,
+            51.92
+          ]
         },
-        "3": {
+        {
           "name": "New York (en anglais)",
-          "coords": {
-            "0": "-74",
-            "1": "40.7"
-          }
+          "coords": [
+            -74,
+            40.7
+          ]
         }
-      },
+      ],
+      "paragraphs": [],
       "servicesTitle": "Services certifiés au niveau mondial",
-      "services": {
-        "0": "Garantie de service du réseau WCA",
-        "1": "OEA et qualification de l'opérateur de qualité ISO 9001",
-        "2": "Départs réguliers en conteneurs complets et en groupage",
-        "3": "Possibilité de transport de Project Cargo, de marchandises dangereuses et de charges exceptionnelles",
-        "4": "Utilisation de vecteurs réguliers de première importance et fiabilité",
-        "5": "Assurance tous risques sur demande"
-      }
+      "services": [
+        "Garantie de service du réseau WCA",
+        "OEA et qualification de l'opérateur de qualité ISO 9001",
+        "Départs réguliers en conteneurs complets et en groupage",
+        "Possibilité de transport de Project Cargo, de marchandises dangereuses et de charges exceptionnelles",
+        "Utilisation de vecteurs réguliers de première importance et fiabilité",
+        "Assurance tous risques sur demande"
+      ]
     },
     "algeria": {
       "title": "Transport Algérie",
       "claim": "Nous avons notre propre structure dans la région depuis de nombreuses années. Nous en connaissons la dynamique et les particularités. Nous vivons les changements réglementaires au quotidien et sommes en mesure de prendre des mesures immédiates pour les faire respecter.",
       "intro": "Nous proposons des transports depuis l'Espagne, la France et l'Italie vers les ports d'Alger, d'Oran et tous les principaux ports algériens.",
       "image": "/img/dest-algeria.webp",
-      "mapCoords": {
-        "0": "2.6333",
-        "1": "28"
-      },
-      "mapMarkers": {
-        "0": {
+      "mapCoords": [
+        2.6333,
+        28
+      ],
+      "mapMarkers": [
+        {
           "name": "Alger",
-          "coords": {
-            "0": "3.0588",
-            "1": "36.7538"
-          }
+          "coords": [
+            3.0588,
+            36.7538
+          ]
         },
-        "1": {
+        {
           "name": "Oran",
-          "coords": {
-            "0": "-0.6417",
-            "1": "35.6987"
-          }
+          "coords": [
+            -0.6417,
+            35.6987
+          ]
         }
-      },
-      "paragraphs": {
-        "0": "L'expérience acquise au fil du temps et la présence de son propre personnel dans la région garantissent la qualité des services et la fiabilité de l'infrastructure mise à la disposition des clients.",
-        "1": "Nous savons que la rapidité, non seulement dans le transport, mais aussi et surtout dans la prise en compte de toutes les dynamiques locales, est un atout pour donner à nos services d'expédition une garantie de qualité.",
-        "2": "Nous connaissons l'importance de la documentation qui permet à tous les opérateurs de mener à bien leurs transactions et nous conseillons et suggérons, avant même le début de l'expédition, toutes les spécificités qui permettent d'y parvenir."
-      },
+      ],
+      "paragraphs": [
+        "L'expérience acquise au fil du temps et la présence de son propre personnel dans la région garantissent la qualité des services et la fiabilité de l'infrastructure mise à la disposition des clients.",
+        "Nous savons que la rapidité, non seulement dans le transport, mais aussi et surtout dans la prise en compte de toutes les dynamiques locales, est un atout pour donner à nos services d'expédition une garantie de qualité.",
+        "Nous connaissons l'importance de la documentation qui permet à tous les opérateurs de mener à bien leurs transactions, et nous conseillons et suggérons, avant même le début de l'expédition, toutes les spécificités qui le permettent."
+      ],
       "servicesTitle": "Services Algérie",
-      "services": {
-        "0": "Services réguliers de groupage par voie maritime vers Alger et Oran",
-        "1": "Services réguliers de transport de conteneurs vers tous les ports algériens",
-        "2": "Possibilité de charger des marchandises dangereuses en totalité et en groupage, du matériel roulant et des charges exceptionnelles",
-        "3": "Possibilité de livraisons en porte-à-porte dans toute l'Algérie",
-        "4": "Temps de transit très rapides",
-        "5": "Assurance tous risques sur demande"
-      }
+      "services": [
+        "Services réguliers de groupage par voie maritime vers Alger et Oran",
+        "Services réguliers de transport de conteneurs vers tous les ports algériens",
+        "Possibilité de charger des marchandises dangereuses en totalité et en groupage, du matériel roulant et des charges exceptionnelles",
+        "Possibilité de livraisons en porte-à-porte dans toute l'Algérie",
+        "Temps de transit très rapides",
+        "Assurance tous risques sur demande"
+      ]
     },
     "tunisia": {
       "title": "Tunisie Transport",
       "claim": "Nous sommes un point de référence dans le pays pour le transport vers et depuis l'Europe méditerranéenne.",
       "intro": "Une croissance continue grâce à nos clients qui, par leur fidélité et leur reconnaissance, nous ont donné l'élan nécessaire pour essayer de répondre à leurs attentes et à leurs demandes avec toujours plus de soin et d'attention.",
       "image": "/img/destinations/tunisie.webp",
-      "mapCoords": {
-        "0": "10.18",
-        "1": "36.8"
-      },
-      "paragraphs": {
-        "0": "Nous proposons des transports depuis l'Espagne, la France et l'Italie vers les ports de Tunis, Sousse et Sfax.",
-        "1": "Notre expérience de plusieurs décennies et notre chaîne d'approvisionnement complète avec nos propres entrepôts et notre personnel local nous permettent de garantir les meilleurs délais sur le marché tunisien.",
-        "2": "L'expérience acquise au fil du temps et la présence de son propre personnel dans la région garantissent la qualité des services et la fiabilité de l'infrastructure mise à la disposition des clients.",
-        "3": "Nous savons que la rapidité, non seulement dans le transport, mais aussi et surtout dans la prise en compte de toutes les dynamiques locales, est un atout pour donner à nos services d'expédition une garantie de qualité.",
-        "4": "Nous connaissons l'importance de la documentation qui permet à tous les opérateurs de mener à bien leurs transactions et nous conseillons et suggérons, avant même le début de l'expédition, toutes les spécificités qui permettent d'y parvenir."
-      },
+      "mapCoords": [
+        10.18,
+        36.8
+      ],
+      "paragraphs": [
+        "Nous proposons des transports depuis l'Espagne, la France et l'Italie vers les ports de Tunis, Sousse et Sfax.",
+        "Notre expérience de plusieurs décennies et notre chaîne d'approvisionnement complète avec nos propres entrepôts et notre personnel local nous permettent de garantir les meilleurs délais sur le marché tunisien.",
+        "L'expérience acquise au fil du temps et la présence de son propre personnel dans la région garantissent la qualité des services et la fiabilité de l'infrastructure mise à la disposition des clients.",
+        "Nous savons que la rapidité, non seulement dans le transport, mais aussi et surtout dans la prise en compte de toutes les dynamiques locales, est un atout pour donner à nos services d'expédition une garantie de qualité.",
+        "Nous connaissons l'importance de la documentation qui permet à tous les opérateurs de mener à bien leurs transactions, et nous conseillons et suggérons, avant même le début de l'expédition, toutes les spécificités qui le permettent."
+      ],
       "servicesTitle": "Services Tunisie",
-      "services": {
-        "0": "Services de groupage trihebdomadaires à destination de Tunis, Sousse et Sfax",
-        "1": "Services multisemaines en conteneurs et en remorques complètes vers tous les principaux ports tunisiens",
-        "2": "Possibilité de charger des marchandises dangereuses en totalité et en groupage, du matériel roulant et des charges exceptionnelles",
-        "3": "Livraisons porte à porte possibles dans toute la Tunisie",
-        "4": "Temps de transit très rapides",
-        "5": "Assurance tous risques sur demande"
-      },
+      "services": [
+        "Services de groupage trihebdomadaires à destination de Tunis, Sousse et Sfax",
+        "Services multisemaines en conteneurs et en remorques complètes vers tous les principaux ports tunisiens",
+        "Possibilité de charger des marchandises dangereuses en totalité et en groupage, du matériel roulant et des charges exceptionnelles",
+        "Livraisons porte à porte possibles dans toute la Tunisie",
+        "Temps de transit très rapides",
+        "Assurance tous risques sur demande"
+      ],
       "cta": "Demande de devis"
     }
   },
@@ -240,83 +374,83 @@
       "title": "BONGIORNO TRANSPORT",
       "subtitle": "Envois internationaux",
       "claim": "Depuis 1985, nous assurons avec dévouement et attention la liaison entre les principaux ports européens de la Méditerranée et le Maghreb : la Tunisie, l'Algérie et le Maroc en premier lieu, mais aussi de nombreuses autres destinations, desservant chaque année plus de 60 pays dans le monde entier.",
-      "ctas": {
-        "0": {
-          "href": "/citations",
+      "ctas": [
+        {
+          "href": "#129837",
           "label": "Demande de devis"
         },
-        "1": {
+        {
           "href": "/contacts",
           "label": "Contactez nous"
         }
-      }
+      ]
     },
-    "intro": {
-      "0": "Nos services dans les ports d'Afrique du Nord sont structurés pour garantir des conditions de transport particulièrement favorables, mais surtout pour guider et aider les opérateurs dans toutes les phases qui précèdent les expéditions et les mènent à bonne fin.",
-      "1": "C'est notre présence quotidienne sur le terrain qui nous permet de nous tenir au courant des procédures et des réglementations qui changent souvent sur ces marchés. Pour ce faire, nous avons beaucoup investi dans les structures et les personnes qui nous permettent de les gérer de manière dynamique et efficace.",
-      "2": "Nous sommes présents en Tunisie dans les trois principaux ports. Tunis, Sousse et Sfax. En Algérie, notre bureau d'Alger gère et garantit les opérations dans tous les ports algériens. Au Maroc, nous exploitons une relation d'agence consolidée qui, au fil du temps, nous a permis de nous développer et de donner de la solidité et de la fiabilité à nos services.",
-      "3": "Bongiorno Espagne et Bongiorno France complètent notre structure, ce qui nous permet de couvrir tous les principaux canaux de trafic qui, depuis l'Europe, se déversent dans la Méditerranée en direction des destinations nord-africaines.",
-      "4": "Nos mots d'ordre : Ponctualité, Disponibilité et Réactivité pour faire face efficacement à toutes les éventualités.",
-      "5": "Nous sommes prêts à être votre partenaire de confiance pour tout transport vers l'Afrique du Nord et au-delà."
-    },
+    "intro": [
+      "Nos services dans les ports d'Afrique du Nord sont structurés pour garantir des conditions de transport particulièrement favorables, mais surtout pour guider et aider les opérateurs dans toutes les phases qui précèdent les expéditions et les mènent à bonne fin.",
+      "C'est notre présence quotidienne sur le terrain qui nous permet de nous tenir au courant des procédures et des réglementations qui changent souvent sur ces marchés. Pour ce faire, nous avons beaucoup investi dans les structures et les personnes qui nous permettent de les gérer de manière dynamique et efficace.",
+      "Nous sommes présents en Tunisie dans les trois principaux ports. Tunis, Sousse et Sfax. En Algérie, notre bureau d'Alger gère et garantit les opérations dans tous les ports algériens. Au Maroc, nous exploitons une relation d'agence consolidée qui, au fil du temps, nous a permis de nous développer et de donner de la solidité et de la fiabilité à nos services.",
+      "Bongiorno Espagne et Bongiorno France complètent notre structure, ce qui nous permet de couvrir tous les principaux canaux de trafic qui, depuis l'Europe, se jettent dans la Méditerranée en direction des destinations nord-africaines.",
+      "Nos mots d'ordre : Ponctualité, Disponibilité et Réactivité pour faire face efficacement à toutes les éventualités.",
+      "Nous sommes prêts à être votre partenaire de confiance pour tout transport vers l'Afrique du Nord et au-delà."
+    ],
     "destinations": {
       "title": "Destinations Transport Afrique du Nord-Maghreb",
-      "items": {
-        "0": {
+      "items": [
+        {
           "title": "Tunisie Transport",
           "text": "Liaison directe avec les principaux ports depuis 1985.",
           "image": "/img/tunisia.webp",
           "href": "/tunisie"
         },
-        "1": {
+        {
           "title": "Transport Algérie",
           "text": "Basée à Alger, elle opère dans tous les ports algériens.",
           "image": "/img/algeria.webp",
           "href": "/algeria"
         },
-        "2": {
+        {
           "title": "Transport Maroc",
           "text": "Des relations établies pour des services fiables et rapides.",
           "image": "/img/marocco.webp",
           "href": "/maroc"
         },
-        "3": {
+        {
           "title": "Libye et Mauritanie",
           "text": "Des relations établies pour des services fiables et rapides.",
           "image": "/img/libia.webp",
           "href": "/libia"
         },
-        "4": {
+        {
           "title": "Le monde",
           "text": "Des relations établies pour des services fiables et rapides.",
           "image": "/img/world.webp",
           "href": "/monde"
         }
-      }
+      ]
     },
     "services": {
       "title": "Services",
-      "intro": {
-        "0": "Votre confiance est le moteur de nos transports. Nous sommes impatients de vous prouver que nous dépasserons vos attentes. Choisissez nos solutions de transport et découvrez la véritable signification d'un service d'expédition de première classe."
-      },
-      "items": {
-        "0": {
+      "intro": [
+        "Votre confiance est le moteur de nos transports. Nous sommes impatients de vous prouver que nous dépasserons vos attentes. Choisissez nos solutions de transport et découvrez la véritable signification d'un service d'expédition de première classe."
+      ],
+      "items": [
+        {
           "title": "Transport de groupage",
           "description": "Pour ne jamais interrompre votre production ou vos activités commerciales, il est essentiel de faire appel à une personne capable de traiter des envois de petite et moyenne taille avec le soin et la rapidité nécessaires."
         },
-        "1": {
+        {
           "title": "Transports exceptionnels et Project Cargo",
           "description": "Un type de transport qui nécessite non seulement une expertise approfondie, mais aussi une étude minutieuse des itinéraires, des réglementations et des caractéristiques des marchandises et des territoires dans lesquels les expéditions sont effectuées."
         },
-        "2": {
+        {
           "title": "Services de conteneurs complets",
           "description": "Fréquence et temps de transit très rapides, disponibilité de l'espace à bord des navires et grande variété de types de conteneurs pour répondre aux besoins les plus divers."
         },
-        "3": {
+        {
           "title": "Assurance tous risques",
           "description": "Pour ceux qui ne veulent jamais rien laisser au hasard. Une police d'assurance qui protège contre tous les risques pendant le transport. La clé d'un transport sans heurts. Notre solide police d'assurance tous risques est disponible sur demande."
         }
-      }
+      ]
     },
     "content": {
       "title": "Nous ne sommes pas seulement des transitaires",
@@ -325,8 +459,8 @@
       "intro3": "Nous sommes fiers d'avoir créé, au fil du temps, des services spécialisés qui nous permettent de gérer les expéditions vers le Maghreb et plusieurs autres zones géographiques avec une structure unique et solide.",
       "intro4": "Depuis le moment où les marchandises quittent la porte de l'exportateur jusqu'à celui où elles sont mises à la disposition de l'importateur, nous contrôlons chaque étape grâce à la formation de notre personnel, qui a une connaissance approfondie de la dynamique et des opérations liées au transport international. En suivant les innovations et les changements qui rendent notre activité de plus en plus dynamique.",
       "intro5": "Notre objectif est de gagner la confiance de nos clients en leur montrant que nous travaillons sans relâche pour une croissance continue.",
-      "blocks": {
-        "0": {
+      "blocks": [
+        {
           "title": "Nous sommes les véritables protagonistes de votre transport",
           "text1": "Choisir Bongiorno, c'est choisir la sécurité et l'efficacité.",
           "text2": "Faites-nous confiance pour tous vos envois internationaux et découvrez comment nous faisons du transport de marchandises une expérience sans heurts.",
@@ -334,7 +468,7 @@
           "text4": "Pour que nos clients aient l'esprit tranquille, nous proposons également une police \"tous risques\" facultative, qui couvre le montant total de votre facture de vente. Quoi qu'il arrive pendant le transport, vous serez toujours en sécurité.",
           "alt": "Camions et conteneurs sur la route"
         }
-      }
+      ]
     },
     "quality": {
       "title": "Notre qualité, certifiée et reconnue",
@@ -350,68 +484,69 @@
       "globalTitle": "Bongiorno dans le monde",
       "globalText": "Le caractère international de notre activité et notre croissance continue nous ont amenés à étendre nos services au-delà des frontières des pays où nous sommes déjà implantés et ce, depuis longtemps, grâce au soutien et à l'aide précieuse du réseau d'agences fourni par l'Alliance mondiale pour le commerce, dont nous sommes membres depuis 2009.",
       "globalContact": "Contact",
-      "locations": {
-        "0": {
+      "locations": [
+        {
           "name": "Bongiorno Italie",
           "flag": "/img/flags/en.svg",
-          "description": {
-            "0": "Fondée en 1985, Bongiorno srl est notre société mère.",
-            "1": "Basée à Gallarate, à cinq minutes de l'aéroport Malpensa de Milan, elle est le point de confluence des principaux axes de circulation en provenance des régions industrielles du centre-nord de l'Italie.",
-            "2": "Notre proximité avec les principaux ports commerciaux du nord de la Méditerranée nous place dans une position privilégiée pour garantir une exécution extrêmement rapide et efficace des mandats de transport."
-          },
+          "description": [
+            "Fondée en 1985, Bongiorno srl est notre société mère.",
+            "Basée à Gallarate, à cinq minutes de l'aéroport Malpensa de Milan, elle est le point de confluence des principaux axes de circulation en provenance des régions industrielles du centre-nord de l'Italie.",
+            "Notre proximité avec les principaux ports commerciaux du nord de la Méditerranée nous place dans une position privilégiée pour garantir une exécution extrêmement rapide et efficace des mandats de transport."
+          ],
           "contactUrl": "#"
         },
-        "1": {
+        {
           "name": "Bongiorno Espagne",
           "flag": "/img/flags/es.svg",
-          "description": {
-            "0": "Avec son siège à Barcelone et ses plateformes logistiques stratégiques en Espagne et au Portugal, Bongiorno Espagne est en mesure d'assurer un service précis et capillaire à destination et en provenance de l'ensemble de la péninsule ibérique.",
-            "1": "Aujourd'hui, Bongiorno Espagne représente, pour le groupe, une référence d'importance fondamentale dans le développement des échanges vers l'Afrique du Nord."
-          },
+          "description": [
+            "Avec son siège à Barcelone et ses plateformes logistiques stratégiques en Espagne et au Portugal, Bongiorno Espagne est en mesure d'assurer un service précis et capillaire à destination et en provenance de l'ensemble de la péninsule ibérique.",
+            "Aujourd'hui, Bongiorno Espagne représente, pour le groupe, une référence d'importance fondamentale dans le développement des échanges vers l'Afrique du Nord."
+          ],
           "contactUrl": "#"
         },
-        "2": {
+        {
           "name": "Bongiorno France",
           "flag": "/img/flags/fr.svg",
-          "description": {
-            "0": "Nous sommes basés à Marseille, sur la principale voie d'accès à la ville et à seulement 1 km du port, point stratégique de l'activité maritime vers les ports du Maghreb et de toute la Méditerranée.",
-            "1": "Nous disposons également de plateformes logistiques dans les zones les plus sensibles (région parisienne, région lyonnaise, nord de la France).",
-            "2": "Nos services de transport par camion nous permettent également de desservir une grande partie de l'Allemagne et l'ensemble de la Belgique et des Pays-Bas."
-          },
+          "description": [
+            "Nous sommes basés à Marseille, sur la principale voie d'accès à la ville et à seulement 1 km du port, point stratégique de l'activité maritime vers les ports du Maghreb et de toute la Méditerranée.",
+            "Nous disposons également de plateformes logistiques dans les zones les plus sensibles (région parisienne, région lyonnaise, nord de la France).",
+            "Nos services de transport par camion nous permettent également de desservir une grande partie de l'Allemagne et l'ensemble de la Belgique et des Pays-Bas."
+          ],
           "contactUrl": "#"
         },
-        "3": {
+        {
           "name": "Bonjour la Tunisie",
           "flag": "/img/flags/tn.svg",
-          "description": {
-            "0": "Il s'agit de notre première base commerciale et opérationnelle en Afrique du Nord.",
-            "1": "La structure opérationnelle de Bongiorno Tunisie est actuellement considérée comme l'une des plus importantes du secteur des transports en Tunisie.",
-            "2": "Nous disposons de trois terminaux à conteneurs avec entrepôts sous douane dans les principaux ports tunisiens (Radès, Sousse et Sfax) qui nous permettent de répondre aux besoins de tous les opérateurs économiques tunisiens pour tout type de transport."
-          },
+          "description": [
+            "Il s'agit de notre première base commerciale et opérationnelle en Afrique du Nord.",
+            "La structure opérationnelle de Bongiorno Tunisie est actuellement considérée comme l'une des plus importantes du secteur des transports en Tunisie.",
+            "Nous disposons de trois terminaux à conteneurs avec entrepôts sous douane dans les principaux ports tunisiens (Radès, Sousse et Sfax) qui nous permettent de répondre aux besoins de tous les opérateurs économiques tunisiens pour tout type de transport."
+          ],
           "contactUrl": "#"
         },
-        "4": {
+        {
           "name": "Bonjour l'Algérie",
           "flag": "/img/flags/dz.svg",
-          "description": {
-            "0": "L'Algérie est un pays en plein développement économique qui s'affirme de plus en plus sur la scène internationale.",
-            "1": "C'est pourquoi nous avons créé Bongiorno Algerie au début de l'année 2000, convaincus que notre expérience et notre professionnalisme pouvaient être un outil utile et apprécié des opérateurs algériens et européens pour développer leurs activités."
-          },
+          "description": [
+            "L'Algérie est un pays en plein développement économique qui s'affirme de plus en plus sur la scène internationale.",
+            "C'est pourquoi nous avons créé Bongiorno Algerie au début de l'année 2000, convaincus que notre expérience et notre professionnalisme pouvaient être un outil utile et apprécié des opérateurs algériens et européens pour développer leurs activités."
+          ],
           "contactUrl": "#"
         },
-        "5": {
+        {
           "name": "Bongiorno dans le monde",
           "flag": "/img/flags/dz.svg",
-          "description": {
-            "0": "Le caractère international de notre activité et notre croissance continue nous ont amenés à étendre nos services au-delà des frontières des pays où nous sommes déjà implantés et ce, depuis longtemps, grâce au soutien et à l'aide inestimable du réseau d'agences fourni par l'Alliance mondiale pour le commerce dont nous sommes membres depuis 2009."
-          },
+          "description": [
+            "Le caractère international de notre activité et notre croissance continue nous ont amenés à étendre nos services au-delà des frontières des pays où nous sommes déjà implantés et ce, depuis longtemps, grâce au soutien et à l'aide inestimable du réseau d'agences fourni par l'Alliance mondiale pour le commerce dont nous sommes membres depuis 2009."
+          ],
           "contactUrl": "#"
         }
-      }
+      ]
     }
   },
   "quote": {
     "title": "Citations",
+    "id": "129837",
     "subtitle": "Contactez-nous à l'aide du formulaire et vous serez servi par l'un de nos vendeurs dans les plus brefs délais.",
     "select": "Sélectionner une option",
     "other": "Plus d'informations",
@@ -440,7 +575,7 @@
     },
     "privacyLink": "Politique de confidentialité",
     "placeholders": {
-      "company": "Saisir le nom de l'entreprise (le cas échéant)",
+      "company": "Nom de l'entreprise",
       "transport": "Par exemple, groupage, complet, conteneur, etc.",
       "details": "Saisissez ici les détails de votre envoi...",
       "otherCountry": "Préciser le pays",
@@ -456,13 +591,13 @@
       "noConsent": "Vous devez consentir au traitement de vos données pour pouvoir continuer."
     },
     "intro": "Depuis 1985, nous sommes leader dans le transport entre l'Europe et le Maghreb, principalement la Tunisie, l'Algérie et le Maroc, ainsi que de nombreuses autres destinations, desservant chaque année plus de 60 pays dans le monde.",
-    "features": {
-      "0": "Des tarifs clairs et sans surprise",
-      "1": "Bureaux locaux en Tunisie et en Algérie",
-      "2": "Groupage, FCL et Project Cargo",
-      "3": "Choix de la couverture d'assurance, y compris tous risques",
-      "4": "Plus de 35 ans d'expérience"
-    },
+    "features": [
+      "Des tarifs clairs et sans surprise",
+      "Bureaux locaux en Tunisie, en Algérie, en Italie, en Espagne et en France",
+      "Groupage, FCL et Project Cargo",
+      "Choix de la couverture d'assurance, y compris tous risques",
+      "Plus de 35 ans d'expérience"
+    ],
     "cta": {
       "quote": "Demande de devis",
       "call": "Appeler maintenant"
@@ -493,74 +628,74 @@
   "services": {
     "title": "Services",
     "intro": "Grâce à notre expérience et à notre présence directe dans les principaux pays méditerranéens, nous offrons une gamme complète de services de transport international et de logistique conçus pour garantir la ponctualité, la sécurité et la commodité.",
-    "cards": {
-      "0": {
+    "cards": [
+      {
         "icon": "Paquet",
         "title": "Transport de groupage",
         "href": "#groupage",
         "text": "Pour l'industrie, le commerce et les grands travaux, nous avons créé des services qui offrent au transport les meilleurs rendements et conditions. Pour que vos marchandises soient toujours livrées à temps."
       },
-      "1": {
+      {
         "icon": "Camion",
         "title": "Transports complets",
         "href": "#complete",
         "text": "Fréquence et temps de transit rapides, disponibilité d'espace à bord des navires et grande variété de conteneurs dans les principaux ports du Maghreb."
       },
-      "2": {
+      {
         "icon": "Cog",
         "title": "Cargaison exceptionnelle et cargaison de projet",
         "href": "#exceptionnel",
         "text": "Transport qui nécessite une grande compétence et une étude approfondie des itinéraires, des réglementations, des caractéristiques des marchandises et des territoires."
       },
-      "3": {
+      {
         "icon": "ShieldCheck",
         "title": "Assurance tous risques",
         "href": "#Assurance",
         "text": "Pour ne rien laisser au hasard. Une police d'assurance à la demande protège contre tous les risques pendant le transport."
       }
-    },
-    "details": {
-      "0": {
+    ],
+    "details": [
+      {
         "id": "groupage",
         "icon": "Paquet",
         "title": "Transport de groupage",
-        "paragraphs": {
-          "0": "Un vaste réseau de transporteurs routiers couvrant l'ensemble de l'Europe permet aux marchandises d'arriver dans nos centres de collecte dans les meilleurs délais et avec les meilleures garanties de qualité.",
-          "1": "Nous utilisons des zones logistiques modernes avec des véhicules et du personnel très efficaces, équipés de systèmes de sécurité modernes et prêts à s'adapter aux besoins les plus divers.",
-          "2": "En tant qu'opérateurs économiques agréés en Italie, nous effectuons les opérations douanières directement dans les centres de collecte, avec notre propre personnel et en temps réel.",
-          "3": "La régularité et la fréquence de nos services nous permettent d'offrir une variété unique de solutions sur les marchés du Maghreb."
-        }
+        "paragraphs": [
+          "Un vaste réseau de transporteurs routiers couvrant l'ensemble de l'Europe permet aux marchandises d'arriver dans nos centres de collecte dans les meilleurs délais et avec les meilleures garanties de qualité.",
+          "Nous utilisons des zones logistiques modernes avec des véhicules et du personnel très efficaces, équipés de systèmes de sécurité modernes et prêts à s'adapter aux besoins les plus divers.",
+          "En tant qu'opérateurs économiques agréés en Italie, nous effectuons les opérations douanières directement dans les centres de collecte, avec notre propre personnel et en temps réel.",
+          "La régularité et la fréquence de nos services nous permettent d'offrir une variété unique de solutions sur les marchés du Maghreb."
+        ]
       },
-      "1": {
+      {
         "id": "combinaisons",
         "icon": "Camion",
         "title": "Transports complets",
-        "paragraphs": {
-          "0": "Nous sommes conscients que le succès d'une expédition dépend de nombreuses variables, et notre spécialisation fait de nous le partenaire idéal pour toutes les éventualités.",
-          "1": "Du choix du transporteur maritime à la disponibilité des équipements, rien n'est laissé au hasard.",
-          "2": "Nous avons investi des ressources considérables pour rendre chaque composant plus efficace afin de garantir une fiabilité maximale et une livraison rapide."
-        }
+        "paragraphs": [
+          "Nous sommes conscients que le succès d'une expédition dépend de nombreuses variables, et notre spécialisation fait de nous le partenaire idéal pour toutes les éventualités.",
+          "Du choix du transporteur maritime à la disponibilité des équipements, rien n'est laissé au hasard.",
+          "Nous avons investi des ressources considérables pour rendre chaque composant plus efficace afin de garantir une fiabilité maximale et une livraison rapide."
+        ]
       },
-      "2": {
+      {
         "id": "exceptionnel",
         "icon": "Cog",
         "title": "Transport exceptionnel et cargaison de projet",
-        "paragraphs": {
-          "0": "Un type de transport qui exige une grande compétence et une étude minutieuse des itinéraires, des réglementations et des caractéristiques des marchandises.",
-          "1": "Nous évaluons toutes les éventualités afin de nous assurer qu'aucun problème technique ou bureaucratique n'affecte le résultat.",
-          "2": "Nous travaillons avec les partenaires routiers et maritimes les plus fiables pour garantir une sécurité maximale."
-        }
+        "paragraphs": [
+          "Un type de transport qui exige une grande compétence et une étude minutieuse des itinéraires, des réglementations et des caractéristiques des marchandises.",
+          "Nous évaluons toutes les éventualités afin de nous assurer qu'aucun problème technique ou bureaucratique n'affecte le résultat.",
+          "Nous travaillons avec les partenaires routiers et maritimes les plus fiables pour garantir une sécurité maximale."
+        ]
       },
-      "3": {
-        "id": "assurance",
+      {
+        "id": "l'assurance",
         "icon": "ShieldCheck",
         "title": "Assurance tous risques",
-        "paragraphs": {
-          "0": "Nous considérons la couverture All Risk comme un outil extrêmement important, une garantie qui protège contre tous les risques possibles lors d'une opération de transport.",
-          "1": "Nous fournissons à nos clients une politique éprouvée, disponible sur demande pour chaque envoi."
-        }
+        "paragraphs": [
+          "Nous considérons la couverture All Risk comme un outil extrêmement important, une garantie qui protège contre tous les risques possibles lors d'une opération de transport.",
+          "Nous fournissons à nos clients une politique éprouvée, disponible sur demande pour chaque envoi."
+        ]
       }
-    }
+    ]
   },
   "news": {
     "hero": {
@@ -572,8 +707,8 @@
       "title": "Articles récents et réflexions"
     },
     "read_more": "En savoir plus",
-    "articles": {
-      "0": {
+    "articles": [
+      {
         "title": "Loi n° 105/2025 : un tournant pour la logistique",
         "author": "Greta",
         "date": "7 octobre 2025",
@@ -582,7 +717,7 @@
         "image": "/img/news-law-105.webp",
         "slug": "loi-105-2025"
       },
-      "1": {
+      {
         "title": "Nouvelles routes en Méditerranée : expansion des services de Bongiorno",
         "author": "L'équipe éditoriale",
         "date": "18 septembre 2025",
@@ -591,14 +726,20 @@
         "image": "/img/news-mediterranean.webp",
         "slug": "nouvelle-route-mediterranee"
       }
-    }
+    ]
   },
-  "cta": {
+  "ctaBanner": {
     "cta_main": "Notre présence stable et de longue date sur le territoire fait de nous un partenaire solide, capable de résoudre rapidement tout événement imprévu, en offrant rapidité, sécurité et garantie sur tous les marchés où nous opérons.",
     "claim": "Ceci, combiné à notre personnel hautement expérimenté et compétent, nous permet d'offrir un maximum de rapidité, de sûreté et de sécurité sur tous les marchés où nous opérons grâce à nos normes opérationnelles élevées.",
     "cta": {
-      "contact": "En savoir plus sur les services",
-      "quote": "Demande de devis"
+      "ctacontatti": "Contactez nous",
+      "hrefcontatti": "/contacts",
+      "ctaservizi": "En savoir plus sur les services",
+      "hrefservizi": "/services",
+      "contattaci": "Appelez ou écrivez et vous serez mis en contact avec notre vendeur le plus approprié.",
+      "parliamo": "Nous parlons italien, français, espagnol, anglais et allemand. ",
+      "quote": "Demande de devis",
+      "hrefquote": "/citations"
     }
   },
   "about": {

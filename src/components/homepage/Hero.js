@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 
 
@@ -33,7 +33,7 @@ export default function Hero({ title, subtitle, ctas, claim }) {
           {ctas.map((cta, i) => (
             <Link
               key={i}
-              href={locale + cta.href}
+              href={cta.href}
                 className={
                 i === 0
                   ? "px-6 py-3 rounded-md bg-white w-fit text-brand-dark font-semibold shadow hover:bg-gray-100"

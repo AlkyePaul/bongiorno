@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import Image from "next/image";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import matter from "gray-matter";
 import H1 from "@/components/common/H1";
 import H2 from "@/components/common/H2";
@@ -129,7 +129,7 @@ export default async function NewsPage({ params }) {
                 {secondary.excerpt}
               </p>
               <Link
-                href={`/${locale}/news/${secondary.slug}`}
+                href={`/news/${secondary.slug}`}
                 className="text-brand-accent hover:underline"
               >
                 Leggi di più
@@ -147,7 +147,7 @@ export default async function NewsPage({ params }) {
             {articles.map((a) => (
               <li key={a.slug} className="border-b border-gray-200/30 pb-3">
                 <Link
-                  href={`/${locale}/news/${a.slug}`}
+                  href={`/news/${a.slug}`}
                   className="block hover:text-brand-accent transition"
                 >
                   {a.title}

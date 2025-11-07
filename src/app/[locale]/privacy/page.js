@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import H1  from "@/components/common/H1";
 
 export default function PrivacyPage() {

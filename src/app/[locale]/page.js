@@ -68,14 +68,16 @@ export default function HomePage() {
       <section className="mx-auto">
         <SediSection/>
       </section>
-       <section className="grid grid-cols-1 lg:grid-cols-[40%_60%] max-w-4xl mx-auto rounded-2xl bg-gray-50 dark:bg-gray-900 py-20 mb-20 border-t border-gray-200 dark:border-gray-800">
-      <div className="container mx-auto px-6 max-w-4xl">
+       <section id="preventivi" className="grid grid-cols-1 lg:grid-cols-[40%_60%] max-w-6xl mx-auto rounded-2xl bg-gray-50 dark:bg-gray-900 md:py-20 py-12 px-4">
+      <div className="mx-auto lg:px-24 lg:py-4 px-4">
+        
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           {quote.title}
         </h2>
         <p className="text-gray-600 dark:text-gray-300 mb-10">
           {quote.subtitle}
         </p>
+      
         </div>
         <FromPreventivi/>
       </section>

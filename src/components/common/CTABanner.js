@@ -1,4 +1,4 @@
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 
 export default function CTABanner({ t }) {
     return (
@@ -18,10 +18,11 @@ export default function CTABanner({ t }) {
                     href="/contatti"
                     className="px-6 py-3 rounded-md bg-brand-accent text-white font-medium hover:bg-brand-accent/90 transition"
                   >
-                    {t("cta.contact")}
+                    {t("cta.ctacontatti")}
                   </Link>
                   <Link
-                    href="/preventivi"
+                    href={t("cta.hrefcontatti")}
+
                     className="px-6 py-3 rounded-md bg-white  text-brand-navy font-medium hover:bg-brand-accent hover:text-white transition"
                   >
                     {t("cta.quote")}

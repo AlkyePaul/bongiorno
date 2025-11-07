@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import dynamic from "next/dynamic";
 import { useLocale } from "next-intl";
 
 export default function SediSection() {
   const t = useTranslations("home.sedi");
-  const cta = useTranslations("cta");
+  const cta = useTranslations("ctaBanner");
   const locale = useLocale();
 
  const BongiornoMap = dynamic(() => import("../maps/BongiornoMap"), { ssr: false });
@@ -48,7 +48,7 @@ export default function SediSection() {
           </p>
                <div className="mb-6 flex flex-col items-center  justify-center w-full mx-auto">
                 <Link
-                  href={locale +"/contatti"}
+                  href="/contatti"
                   className="inline-block px-4 py-2 mb-6 text-sm font-medium rounded-md bg-brand-accent text-white hover:bg-brand-accent/90 transition"
                 >
                   {t("contactLabel")}

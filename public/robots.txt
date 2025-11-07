@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.bongiornotrasporti.it
+
+# Sitemaps
+Sitemap: https://www.bongiornotrasporti.it/sitemap.xml

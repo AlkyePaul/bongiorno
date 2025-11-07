@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import H2 from "@/components/common/H2";
 import { Calendar, User, FolderOpen, ArrowLeft, AlertTriangle, Clock, Euro, Moon } from "lucide-react";
@@ -102,7 +102,7 @@ const { content, data } = matter(fileContent);
 
       <div className="text-center mb-20">
         <Link
-          href={`/${locale}/news`}
+          href="/news"
           className="inline-flex items-center gap-2 px-6 py-3 bg-brand-accent text-white rounded-md hover:bg-brand-accent/90 transition"
         >
           <ArrowLeft className="w-4 h-4" />

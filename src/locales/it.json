@@ -200,7 +200,7 @@
   "claim": "Grazie ai nostri partners WCA arriviamo ovunque con la qualità garantita dal più importante e capillare network di spedizionieri internazionali.",
   "intro": "Servizi certificati a livello globale e garantiti dalla nostra adesione al network WCA.",
   "image": "/img/dest-mondo.webp",
-  "mapCoords": [10.0, 20.0],
+  "mapCoords": [8.793, 45.66],
   "mapMarkers": [
     { "name": "Canale di Panama", "coords": [-79.8, 9.1] },
     { "name": "Singapore", "coords": [103.8, 1.35] },
@@ -294,7 +294,7 @@
       "subtitle": "Spedizioni internazionali",
       "claim":  "Dal 1985 colleghiamo con dedizione e attenzione i principali porti europei del Mediterraneo con il Maghreb: Tunisia, Algeria e Marocco in primis, ma anche molte altre destinazioni, servendo ogni anno oltre 60 Paesi nel mondo.",
       "ctas": [
-    { "href": "/preventivi", "label": "Richiedi Preventivo" },
+    { "href": "#129837", "label": "Richiedi Preventivo" },
     { "href": "/contatti", "label": "Contattaci" }
   ]
     },
@@ -451,6 +451,7 @@
 
   "quote": {
     "title": "Preventivi",
+    "id": "129837",
     "subtitle": "Contattaci con il form e sarai servito da un nostro commerciale al più presto.",
     "select": "Seleziona un'opzione",
     "other": "Altro",
@@ -650,14 +651,18 @@
   ]
 },
 
-    "cta": {
+    "ctaBanner": {
       "cta_main": "La nostra presenza stabile e di lunga data sul territorio ci rende un partner solido in grado di risolvere ogni imprevisto in tempi rapidi, offrendo velocità, sicurezza e garanzia in tutti i mercati in cui operiamo.",
        "claim":"Questo, unito al personale di grande esperienza e competenza, ci permette di offrite la massima velocità, sicurezza e garanzia in tutti i mercati in cui operiamo grazie a elevati standard operativi.",
       "cta": {
+        "ctacontatti": "Contattaci",
+        "hrefcontatti": "/contatti",
       "ctaservizi": "Scopri di più sui servizi",
+      "hrefservizi": "/servizi",
       "contattaci": "Chiama o scrivi e verrai messo in contatto con il nostro commerciale più adatto alla tue esigenze.", 
       "parliamo": "Parliamo Italiano, Francese, Spagnolo, Inglese e Tedesco ",
-      "quote": "Chiedi preventivo"
+      "quote": "Chiedi preventivo",
+      "hrefquote": "/preventivi"
     }},
 
 

@@ -3,13 +3,16 @@ import { notFound } from 'next/navigation';
 import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
 import CookieConsent from "@/components/common/CookieConsent";
+import { generateLocaleParams } from '@/lib/locales';
 
 
 export function generateStaticParams() {
-  return [{ locale: 'es' }, { locale: 'en' }, { locale: 'it' }];
+  const params = generateLocaleParams();
+  console.log('[layout] generateStaticParams ->', params);
+  return params;
 }
 export default async function LocaleLayout({ children, params }) {
-  const { locale } = await params; // ✅ no await here
+  const { locale } = params; 
   let messages;
   try {
     messages = (await import(`@/locales/${locale}.json`)).default;
@@ -18,8 +21,7 @@ export default async function LocaleLayout({ children, params }) {
   }
 
   return (
-    <html lang={locale}>
-      <body className="max-w-screen overflow-y-hidden">
+  
         <NextIntlClientProvider locale={locale} messages={messages}>
         
           <Header />
@@ -28,7 +30,7 @@ export default async function LocaleLayout({ children, params }) {
            <CookieConsent />
         </NextIntlClientProvider>
         
-      </body>
-    </html>
+  
+   
   );
 }

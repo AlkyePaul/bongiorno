@@ -1,6 +1,6 @@
 "use client";
 import { Mail, Phone, MapPin, Link as LinkIcon } from "lucide-react";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
 
@@ -26,27 +26,27 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2 text-gray-400 text-sm">
             <li>
-              <Link href="/it/destinazioni" className="hover:text-white transition">
+              <Link href="/destinazioni" className="hover:text-white transition">
                 {t("links.destinations")}
               </Link>
             </li>
             <li>
-              <Link href="/it/lavora-con-noi" className="hover:text-white transition">
+              <Link href="/lavora-con-noi" className="hover:text-white transition">
                 {t("links.workwithus")}
               </Link>
             </li>
             <li>
-              <Link href="/it/chi-siamo" className="hover:text-white transition">
+              <Link href="/chi-siamo" className="hover:text-white transition">
                 {t("links.about")}
               </Link>
             </li>
             <li>
-              <Link href="/it/privacy" className="hover:text-white transition">
+              <Link href="/privacy" className="hover:text-white transition">
                 {t("links.privacy")}
               </Link>
             </li>
             <li>
-              <Link href="/it/contatti" className="hover:text-white transition">
+              <Link href="/contatti" className="hover:text-white transition">
                 {t("links.contacts")}
               </Link>
             </li>

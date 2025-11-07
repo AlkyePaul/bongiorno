@@ -2,7 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import LogoGrid from "../common/LogoGrid";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
+import { PDF_QUALITY } from "@/constants/constants";
 
 export default function QualitySection() {
   const t = useTranslations("home.quality");
@@ -24,7 +25,7 @@ export default function QualitySection() {
         {/* 📝 Text */}
         <div className="max-w-3xl mx-auto text-gray-600 dark:text-gray-300 leading-relaxed space-y-4">
           <p>{t("text1")}</p>
-          <Link className="text-brand-accent hover:underline" href="https://bongiornotrasporti.it/wp-content/uploads/2024/10/S258-Bongio22022216230.pdf" target="_blank">{t("text2")}</Link>
+          <Link className="text-brand-accent hover:underline" href={PDF_QUALITY} target="_blank">{t("text2")}</Link>
         </div>
       </div>
     </section>

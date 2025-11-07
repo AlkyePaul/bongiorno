@@ -1,34 +1,10 @@
 // middleware.js
 import createMiddleware from 'next-intl/middleware';
-import { NextResponse } from 'next/server';
+import { routing } from './src/i18n/routing';
 
-const locales = ['es', 'en', 'it', 'fr'];
-const defaultLocale = 'it';
-
-const intlMiddleware = createMiddleware({
-  locales,
-  defaultLocale,
-  localePrefix: 'as-needed',
-  localeDetection: true
-});
-
-export default function middleware(request) {
-  const { pathname } = request.nextUrl;
-
-  // Skip for static files and API routes
-  if (
-    pathname.startsWith('/_next') ||
-    pathname.startsWith('/api') ||
-    pathname.startsWith('/static') ||
-    pathname.includes('.')
-  ) {
-    return;
-  }
-
-  // Let next-intl handle other routes
-  return intlMiddleware(request);
-}
+// Delegate to next-intl using the centralized routing map (pathnames + localePrefix)
+export default createMiddleware(routing);
 
 export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)'],
+  matcher: ['/((?!api|_next/static|_next/image|img|og|favicon|content|robots.txt|sitemap.xml).*)'],
 };

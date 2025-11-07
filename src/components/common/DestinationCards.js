@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 
 export default function DestinationCards({ items }) {
@@ -11,7 +11,7 @@ export default function DestinationCards({ items }) {
         {items.map((item, idx) => (
           <Link
             key={idx}
-            href={locale +"/destinazioni" + item.href}
+            href={item.href}
             className="container relative rounded-2xl overflow-hidden shadow-lg h-64 flex items-end hover:scale-105 transition-all duration-300"
           >
             {/* Background image */}

@@ -4,7 +4,14 @@ import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { MAP_STYLE } from "@/constants/constants";
 
-export default function DestinationMap({ coordinates = [10.18, 36.8], zoom = 6, markers = [] }) {
+export default function DestinationMap({
+  coordinates = [10.18, 36.8],
+  zoom = 4,
+  markers = [],
+  padding = 60,
+  maxZoom = 10,
+  maintainCenter = true,
+}) {
   const mapContainer = useRef(null);
 
   useEffect(() => {
@@ -22,11 +29,30 @@ export default function DestinationMap({ coordinates = [10.18, 36.8], zoom = 6, 
 
     // Additional markers if present
     markers.forEach((m) =>
-      new maplibregl.Marker({ color: "#02365b" }).setLngLat(m.coords).setPopup(new maplibregl.Popup().setText(m.label)).addTo(map)
+      new maplibregl.Marker({ color: "#02365b" })
+        .setLngLat(m.coords)
+        .setPopup(new maplibregl.Popup().setText(m.label))
+        .addTo(map)
     );
 
+    // Fit zoom to include center and all markers
+    const bounds = new maplibregl.LngLatBounds();
+    bounds.extend(coordinates);
+    markers.forEach((m) => bounds.extend(m.coords));
+    if (!bounds.isEmpty()) {
+      map.fitBounds(bounds, { padding, maxZoom, duration: 500 });
+      if (maintainCenter) {
+        // keep the provided center but use the computed zoom level
+        map.once("moveend", () => {
+          const computedZoom = map.getZoom();
+          map.setCenter(coordinates);
+          map.setZoom(Math.min(computedZoom, maxZoom));
+        });
+      }
+    }
+
     return () => map.remove();
-  }, [coordinates, markers, zoom]);
+  }, [coordinates, markers, zoom, padding, maxZoom, maintainCenter]);
 
   return <div ref={mapContainer} className="w-full h-full" />;
 }

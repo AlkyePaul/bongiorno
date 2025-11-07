@@ -55,6 +55,47 @@ function unflattenObject(flatObj) {
   return result;
 }
 
+// === STRING LEAVES COLLECTION/APPLY (preserve arrays & non-strings) ===
+// Collect paths to string leaves only (skip numbers, arrays, objects unless leaf is string)
+function collectStringLeaves(obj, path = [], out = []) {
+  if (obj == null) return out;
+  const t = typeof obj;
+  if (t === "string") {
+    out.push({ path, text: obj });
+    return out;
+  }
+  if (Array.isArray(obj)) {
+    obj.forEach((item, idx) => collectStringLeaves(item, path.concat(idx), out));
+    return out;
+  }
+  if (t === "object") {
+    for (const [k, v] of Object.entries(obj)) {
+      collectStringLeaves(v, path.concat(k), out);
+    }
+  }
+  return out;
+}
+
+function setDeep(target, path, value) {
+  let node = target;
+  for (let i = 0; i < path.length - 1; i++) {
+    const key = path[i];
+    const nextKey = path[i + 1];
+    const shouldBeArray = typeof nextKey === "number";
+    if (node[key] == null) node[key] = shouldBeArray ? [] : {};
+    node = node[key];
+  }
+  node[path[path.length - 1]] = value;
+}
+
+function deepClone(obj) {
+  return Array.isArray(obj)
+    ? obj.map((v) => deepClone(v))
+    : obj && typeof obj === "object"
+    ? Object.fromEntries(Object.entries(obj).map(([k, v]) => [k, deepClone(v)]))
+    : obj;
+}
+
 // === TRANSLATE BATCH ===
 async function translateBatch(texts, fromLang, toLang) {
   const url = "https://api-free.deepl.com/v2/translate";
@@ -84,26 +125,23 @@ async function translateBatch(texts, fromLang, toLang) {
 async function translateJsonFile(filePath, fromLang, toLang) {
   const fileData = await fs.readJson(filePath);
 
-  // flatten nested objects
-  const flat = flattenObject(fileData);
-  const keys = Object.keys(flat);
-  const values = Object.values(flat).map((v) => (typeof v === "string" ? v : JSON.stringify(v)));
+  // Collect only string leaves to translate
+  const leaves = collectStringLeaves(fileData);
+  const texts = leaves.map((l) => l.text);
 
-  let translatedValues = [];
-  for (let i = 0; i < values.length; i += MAX_TEXTS_PER_REQUEST) {
-    const batch = values.slice(i, i + MAX_TEXTS_PER_REQUEST);
+  let translatedTexts = [];
+  for (let i = 0; i < texts.length; i += MAX_TEXTS_PER_REQUEST) {
+    const batch = texts.slice(i, i + MAX_TEXTS_PER_REQUEST);
     const batchRes = await translateBatch(batch, fromLang, toLang);
-    translatedValues = translatedValues.concat(batchRes);
+    translatedTexts = translatedTexts.concat(batchRes);
     await sleep(DELAY_BETWEEN_BATCHES);
   }
 
-  // rebuild nested structure
-  const translatedFlat = {};
-  keys.forEach((key, idx) => {
-    translatedFlat[key] = translatedValues[idx] ?? "";
+  // Clone and re-inject translations at the same paths
+  const translatedObj = deepClone(fileData);
+  leaves.forEach((leaf, idx) => {
+    setDeep(translatedObj, leaf.path, translatedTexts[idx] ?? leaf.text);
   });
-
-  const translatedObj = unflattenObject(translatedFlat);
 
   const destPath = path.join(path.dirname(filePath), `${toLang}.json`);
   await fs.writeJson(destPath, translatedObj, { spaces: 2 });
