@@ -4,13 +4,14 @@ import Image from "next/image";
 import {useTranslations} from "next-intl";
 import {Link, getPathname} from "@/i18n/navigation";
 import {Package, Truck, ShieldCheck, Cog} from "lucide-react";
+import ReactMarkdown from 'react-markdown';
 
 import H1 from "@/components/common/H1";
 import H2 from "@/components/common/H2";
 import CTABanner from "@/components/common/CTABanner";
 
 import {buildMetadata} from "@/lib/seo";
-import {generateLocaleParams} from "@/lib/locales";   // ✅ centralized locale generator
+import {generateLocaleParams} from "@/lib/locales";   // centralized locale generator
 
 // 🔹 Pre-generate pages for all locales (so /es/servicios, /en/services, etc. exist)
 export function generateStaticParams() {
@@ -102,12 +103,12 @@ export default function ServiziPage() {
               <H2>{item.title}</H2>
             </div>
             {item.paragraphs.map((p, j) => (
-              <p
+              <div
                 key={j}
                 className="text-lg leading-relaxed mb-4 text-gray-700 dark:text-gray-300"
               >
-                {p}
-              </p>
+                <ReactMarkdown>{p}</ReactMarkdown>
+              </div>
             ))}
             <hr className="h-[2px] my-4 bg-gray-200 border-0 md:my-10 dark:bg-gray-700" />
           </article>

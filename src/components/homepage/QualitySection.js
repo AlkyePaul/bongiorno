@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import ReactMarkdown from 'react-markdown';
 import LogoGrid from "../common/LogoGrid";
 import {Link} from "@/i18n/navigation";
 import { PDF_QUALITY } from "@/constants/constants";
@@ -24,8 +25,8 @@ export default function QualitySection() {
 
         {/* 📝 Text */}
         <div className="max-w-3xl mx-auto text-lg text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
-          <p>{t("text1")}</p>
-          <Link className="text-brand-accent hover:underline" href={PDF_QUALITY} target="_blank">{t("text2")}</Link>
+          <ReactMarkdown>{t("text1")}</ReactMarkdown>
+          <Link className="text-brand-accent hover:underline" href={PDF_QUALITY} target="_blank"><ReactMarkdown>{t("text2")}</ReactMarkdown></Link>
         </div>
       </div>
     </section>

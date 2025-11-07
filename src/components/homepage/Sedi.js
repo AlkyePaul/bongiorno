@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import {Link} from "@/i18n/navigation";
+import ReactMarkdown from 'react-markdown';
 import dynamic from "next/dynamic";
 import { useLocale } from "next-intl";
 
@@ -37,15 +38,15 @@ export default function SediSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
             {t("title")}
           </h2>
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            {t("intro1")}
-          </p>
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            {t("intro2")}
-          </p>
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            {t("intro3")}
-          </p>
+          <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <ReactMarkdown>{t("intro1")}</ReactMarkdown>
+          </div>
+          <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <ReactMarkdown>{t("intro2")}</ReactMarkdown>
+          </div>
+          <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <ReactMarkdown>{t("intro3")}</ReactMarkdown>
+          </div>
                <div className="mb-6 flex flex-col items-center  justify-center w-full mx-auto">
                 <Link
                   href="/contatti"
@@ -54,8 +55,8 @@ export default function SediSection() {
                   {t("contactLabel")}
                 </Link>
 
-                <p className="text-lg text-gray-700 dark:text-gray-300">{cta("cta.contattaci")}</p>
-                <p className="text-lg text-gray-700 dark:text-gray-300">{cta("cta.parliamo")}</p>
+                <div className="text-lg text-gray-700 dark:text-gray-300"><ReactMarkdown>{cta("cta.contattaci")}</ReactMarkdown></div>
+                <div className="text-lg text-gray-700 dark:text-gray-300"><ReactMarkdown>{cta("cta.parliamo")}</ReactMarkdown></div>
               </div>
 
         </div>
@@ -97,7 +98,7 @@ export default function SediSection() {
               {/* Description */}
               <div className="flex-1 space-y-3 text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                 {sede.description.map((p, idx) => (
-                  <p key={idx}>{p}</p>
+                  <ReactMarkdown key={idx}>{p}</ReactMarkdown>
                 ))}
               </div>
 

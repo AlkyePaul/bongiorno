@@ -1,22 +1,23 @@
-  import Image from "next/image";
-  import { notFound } from "next/navigation";
-  import { useTranslations } from "next-intl";
-  import DestinationMap from "@/components/maps/DestinationMap";
-  import { BriefcaseBusiness, MoveRight } from "lucide-react";
-  import {Link} from "@/i18n/navigation";
-  import H1 from "@/components/common/H1";
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import ReactMarkdown from 'react-markdown';
+import { useTranslations } from "next-intl";
+import DestinationMap from "@/components/maps/DestinationMap";
+import { BriefcaseBusiness, MoveRight } from "lucide-react";
+import {Link} from "@/i18n/navigation";
+import H1 from "@/components/common/H1";
 
-  export function generateStaticParams() {
-    const destinations = ["tunisia", "algeria", "marocco", "libia", "mauritania"];
-    return destinations.flatMap((dest) => [
-      { locale: "it", destination: dest },
-      { locale: "en", destination: dest },
-      { locale: "es", destination: dest },
-    ]);
-  }
+export function generateStaticParams() {
+  const destinations = ["tunisia", "algeria", "marocco", "libia", "mauritania"];
+  return destinations.flatMap((dest) => [
+    { locale: "it", destination: dest },
+    { locale: "en", destination: dest },
+    { locale: "es", destination: dest },
+  ]);
+}
 
-  export default async function DestinationPage({ params }) {
-    const { locale, destination } = params;
+export default async function DestinationPage({ params }) {
+  const { locale, destination } = params;
     
     const messages = (await import(`@/locales/${locale}.json`)).default;
     const data = messages?.destinations?.[destination];
@@ -33,12 +34,12 @@
         <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
           <div className="md:col-span-3 order-2 md:order-1">
             <H1>{data.title}</H1>
-            <p className="text-lg md:text-lg text-gray-700 dark:text-gray-300 mb-4">
-              {data.claim}
-            </p>
-            <p className="text-lg md:text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-              {data.intro}
-            </p>
+            <div className="text-lg md:text-lg text-gray-700 dark:text-gray-300 mb-4">
+              <ReactMarkdown>{data.claim}</ReactMarkdown>
+            </div>
+            <div className="text-lg md:text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+              <ReactMarkdown>{data.intro}</ReactMarkdown>
+            </div>
           </div>
 
           <div className="md:col-span-2 order-1 md:order-2">
@@ -66,12 +67,12 @@
 
           <div className="space-y-4">
             {data.paragraphs?.map((p, i) => (
-              <p
+              <div
                 key={i}
                 className="text-lg leading-relaxed text-gray-700 dark:text-gray-300"
               >
-                {p}
-              </p>
+                <ReactMarkdown>{p}</ReactMarkdown>
+              </div>
             ))}
           </div>
         </div>

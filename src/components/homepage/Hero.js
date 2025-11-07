@@ -1,7 +1,8 @@
+"use client";
 import Image from "next/image";
-import {Link} from "@/i18n/navigation";
+import Link from "next/link";
+import ReactMarkdown from 'react-markdown';
 import { useLocale } from "next-intl";
-
 
 export default function Hero({ title, subtitle, ctas, claim }) {
 
@@ -46,9 +47,9 @@ export default function Hero({ title, subtitle, ctas, claim }) {
         </div>
 
         {/* Parrafo introductorio */}
-        <p className="mt-6  mx-auto text-lg font-semibold leading-relaxed">
-          {claim}
-        </p>
+        <div className="mt-6  mx-auto text-lg font-semibold leading-relaxed">
+          <ReactMarkdown>{claim}</ReactMarkdown>
+        </div>
    
       </div>
     

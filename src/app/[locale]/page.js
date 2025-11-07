@@ -11,6 +11,7 @@ import QualitySection from '@/components/homepage/QualitySection';
 import SediSection from '@/components/homepage/Sedi';
 import FromPreventivi from '@/components/common/QuoteForm';
 
+
 export default function HomePage() {
   const messages = useMessages();
   const home = messages?.home || {};
@@ -44,8 +45,8 @@ export default function HomePage() {
     <main>
       <Hero title={title} subtitle={subtitle} ctas={ctas} claim={claim} />
       
-      <section className=" homepage px-4 lg:px-0 mx-auto md:py-12 py-8">
-   <section className=" max-w-4xl">
+      <section className=" px-4 lg:px-0 mx-auto md:py-12 py-8">
+   <section className=" max-w-4xl mx-auto">
 <Intro>{home.intro}</Intro>
 
       </section>
@@ -69,9 +70,7 @@ export default function HomePage() {
        <section id="preventivi" className="grid grid-cols-1 lg:grid-cols-[40%_60%] max-w-6xl mx-auto rounded-2xl bg-gray-50 dark:bg-gray-900 md:py-12 py-8 md:py-12 px-4">
       <div className="mx-auto lg:px-24 lg:py-4 px-4">
         
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          {quote.title}
-        </h2>
+        <H2>{quote.title}</H2>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-10">
           {quote.subtitle}
         </p>

@@ -2,15 +2,17 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import ReactMarkdown from 'react-markdown';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import H2 from "@/components/common/H2";
 import SediSection from "@/components/homepage/Sedi";
 import CTABanner from "@/components/common/CTABanner";
+import BongiornoMap from "@/components/maps/BongiornoMap";
 
 export default function ChiSiamoPage() {
   const t = useTranslations("about");
-  const ctas = useTranslations("cta");
+  const ctas = useTranslations("ctaBanner");
   const [years, setYears] = useState(0);
   const [transports, setTransports] = useState(0);
   const [employees, setEmployees] = useState(0);
@@ -120,10 +122,10 @@ export default function ChiSiamoPage() {
           {/* Right Text */}
           <div className="max-w-xl">
             <H2>{t("subtitle")}</H2>
-            {[1, 2, 3, 4, 5, 6].map((n) => (
-              <p key={n} className="text-lg leading-relaxed mb-6">
-                {t(`text${n}`)}
-              </p>
+            {[1, 2, 3, 4, 5].map((n) => (
+              <div key={n} className="text-lg leading-relaxed mb-6">
+                <ReactMarkdown>{t(`text${n}`)}</ReactMarkdown>
+              </div>
             ))}
           </div>
 
@@ -139,12 +141,7 @@ export default function ChiSiamoPage() {
   </div>
 <p className="text-center italic max-w-[300px] text-base">{t("sede")}</p>
   <div className="relative w-[400px] h-[400px] overflow-hidden rounded-2xl shadow-lg">
-    <Image
-      src="/img/truck.webp"
-      alt={t("hero.alt")}
-      fill
-      className="object-cover"
-    />
+    <BongiornoMap />
   </div>
 </div>
 

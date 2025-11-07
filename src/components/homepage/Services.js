@@ -1,9 +1,11 @@
 "use client"; 
+import { useTranslations } from "next-intl";
+import ReactMarkdown from 'react-markdown';
 import H2 from "../common/H2";
-import { useMessages } from "next-intl";
-import { Package, Truck, Landmark, ShieldCheck, Cog } from "lucide-react";
+import { Package, Truck, ShieldCheck, Cog } from "lucide-react";
 import {Link} from "@/i18n/navigation";
 import { useLocale } from "next-intl";
+import { useMessages } from "next-intl";
 
 export default function ServicesSection(props) {
   const messages = useMessages();
@@ -39,7 +41,7 @@ export default function ServicesSection(props) {
         </H2>
         <div className="text-lg text-gray-700 dark:text-gray-300 space-y-4 mb-6 leading-relaxed">
           {intro.map((p, i) => (
-            <p key={i}>{p}</p>
+            <ReactMarkdown key={i}>{p}</ReactMarkdown>
           ))}
         </div>
         <Link
@@ -63,9 +65,9 @@ export default function ServicesSection(props) {
             <h3 className="font-bold text-lg  mb-2 ">
               {service.title}
             </h3>
-            <p className=" text-base leading-relaxed ">
-              {service.text}
-            </p>
+            <div className="text-base leading-relaxed">
+              <ReactMarkdown>{service.text}</ReactMarkdown>
+            </div>
           </div>
         ))}
       </div>

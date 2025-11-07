@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import ReactMarkdown from 'react-markdown';
 import H2 from "../common/H2";
 
 export default function HomepageContent() {
@@ -14,11 +15,11 @@ export default function HomepageContent() {
           {t("title")}
         </H2>
         <div className="space-y-4  text-gray-700 dark:text-gray-300 leading-relaxed">
-          <p>{t("intro1")}</p>
-          <p>{t("intro2")}</p>
-          <p>{t("intro3")}</p>
-          <p>{t("intro4")}</p>
-          <p>{t("intro5")}</p>
+          <ReactMarkdown>{t("intro1")}</ReactMarkdown>
+          <ReactMarkdown>{t("intro2")}</ReactMarkdown>
+          <ReactMarkdown>{t("intro3")}</ReactMarkdown>
+          <ReactMarkdown>{t("intro4")}</ReactMarkdown>
+          <ReactMarkdown>{t("intro5")}</ReactMarkdown>
         </div>
       </div>
 
@@ -41,10 +42,10 @@ export default function HomepageContent() {
             <H2>
               {t("blocks.0.title")}
             </H2>
-            <p>{t("blocks.0.text1")}</p>
-            <p>{t("blocks.0.text2")}</p>
-            <p>{t("blocks.0.text3")}</p>
-            <p>{t("blocks.0.text4")}</p>
+            <ReactMarkdown>{t("blocks.0.text1")}</ReactMarkdown>
+            <ReactMarkdown>{t("blocks.0.text2")}</ReactMarkdown>
+            <ReactMarkdown>{t("blocks.0.text3")}</ReactMarkdown>
+            <ReactMarkdown>{t("blocks.0.text4")}</ReactMarkdown>
           </div>
 
           {/* Bottom image 
