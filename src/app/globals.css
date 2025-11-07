@@ -52,4 +52,16 @@ body {
  @apply text-xl font-semibold mb-3 pt-3 text-brand-navy flex items-center gap-2;
 }
 
+em {
+ @apply font-semibold text-brand-navy not-italic;
+}
 
+.homepage p {
+ @apply text-lg leading-relaxed text-gray-700 dark:text-gray-300;
+}
+
+.intro-section p {
+ @apply text-lg leading-relaxed text-gray-700 dark:text-gray-300;
+}
+
+ 

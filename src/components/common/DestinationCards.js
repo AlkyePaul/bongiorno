@@ -27,7 +27,7 @@ export default function DestinationCards({ items }) {
             {/* Text content */}
             <div className="relative z-10 p-4 text-white">
               <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-              <p className="text-sm">{item.text}</p>
+              <p className="text-base">{item.text}</p>
             </div>
           </Link>
         ))}

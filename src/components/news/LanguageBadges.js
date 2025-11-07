@@ -79,7 +79,7 @@ export default function LanguageBadges({ availableLocales, currentLocale, varian
                 return (
                   <span
                     key={locale}
-                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm ${
+                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-base ${
                       isCurrent
                         ? 'bg-brand-accent text-white font-semibold'
                         : 'bg-blue-100 text-blue-800 dark:bg-blue-800 dark:text-blue-100'

@@ -11,7 +11,7 @@ export default function QualitySection() {
 
 
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 py-20 border-t border-gray-200 dark:border-gray-800">
+    <section className="bg-gray-50 dark:bg-gray-900 md:py-20 py-8 border-t border-gray-200 dark:border-gray-800">
       <div className="container mx-auto px-6 text-center">
         {/* 🏷️ Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12">
@@ -23,7 +23,7 @@ export default function QualitySection() {
         {/*
 
         {/* 📝 Text */}
-        <div className="max-w-3xl mx-auto text-gray-600 dark:text-gray-300 leading-relaxed space-y-4">
+        <div className="max-w-3xl mx-auto text-lg text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
           <p>{t("text1")}</p>
           <Link className="text-brand-accent hover:underline" href={PDF_QUALITY} target="_blank">{t("text2")}</Link>
         </div>

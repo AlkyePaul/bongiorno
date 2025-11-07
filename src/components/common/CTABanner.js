@@ -13,17 +13,17 @@ export default function CTABanner({ t }) {
                 </div>
     
                 {/* Right side – buttons */}
-                <div className="flex-1 lg:basis-1/3 flex justify-center lg:justify-end gap-4 mt-8 lg:mt-0">
+                <div className="flex-1 lg:basis-1/3 flex flex-col lg:flex-row items-center lg:items-end lg:justify-end gap-4 mt-8 lg:mt-0">
                   <Link
                     href="/contatti"
-                    className="px-6 py-3 rounded-md bg-brand-accent text-white font-medium hover:bg-brand-accent/90 transition"
+                    className="px-6 py-3 w-fit h-full rounded-md bg-brand-accent text-white font-medium hover:bg-brand-accent/90 transition"
                   >
                     {t("cta.ctacontatti")}
                   </Link>
                   <Link
                     href={t("cta.hrefcontatti")}
 
-                    className="px-6 py-3 rounded-md bg-white  text-brand-navy font-medium hover:bg-brand-accent hover:text-white transition"
+                    className="px-6 py-3 rounded-md bg-white w-fit h-full  text-brand-navy font-medium hover:bg-gray-200  transition"
                   >
                     {t("cta.quote")}
                   </Link>

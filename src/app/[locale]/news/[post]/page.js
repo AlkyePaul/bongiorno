@@ -59,7 +59,7 @@ export default async function NewsPostPage({ params }) {
             {title}
           </h1>
           {isFallback && (
-            <p className="text-sm mt-3 text-yellow-300 bg-yellow-900/40 px-4 py-2 rounded-md inline-block">
+            <p className="text-base mt-3 text-yellow-300 bg-yellow-900/40 px-4 py-2 rounded-md inline-block">
               ⚠️ {t('fallbackNotice')}
             </p>
           )}

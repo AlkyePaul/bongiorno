@@ -120,9 +120,9 @@ const quoteLabel = messages?.common?.preventivo;
                   >
                     {link.label}
                     {isOpen ? (
-                      <FaAngleUp className="text-sm mb-1 ml-1" />
+                      <FaAngleUp className="text-base mb-1 ml-1" />
                     ) : (
-                      <FaAngleDown className="text-sm mb-1 ml-1" />
+                      <FaAngleDown className="text-base mb-1 ml-1" />
                     )}
                   </button>
 
@@ -194,7 +194,7 @@ const quoteLabel = messages?.common?.preventivo;
                   return <Flag title={currentLocale.toUpperCase()} className="w-5 h-5" />;
                 })()}
               </div>
-              <span className="text-sm uppercase"></span>
+              <span className="text-base uppercase"></span>
             </button>
 
             <AnimatePresence>
@@ -223,7 +223,7 @@ const quoteLabel = messages?.common?.preventivo;
                             return <Flag title={l.label} className="w-5 h-5" />;
                           })()}
                         </div>
-                        <span className="text-sm">{l.label}</span>
+                        <span className="text-base">{l.label}</span>
                       </button>
                     </li>
                   ))}
@@ -269,9 +269,9 @@ const quoteLabel = messages?.common?.preventivo;
                 >
                   <span>{link.label}</span>
                   {isOpen ? (
-                    <FaAngleUp className="text-sm" />
+                    <FaAngleUp className="text-base" />
                   ) : (
-                    <FaAngleDown className="text-sm" />
+                    <FaAngleDown className="text-base" />
                   )}
                 </button>
 

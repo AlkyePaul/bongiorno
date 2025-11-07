@@ -120,7 +120,7 @@ export default function QuoteForm() {
           {/* 🏢 Azienda o privato */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium mb-1">{t("fields.companyName")}</label>
+              <label className="block text-base font-medium mb-1">{t("fields.companyName")}</label>
               <input
                 type="text"
                 name="companyName"
@@ -146,7 +146,7 @@ export default function QuoteForm() {
 
           {/* 📛 Nome */}
           <div>
-            <label className="block text-sm font-medium mb-1">{t("fields.name")}</label>
+            <label className="block text-base font-medium mb-1">{t("fields.name")}</label>
             <input
               type="text"
               name="name"
@@ -160,7 +160,7 @@ export default function QuoteForm() {
           {/* 📧 Email / ☎️ Telefono */}
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium mb-1">{t("fields.email")}</label>
+              <label className="block text-base font-medium mb-1">{t("fields.email")}</label>
               <input
                 type="email"
                 name="email"
@@ -172,7 +172,7 @@ export default function QuoteForm() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">{t("fields.phone")}</label>
+              <label className="block text-base font-medium mb-1">{t("fields.phone")}</label>
               <input
                 type="tel"
                 name="phone"
@@ -185,7 +185,7 @@ export default function QuoteForm() {
 
           {/* 🌍 Paese di partenza */}
           <div>
-            <label className="block text-sm font-medium mb-1">{t("fields.originCountry")}</label>
+            <label className="block text-base font-medium mb-1">{t("fields.originCountry")}</label>
             <select
               name="originCountry"
               value={form.originCountry}
@@ -240,7 +240,7 @@ export default function QuoteForm() {
 
           {/* 🎯 Paese di destinazione */}
           <div>
-            <label className="block text-sm font-medium mb-1">{t("fields.destinationCountry")}</label>
+            <label className="block text-base font-medium mb-1">{t("fields.destinationCountry")}</label>
             <select
               name="destinationCountry"
               value={form.destinationCountry}
@@ -280,7 +280,7 @@ export default function QuoteForm() {
 
           {form.dangerousGoods && (
             <div>
-              <label className="block text-sm font-medium mb-1">{t("fields.goodsClass")}</label>
+              <label className="block text-base font-medium mb-1">{t("fields.goodsClass")}</label>
               <select
                 name="goodsClass"
                 value={form.goodsClass}
@@ -338,7 +338,7 @@ export default function QuoteForm() {
               required
               className="mt-1 h-5 w-5 rounded border-gray-300 dark:border-gray-700 text-brand-accent focus:ring-brand-accent"
             />
-            <label htmlFor="consent" className="text-sm text-gray-700 dark:text-gray-300">
+            <label htmlFor="consent" className="text-base text-gray-700 dark:text-gray-300">
               {t("fields.consent")}{" "}
               <Link href="/privacy" locale={locale} className="underline text-brand-accent hover:text-brand-accent/80">
                 {t("privacyLink")}

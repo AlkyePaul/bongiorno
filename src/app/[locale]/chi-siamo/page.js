@@ -65,7 +65,7 @@ export default function ChiSiamoPage() {
               <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-md">
                 {t("hero.title")}
               </h1>
-              <p className="text-lg md:text-xl text-gray-100 max-w-lg">
+              <p className="text-lg md:text-lg text-gray-100 max-w-lg">
                 {t("hero.subtitle")}
               </p>
             </div>
@@ -137,7 +137,7 @@ export default function ChiSiamoPage() {
       className="object-cover"
     />
   </div>
-<p className="text-center italic max-w-[300px] text-sm">{t("sede")}</p>
+<p className="text-center italic max-w-[300px] text-base">{t("sede")}</p>
   <div className="relative w-[400px] h-[400px] overflow-hidden rounded-2xl shadow-lg">
     <Image
       src="/img/truck.webp"

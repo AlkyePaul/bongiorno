@@ -324,14 +324,15 @@
     { "href": "/contatti", "label": "Contattaci" }
   ]
     },
-    "intro": [
-      "I nostri servizi sui porti del Nord Africa sono strutturati per garantire condizioni di trasporto particolarmente favorevoli, ma soprattutto per guidare e aiutare gli operatori in tutte le fasi che precedono le spedizioni e che le portano a buon fine.",
-      "E' la nostra presenza quotidiana sul territorio che ci consente di essere sempre aggiornati sulle procedure e normative che sono spesso mutevoli su questi mercati. Per raggiungere questo scopo abbiamo investito molto sulle strutture e sulle persone che ci permettono di farle funzionare in maniera dinamica ed efficace.",
-      "Siamo presenti in Tunisia nei tre porti principali. Tunisi, Sousse e Sfax. In Algeria la nostra sede di Algeri gestisce e garantisce l'operatività su tutti i porti algerini. In Marocco mettiamo a frutto un consolidato rapporto agenziale che, nel tempo, ci ha fatto crescere e dare solidità ed affidabilità ai nostri servizi.",
-      "La Bongiorno Spagna e la Bongiorno Francia completano la nostra struttura consentendoci di dare copertura a tutti i principali canali di traffico che, dall'Europa, sfociano nel Mediterraneo con rotta alle destinazioni nordafricane.",
-      "Le nostre parole d'ordine: Puntualità, Disponibilità e Reattività per far fronte in maniera efficace anche a tutti i possibili imprevisti.",
-      "Siamo pronti a essere il vostro partner di fiducia per ogni trasporto verso il Nord Africa e oltre."
-    ],
+   "intro": [
+  "I nostri servizi sui *porti del Nord Africa* sono strutturati per garantire *condizioni di trasporto particolarmente favorevoli*, ma soprattutto per *guidare e aiutare gli operatori* in tutte le fasi che precedono le spedizioni e che le portano a buon fine.",
+  "È la nostra *presenza quotidiana sul territorio* che ci consente di essere sempre aggiornati sulle *procedure e normative* che sono spesso mutevoli su questi mercati. Per raggiungere questo scopo abbiamo investito molto sulle *strutture* e sulle *persone* che ci permettono di farle funzionare in maniera dinamica ed efficace.",
+  "Siamo presenti in *Tunisia* nei tre porti principali: *Tunisi*, *Sousse* e *Sfax*. In *Algeria* la nostra sede di Algeri gestisce e garantisce l'operatività su tutti i porti algerini. In *Marocco* mettiamo a frutto un consolidato rapporto agenziale che, nel tempo, ci ha fatto crescere e dare solidità ed affidabilità ai nostri servizi.",
+  "La *Bongiorno Spagna* e la *Bongiorno Francia* completano la nostra struttura consentendoci di dare copertura a tutti i principali canali di traffico che, dall'Europa, sfociano nel Mediterraneo con rotta alle *destinazioni nordafricane*.",
+  "Le nostre parole d'ordine: *Puntualità*, *Disponibilità* e *Reattività* per far fronte in maniera efficace anche a tutti i possibili imprevisti.",
+  "Siamo pronti a essere il vostro *partner di fiducia* per ogni *trasporto verso il Nord Africa* e oltre."
+]
+,
     "destinations": {
       "title": "Destinazioni Trasporti Nord Africa-Maghreb",
       "items": [
@@ -709,6 +710,7 @@
     "sending": "Invio in corso...",
     "success": "Messaggio inviato!",
     "consent": "Acconsento al trattamento dei dati inseriti (obbligatorio, consulta qui la privacy policy)",
+    "privacyLink": "Privacy policy",
     "noConsent": "Devi acconsentire al trattamento dei dati per procedere."
   }
 }

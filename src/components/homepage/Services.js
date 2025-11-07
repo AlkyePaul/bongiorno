@@ -37,7 +37,7 @@ export default function ServicesSection(props) {
         <H2>
           {title}
         </H2>
-        <div className="text-gray-700 space-y-4 mb-6">
+        <div className="text-lg text-gray-700 dark:text-gray-300 space-y-4 mb-6 leading-relaxed">
           {intro.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
@@ -63,7 +63,7 @@ export default function ServicesSection(props) {
             <h3 className="font-bold text-lg  mb-2 ">
               {service.title}
             </h3>
-            <p className=" text-sm leading-relaxed ">
+            <p className=" text-base leading-relaxed ">
               {service.text}
             </p>
           </div>

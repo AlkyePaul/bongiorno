@@ -30,32 +30,32 @@ export default function SediSection() {
   };
 
   return (
-    <section className="bg-white dark:bg-gray-950 py-20 border-t border-gray-200 dark:border-gray-800">
+    <section className="bg-white dark:bg-gray-950 md:py-20 py-8 border-t border-gray-200 dark:border-gray-800">
       <div className="container mx-auto px-6 space-y-16">
         {/* 🏷️ Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
             {t("title")}
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             {t("intro1")}
           </p>
-          <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             {t("intro2")}
           </p>
-          <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             {t("intro3")}
           </p>
                <div className="mb-6 flex flex-col items-center  justify-center w-full mx-auto">
                 <Link
                   href="/contatti"
-                  className="inline-block px-4 py-2 mb-6 text-sm font-medium rounded-md bg-brand-accent text-white hover:bg-brand-accent/90 transition"
+                  className="inline-block px-4 py-2 mb-6 text-base font-medium rounded-md bg-brand-accent text-white hover:bg-brand-accent/90 transition"
                 >
                   {t("contactLabel")}
                 </Link>
 
-                <p className="text-gray-600 dark:text-gray-300">{cta("cta.contattaci")}</p>
-                <p className="text-gray-600 dark:text-gray-300">{cta("cta.parliamo")}</p>
+                <p className="text-lg text-gray-700 dark:text-gray-300">{cta("cta.contattaci")}</p>
+                <p className="text-lg text-gray-700 dark:text-gray-300">{cta("cta.parliamo")}</p>
               </div>
 
         </div>
@@ -95,7 +95,7 @@ export default function SediSection() {
               </div>
 
               {/* Description */}
-              <div className="flex-1 space-y-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+              <div className="flex-1 space-y-3 text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                 {sede.description.map((p, idx) => (
                   <p key={idx}>{p}</p>
                 ))}
@@ -105,7 +105,7 @@ export default function SediSection() {
               <div className="mt-6">
                 <Link
                   href={sede.contactUrl || "#"}
-                  className="inline-block px-4 py-2 text-sm font-medium rounded-md bg-brand-accent text-white hover:bg-brand-accent/90 transition"
+                  className="inline-block px-4 py-2 text-base font-medium rounded-md bg-brand-accent text-white hover:bg-brand-accent/90 transition"
                 >
                   {t("contactLabel")} {sede.name}
                 </Link>

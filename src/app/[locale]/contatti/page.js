@@ -53,10 +53,10 @@ export default function ContattiPage() {
   };
 
   return (
-    <main className="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 py-20 px-6">
-      <div className="container mx-auto max-w-6xl grid md:grid-cols-2 gap-16 items-start">
+    <main className="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 py-20 px-6 antialiased">
+      <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-16 items-start">
         {/* 🔹 Left Column: Contact Info */}
-        <div className="space-y-8">
+        <div className="space-y-8"> 
           <H1>{t("title")}</H1>
 
           <div className="space-y-6">
@@ -103,7 +103,7 @@ export default function ContattiPage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* 🧍 Nome */}
             <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
+              <label htmlFor="name" className="block text-base font-medium mb-2">
                 {t("form.name")}
               </label>
               <input
@@ -119,7 +119,7 @@ export default function ContattiPage() {
 
             {/* 📧 Email */}
             <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
+              <label htmlFor="email" className="block text-base font-medium mb-2">
                 {t("form.email")}
               </label>
               <input
@@ -135,7 +135,7 @@ export default function ContattiPage() {
 
             {/* 💬 Messaggio */}
             <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-2">
+              <label htmlFor="message" className="block text-base font-medium mb-2">
                 {t("form.message")}
               </label>
               <textarea
@@ -162,14 +162,14 @@ export default function ContattiPage() {
               />
               <label
                 htmlFor="consent"
-                className="text-sm text-gray-700 dark:text-gray-300"
+                className="text-base text-gray-700 dark:text-gray-300"
               >
-                {t("fields.consent")}{" "}
+                {t("form.consent")}{" "}
                 <Link
                   href="/privacy"
                   className="underline text-brand-accent hover:text-brand-accent/80"
                 >
-                  {t("privacyLink")}
+                  {t("form.privacyLink")}
                 </Link>
               </label>
             </div>
@@ -189,12 +189,12 @@ export default function ContattiPage() {
 
             {/* Feedback Messages */}
             {status === "error" && (
-              <p className="text-red-600 dark:text-red-400 text-sm mt-2">
+              <p className="text-red-600 dark:text-red-400 text-base mt-2">
                 ❌ {t("error")}
               </p>
             )}
             {status === "success" && (
-              <p className="text-green-600 dark:text-green-400 text-sm mt-2">
+              <p className="text-green-600 dark:text-green-400 text-base mt-2">
                 ✅ {t("success")}
               </p>
             )}

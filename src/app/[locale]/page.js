@@ -21,10 +21,6 @@ export default function HomePage() {
   const subtitle = home?.hero?.subtitle || '';
   const claim = home?.hero?.claim || '';
 
-  const intro = Array.isArray(home?.intro) ? home.intro : [];
-  const introText = intro.map((text, i) => (
-    <p key={i} className="mb-4">{text}</p>
-  ));
 
   const destinations = home?.destinations?.items || [];
 
@@ -48,18 +44,20 @@ export default function HomePage() {
     <main>
       <Hero title={title} subtitle={subtitle} ctas={ctas} claim={claim} />
       
-      <section className=" px-4 lg:px-0 max-w-4xl mx-auto py-12">
-        <Intro>{introText}</Intro>
+      <section className=" px-4 lg:px-0 max-w-4xl mx-auto md:py-12 py-8">
+   <section className="homepage">
+<Intro>{home.intro}</Intro>
+
       </section>
-         <section className=" px-4 lg:px-0 max-w-4xl mx-auto py-12">
+         <section className=" px-4 lg:px-0 max-w-4xl mx-auto md:py-12 py-8">
   <H2>{home?.destinations?.title || ''}</H2>
       <DestinationCards items={destinations} />
       </section>
 
-      <section className="mx-auto lg:bg-[linear-gradient(to_right,_white_55%,_#f3f4f6_55%)] py-20">
+      <section className="mx-auto lg:bg-[linear-gradient(to_right,_white_55%,_#f3f4f6_55%)] md:py-12 py-8">
         <ServicesSection/>
       </section>
-           <section className="mx-auto lg:bg-[linear-gradient(to_left,_white_55%,_#f3f4f6_55%)] py-20">
+           <section className="mx-auto lg:bg-[linear-gradient(to_left,_white_55%,_#f3f4f6_55%)] md:py-12 py-8">
         <HomepageContent/>
       </section>
       <section className="mx-auto">
@@ -68,18 +66,19 @@ export default function HomePage() {
       <section className="mx-auto">
         <SediSection/>
       </section>
-       <section id="preventivi" className="grid grid-cols-1 lg:grid-cols-[40%_60%] max-w-6xl mx-auto rounded-2xl bg-gray-50 dark:bg-gray-900 md:py-20 py-12 px-4">
+       <section id="preventivi" className="grid grid-cols-1 lg:grid-cols-[40%_60%] max-w-6xl mx-auto rounded-2xl bg-gray-50 dark:bg-gray-900 md:py-12 py-8 md:py-12 px-4">
       <div className="mx-auto lg:px-24 lg:py-4 px-4">
         
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           {quote.title}
         </h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-10">
+        <p className="text-lg text-gray-700 dark:text-gray-300 mb-10">
           {quote.subtitle}
         </p>
       
         </div>
         <FromPreventivi/>
+      </section>
       </section>
     </main>
   );

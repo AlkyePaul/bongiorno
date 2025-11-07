@@ -13,7 +13,7 @@ export default function Footer() {
         {/* 🔹 1. Legale */}
         <div>
           <h3 className="text-xl font-semibold mb-4">{t("legal.title")}</h3>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-400 text-base leading-relaxed">
             © {new Date().getFullYear()} {t("legal.company")}<br />
             {t("legal.details")}
           </p>
@@ -24,7 +24,7 @@ export default function Footer() {
           <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
             <LinkIcon size={18} /> {t("links.title")}
           </h3>
-          <ul className="space-y-2 text-gray-400 text-sm">
+          <ul className="space-y-2 text-gray-400 text-base">
             <li>
               <Link href="/destinazioni" className="hover:text-white transition">
                 {t("links.destinations")}
@@ -56,7 +56,7 @@ export default function Footer() {
         {/* 🔹 3. Contatti */}
         <div>
           <h3 className="text-xl font-semibold mb-4">{t("contact.title")}</h3>
-          <ul className="space-y-4 text-gray-400 text-sm">
+          <ul className="space-y-4 text-gray-400 text-base">
             <li className="flex items-start gap-3">
               <Mail size={18} className="text-brand-accent mt-1" />
               <Link

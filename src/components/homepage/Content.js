@@ -13,8 +13,8 @@ export default function HomepageContent() {
         <H2>
           {t("title")}
         </H2>
-        <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
-          <p className="text-lg">{t("intro1")}</p>
+        <div className="space-y-4  text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p>{t("intro1")}</p>
           <p>{t("intro2")}</p>
           <p>{t("intro3")}</p>
           <p>{t("intro4")}</p>
@@ -37,7 +37,7 @@ export default function HomepageContent() {
           </div>
 
           {/* Text section */}
-          <div className="space-y-4 text-gray-600 dark:text-gray-400 text-md leading-relaxed max-w-prose">
+          <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300 leading-relaxed max-w-prose">
             <H2>
               {t("blocks.0.title")}
             </H2>

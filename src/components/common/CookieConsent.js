@@ -99,7 +99,7 @@ export default function CookieConsent() {
           className="fixed bottom-4 left-4 z-40 flex items-center gap-2 rounded-full px-3 py-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow hover:shadow-md text-gray-700 dark:text-gray-200"
         >
           <Cog className="w-5 h-5" />
-          <span className="text-sm hidden sm:inline">{t("customize")}</span>
+          <span className="text-base hidden sm:inline">{t("customize")}</span>
         </button>
       )}
 
@@ -107,7 +107,7 @@ export default function CookieConsent() {
       {visible && (
         <div className="fixed bottom-4 inset-x-4 z-50 flex justify-center">
           <div className="max-w-4xl w-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-lg p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            <div className="flex-1 text-sm text-gray-700 dark:text-gray-300">
+            <div className="flex-1 text-base text-gray-700 dark:text-gray-300">
               <p className="font-semibold">{t("title")}</p>
               <p className="mt-1">{t("text")}</p>
               <div className="mt-2 text-xs text-gray-500">
@@ -147,7 +147,7 @@ export default function CookieConsent() {
           <div className="absolute inset-0 bg-black/40" onClick={() => setShowCustom(false)} />
           <div className="relative max-w-2xl w-full bg-white dark:bg-gray-900 rounded-xl shadow-xl p-6 z-10">
             <h3 className="text-lg font-semibold mb-3">{t("customizeTitle")}</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">{t("customizeText")}</p>
+            <p className="text-base text-gray-600 dark:text-gray-300 mb-4">{t("customizeText")}</p>
 
             <div className="space-y-4">
               <div className="flex items-start justify-between">
@@ -155,7 +155,7 @@ export default function CookieConsent() {
                   <div className="font-medium">{t("categories.essential.title")}</div>
                   <div className="text-xs text-gray-500">{t("categories.essential.desc")}</div>
                 </div>
-                <div className="text-sm text-gray-500">Required</div>
+                <div className="text-base text-gray-500">Required</div>
               </div>
 
               <div className="flex items-start justify-between">

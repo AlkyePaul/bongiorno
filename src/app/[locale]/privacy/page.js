@@ -14,11 +14,11 @@ export default function PrivacyPage() {
         {/* Header */}
         <header>
           <H1 >{t("title")}</H1>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
+          <p className="text-base text-gray-500 dark:text-gray-400">
             {t("lastUpdated")}
           </p>
 
-          <div className="mt-4 text-sm">
+          <div className="mt-4 text-base">
             <p className="font-medium">{t("controller.name")}</p>
             <p>P.IVA: {t("controller.piva")}</p>
             <p>{t("controller.address")}</p>
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
                 {section.heading}
               </h2>
               {section.subtitle && (
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                <p className="text-base text-gray-500 dark:text-gray-400 mb-3">
                   {section.subtitle}
                 </p>
               )}

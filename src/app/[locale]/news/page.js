@@ -74,7 +74,7 @@ export default async function NewsPage({ params }) {
               />
               <div className="p-6">
                 <H2 className="mb-2">{featured.title}</H2>
-                <div className="flex items-center gap-4 text-sm text-gray-500 mb-3 flex-wrap">
+                <div className="flex items-center gap-4 text-base text-gray-500 mb-3 flex-wrap">
                   <span className="flex items-center gap-1">
                     <User className="w-4 h-4" /> {featured.author}
                   </span>
@@ -109,7 +109,7 @@ export default async function NewsPage({ params }) {
               <h3 className="text-2xl font-semibold mb-3 text-brand-navy">
                 {secondary.title}
               </h3>
-              <div className="flex items-center gap-3 text-sm text-gray-500 mb-2 flex-wrap">
+              <div className="flex items-center gap-3 text-base text-gray-500 mb-2 flex-wrap">
                 <span>{secondary.date} | {secondary.category}</span>
                 <LanguageBadges 
                   availableLocales={secondary.availableLocales} 

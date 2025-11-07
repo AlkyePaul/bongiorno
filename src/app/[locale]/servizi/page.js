@@ -47,27 +47,27 @@ export default function ServiziPage() {
   const icons = {Package, Truck, ShieldCheck, Cog};
 
   return (
-    <main className="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 py-20 px-6">
+    <main className="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 py-20 px-6 antialiased">
       {/* 🔹 Hero */}
-      <section className="container mx-auto px-6 py-20 max-w-5xl">
-        <div className="flex items-center gap-12">
-          <div>
+      <section className="mx-auto max-w-5xl">
+        <div className="flex items-center flex-col md:flex-row gap-12 items-start">
+          <div className="flex-1">
             <H1>{t("title")}</H1>
-            <p className="text-lg leading-relaxed mb-8">{t("intro")}</p>
+            <p className="text-lg leading-relaxed lg:mb-8">{t("intro")}</p>
           </div>
-          <div className="w-full h-full rounded-lg overflow-hidden">
+          <div className="relative w-full md:w-[350px] lg:w-[400px] h-[300px] rounded-lg overflow-hidden hidden md:block flex-shrink-0">
             <Image
               src="/img/sede.webp"
               alt="Sede Bongiorno Trasporti"
-              width={500}
-              height={500}
+              fill
+              className="object-cover"
             />
           </div>
         </div>
       </section>
 
       {/* 🔹 Overview Grid */}
-      <section className="mx-auto px-6 grid md:grid-cols-2 my-20 gap-10 max-w-5xl">
+      <section className="mx-auto px-6 grid md:grid-cols-2 md:my-20 my-8 gap-10 max-w-5xl">
         {t.raw("cards").map((card, i) => {
           const IconComponent = icons[card.icon] || Package;
           return (
@@ -93,7 +93,7 @@ export default function ServiziPage() {
       <section className="px-4 lg:px-0 mx-auto py-20 max-w-3xl space-y-20">
         {t.raw("details").map((item, i) => (
           <article key={i} id={item.id} className="scroll-mt-24">
-            <div className="flex gap-12">
+            <div className="flex md:flex-row flex-col md:gap-4 gap-1">
               <span className="text-brand-accent text-3xl mt-1">
                 {icons[item.icon]
                   ? React.createElement(icons[item.icon])
