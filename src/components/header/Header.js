@@ -139,7 +139,7 @@ const quoteLabel = messages?.common?.preventivo;
                           <Link
                             key={sub.href}
                             href={sub.href}
-                            className="px-4 py-2 text-sm hover:bg-white/10 whitespace-nowrap rounded-md"
+                            className="px-4 py-2 text-md hover:bg-white/10 whitespace-nowrap rounded-md"
                             onClick={() => {
                               setDestOpen(false);
                               setScopriOpen(false);
@@ -288,7 +288,7 @@ const quoteLabel = messages?.common?.preventivo;
                         <li key={sub.href}>
                           <Link
                             href={sub.href}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition"
+                            className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 rounded-md transition"
                             onClick={() => {
                               setMenuOpen(false);
                               setDestOpen(false);
