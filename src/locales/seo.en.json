@@ -1,14 +1,14 @@
 {
-  "siteName": "Bongiorno Transportation SRL",
+  "siteName": "Bongiorno Transportation",
   "defaults": {
     "description": "Reliable logistics solutions in Europe and North Africa.",
     "images": {
       "home": "/og/home.jpg",
       "news": "/og/news.jpg",
       "privacy": "/og/privacy.jpg",
-      "contatti": "/og/contacts.jpg",
-      "preventivi": "/og/prevents.jpg",
-      "about": "/og/who-we-are.jpg",
+      "contatti": "/og/contatti.jpg",
+      "preventivi": "/og/preventivi.jpg",
+      "about": "/og/chi-siamo.jpg",
       "destinationsBase": "/og/destinations/",
       "newsBase": "/og/news/"
     }
@@ -36,12 +36,12 @@
   "contact": {
     "title": "Contacts | Bongiorno Transportation",
     "description": "Contact us for information and quotes.",
-    "image": "/og/contacts.jpg"
+    "image": "/og/contatti.jpg"
   },
   "quote": {
     "title": "Request a quote | Bongiorno Transportation",
     "description": "Quick quotes for your international transportation.",
-    "image": "/og/prevents.jpg"
+    "image": "/og/preventivi.jpg"
   },
   "privacy": {
     "title": "Privacy Policy | Bongiorno Transportation",
@@ -51,6 +51,6 @@
   "about": {
     "title": "About Us | Bongiorno Transportation",
     "description": "Our history, values and international presence.",
-    "image": "/og/who-we-are.jpg"
+    "image": "/og/chi-siamo.jpg"
   }
 }

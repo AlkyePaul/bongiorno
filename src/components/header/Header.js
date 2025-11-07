@@ -92,10 +92,10 @@ const quoteLabel = messages?.common?.preventivo;
 
   return (
 <div>
-    <div className={`${scrolled ? "mt-16" : "mt-18"}`}></div>
+    <div className={`${scrolled ? "mt-14" : "mt-20"}`}></div>
     <header
       className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 shadow-lg
-      ${scrolled ? "bg-white backdrop-blur-md py-0" : "bg-white py-4"}
+      ${scrolled ? "bg-white backdrop-blur-md py-1" : "bg-white py-4"}
       text-black `}
     >
       <nav className="mx-auto px-6 flex items-center justify-between relative">

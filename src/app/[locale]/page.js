@@ -1,4 +1,4 @@
-"use client";
+
 import { useMessages } from 'next-intl';
 import Hero from "@/components/homepage/Hero";
 import Intro from "@/components/homepage/Intro";

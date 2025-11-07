@@ -15,7 +15,7 @@ export default function Hero({ title, subtitle, ctas, claim }) {
           src="/img/hero-bg.webp"
           fill
           alt="Trasporti"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
           priority
           fetchPriority="high"
         />
@@ -47,7 +47,7 @@ export default function Hero({ title, subtitle, ctas, claim }) {
         </div>
 
         {/* Parrafo introductorio */}
-        <div className="mt-6  mx-auto text-lg font-semibold leading-relaxed">
+        <div className="mt-6  mx-auto text-xl font-semibold leading-relaxed text-shadow-lg text-shadow-strong">
           <ReactMarkdown>{claim}</ReactMarkdown>
         </div>
    

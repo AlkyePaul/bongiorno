@@ -1,16 +1,16 @@
 {
-  "siteName": "Bongiorno Transport SRL",
+  "siteName": "Bongiorno Transport",
   "defaults": {
     "description": "Soluciones logísticas fiables en Europa y el Norte de África.",
     "images": {
       "home": "/og/home.jpg",
-      "news": "/og/noticias.jpg",
-      "privacy": "/og/privacidad.jpg",
-      "contatti": "/og/contactos.jpg",
-      "preventivi": "/og/preventivos.jpg",
-      "about": "/og/quienes-somos.jpg",
+      "news": "/og/news.jpg",
+      "privacy": "/og/privacy.jpg",
+      "contatti": "/og/contatti.jpg",
+      "preventivi": "/og/preventivi.jpg",
+      "about": "/og/chi-siamo.jpg",
       "destinationsBase": "/og/destinos/",
-      "newsBase": "/og/noticias/"
+      "newsBase": "/og/news/"
     }
   },
   "home": {
@@ -21,36 +21,36 @@
   "news": {
     "title": "Últimas noticias | Bongiorno Transport",
     "description": "Noticias y análisis sobre transporte y logística.",
-    "image": "/og/noticias.jpg"
+    "image": "/og/news.jpg"
   },
   "newsPost": {
     "titleTemplate": "{postTitle} | Bongiorno",
     "descriptionFallback": "Perspectivas del transporte y la logística.",
-    "imageBase": "/og/noticias/"
+    "imageBase": "/og/news/"
   },
   "destinations": {
     "titleTemplate": "Transporte {nombre} | Transporte Bongiorno",
     "descriptionTemplate": "{introOrClaim}",
-    "imageBase": "/og/destinos/"
+    "imageBase": "/og/destinations/"
   },
   "contact": {
     "title": "Contactos | Bongiorno Transport",
     "description": "Póngase en contacto con nosotros para obtener información y presupuestos.",
-    "image": "/og/contactos.jpg"
+    "image": "/og/contatti.jpg"
   },
   "quote": {
     "title": "Solicitar un presupuesto | Bongiorno Transport",
     "description": "Presupuestos rápidos para sus transportes internacionales.",
-    "image": "/og/preventivos.jpg"
+    "image": "/og/preventivi.jpg"
   },
   "privacy": {
     "title": "Política de privacidad | Bongiorno Transport",
     "description": "Información sobre el tratamiento de datos personales.",
-    "image": "/og/privacidad.jpg"
+    "image": "/og/privacy.jpg"
   },
   "about": {
     "title": "Sobre nosotros | Bongiorno Transport",
     "description": "Nuestra historia, valores y presencia internacional.",
-    "image": "/og/quienes-somos.jpg"
+    "image": "/og/chi-siamo.jpg"
   }
 }
