@@ -13,21 +13,27 @@ export default function DestinationMap({
   maintainCenter = true,
 }) {
   const mapContainer = useRef(null);
+  const mapRef = useRef(null); // store the map instance
 
   useEffect(() => {
     if (!mapContainer.current) return;
 
+    // create map
     const map = new maplibregl.Map({
       container: mapContainer.current,
       style: MAP_STYLE,
       center: coordinates,
       zoom,
     });
+    mapRef.current = map;
 
-    // Main marker (center)
+    // 🔹 ensure resize once visible
+    setTimeout(() => map.resize(), 100);
+
+    // main marker
     new maplibregl.Marker({ color: "#41c7f3" }).setLngLat(coordinates).addTo(map);
 
-    // Additional markers if present
+    // additional markers
     markers.forEach((m) =>
       new maplibregl.Marker({ color: "#02365b" })
         .setLngLat(m.coords)
@@ -35,14 +41,14 @@ export default function DestinationMap({
         .addTo(map)
     );
 
-    // Fit zoom to include center and all markers
+    // fit bounds
     const bounds = new maplibregl.LngLatBounds();
     bounds.extend(coordinates);
     markers.forEach((m) => bounds.extend(m.coords));
+
     if (!bounds.isEmpty()) {
       map.fitBounds(bounds, { padding, maxZoom, duration: 500 });
       if (maintainCenter) {
-        // keep the provided center but use the computed zoom level
         map.once("moveend", () => {
           const computedZoom = map.getZoom();
           map.setCenter(coordinates);
@@ -54,5 +60,5 @@ export default function DestinationMap({
     return () => map.remove();
   }, [coordinates, markers, zoom, padding, maxZoom, maintainCenter]);
 
-  return <div ref={mapContainer} className="w-full h-full" />;
+  return <div ref={mapContainer} className="w-full h-full min-h-[350px]" />;
 }

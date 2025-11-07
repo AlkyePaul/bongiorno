@@ -1,0 +1,56 @@
+{
+  "siteName": "Bongiorno Transport SRL",
+  "defaults": {
+    "description": "Des solutions logistiques fiables en Europe et en Afrique du Nord.",
+    "images": {
+      "home": "/og/home.jpg",
+      "news": "/og/news.jpg",
+      "privacy": "/og/privacy.jpg",
+      "contatti": "/og/contacts.jpg",
+      "preventivi": "/og/preventatives.jpg",
+      "about": "/og/who-we-are.jpg",
+      "destinationsBase": "/og/destinations/",
+      "newsBase": "/og/news/"
+    }
+  },
+  "home": {
+    "title": "Expédition internationale Europe-Afrique du Nord | Bongiorno",
+    "description": "Transport et logistique avec une présence directe au Maghreb et un réseau européen.",
+    "image": "/og/home.jpg"
+  },
+  "news": {
+    "title": "Dernières nouvelles | Bongiorno Transport",
+    "description": "Actualités et points de vue sur le transport et la logistique.",
+    "image": "/og/news.jpg"
+  },
+  "newsPost": {
+    "titleTemplate": "{postTitle} | Bongiorno",
+    "descriptionFallback": "Aperçu du transport et de la logistique.",
+    "imageBase": "/og/news/"
+  },
+  "destinations": {
+    "titleTemplate": "Transport {nom} | Bongiorno Transport",
+    "descriptionTemplate": "{introOrClaim}",
+    "imageBase": "/og/destinations/"
+  },
+  "contact": {
+    "title": "Contacts - Bongiorno Transport",
+    "description": "Contactez-nous pour obtenir des informations et des devis.",
+    "image": "/og/contacts.jpg"
+  },
+  "quote": {
+    "title": "Demande de devis | Bongiorno Transport",
+    "description": "Devis rapides pour vos transports internationaux.",
+    "image": "/og/preventatives.jpg"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité | Bongiorno Transport",
+    "description": "Informations sur le traitement des données personnelles.",
+    "image": "/og/privacy.jpg"
+  },
+  "about": {
+    "title": "A propos de nous | Bongiorno Transport",
+    "description": "Notre histoire, nos valeurs et notre présence internationale.",
+    "image": "/og/who-we-are.jpg"
+  }
+}

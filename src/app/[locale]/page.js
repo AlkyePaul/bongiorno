@@ -10,6 +10,21 @@ import HomepageContent from '@/components/homepage/Content';
 import QualitySection from '@/components/homepage/QualitySection';
 import SediSection from '@/components/homepage/Sedi';
 import FromPreventivi from '@/components/common/QuoteForm';
+import { buildMetadata } from '@/lib/seo';
+
+export async function generateMetadata(props) {
+  const { locale } = await props.params;
+  const seo = (await import(`@/locales/seo.${locale}.json`)).default;
+  const title = seo?.home?.title || seo?.siteName || 'Bongiorno Trasporti SRL';
+  const description = seo?.home?.description || seo?.defaults?.description || 'Soluzioni logistiche affidabili in Europa e Nord Africa.';
+  return buildMetadata({
+    locale,
+    route: '/',
+    title,
+    description,
+    image: seo?.home?.image || seo?.defaults?.images?.home || '/og/home.jpg'
+  });
+}
 
 
 export default function HomePage() {

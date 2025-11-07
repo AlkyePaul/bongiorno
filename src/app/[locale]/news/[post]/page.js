@@ -10,6 +10,7 @@ import { getArticleWithLocales, getArticleLocales } from "@/lib/news-utils";
 import LanguageBadges from "@/components/news/LanguageBadges";
 import { getTranslations } from "next-intl/server";
 import { generateLocaleParams } from '@/lib/locales';
+import { buildMetadata } from '@/lib/seo';
 
 
 export async function generateStaticParams() {
@@ -25,6 +26,23 @@ export async function generateStaticParams() {
   return locales.flatMap((locale) =>
     allPosts.map((post) => ({ locale, post }))
   );
+}
+
+export async function generateMetadata({ params }) {
+  const { locale, post } = await params;
+  const article = getArticleWithLocales(post, locale);
+  const data = article?.data || {};
+  const title = data.title ? `${data.title} | Bongiorno` : 'News | Bongiorno';
+  const description = data.excerpt || data.description || 'Approfondimenti su trasporto e logistica.';
+  const image = data.image || `/og/news/${post}.jpg`;
+  return buildMetadata({
+    locale,
+    route: '/news/[post]',
+    params: { post },
+    title,
+    description,
+    image,
+  });
 }
 
 export default async function NewsPostPage({ params }) {

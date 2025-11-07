@@ -1,0 +1,56 @@
+{
+  "siteName": "Bongiorno Transportation SRL",
+  "defaults": {
+    "description": "Reliable logistics solutions in Europe and North Africa.",
+    "images": {
+      "home": "/og/home.jpg",
+      "news": "/og/news.jpg",
+      "privacy": "/og/privacy.jpg",
+      "contatti": "/og/contacts.jpg",
+      "preventivi": "/og/prevents.jpg",
+      "about": "/og/who-we-are.jpg",
+      "destinationsBase": "/og/destinations/",
+      "newsBase": "/og/news/"
+    }
+  },
+  "home": {
+    "title": "International Shipping Europe-North Africa | Bongiorno",
+    "description": "Transportation and logistics with direct presence in the Maghreb and European network.",
+    "image": "/og/home.jpg"
+  },
+  "news": {
+    "title": "Latest News | Bongiorno Transportation",
+    "description": "News and insights on transportation and logistics.",
+    "image": "/og/news.jpg"
+  },
+  "newsPost": {
+    "titleTemplate": "{postTitle} | Bongiorno",
+    "descriptionFallback": "Insights into transportation and logistics.",
+    "imageBase": "/og/news/"
+  },
+  "destinations": {
+    "titleTemplate": "Transportation {name} | Bongiorno Transportation",
+    "descriptionTemplate": "{introOrClaim}",
+    "imageBase": "/og/destinations/"
+  },
+  "contact": {
+    "title": "Contacts | Bongiorno Transportation",
+    "description": "Contact us for information and quotes.",
+    "image": "/og/contacts.jpg"
+  },
+  "quote": {
+    "title": "Request a quote | Bongiorno Transportation",
+    "description": "Quick quotes for your international transportation.",
+    "image": "/og/prevents.jpg"
+  },
+  "privacy": {
+    "title": "Privacy Policy | Bongiorno Transportation",
+    "description": "Information on the processing of personal data.",
+    "image": "/og/privacy.jpg"
+  },
+  "about": {
+    "title": "About Us | Bongiorno Transportation",
+    "description": "Our history, values and international presence.",
+    "image": "/og/who-we-are.jpg"
+  }
+}

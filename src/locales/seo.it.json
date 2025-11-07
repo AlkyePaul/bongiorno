@@ -1,0 +1,64 @@
+{
+  "siteName": "Bongiorno Trasporti SRL",
+  "defaults": {
+    "description": "Soluzioni logistiche affidabili in Europa e Nord Africa.",
+    "images": {
+      "home": "/og/home.jpg",
+      "news": "/og/news.jpg",
+      "privacy": "/og/privacy.jpg",
+      "contatti": "/og/contatti.jpg",
+      "preventivi": "/og/preventivi.jpg",
+      "about": "/og/chi-siamo.jpg",
+      "destinationsBase": "/og/destinations/",
+      "newsBase": "/og/news/"
+    }
+  },
+
+  "home": {
+    "title": "Spedizioni internazionali Europa–Nord Africa | Bongiorno",
+    "description": "Trasporti e logistica con presenza diretta nel Maghreb e rete europea.",
+    "image": "/og/home.jpg"
+  },
+
+  "news": {
+    "title": "Ultime Notizie | Bongiorno Trasporti",
+    "description": "Novità e approfondimenti su trasporto e logistica.",
+    "image": "/og/news.jpg"
+  },
+
+  "newsPost": {
+    "titleTemplate": "{postTitle} | Bongiorno",
+    "descriptionFallback": "Approfondimenti su trasporto e logistica.",
+    "imageBase": "/og/news/"
+  },
+
+  "destinations": {
+    "titleTemplate": "Trasporti {name} | Bongiorno Trasporti",
+    "descriptionTemplate": "{introOrClaim}",
+    "imageBase": "/og/destinations/"
+  },
+
+  "contact": {
+    "title": "Contatti | Bongiorno Trasporti",
+    "description": "Contattaci per informazioni e preventivi.",
+    "image": "/og/contatti.jpg"
+  },
+
+  "quote": {
+    "title": "Richiedi preventivo | Bongiorno Trasporti",
+    "description": "Preventivi rapidi per i tuoi trasporti internazionali.",
+    "image": "/og/preventivi.jpg"
+  },
+
+  "privacy": {
+    "title": "Privacy Policy | Bongiorno Trasporti",
+    "description": "Informativa sul trattamento dei dati personali.",
+    "image": "/og/privacy.jpg"
+  },
+
+  "about": {
+    "title": "Chi siamo | Bongiorno Trasporti",
+    "description": "La nostra storia, i valori e la presenza internazionale.",
+    "image": "/og/chi-siamo.jpg"
+  }
+}

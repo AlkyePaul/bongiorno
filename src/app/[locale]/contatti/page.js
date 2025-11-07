@@ -5,6 +5,21 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import H1 from "@/components/common/H1";
 import {Link} from "@/i18n/navigation";
 import { usePathname } from "next/navigation";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata(props) {
+  const { locale } = await props.params;
+  const seo = (await import(`@/locales/seo.${locale}.json`)).default;
+  const title = seo?.contact?.title || `Contatti | ${seo?.siteName || 'Bongiorno Trasporti'}`;
+  const description = seo?.contact?.description || seo?.defaults?.description || 'Contatta Bongiorno Trasporti per informazioni e preventivi.';
+  return buildMetadata({
+    locale,
+    route: '/contatti',
+    title,
+    description,
+    image: seo?.contact?.image || seo?.defaults?.images?.contatti || '/og/contatti.jpg',
+  });
+}
 
 export default function ContattiPage() {
   const t = useTranslations("contact");

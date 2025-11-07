@@ -8,6 +8,21 @@ import { useInView } from "react-intersection-observer";
 import H2 from "@/components/common/H2";
 import SediSection from "@/components/homepage/Sedi";
 import CTABanner from "@/components/common/CTABanner";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata(props) {
+  const { locale } = await props.params;
+  const seo = (await import(`@/locales/seo.${locale}.json`)).default;
+  const title = seo?.about?.title || `Chi siamo | ${seo?.siteName || 'Bongiorno Trasporti'}`;
+  const description = seo?.about?.description || seo?.defaults?.description || 'La storia e i valori di Bongiorno Trasporti.';
+  return buildMetadata({
+    locale,
+    route: '/chi-siamo',
+    title,
+    description,
+    image: seo?.about?.image || seo?.defaults?.images?.about || '/og/chi-siamo.jpg',
+  });
+}
 import BongiornoMap from "@/components/maps/BongiornoMap";
 
 export default function ChiSiamoPage() {

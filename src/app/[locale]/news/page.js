@@ -6,6 +6,7 @@ import { User, Calendar, FolderOpen } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { getAllArticlesWithLocales } from "@/lib/news-utils";
 import LanguageBadges from "@/components/news/LanguageBadges";
+import { buildMetadata } from "@/lib/seo";
 
 
 export const dynamic = "force-static";
@@ -17,12 +18,14 @@ export const generateStaticParams = generateLocaleParams;
 // 🔹 SEO metadata
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'news' });
-  
-  return {
-    title: t('meta.title'),
-    description: t('meta.description'),
-  };
+  const seo = (await import(`@/locales/seo.${locale}.json`)).default;
+  return buildMetadata({
+    locale,
+    route: '/news',
+    title: seo?.news?.title || seo?.siteName || 'News | Bongiorno',
+    description: seo?.news?.description || seo?.defaults?.description || '',
+    image: seo?.news?.image || seo?.defaults?.images?.news || '/og/news.jpg',
+  });
 }
 
 export default async function NewsPage({ params }) {

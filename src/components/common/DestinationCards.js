@@ -7,7 +7,7 @@ import { useLocale } from "next-intl";
 export default function DestinationCards({ items }) {
   const locale = useLocale();
   return (
-    <section className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] py-8">
+    <section className="w-screen relative left-1/2 right-1/2 -ml-[40vw] -mr-[40vw] py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center gap-6 md:gap-8 max-w-7xl mx-auto">
           {items.map((item, idx) => (

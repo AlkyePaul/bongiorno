@@ -3,6 +3,21 @@
 import { useTranslations } from "next-intl";
 import {Link} from "@/i18n/navigation";
 import H1  from "@/components/common/H1";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata(props) {
+  const { locale } = await props.params;
+  const messages = (await import(`@/locales/${locale}.json`)).default;
+  const title = messages?.privacy?.meta?.title || `${messages?.privacy?.title ?? 'Privacy'} | Bongiorno Trasporti`;
+  const description = messages?.privacy?.meta?.description || messages?.privacy?.controller?.name || 'Informativa sulla privacy di Bongiorno Trasporti.';
+  return buildMetadata({
+    locale,
+    route: '/privacy',
+    title,
+    description,
+    image: '/og/privacy.jpg',
+  });
+}
 
 export default function PrivacyPage() {
   const t = useTranslations("privacy");

@@ -6,6 +6,7 @@ import DestinationMap from "@/components/maps/DestinationMap";
 import { BriefcaseBusiness, MoveRight } from "lucide-react";
 import {Link} from "@/i18n/navigation";
 import H1 from "@/components/common/H1";
+import { buildMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   const destinations = ["tunisia", "algeria", "marocco", "libia", "mauritania"];
@@ -14,6 +15,29 @@ export function generateStaticParams() {
     { locale: "en", destination: dest },
     { locale: "es", destination: dest },
   ]);
+}
+
+export async function generateMetadata(props) {
+  const { locale, destination } = await props.params;
+  const messages = (await import(`@/locales/${locale}.json`)).default;
+  const seo = (await import(`@/locales/seo.${locale}.json`)).default;
+  const data = messages?.destinations?.[destination] || {};
+  const name = (data?.title || destination).replace(/^Trasporti\s+/i, '');
+  const title = (seo?.destinations?.titleTemplate || '{name} | Bongiorno Trasporti')
+    .replace('{name}', name);
+  const descSource = data?.intro || data?.claim || seo?.defaults?.description || '';
+  const description = (seo?.destinations?.descriptionTemplate || '{introOrClaim}')
+    .replace('{introOrClaim}', descSource);
+  const image = (seo?.destinations?.imageBase ? `${seo.destinations.imageBase}${destination}.jpg` : `/og/destinations/${destination}.jpg`);
+
+  return buildMetadata({
+    locale,
+    route: "/destinazioni/[destination]",
+    params: { destination },
+    title,
+    description,
+    image,
+  });
 }
 
 export default async function DestinationPage({ params }) {
@@ -56,16 +80,44 @@ export default async function DestinationPage({ params }) {
         </div>
       </section>
 
-      {/* 🔹 Content with Map + Services */}
-      <section className="container mx-auto px-6 py-20 grid lg:grid-cols-3 gap-12 items-start">
-        {/* LEFT — Map + paragraphs */}
-        <div className="lg:col-span-2 flex flex-col gap-8 order-2 lg:order-1  ">
-          <div className="rounded-2xl overflow-hidden shadow-lg h-[400px] ">
-            {/* ✅ This component is client-side */}
-            <DestinationMap coordinates={data.mapCoords} markers={data.mapMarkers} />
-          </div>
+<section className="container mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-stretch">
+  {/* LEFT — Map + paragraphs */}
+  <div className="flex flex-col gap-8 order-2 lg:order-1">
+    <div className="relative w-full">
+      {/* ✅ Maintain height ratio with aspect-ratio for smaller screens */}
+      <div className="relative lg:aspect-auto lg:h-full min-h-[350px] lg:min-h-[500px] rounded-2xl overflow-hidden shadow-lg">
+        <DestinationMap coordinates={data.mapCoords} markers={data.mapMarkers} />
+      </div>
+    </div>
+  </div>
 
-          <div className="space-y-4">
+  {/* RIGHT — Services */}
+  <aside className="bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-lg p-4 md:p-6 flex flex-col gap-6 order-1 lg:order-2 lg:h-full">
+    <div className="flex items-center gap-4 m-2">
+      <BriefcaseBusiness className="w-8 h-8 text-brand-accent shrink-0" />
+      <h2 className="text-2xl font-semibold">{data.servicesTitle}</h2>
+    </div>
+
+    <ul className="space-y-3 text-lg text-gray-700 dark:text-gray-300 flex-1">
+      {data.services?.map((s, i) => (
+        <li key={i} className="flex items-center gap-2">
+          <MoveRight className="w-4 h-4 text-brand-accent shrink-0" />
+          <span className="flex-1">{s}</span>
+        </li>
+      ))}
+    </ul>
+
+    <Link
+      href="/preventivi"
+      className="mt-auto inline-block px-6 py-3 bg-brand-accent text-white font-medium rounded-md hover:bg-brand-accent/90 transition text-center"
+    >
+      {t.preventivo}
+    </Link>
+  </aside>
+</section>
+
+<section className="max-w-4xl mx-auto md:py-20 py-12 ">
+        <div className="space-y-4">
             {data.paragraphs?.map((p, i) => (
               <div
                 key={i}
@@ -75,33 +127,7 @@ export default async function DestinationPage({ params }) {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* RIGHT — Services */}
-        <aside className="bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-lg p-2 md:p-6  flex flex-col gap-6 order-1 lg:order-2">
-          <div className="flex items-center gap-4 m-2">
-          <BriefcaseBusiness className="w-8 h-8 text-brand-accent" />
-            <h2 className="text-2xl font-semibold">{data.servicesTitle}</h2>
-          </div>
-
-          <ul className="space-y-3 text-lg text-gray-700 dark:text-gray-300">
-            {data.services?.map((s, i) => (
-              <li key={i} className="flex items-center gap-2">
-                
-                <MoveRight className="w-4 h-4 text-brand-accent flex-1" />
-                <span className="flex-8">{s}</span>
-              </li>
-            ))}
-          </ul>
-
-          <Link
-            href="/preventivi"
-            className="mt-6 inline-block px-6 py-3 bg-brand-accent text-white font-medium rounded-md hover:bg-brand-accent/90 transition text-center"
-          >
-            {t.preventivo}
-          </Link>
-        </aside>
-      </section>
+          </section>
     </main>
   );
 }

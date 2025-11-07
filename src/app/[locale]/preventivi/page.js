@@ -2,6 +2,21 @@
 import { useTranslations } from "next-intl";
 import FromPreventivi from '@/components/common/QuoteForm';
 import H1 from '@/components/common/H1';
+import { buildMetadata } from '@/lib/seo';
+
+export async function generateMetadata(props) {
+  const { locale } = await props.params;
+  const seo = (await import(`@/locales/seo.${locale}.json`)).default;
+  const title = seo?.quote?.title || `Richiedi preventivo | ${seo?.siteName || 'Bongiorno Trasporti'}`;
+  const description = seo?.quote?.description || seo?.defaults?.description || 'Richiedi un preventivo per i tuoi trasporti internazionali.';
+  return buildMetadata({
+    locale,
+    route: '/preventivi',
+    title,
+    description,
+    image: seo?.quote?.image || seo?.defaults?.images?.preventivi || '/og/preventivi.jpg',
+  });
+}
 export default function Preventivi() {
    const t = useTranslations("quote");
    const features = Array.isArray(t.raw("features")) ? t.raw("features") : [];

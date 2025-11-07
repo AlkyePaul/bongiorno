@@ -1,0 +1,56 @@
+{
+  "siteName": "Bongiorno Transport SRL",
+  "defaults": {
+    "description": "Soluciones logísticas fiables en Europa y el Norte de África.",
+    "images": {
+      "home": "/og/home.jpg",
+      "news": "/og/noticias.jpg",
+      "privacy": "/og/privacidad.jpg",
+      "contatti": "/og/contactos.jpg",
+      "preventivi": "/og/preventivos.jpg",
+      "about": "/og/quienes-somos.jpg",
+      "destinationsBase": "/og/destinos/",
+      "newsBase": "/og/noticias/"
+    }
+  },
+  "home": {
+    "title": "Envíos internacionales Europa-Norte de África | Bongiorno",
+    "description": "Transporte y logística con presencia directa en el Magreb y red europea.",
+    "image": "/og/home.jpg"
+  },
+  "news": {
+    "title": "Últimas noticias | Bongiorno Transport",
+    "description": "Noticias y análisis sobre transporte y logística.",
+    "image": "/og/noticias.jpg"
+  },
+  "newsPost": {
+    "titleTemplate": "{postTitle} | Bongiorno",
+    "descriptionFallback": "Perspectivas del transporte y la logística.",
+    "imageBase": "/og/noticias/"
+  },
+  "destinations": {
+    "titleTemplate": "Transporte {nombre} | Transporte Bongiorno",
+    "descriptionTemplate": "{introOrClaim}",
+    "imageBase": "/og/destinos/"
+  },
+  "contact": {
+    "title": "Contactos | Bongiorno Transport",
+    "description": "Póngase en contacto con nosotros para obtener información y presupuestos.",
+    "image": "/og/contactos.jpg"
+  },
+  "quote": {
+    "title": "Solicitar un presupuesto | Bongiorno Transport",
+    "description": "Presupuestos rápidos para sus transportes internacionales.",
+    "image": "/og/preventivos.jpg"
+  },
+  "privacy": {
+    "title": "Política de privacidad | Bongiorno Transport",
+    "description": "Información sobre el tratamiento de datos personales.",
+    "image": "/og/privacidad.jpg"
+  },
+  "about": {
+    "title": "Sobre nosotros | Bongiorno Transport",
+    "description": "Nuestra historia, valores y presencia internacional.",
+    "image": "/og/quienes-somos.jpg"
+  }
+}
