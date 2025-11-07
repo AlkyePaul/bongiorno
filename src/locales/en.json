@@ -1,4 +1,29 @@
-{
+{ 
+  "news": {
+    "hero": {
+      "title": "Explore the Latest in the World of Shipping",
+      "subtitle": "Discover exclusive insights and updates on international shipping, with a focus on Europe and North Africa."
+    },
+    "featured": {
+      "readMore": "Read more"
+    },
+    "sidebar": {
+      "title": "Recent Articles"
+    },
+    "meta": {
+      "title": "Latest News | Bongiorno Transportation",
+      "description": "Find out the latest news and insights on international transportation, logistics and supply chain."
+    },
+    "availableIn": "This article is available in:",
+    "notAvailableIn": "Translation not yet available for:",
+    "fallbackNotice": "This article is not yet available in this language. Showing the Italian version.",
+    "languages": {
+      "it": "Italiano",
+      "es": "Español",
+      "en": "English",
+      "fr": "Français"
+    }
+  },
   "privacy": {
     "title": "Privacy policy",
     "lastUpdated": " Last updated: 04/28/2024",
@@ -694,37 +719,6 @@
           "We consider All Risk coverage an enormously important tool, a guarantee that allows you to protect yourself from all possible risks during a transport.",
           "We provide customers with a proven policy, available upon request for each shipment."
         ]
-      }
-    ]
-  },
-  "news": {
-    "hero": {
-      "title": "Explore the Latest in the World of Shipping",
-      "subtitle": "Discover exclusive insights and updates on international shipping, with a focus on Europe and North Africa.",
-      "alt": "Panorama harbor and winches"
-    },
-    "sidebar": {
-      "title": "Recent Articles and Insights"
-    },
-    "read_more": "Read more",
-    "articles": [
-      {
-        "title": "Law No. 105/2025: A Turn for Logistics",
-        "author": "Greta",
-        "date": "October 7, 2025",
-        "category": "Regulations and Laws",
-        "excerpt": "Find out how recent legislation is impacting the freight transport sector, posing new challenges for freight operators. On July 19, 2025, Law No. 105 of July 18, 2025, which converts Decree Law No. 73...",
-        "image": "/img/news-law-105.webp",
-        "slug": "law-105-2025"
-      },
-      {
-        "title": "New Routes in the Mediterranean: Expansion of Bongiorno Services.",
-        "author": "Editorial staff",
-        "date": "September 18, 2025",
-        "category": "Transportation and Logistics",
-        "excerpt": "The expansion of shipping lines between Europe and North Africa consolidates Bongiorno SRL's position as a strategic partner for Mediterranean shipping.",
-        "image": "/img/news-mediterranean.webp",
-        "slug": "new-rotte-mediterranean"
       }
     ]
   },

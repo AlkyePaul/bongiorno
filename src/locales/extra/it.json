@@ -1,0 +1,18 @@
+{
+  "news": {
+    "hero": {
+      "title": "Esplora le Ultime Novità nel Mondo delle Spedizioni",
+      "subtitle": "Scopri approfondimenti esclusivi e aggiornamenti sulle spedizioni internazionali, con un focus su Europa e Nord Africa."
+    },
+    "featured": {
+      "readMore": "Leggi di più"
+    },
+    "sidebar": {
+      "title": "Articoli Recenti"
+    },
+    "meta": {
+      "title": "Ultime Notizie | Bongiorno Trasporti",
+      "description": "Scopri le ultime novità e approfondimenti sul trasporto internazionale, logistica e supply chain."
+    }
+  }
+}

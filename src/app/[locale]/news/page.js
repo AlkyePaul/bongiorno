@@ -1,53 +1,36 @@
-import fs from "fs";
-import path from "path";
 import Image from "next/image";
 import {Link} from "@/i18n/navigation";
-import matter from "gray-matter";
 import H1 from "@/components/common/H1";
 import H2 from "@/components/common/H2";
 import { User, Calendar, FolderOpen } from "lucide-react";
+import { getTranslations } from "next-intl/server";
+import { getAllArticlesWithLocales } from "@/lib/news-utils";
+import LanguageBadges from "@/components/news/LanguageBadges";
 
 
 export const dynamic = "force-static";
 
-export async function generateStaticParams() {
-  return [{ locale: "it" }, { locale: "en" }, { locale: "es" }];
+import { generateLocaleParams } from '@/lib/locales';
+
+export const generateStaticParams = generateLocaleParams;
+
+// 🔹 SEO metadata
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'news' });
+  
+  return {
+    title: t('meta.title'),
+    description: t('meta.description'),
+  };
 }
 
 export default async function NewsPage({ params }) {
-  const { locale } = params;
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'news' });
 
-  // 🧭 Folder for current language (fallback to Italian if missing)
-  const newsDir = path.join(process.cwd(), "content/news", locale);
-  const fallbackDir = path.join(process.cwd(), "content/news/it");
-  const dirToUse = fs.existsSync(newsDir) ? newsDir : fallbackDir;
-
-  // 📰 Read all localized MDX files
-  const files = fs
-    .readdirSync(dirToUse)
-    .filter((file) => file.endsWith(".mdx"));
-
-  // Parse front-matter metadata
-  const articles = files.map((file) => {
-    const slug = file.replace(/\.mdx$/, "");
-    const source = fs.readFileSync(path.join(dirToUse, file), "utf8");
-    const { data } = matter(source);
-
-    return {
-      slug,
-      title: data.title || slug,
-      author: data.author || "Redazione",
-      date: data.date || "—",
-      category: data.category || "Articolo",
-      image: data.image || "/img/news-placeholder.webp",
-      excerpt: data.intro || "",
-    };
-  });
-
-  // Sort by date descending
-  articles.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  // 📰 Get all articles with locale availability info
+  const articles = getAllArticlesWithLocales(locale);
 
   const featured = articles[0];
   const secondary = articles[1];
@@ -67,11 +50,10 @@ export default async function NewsPage({ params }) {
         <div className="absolute inset-0 bg-gradient-to-r from-gray-950/90 via-gray-900/70 to-transparent z-10" />
         <div className="relative z-20 container mx-auto px-6 text-left max-w-4xl">
           <H1 white={true}>
-            Esplora le Ultime Novità nel Mondo delle Spedizioni
+            {t('hero.title')}
           </H1>
           <p className="text-lg md:text-xl text-gray-100 mt-4 max-w-2xl">
-            Scopri approfondimenti esclusivi e aggiornamenti sulle spedizioni
-            internazionali, con un focus su Europa e Nord Africa.
+            {t('hero.subtitle')}
           </p>
         </div>
       </section>
@@ -92,7 +74,7 @@ export default async function NewsPage({ params }) {
               />
               <div className="p-6">
                 <H2 className="mb-2">{featured.title}</H2>
-                <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                <div className="flex items-center gap-4 text-sm text-gray-500 mb-3 flex-wrap">
                   <span className="flex items-center gap-1">
                     <User className="w-4 h-4" /> {featured.author}
                   </span>
@@ -102,15 +84,20 @@ export default async function NewsPage({ params }) {
                   <span className="flex items-center gap-1">
                     <FolderOpen className="w-4 h-4" /> {featured.category}
                   </span>
+                  <LanguageBadges 
+                    availableLocales={featured.availableLocales} 
+                    currentLocale={locale}
+                    variant="compact"
+                  />
                 </div>
                 <p className="text-gray-700 dark:text-gray-300 mb-6">
                   {featured.excerpt}
                 </p>
                 <Link
-                  href={`/${locale}/news/${featured.slug}`}
+                  href={`/news/${featured.slug}`}
                   className="inline-block bg-brand-accent text-white px-6 py-2 rounded-md hover:bg-brand-accent/90 transition"
                 >
-                  Leggi di più
+                  {t('featured.readMore')}
                 </Link>
               </div>
             </div>
@@ -122,9 +109,14 @@ export default async function NewsPage({ params }) {
               <h3 className="text-2xl font-semibold mb-3 text-brand-navy">
                 {secondary.title}
               </h3>
-              <p className="text-sm text-gray-500 mb-2">
-                {secondary.date} | {secondary.category}
-              </p>
+              <div className="flex items-center gap-3 text-sm text-gray-500 mb-2 flex-wrap">
+                <span>{secondary.date} | {secondary.category}</span>
+                <LanguageBadges 
+                  availableLocales={secondary.availableLocales} 
+                  currentLocale={locale}
+                  variant="compact"
+                />
+              </div>
               <p className="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">
                 {secondary.excerpt}
               </p>
@@ -132,7 +124,7 @@ export default async function NewsPage({ params }) {
                 href={`/news/${secondary.slug}`}
                 className="text-brand-accent hover:underline"
               >
-                Leggi di più
+                {t('featured.readMore')}
               </Link>
             </div>
           )}
@@ -141,7 +133,7 @@ export default async function NewsPage({ params }) {
         {/* RIGHT — Sidebar “All News” */}
         <aside className="flex flex-col gap-4 bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-md">
           <h3 className="text-xl font-semibold mb-4 text-brand-navy">
-            Articoli Recenti
+            {t('sidebar.title')}
           </h3>
           <ul className="space-y-3">
             {articles.map((a) => (

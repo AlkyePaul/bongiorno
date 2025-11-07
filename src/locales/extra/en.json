@@ -1,0 +1,18 @@
+{
+  "news": {
+    "hero": {
+      "title": "Explore the Latest in the World of Shipping",
+      "subtitle": "Discover exclusive insights and updates on international shipping, with a focus on Europe and North Africa."
+    },
+    "featured": {
+      "readMore": "Read more"
+    },
+    "sidebar": {
+      "title": "Recent Articles"
+    },
+    "meta": {
+      "title": "Latest News | Bongiorno Transportation",
+      "description": "Find out the latest news and insights on international transportation, logistics and supply chain."
+    }
+  }
+}

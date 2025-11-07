@@ -1,4 +1,29 @@
 {
+  "news": {
+    "hero": {
+      "title": "Últimas noticias sobre transporte marítimo",
+      "subtitle": "Descubra información exclusiva y actualizada sobre el transporte marítimo internacional, con especial atención a Europa y el Norte de África."
+    },
+    "featured": {
+      "readMore": "Seguir leyendo"
+    },
+    "sidebar": {
+      "title": "Artículos recientes"
+    },
+    "meta": {
+      "title": "Últimas noticias | Bongiorno Transport",
+      "description": "Conozca las últimas noticias y perspectivas sobre transporte internacional, logística y cadena de suministro."
+    },
+    "availableIn": "Este artículo está disponible en:",
+    "notAvailableIn": "Traducción aún no disponible para:",
+    "fallbackNotice": "Este artículo aún no está disponible en este idioma. Se muestra la versión italiana.",
+    "languages": {
+      "it": "Italiano",
+      "es": "Español",
+      "en": "English",
+      "fr": "Français"
+    }
+  },
   "privacy": {
     "title": "Política de privacidad",
     "lastUpdated": " Última actualización: 28/04/2024",
@@ -694,37 +719,6 @@
           "Consideramos que la cobertura a todo riesgo es una herramienta extremadamente importante, una garantía que protege contra todos los riesgos posibles durante una operación de transporte.",
           "Proporcionamos a los clientes una póliza probada, disponible a petición para cada envío."
         ]
-      }
-    ]
-  },
-  "news": {
-    "hero": {
-      "title": "Últimas noticias sobre transporte marítimo",
-      "subtitle": "Descubra información exclusiva y actualizada sobre el transporte marítimo internacional, con especial atención a Europa y el Norte de África.",
-      "alt": "Puerto panorámico y tornos"
-    },
-    "sidebar": {
-      "title": "Artículos recientes"
-    },
-    "read_more": "Seguir leyendo",
-    "articles": [
-      {
-        "title": "Ley nº 105/2025: Un giro para la logística",
-        "author": "Greta",
-        "date": "7 de octubre de 2025",
-        "category": "Normativa y legislación",
-        "excerpt": "Descubra cómo la reciente legislación está afectando al sector del transporte de mercancías, planteando nuevos retos para los operadores del sector. El 19 de julio de 2025 se publicó en el Diario Oficial la Ley nº 105, de 18 de julio de 2025, por la que se convierte el Decreto Ley nº 73...",
-        "image": "/img/noticias-ley-105.webp",
-        "slug": "ley-105-2025"
-      },
-      {
-        "title": "Nuevas rutas en el Mediterráneo: ampliación de los servicios de Bongiorno",
-        "author": "Redacción",
-        "date": "18 de septiembre de 2025",
-        "category": "Transporte y logística",
-        "excerpt": "La expansión de las líneas marítimas entre Europa y el norte de África consolida la posición de Bongiorno SRL como socio estratégico del transporte marítimo en el Mediterráneo.",
-        "image": "/img/noticias-mediterraneo.webp",
-        "slug": "nueva-ruta-mediterránea"
       }
     ]
   },

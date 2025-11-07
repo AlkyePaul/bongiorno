@@ -1,20 +1,24 @@
-import fs from "fs";
-import path from "path";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import {Link} from "@/i18n/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import H2 from "@/components/common/H2";
-import { Calendar, User, FolderOpen, ArrowLeft, AlertTriangle, Clock, Euro, Moon } from "lucide-react";
-import matter from "gray-matter";
+import { ArrowLeft } from "lucide-react";
 import { mdxComponents } from "@/components/news/MDXComp";
 import PostMeta from "@/components/news/PostMeta";
+import { getArticleWithLocales, getArticleLocales } from "@/lib/news-utils";
+import LanguageBadges from "@/components/news/LanguageBadges";
+import { getTranslations } from "next-intl/server";
+import { generateLocaleParams } from '@/lib/locales';
 
 
 export async function generateStaticParams() {
-  const locales = ["it", "en", "es"];
-  const allPosts = fs
-    .readdirSync(path.join(process.cwd(), "content/news/it"))
+  const fs = await import('fs');
+  const path = await import('path');
+  
+  const locales = generateLocaleParams().map(p => p.locale);
+  const allPosts = fs.default
+    .readdirSync(path.default.join(process.cwd(), "content/news/it"))
     .filter((f) => f.endsWith(".mdx"))
     .map((f) => f.replace(".mdx", ""));
 
@@ -24,34 +28,19 @@ export async function generateStaticParams() {
 }
 
 export default async function NewsPostPage({ params }) {
-  const { locale, post } = params;
-  const t = (await import(`@/locales/${locale}.json`)).default.common;
+  const { locale, post } = await params;
+  const t = await getTranslations({ locale, namespace: 'news' });
+  const tCommon = await getTranslations({ locale, namespace: 'common' });
 
-  const articlePath = path.join(process.cwd(), "content/news", locale, `${post}.mdx`);
-  const fallbackPath = path.join(process.cwd(), "content/news", "it", `${post}.mdx`);
-
-  const articleExists = fs.existsSync(articlePath);
-  const fallbackExists = fs.existsSync(fallbackPath);
-// Read file
-
-// Parse front-matter
-
-
-  // If not even the default version exists → 404
-  if (!articleExists && !fallbackExists) notFound();
-
-  // Select which MDX file to render
-  const fileToRender = articleExists ? articlePath : fallbackPath;
-  const isFallback = !articleExists && fallbackExists;
-const fileContent = fs.readFileSync(fileToRender, "utf-8");
-
-const { content, data } = matter(fileContent);
-
-
-  // Metadata extraction (title, image, etc.) → optional frontmatter
+  // Get article with locale information
+  const article = getArticleWithLocales(post, locale);
+  
+  // If article doesn't exist at all → 404
+  if (!article) notFound();
+  
+  const { content, data, availableLocales, isFallback } = article;
   const title = data.title;
   const image = data.image;
-  const intro = data.intro;
 
   return (
     <main className="text-gray-800 dark:text-gray-200">
@@ -70,10 +59,17 @@ const { content, data } = matter(fileContent);
             {title}
           </h1>
           {isFallback && (
-            <p className="text-sm mt-2 text-gray-300 italic">
-              ⚠️ {t.fallback_notice}
+            <p className="text-sm mt-3 text-yellow-300 bg-yellow-900/40 px-4 py-2 rounded-md inline-block">
+              ⚠️ {t('fallbackNotice')}
             </p>
           )}
+          <div className="mt-4">
+            <LanguageBadges 
+              availableLocales={availableLocales}
+              currentLocale={locale}
+              variant="compact"
+            />
+          </div>
         </div>
       </section>
     
@@ -106,7 +102,7 @@ const { content, data } = matter(fileContent);
           className="inline-flex items-center gap-2 px-6 py-3 bg-brand-accent text-white rounded-md hover:bg-brand-accent/90 transition"
         >
           <ArrowLeft className="w-4 h-4" />
-          {t?.back_news ?? "Torna alle notizie"}
+          {tCommon('back_news')}
         </Link>
       </div>
     </main>

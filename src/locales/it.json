@@ -1,4 +1,36 @@
 {
+  "common": {
+"company": "Bongiorno SRL",
+"preventivo": "Richiedi Preventivo",
+  "back_news": "Torna alle notizie",
+  "fallback_notice": "Questo articolo non è ancora disponibile in questa lingua. Mostrata la versione italiana."
+
+},
+ "news": {
+    "hero": {
+      "title": "Esplora le Ultime Novità nel Mondo delle Spedizioni",
+      "subtitle": "Scopri approfondimenti esclusivi e aggiornamenti sulle spedizioni internazionali, con un focus su Europa e Nord Africa."
+    },
+    "featured": {
+      "readMore": "Leggi di più"
+    },
+    "sidebar": {
+      "title": "Articoli Recenti"
+    },
+    "meta": {
+      "title": "Ultime Notizie | Bongiorno Trasporti",
+      "description": "Scopri le ultime novità e approfondimenti sul trasporto internazionale, logistica e supply chain."
+    },
+    "availableIn": "Questo articolo è disponibile in:",
+    "notAvailableIn": "Traduzione non ancora disponibile per:",
+    "fallbackNotice": "Questo articolo non è ancora disponibile in questa lingua. Mostrata la versione italiana.",
+    "languages": {
+      "it": "Italiano",
+      "es": "Español",
+      "en": "English",
+      "fr": "Français"
+    }
+  },
 
   "privacy": {
     "title": "Privacy policy",
@@ -136,13 +168,7 @@
 }
 ,
 
-"common": {
-"company": "Bongiorno SRL",
-"preventivo": "Richiedi Preventivo",
-  "back_news": "Torna alle notizie",
-  "fallback_notice": "Questo articolo non è ancora disponibile in questa lingua. Mostrata la versione italiana."
 
-},
 
 "destinations": {
 "marocco": {
@@ -618,38 +644,6 @@
         ]
       }
     ]},
-
-    "news": {
-  "hero": {
-    "title": "Esplora le Ultime Novità nel Mondo delle Spedizioni",
-    "subtitle": "Scopri approfondimenti esclusivi e aggiornamenti sulle spedizioni internazionali, con un focus su Europa e Nord Africa.",
-    "alt": "Panorama porto e argani"
-  },
-  "sidebar": {
-    "title": "Articoli Recenti e Approfondimenti"
-  },
-  "read_more": "Leggi di più",
-  "articles": [
-    {
-      "title": "Legge n. 105/2025: Una Svolta per la Logistica",
-      "author": "Greta",
-      "date": "Ottobre 7, 2025",
-      "category": "Normative e Leggi",
-      "excerpt": "Scopri come la recente normativa sta impattando il settore dei trasporti merci, ponendo nuove sfide agli operatori del settore. In data 19 luglio 2025 è stata pubblicata sulla Gazzetta Ufficiale la Legge n. 105 del 18 luglio 2025, che converte il Decreto Legge n. 73...",
-      "image": "/img/news-legge-105.webp",
-      "slug": "legge-105-2025"
-    },
-    {
-      "title": "Nuove Rotte nel Mediterraneo: Espansione dei Servizi Bongiorno",
-      "author": "Redazione",
-      "date": "Settembre 18, 2025",
-      "category": "Trasporti e Logistica",
-      "excerpt": "L’espansione delle linee marittime tra Europa e Nord Africa consolida la posizione di Bongiorno SRL come partner strategico per le spedizioni mediterranee.",
-      "image": "/img/news-mediterraneo.webp",
-      "slug": "nuove-rotte-mediterraneo"
-    }
-  ]
-},
 
     "ctaBanner": {
       "cta_main": "La nostra presenza stabile e di lunga data sul territorio ci rende un partner solido in grado di risolvere ogni imprevisto in tempi rapidi, offrendo velocità, sicurezza e garanzia in tutti i mercati in cui operiamo.",

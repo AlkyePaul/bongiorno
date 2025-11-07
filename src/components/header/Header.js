@@ -12,7 +12,8 @@ import { useLocale } from "next-intl";
 const locales = [
   { code: "it", label: "IT" },
   { code: "en", label: "EN" },
-  { code: "es", label: "ES" }
+  { code: "es", label: "ES" },
+  { code: "fr", label: "FR" }
 ];
 
 export default function Header() {
@@ -187,7 +188,8 @@ const quoteLabel = messages?.common?.preventivo;
                   const { IT } = require('country-flag-icons/react/3x2');
                   const { GB } = require('country-flag-icons/react/3x2');
                   const { ES } = require('country-flag-icons/react/3x2');
-                  const map = { it: IT, en: GB, es: ES };
+                  const { FR } = require('country-flag-icons/react/3x2');
+                  const map = { it: IT, en: GB, es: ES, fr: FR };
                   const Flag = map[currentLocale] || IT;
                   return <Flag title={currentLocale.toUpperCase()} className="w-5 h-5" />;
                 })()}
@@ -215,7 +217,8 @@ const quoteLabel = messages?.common?.preventivo;
                             const { IT } = require('country-flag-icons/react/3x2');
                             const { GB } = require('country-flag-icons/react/3x2');
                             const { ES } = require('country-flag-icons/react/3x2');
-                            const map = { it: IT, en: GB, es: ES };
+                            const { FR } = require('country-flag-icons/react/3x2');
+                            const map = { it: IT, en: GB, es: ES, fr: FR };
                             const Flag = map[l.code] || IT;
                             return <Flag title={l.label} className="w-5 h-5" />;
                           })()}

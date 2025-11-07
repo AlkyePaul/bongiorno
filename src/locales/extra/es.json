@@ -1,0 +1,18 @@
+{
+  "news": {
+    "hero": {
+      "title": "Últimas noticias sobre transporte marítimo",
+      "subtitle": "Descubra información exclusiva y actualizada sobre el transporte marítimo internacional, con especial atención a Europa y el Norte de África."
+    },
+    "featured": {
+      "readMore": "Seguir leyendo"
+    },
+    "sidebar": {
+      "title": "Artículos recientes"
+    },
+    "meta": {
+      "title": "Últimas noticias | Bongiorno Transport",
+      "description": "Conozca las últimas noticias y perspectivas sobre transporte internacional, logística y cadena de suministro."
+    }
+  }
+}
