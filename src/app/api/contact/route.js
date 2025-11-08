@@ -11,10 +11,19 @@ export async function POST(req) {
     }
 
     // ➕ Tag di tipo per differenziare nel foglio Zapier
+    const now = new Date();
+    const dd = String(now.getDate()).padStart(2, "0");
+    const mm = String(now.getMonth() + 1).padStart(2, "0");
+    const yyyy = String(now.getFullYear());
+    const HH = String(now.getHours()).padStart(2, "0");
+    const min = String(now.getMinutes()).padStart(2, "0");
+
     const payload = {
       ...data,
-      source: "bongiorno italia",
-      date: new Date().toISOString(),
+      source: "bongiorno web - " + data.locale,
+      date: `${dd}/${mm}/${yyyy}`,
+      time: `${HH}:${min}`,
+    
     };
 
     const res = await fetch(zapierHook, {

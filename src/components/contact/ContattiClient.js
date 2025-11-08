@@ -7,6 +7,7 @@ import { Link } from "@/i18n/navigation";
 
 export default function ContattiClient() {
   const t = useTranslations("contact");
+  const f = useTranslations("quote");
   const locale = useLocale();
 
   const [form, setForm] = useState({
@@ -36,7 +37,7 @@ export default function ContattiClient() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, type: "generale" }),
+        body: JSON.stringify({ ...form, type: "generale", locale }),
       });
       if (!res.ok) throw new Error("Failed to send");
       setStatus("success");
@@ -157,10 +158,10 @@ export default function ContattiClient() {
                 : t("form.submit")}
             </button>
             {status === "error" && (
-              <p className="text-red-600 dark:text-red-400 text-base mt-2">❌ {t("error")}</p>
+              <p className="text-red-600 dark:text-red-400 text-base mt-2">❌ {f("error")}</p>
             )}
             {status === "success" && (
-              <p className="text-green-600 dark:text-green-400 text-base mt-2">✅ {t("success")}</p>
+              <p className="text-green-600 dark:text-green-400 text-base mt-2">✅ {f("success")}</p>
             )}
           </form>
         </div>

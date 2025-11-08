@@ -548,6 +548,35 @@
   },
 
 
+  "contact": {
+  "title": "Contatti",
+    "privacyLink": "Privacy policy",
+
+  "address": {
+    "label": "Indirizzo",
+    "value": "Via Marsala 40, Gallarate, Varese, 21013 Italia"
+  },
+  "email": {
+    "label": "Email",
+    "value": "bongiorno@bongiornosrl.com"
+  },
+  "phone": {
+    "label": "Telefono",
+    "value": "+39 0331 776 334"
+  },
+  "form": {
+    "title": "Scrivici un messaggio",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "submit": "Invia",
+    "sending": "Invio in corso...",
+    "success": "Messaggio inviato!",
+    "consent": "Acconsento al trattamento dei dati inseriti (obbligatorio, consulta qui la privacy policy)",
+    "privacyLink": "Privacy policy",
+    "noConsent": "Devi acconsentire al trattamento dei dati per procedere."
+  }
+},
  
  
   "footer": {
@@ -685,35 +714,8 @@
     "subtitle": "La nostra Storia",
     "sede": "La sede della Bongiorno a Gallarate, via Marsala 40, la sede centrale dell'attività."
   
-  },
-
-  "contact": {
-  "title": "Contatti",
-  "address": {
-    "label": "Indirizzo",
-    "value": "Via Marsala 40, Gallarate, Varese, 21013 Italia"
-  },
-  "email": {
-    "label": "Email",
-    "value": "bongiorno@bongiornosrl.com"
-  },
-  "phone": {
-    "label": "Telefono",
-    "value": "+39 0331 776 334"
-  },
-  "form": {
-    "title": "Scrivici un messaggio",
-    "name": "Nome",
-    "email": "Email",
-    "message": "Messaggio",
-    "submit": "Invia",
-    "sending": "Invio in corso...",
-    "success": "Messaggio inviato!",
-    "consent": "Acconsento al trattamento dei dati inseriti (obbligatorio, consulta qui la privacy policy)",
-    "privacyLink": "Privacy policy",
-    "noConsent": "Devi acconsentire al trattamento dei dati per procedere."
   }
-}
+
 
 
 }

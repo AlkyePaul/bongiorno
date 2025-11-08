@@ -48,7 +48,7 @@ export default function QuoteForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, type: "preventivo" }),
+        body: JSON.stringify({ ...form, type: "preventivo", locale }),
       });
       if (!res.ok) throw new Error();
 
