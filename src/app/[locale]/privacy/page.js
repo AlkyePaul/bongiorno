@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import {Link} from "@/i18n/navigation";
 import H1  from "@/components/common/H1";

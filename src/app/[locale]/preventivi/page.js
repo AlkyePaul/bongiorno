@@ -1,5 +1,4 @@
-"use client";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import FromPreventivi from '@/components/common/QuoteForm';
 import H1 from '@/components/common/H1';
 import { buildMetadata } from '@/lib/seo';
@@ -17,9 +16,11 @@ export async function generateMetadata(props) {
     image: seo?.quote?.image || seo?.defaults?.images?.preventivi || '/og/preventivi.jpg',
   });
 }
-export default function Preventivi() {
-   const t = useTranslations("quote");
-   const features = Array.isArray(t.raw("features")) ? t.raw("features") : [];
+export default async function Preventivi({ params }) {
+   const { locale } = await params;
+   const t = await getTranslations({ locale, namespace: 'quote' });
+   const messages = (await import(`@/locales/${locale}.json`)).default;
+   const features = Array.isArray(messages?.quote?.features) ? messages.quote.features : [];
 
     return (
     <>

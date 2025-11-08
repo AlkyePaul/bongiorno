@@ -1,14 +1,11 @@
-"use client";
-import { useEffect, useState } from "react";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import ReactMarkdown from 'react-markdown';
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { getTranslations } from "next-intl/server";
 import H2 from "@/components/common/H2";
 import SediSection from "@/components/homepage/Sedi";
 import CTABanner from "@/components/common/CTABanner";
 import { buildMetadata } from "@/lib/seo";
+import Counters from "@/components/about/Counters";
 
 export async function generateMetadata(props) {
   const { locale } = await props.params;
@@ -25,43 +22,16 @@ export async function generateMetadata(props) {
 }
 import BongiornoMap from "@/components/maps/BongiornoMap";
 
-export default function ChiSiamoPage() {
-  const t = useTranslations("about");
-  const ctas = useTranslations("ctaBanner");
-  const [years, setYears] = useState(0);
-  const [transports, setTransports] = useState(0);
-  const [employees, setEmployees] = useState(0);
-
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
-  const controls = useAnimation();
-
+export default async function ChiSiamoPage({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'about' });
+  const tCta = await getTranslations({ locale, namespace: 'ctaBanner' });
   const yearsActive = new Date().getFullYear() - 1985;
-
-  useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1, y: 0 });
-      let t1 = 0,
-        t2 = 0,
-        t3 = 0;
-      const interval = setInterval(() => {
-        t1 += 300;
-        t2 += 1;
-        t3 += 2;
-        setTransports(Math.min(t1, 12000));
-        setYears(Math.min(t2, yearsActive));
-        setEmployees(Math.min(t3, 150));
-      }, 40);
-      return () => clearInterval(interval);
-    }
-  }, [inView, controls, yearsActive]);
 
   return (
     <main className="text-gray-800 dark:text-gray-200 overflow-hidden">
       {/* 🔹 Hero Section */}
-      <section
-        ref={ref}
-        className="relative w-full min-h-[80vh] flex items-center justify-center overflow-hidden"
-      >
+      <section className="relative w-full min-h-[80vh] flex items-center justify-center overflow-hidden">
         {/* Background Layer */}
         <div className="absolute inset-0 pointer-events-none">
           <Image
@@ -87,44 +57,20 @@ export default function ChiSiamoPage() {
               </p>
             </div>
 
-            {/* Right: Counters */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={controls}
-              transition={{ duration: 0.6 }}
-              className="grid grid-cols-1 sm:grid-cols-3 gap-5 text-center"
-            >
-              {[
-                {
-                  prefix: t("counters.transports_prefix"),
-                  value: transports.toLocaleString(),
-                  label: t("counters.transports_label"),
-                },
-                {
-                  prefix: t("counters.years_prefix"),
-                  value: years,
-                  label: t("counters.years_label"),
-                },
-                {
-                  prefix: t("counters.employees_prefix"),
-                  value: employees,
-                  label: t("counters.employees_label"),
-                },
-              ].map((c, i) => (
-                <div
-                  key={i}
-                  className="bg-white/90 rounded-2xl shadow-md p-6 backdrop-blur-sm flex flex-col items-center justify-center min-h-[150px]"
-                >
-                  <span className="text-xs uppercase tracking-wide text-gray-500 mb-1">
-                    {c.prefix}
-                  </span>
-                  <h2 className="text-5xl font-bold text-brand-navy my-1 leading-none">
-                    {c.value}
-                  </h2>
-                  <p className="text-xs text-gray-600 mt-1">{c.label}</p>
-                </div>
-              ))}
-            </motion.div>
+            {/* Right: Counters (client) */}
+            <Counters
+              transportsTarget={12000}
+              yearsTarget={yearsActive}
+              employeesTarget={150}
+              texts={{
+                transports_prefix: t('counters.transports_prefix'),
+                transports_label: t('counters.transports_label'),
+                years_prefix: t('counters.years_prefix'),
+                years_label: t('counters.years_label'),
+                employees_prefix: t('counters.employees_prefix'),
+                employees_label: t('counters.employees_label'),
+              }}
+            />
           </div>
         </div>
       </section>
@@ -165,7 +111,7 @@ export default function ChiSiamoPage() {
       </section>
 
       {/* 🔹 CTA + Sedi */}
-      <CTABanner t={ctas} />
+      <CTABanner t={(k)=>tCta(k)} />
       <SediSection />
     </main>
   );
