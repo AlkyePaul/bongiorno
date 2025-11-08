@@ -39,6 +39,7 @@ export default function HomePage() {
 
 
   const destinations = home?.destinations?.items || [];
+  const piuCta = home?.destinations?.piu || '';
 
   const serviceItems = Array.isArray(home?.services?.items) ? home.services.items : [];
   const iconSet = [
@@ -67,7 +68,7 @@ export default function HomePage() {
       </section>
          <section className=" px-4 lg:px-0 max-w-4xl mx-auto md:py-12 py-8">
   <H2>{home?.destinations?.title || ''}</H2>
-      <DestinationCards items={destinations} />
+      <DestinationCards items={destinations} Cta={piuCta}/>
       </section>
 
       <section className="mx-auto lg:bg-[linear-gradient(to_right,_white_55%,_#f3f4f6_55%)] md:py-12 py-8">
@@ -82,7 +83,7 @@ export default function HomePage() {
       <section className="mx-auto">
         <SediSection/>
       </section>
-       <section id="preventivi" className="grid grid-cols-1 lg:grid-cols-[40%_60%] max-w-6xl mx-auto rounded-2xl bg-gray-50 dark:bg-gray-900 md:py-12 py-8 md:py-12 px-4">
+       <section id="quote" className="grid grid-cols-1 lg:grid-cols-[40%_60%] max-w-6xl mx-auto rounded-2xl bg-gray-50 dark:bg-gray-900 md:py-12 py-8 md:py-12 px-4">
       <div className="mx-auto lg:px-24 lg:py-4 px-4">
         
         <H2>{quote.title}</H2>

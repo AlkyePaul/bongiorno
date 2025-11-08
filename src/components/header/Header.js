@@ -171,7 +171,7 @@ const quoteLabel = messages?.common?.preventivo;
      
 
         {/* RIGHT → CTA + Lang */}
-          <Link href="/preventivi" className="px-5 py-2 rounded-md bg-brand-navy text-white font-medium shadow hover:bg-brand-accent transition">
+          <Link href="/preventivi" className="btn-sm">
             {quoteLabel}
           </Link>
 

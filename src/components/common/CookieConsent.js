@@ -32,9 +32,13 @@ export default function CookieConsent() {
         const parsed = typeof raw === "string" ? JSON.parse(raw) : raw;
         console.log("[consent] loaded prefs:", parsed);
         setPrefs((p) => ({ ...p, ...parsed }));
-        // if analytics allowed previously, enable analytics right away
+        // enable previously allowed categories right away
         if (parsed.analytics) {
+          // analytics -> Google Analytics (gtag) only
           enableGTag().catch(console.error);
+        }
+        if (parsed.marketing) {
+          // marketing -> Google Tag Manager (and other marketing tags) only
           enableGTM().catch(console.error);
         }
         setVisible(false);
@@ -62,12 +66,15 @@ export default function CookieConsent() {
     setShowFab(true);
     console.log("[consent] saved prefs:", toStore);
 
-    // Activate requested services:
+    // Activate requested services based on categories
     if (toStore.analytics) {
+      // analytics -> GA only
       enableGTag().catch(console.error);
+    }
+    if (toStore.marketing) {
+      // marketing -> GTM (and future marketing scripts)
       enableGTM().catch(console.error);
     }
-    // marketing would be similarly enabled if you add functions for other pixels
   }
 
   const acceptAll = () => {

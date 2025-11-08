@@ -1,12 +1,11 @@
 {
   "common": {
-"company": "Bongiorno SRL",
-"preventivo": "Richiedi Preventivo",
-  "back_news": "Torna alle notizie",
-  "fallback_notice": "Questo articolo non è ancora disponibile in questa lingua. Mostrata la versione italiana."
-
-},
- "news": {
+    "company": "Bongiorno SRL",
+    "preventivo": "Richiedi Preventivo",
+    "back_news": "Torna alle notizie",
+    "fallback_notice": "Questo articolo non è ancora disponibile in questa lingua. Mostrata la versione italiana."
+  },
+  "news": {
     "hero": {
       "title": "Esplora le Ultime Novità nel Mondo delle Spedizioni",
       "subtitle": "Scopri approfondimenti esclusivi e aggiornamenti sulle spedizioni internazionali, con un focus su Europa e Nord Africa."
@@ -31,7 +30,6 @@
       "fr": "Français"
     }
   },
-
   "privacy": {
     "title": "Privacy policy",
     "lastUpdated": " Ultimo aggiornamento: 28/04/2024",
@@ -138,167 +136,249 @@
         ]
       }
     ]
-  }
-,
-  "cookies": {
-  "title": "Usiamo i cookie 🍪",
-  "text": "Utilizziamo cookie tecnici e, previo consenso, cookie di analisi per migliorare la tua esperienza.",
-  "privacyLink": "Privacy policy",
-  "accept": "Accetta tutto",
-  "decline": "Rifiuta",
-  "customize": "Personalizza",
-  "customizeTitle": "Preferenze cookie",
-  "customizeText": "Scegli quali categorie di cookie vuoi autorizzare.",
-  "cancel": "Annulla",
-  "save": "Salva preferenze",
-  "categories": {
-    "essential": {
-      "title": "Essenziali",
-      "desc": "Cookie necessari per il funzionamento del sito."
-    },
-    "analytics": {
-      "title": "Analitici",
-      "desc": "Cookie che ci aiutano a capire l'utilizzo del sito (Google Analytics)."
-    },
-    "marketing": {
-      "title": "Marketing",
-      "desc": "Cookie usati per campagne pubblicitarie e remarketing."
-    }
-  }
-}
-,
-
-
-
-"destinations": {
-"marocco": {
-  "title": "Trasporti Marocco",
-  "claim": "La nostra dedicazione al Marocco è ormai consolidata da decenni. Abbiamo selezionato e rafforzato nel tempo una partnership con una realtà locale che viaggiasse sulla nostra lunghezza d'onda. Per raggiungere l'obiettivo comune di dare alla clientela sempre più ragioni per scegliere il nostro servizio.",
-  "intro": "Offriamo trasporti da Spagna, Francia e Italia verso i principali porti del Marocco.",
-  "image": "/img/dest-marocco.webp",
-  "mapCoords": [-6.8326, 31.7917],
-  "mapMarkers": [
-    { "name": "Casablanca", "coords": [-7.5898, 33.5731] },
-    { "name": "Tangeri", "coords": [-5.8127, 35.7595] }
-  ],
-  "paragraphs": [
-    "L'esperienza decennale ci permette di garantire le migliori tempistiche sul mercato marocchino.",
-    "Sappiamo quanto la rapidità, non solo nel trasporto, ma anche e soprattutto negli interventi su tutte le dinamiche locali, siano una carta vincente per dare ai nostri servizi di spedizione una garanzia di qualità.",
-    "Conosciamo l'importanza della documentazione che consente a tutti gli operatori di portare a buon fine le loro transazioni e consigliamo e suggeriamo, ancor prima che la spedizione abbia inizio, tutte le eventuali specificità che lo rendono possibile."
-  ],
-  "servicesTitle": "Servizi Marocco",
-  "services": [
-    "Servizi regolari Groupage via mare su Casablanca",
-    "Possibilità di imbarco merci pericolose in completi e collettame, di rotabili e di carichi eccezionali",
-    "Possibilità di effettuare consegne door to door su tutto il territorio marocchino",
-    "Trasporti settimanali verso i porti di Tangeri e Casablanca",
-    "Transit Time rapidissimi",
-    "Assicurazione All Risk a richiesta"
-  ]
-},
-"libia": {
-  "title": "Trasporti Libia e Mauritania",
-  "claim": "La copertura totale del Maghreb ci porta anche qui. Con la stessa cura e attenzione con servizi regolari di container completi verso i principali porti.",
-  "intro": "Offriamo trasporti da Spagna, Francia e Italia verso i principali porti libici e mauritani.",
-  "image": "/img/dest-libia-mauritania.webp",
-  "mapCoords": [13.0, 22.0],
-  "mapMarkers": [
-    { "name": "Tripoli", "coords": [13.1913, 32.8872] },
-    { "name": "Misurata", "coords": [15.1, 32.37] },
-    { "name": "Bengasi", "coords": [20.0667, 32.1167] },
-    { "name": "Nouakchott", "coords": [-15.9785, 18.0858] },
-    { "name": "Nouadhibou", "coords": [-17.0333, 20.9333] }
-  ],
-  "paragraphs": [
-    "L'esperienza decennale e la qualità dei nostri servizi, certificata ISO9001, ci permettono di garantire servizi di trasporto completi rapidi ed efficienti."
-  ],
-  "servicesTitle": "Servizi Libia e Mauritania",
-  "services": [
-    "Servizi regolari in container completi",
-    "Trasporti settimanali verso i porti di Tripoli, Misurata e Bengasi, Nouakchott e Nouadhibou",
-    "Possibilità di imbarco merci pericolose e carichi eccezionali",
-    "Assicurazione All Risk su richiesta"
-  ]
-},
-
-"mondo": {
-  "title": "Trasporti nel Mondo",
-  "claim": "Grazie ai nostri partners WCA arriviamo ovunque con la qualità garantita dal più importante e capillare network di spedizionieri internazionali.",
-  "intro": "Servizi certificati a livello globale e garantiti dalla nostra adesione al network WCA.",
-  "image": "/img/dest-mondo.webp",
-  "mapCoords": [8.793, 45.66],
-  "mapMarkers": [
-    { "name": "Canale di Panama", "coords": [-79.8, 9.1] },
-    { "name": "Singapore", "coords": [103.8, 1.35] },
-    { "name": "Rotterdam", "coords": [4.48, 51.92] },
-    { "name": "New York", "coords": [-74.0, 40.7] }
-  ],
-  "paragraphs": [],
-  "servicesTitle": "Servizi Certificati a livello Globale",
-  "services": [
-    "Garanzia di servizio Network WCA",
-    "Qualifica di operatori AEO e di qualità ISO 9001",
-    "Partenze regolari in containers completi e groupage",
-    "Possibilità trasporto Project Cargo, merci pericolose e carichi eccezionali",
-    "Utilizzo di vettori regolari di primaria importanza e affidabilità",
-    "Assicurazione All Risk su richiesta"
-  ]
-},
-
-
-  "algeria": {
-  "title": "Trasporti Algeria",
-  "claim": "Siamo presenti con una nostra struttura sul territorio da molti anni. Ne conosciamo le dinamiche e le peculiarità. Viviamo quotidianamente le novità normative e siamo in grado di intervenire con immediatezza per fare in modo che vengano rispettate.",
-  "intro": "Offriamo trasporti da Spagna, Francia e Italia verso i porti di Algeri, Orano e tutti i principali porti algerini.",
-  "image": "/img/dest-algeria.webp",
-  "mapCoords": [2.6333, 28.0],
-  "mapMarkers": [
-    { "name": "Algeri", "coords": [3.0588, 36.7538] },
-    { "name": "Orano", "coords": [-0.6417, 35.6987] }
-  ],
-  "paragraphs": [
-    "L'esperienza maturata nel tempo e la presenza sul territorio di personale proprio garantiscono la qualità dei servizi e l'affidabilità delle infrastrutture messe a disposizione della clientela.",
-    "Sappiamo quanto la rapidità, non solo nel trasporto, ma anche e soprattutto negli interventi su tutte le dinamiche locali, siano una carta vincente per dare ai nostri servizi di spedizione una garanzia di qualità.",
-    "Conosciamo l'importanza della documentazione che consente a tutti gli operatori di portare a buon fine le loro transazioni e consigliamo e suggeriamo, ancor prima che la spedizione abbia inizio, tutte le eventuali specificità che lo rendono possibile."
-  ],
-  "servicesTitle": "Servizi Algeria",
-
-  "services": [
-    "Servizi regolari Groupage via mare su Algeri e Orano",
-    "Servizi regolari in containers su tutti i porti algerini",
-    "Possibilità di imbarco merci pericolose in completi e collettame, di rotabili e di carichi eccezionali",
-    "Possibilità di effettuare consegne door to door su tutto il territorio algerino",
-    "Transit Time rapidissimi",
-    "Assicurazione All Risk a richiesta"
-  ]
   },
-
-  "tunisia": {
-    "title": "Trasporti Tunisia",
-    "claim": "Siamo un punto di riferimento nel paese per i trasporti da e per l'Europa Mediterranea.",
-    "intro": "Una continua crescita grazie ai nostri clienti che, con la loro fedeltà e riconoscenza, ci hanno dato la spinta per cercare di rispondere, con sempre maggior cura e attenzione, alle loro aspettative e richieste.",
-    "image": "/img/destinations/tunisia.webp",
-    "mapCoords": [10.18, 36.8],
-    "paragraphs": [
-      "Offriamo trasporti da Spagna, Francia e Italia verso i porti di Tunisi, Sousse e Sfax.",
-      "L'esperienza decennale e la filiera completa con magazzini di proprietà e personale locale ci permette di garantire le migliori tempistiche sul mercato tunisino.",
-      "L'esperienza maturata nel tempo e la presenza sul territorio di personale proprio garantiscono la qualità dei servizi e l'affidabilità delle infrastrutture messe a disposizione della clientela.",
-      "Sappiamo quanto la rapidità, non solo nel trasporto, ma anche e soprattutto negli interventi su tutte le dinamiche locali, siano una carta vincente per dare ai nostri servizi di spedizione una garanzia di qualità.",
-      "Conosciamo l'importanza della documentazione che consente a tutti gli operatori di portare a buon fine le loro transazioni e consigliamo e suggeriamo, ancor prima che la spedizione abbia inizio, tutte le eventuali specificità che lo rendono possibile."
-    ],
-    "servicesTitle": "Servizi Tunisia",
-    "services": [
-      "Servizi Groupage trisettimanali su Tunisi, Sousse e Sfax",
-      "Servizi plurisettimanali in containers e trailers completi su tutti i principali porti tunisini",
-      "Possibilità di imbarco merci pericolose in completi e collettame, di rotabili e di carichi eccezionali",
-      "Possibilità di effettuare consegne Door to Door su tutto il territorio tunisino",
-      "Transit Time rapidissimi",
-      "Assicurazione All Risk a richiesta"
-    ],
-    "cta": "Chiedi un preventivo"
-  }
-},
-
+  "cookies": {
+    "title": "Usiamo i cookie 🍪",
+    "text": "Utilizziamo cookie tecnici e, previo consenso, cookie di analisi per migliorare la tua esperienza.",
+    "privacyLink": "Privacy policy",
+    "accept": "Accetta tutto",
+    "decline": "Rifiuta",
+    "customize": "Personalizza",
+    "customizeTitle": "Preferenze cookie",
+    "customizeText": "Scegli quali categorie di cookie vuoi autorizzare.",
+    "cancel": "Annulla",
+    "save": "Salva preferenze",
+    "categories": {
+      "essential": {
+        "title": "Essenziali",
+        "desc": "Cookie necessari per il funzionamento del sito."
+      },
+      "analytics": {
+        "title": "Analitici",
+        "desc": "Cookie che ci aiutano a capire l'utilizzo del sito (Google Analytics)."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "desc": "Cookie usati per campagne pubblicitarie e remarketing."
+      }
+    }
+  },
+  "destinations": {
+    "marocco": {
+      "title": "Trasporti Marocco",
+      "claim": "La nostra dedicazione al Marocco è ormai consolidata da decenni. Abbiamo selezionato e rafforzato nel tempo una partnership con una realtà locale che viaggiasse sulla nostra lunghezza d'onda. Per raggiungere l'obiettivo comune di dare alla clientela sempre più ragioni per scegliere il nostro servizio.",
+      "intro": "Offriamo trasporti da Spagna, Francia e Italia verso i principali porti del Marocco.",
+      "image": "/img/dest-marocco.webp",
+      "mapCoords": [
+        -6.8326,
+        31.7917
+      ],
+      "mapMarkers": [
+        {
+          "name": "Casablanca",
+          "coords": [
+            -7.5898,
+            33.5731
+          ]
+        },
+        {
+          "name": "Tangeri",
+          "coords": [
+            -5.8127,
+            35.7595
+          ]
+        }
+      ],
+      "paragraphs": [
+        "L'esperienza decennale ci permette di garantire le migliori tempistiche sul mercato marocchino.",
+        "Sappiamo quanto la rapidità, non solo nel trasporto, ma anche e soprattutto negli interventi su tutte le dinamiche locali, siano una carta vincente per dare ai nostri servizi di spedizione una garanzia di qualità.",
+        "Conosciamo l'importanza della documentazione che consente a tutti gli operatori di portare a buon fine le loro transazioni e consigliamo e suggeriamo, ancor prima che la spedizione abbia inizio, tutte le eventuali specificità che lo rendono possibile."
+      ],
+      "servicesTitle": "Servizi Marocco",
+      "services": [
+        "Servizi regolari Groupage via mare su Casablanca",
+        "Possibilità di imbarco merci pericolose in completi e collettame, di rotabili e di carichi eccezionali",
+        "Possibilità di effettuare consegne door to door su tutto il territorio marocchino",
+        "Trasporti settimanali verso i porti di Tangeri e Casablanca",
+        "Transit Time rapidissimi",
+        "Assicurazione All Risk a richiesta"
+      ]
+    },
+    "libia": {
+      "title": "Trasporti Libia e Mauritania",
+      "claim": "La copertura totale del Maghreb ci porta anche qui. Con la stessa cura e attenzione con servizi regolari di container completi verso i principali porti.",
+      "intro": "Offriamo trasporti da Spagna, Francia e Italia verso i principali porti libici e mauritani.",
+      "image": "/img/dest-libia-mauritania.webp",
+      "mapCoords": [
+        13.0,
+        22.0
+      ],
+      "mapMarkers": [
+        {
+          "name": "Tripoli",
+          "coords": [
+            13.1913,
+            32.8872
+          ]
+        },
+        {
+          "name": "Misurata",
+          "coords": [
+            15.1,
+            32.37
+          ]
+        },
+        {
+          "name": "Bengasi",
+          "coords": [
+            20.0667,
+            32.1167
+          ]
+        },
+        {
+          "name": "Nouakchott",
+          "coords": [
+            -15.9785,
+            18.0858
+          ]
+        },
+        {
+          "name": "Nouadhibou",
+          "coords": [
+            -17.0333,
+            20.9333
+          ]
+        }
+      ],
+      "paragraphs": [
+        "L'esperienza decennale e la qualità dei nostri servizi, certificata ISO9001, ci permettono di garantire servizi di trasporto completi rapidi ed efficienti."
+      ],
+      "servicesTitle": "Servizi Libia e Mauritania",
+      "services": [
+        "Servizi regolari in container completi",
+        "Trasporti settimanali verso i porti di Tripoli, Misurata e Bengasi, Nouakchott e Nouadhibou",
+        "Possibilità di imbarco merci pericolose e carichi eccezionali",
+        "Assicurazione All Risk su richiesta"
+      ]
+    },
+    "mondo": {
+      "title": "Trasporti nel Mondo",
+      "claim": "Grazie ai nostri partners WCA arriviamo ovunque con la qualità garantita dal più importante e capillare network di spedizionieri internazionali.",
+      "intro": "Servizi certificati a livello globale e garantiti dalla nostra adesione al network WCA.",
+      "image": "/img/dest-mondo.webp",
+      "mapCoords": [
+        8.793,
+        45.66
+      ],
+      "mapMarkers": [
+        {
+          "name": "Canale di Panama",
+          "coords": [
+            -79.8,
+            9.1
+          ]
+        },
+        {
+          "name": "Singapore",
+          "coords": [
+            103.8,
+            1.35
+          ]
+        },
+        {
+          "name": "Rotterdam",
+          "coords": [
+            4.48,
+            51.92
+          ]
+        },
+        {
+          "name": "New York",
+          "coords": [
+            -74.0,
+            40.7
+          ]
+        }
+      ],
+      "paragraphs": [],
+      "servicesTitle": "Servizi Certificati a livello Globale",
+      "services": [
+        "Garanzia di servizio Network WCA",
+        "Qualifica di operatori AEO e di qualità ISO 9001",
+        "Partenze regolari in containers completi e groupage",
+        "Possibilità trasporto Project Cargo, merci pericolose e carichi eccezionali",
+        "Utilizzo di vettori regolari di primaria importanza e affidabilità",
+        "Assicurazione All Risk su richiesta"
+      ]
+    },
+    "algeria": {
+      "title": "Trasporti Algeria",
+      "claim": "Siamo presenti con una nostra struttura sul territorio da molti anni. Ne conosciamo le dinamiche e le peculiarità. Viviamo quotidianamente le novità normative e siamo in grado di intervenire con immediatezza per fare in modo che vengano rispettate.",
+      "intro": "Offriamo trasporti da Spagna, Francia e Italia verso i porti di Algeri, Orano e tutti i principali porti algerini.",
+      "image": "/img/dest-algeria.webp",
+      "mapCoords": [
+        2.6333,
+        28.0
+      ],
+      "mapMarkers": [
+        {
+          "name": "Algeri",
+          "coords": [
+            3.0588,
+            36.7538
+          ]
+        },
+        {
+          "name": "Orano",
+          "coords": [
+            -0.6417,
+            35.6987
+          ]
+        }
+      ],
+      "paragraphs": [
+        "L'esperienza maturata nel tempo e la presenza sul territorio di personale proprio garantiscono la qualità dei servizi e l'affidabilità delle infrastrutture messe a disposizione della clientela.",
+        "Sappiamo quanto la rapidità, non solo nel trasporto, ma anche e soprattutto negli interventi su tutte le dinamiche locali, siano una carta vincente per dare ai nostri servizi di spedizione una garanzia di qualità.",
+        "Conosciamo l'importanza della documentazione che consente a tutti gli operatori di portare a buon fine le loro transazioni e consigliamo e suggeriamo, ancor prima che la spedizione abbia inizio, tutte le eventuali specificità che lo rendono possibile."
+      ],
+      "servicesTitle": "Servizi Algeria",
+      "services": [
+        "Servizi regolari Groupage via mare su Algeri e Orano",
+        "Servizi regolari in containers su tutti i porti algerini",
+        "Possibilità di imbarco merci pericolose in completi e collettame, di rotabili e di carichi eccezionali",
+        "Possibilità di effettuare consegne door to door su tutto il territorio algerino",
+        "Transit Time rapidissimi",
+        "Assicurazione All Risk a richiesta"
+      ]
+    },
+    "tunisia": {
+      "title": "Trasporti Tunisia",
+      "claim": "Siamo un punto di riferimento nel paese per i trasporti da e per l'Europa Mediterranea.",
+      "intro": "Una continua crescita grazie ai nostri clienti che, con la loro fedeltà e riconoscenza, ci hanno dato la spinta per cercare di rispondere, con sempre maggior cura e attenzione, alle loro aspettative e richieste.",
+      "image": "/img/destinations/tunisia.webp",
+      "mapCoords": [
+        10.18,
+        36.8
+      ],
+      "paragraphs": [
+        "Offriamo trasporti da Spagna, Francia e Italia verso i porti di Tunisi, Sousse e Sfax.",
+        "L'esperienza decennale e la filiera completa con magazzini di proprietà e personale locale ci permette di garantire le migliori tempistiche sul mercato tunisino.",
+        "L'esperienza maturata nel tempo e la presenza sul territorio di personale proprio garantiscono la qualità dei servizi e l'affidabilità delle infrastrutture messe a disposizione della clientela.",
+        "Sappiamo quanto la rapidità, non solo nel trasporto, ma anche e soprattutto negli interventi su tutte le dinamiche locali, siano una carta vincente per dare ai nostri servizi di spedizione una garanzia di qualità.",
+        "Conosciamo l'importanza della documentazione che consente a tutti gli operatori di portare a buon fine le loro transazioni e consigliamo e suggeriamo, ancor prima che la spedizione abbia inizio, tutte le eventuali specificità che lo rendono possibile."
+      ],
+      "servicesTitle": "Servizi Tunisia",
+      "services": [
+        "Servizi Groupage trisettimanali su Tunisi, Sousse e Sfax",
+        "Servizi plurisettimanali in containers e trailers completi su tutti i principali porti tunisini",
+        "Possibilità di imbarco merci pericolose in completi e collettame, di rotabili e di carichi eccezionali",
+        "Possibilità di effettuare consegne Door to Door su tutto il territorio tunisino",
+        "Transit Time rapidissimi",
+        "Assicurazione All Risk a richiesta"
+      ],
+      "cta": "Chiedi un preventivo"
+    }
+  },
   "nav": {
     "home": "Home",
     "services": "Servizi",
@@ -318,65 +398,77 @@
     "hero": {
       "title": "BONGIORNO TRASPORTI",
       "subtitle": "Spedizioni internazionali",
-      "claim":  "Dal 1985 colleghiamo con dedizione e attenzione i principali porti europei del Mediterraneo con il Maghreb: Tunisia, Algeria e Marocco in primis, ma anche molte altre destinazioni, servendo ogni anno oltre 60 Paesi nel mondo.",
+      "claim": "Dal 1985 colleghiamo con dedizione e attenzione i principali porti europei del Mediterraneo con il Maghreb: Tunisia, Algeria e Marocco in primis, ma anche molte altre destinazioni, servendo ogni anno oltre 60 Paesi nel mondo.",
       "ctas": [
-    { "href": "#129837", "label": "Richiedi Preventivo" },
-    { "href": "/contatti", "label": "Contattaci" }
-  ]
+        {
+          "label": "Richiedi Preventivo"
+        },
+        {
+          "label": "Contattaci"
+        }
+      ]
     },
-   "intro": [
-  "I nostri servizi sui *porti del Nord Africa* sono strutturati per garantire *condizioni di trasporto particolarmente favorevoli*, ma soprattutto per *guidare e aiutare gli operatori* in tutte le fasi che precedono le spedizioni e che le portano a buon fine.",
-  "È la nostra *presenza quotidiana sul territorio* che ci consente di essere sempre aggiornati sulle *procedure e normative* che sono spesso mutevoli su questi mercati. Per raggiungere questo scopo abbiamo investito molto sulle *strutture* e sulle *persone* che ci permettono di farle funzionare in maniera dinamica ed efficace.",
-  "Siamo presenti in *Tunisia* nei tre porti principali: *Tunisi*, *Sousse* e *Sfax*. In *Algeria* la nostra sede di Algeri gestisce e garantisce l'operatività su tutti i porti algerini. In *Marocco* mettiamo a frutto un consolidato rapporto agenziale che, nel tempo, ci ha fatto crescere e dare solidità ed affidabilità ai nostri servizi.",
-  "La *Bongiorno Spagna* e la *Bongiorno Francia* completano la nostra struttura consentendoci di dare copertura a tutti i principali canali di traffico che, dall'Europa, sfociano nel Mediterraneo con rotta alle *destinazioni nordafricane*.",
-  "Le nostre parole d'ordine: *Puntualità*, *Disponibilità* e *Reattività* per far fronte in maniera efficace anche a tutti i possibili imprevisti.",
-  "Siamo pronti a essere il vostro *partner di fiducia* per ogni *trasporto verso il Nord Africa* e oltre."
-]
-,
+    "intro": [
+      "I nostri servizi sui *porti del Nord Africa* sono strutturati per garantire *condizioni di trasporto particolarmente favorevoli*, ma soprattutto per *guidare e aiutare gli operatori* in tutte le fasi che precedono le spedizioni e che le portano a buon fine.",
+      "È la nostra *presenza quotidiana sul territorio* che ci consente di essere sempre aggiornati sulle *procedure e normative* che sono spesso mutevoli su questi mercati. Per raggiungere questo scopo abbiamo investito molto sulle *strutture* e sulle *persone* che ci permettono di farle funzionare in maniera dinamica ed efficace.",
+      "Siamo presenti in *Tunisia* nei tre porti principali: *Tunisi*, *Sousse* e *Sfax*. In *Algeria* la nostra sede di Algeri gestisce e garantisce l'operatività su tutti i porti algerini. In *Marocco* mettiamo a frutto un consolidato rapporto agenziale che, nel tempo, ci ha fatto crescere e dare solidità ed affidabilità ai nostri servizi.",
+      "La *Bongiorno Spagna* e la *Bongiorno Francia* completano la nostra struttura consentendoci di dare copertura a tutti i principali canali di traffico che, dall'Europa, sfociano nel Mediterraneo con rotta alle *destinazioni nordafricane*.",
+      "Le nostre parole d'ordine: *Puntualità*, *Disponibilità* e *Reattività* per far fronte in maniera efficace anche a tutti i possibili imprevisti.",
+      "Siamo pronti a essere il vostro *partner di fiducia* per ogni *trasporto verso il Nord Africa* e oltre."
+    ],
     "destinations": {
       "title": "Destinazioni Trasporti Nord Africa-Maghreb",
+      "piu": "Scopri di più",
       "items": [
         {
           "title": "Trasporti Tunisia",
           "text": "Nel nostro DNA dalle origini. La nostra linea storica dal 1985.",
-          "image": "/img/tunisia.webp",
-          "href": "/tunisia"
+          "image": "/img/tunisia.webp"
         },
         {
           "title": "Trasporti Algeria",
           "text": "Grande paese su cui abbiamo creduto e investito costruendo servizi su misura.",
-          "image": "/img/algeria.webp",
-          "href": "/algeria"
+          "image": "/img/algeria.webp"
         },
         {
           "title": "Trasporti Marocco",
           "text": "Accompagniamo le tue merci fino alla porta del tuo cliente. Dal deserto alle cime dell'Atlas.",
-          "image": "/img/marocco.webp",
-          "href": "/marocco"
+          "image": "/img/marocco.webp"
         },
         {
           "title": "Libia e Mauritania",
           "text": "La copertura totale del Maghreb ci porta anche qui. Con la stessa cura e attenzione.",
-          "image": "/img/libia.webp",
-          "href": "/libia"
+          "image": "/img/libia.webp"
         },
         {
           "title": "Mondo",
           "text": "Grazie ai nostri partners certificati WCA arriviamo ovunque con le massime garanzie.",
-          "image": "/img/mondo.webp",
-          "href": "/mondo"
+          "image": "/img/mondo.webp"
         }
       ]
     },
-
-        "services": {
+    "services": {
       "title": "Servizi",
-      "intro": ["La vostra fiducia è il motore dei nostri trasporti. Non vediamo l'ora di dimostrarvi che sapremo superare le vostre aspettative. Scegliete le nostre soluzioni di trasporto e scoprite il vero significato di un servizio di spedizioni di prima classe."],
+      "intro": [
+        "La vostra fiducia è il motore dei nostri trasporti. Non vediamo l'ora di dimostrarvi che sapremo superare le vostre aspettative. Scegliete le nostre soluzioni di trasporto e scoprite il vero significato di un servizio di spedizioni di prima classe."
+      ],
       "items": [
-        { "title": "Trasporti Groupage", "description": "Affidarsi a chi sa gestire le piccole e medie spedizioni con la giusta cura e rapidità è di vitale importanza per non interrompere mai l'attività produttiva o commerciale." },
-        { "title": "Trasporti eccezionali e Project Cargo", "description": "Una tipologia di trasporti che necessita, non solo una profonda competenza, ma anche un attento studio dei percorsi, delle normative e delle caratteristiche delle merci e dei territori di esecuzione delle spedizioni." },
-        { "title": "Servizi Full Containers", "description": "Frequenza e transit time rapidissimi, disponibilità di spazio a bordo delle navi e grande varietà di tipologie di containers per soddisfare le più svariate necessità." },
-        { "title": "Assicurazione All Risks", "description": "Per chi non vuole mai lasciare nulla al caso. Una polizza assicurativa che mette al riparo da ogni rischio nel corso del trasporto. La chiave per una spedizione serena. La nostra solida polizza all risks è a disposizione su richiesta." }
+        {
+          "title": "Trasporti Groupage",
+          "description": "Affidarsi a chi sa gestire le piccole e medie spedizioni con la giusta cura e rapidità è di vitale importanza per non interrompere mai l'attività produttiva o commerciale."
+        },
+        {
+          "title": "Trasporti eccezionali e Project Cargo",
+          "description": "Una tipologia di trasporti che necessita, non solo una profonda competenza, ma anche un attento studio dei percorsi, delle normative e delle caratteristiche delle merci e dei territori di esecuzione delle spedizioni."
+        },
+        {
+          "title": "Servizi Full Containers",
+          "description": "Frequenza e transit time rapidissimi, disponibilità di spazio a bordo delle navi e grande varietà di tipologie di containers per soddisfare le più svariate necessità."
+        },
+        {
+          "title": "Assicurazione All Risks",
+          "description": "Per chi non vuole mai lasciare nulla al caso. Una polizza assicurativa che mette al riparo da ogni rischio nel corso del trasporto. La chiave per una spedizione serena. La nostra solida polizza all risks è a disposizione su richiesta."
+        }
       ]
     },
     "content": {
@@ -397,13 +489,11 @@
         }
       ]
     },
-       "quality": {
+    "quality": {
       "title": "La nostra qualità, certificata e riconosciuta",
       "text1": "La Bongiorno Italia (Bongiorno SRL) dal 2014 ha ottenuto lo *status di AEO per la operatività doganale* che riveste enorme importanza perché ci consente una *maggiore velocità nelle spedizioni*, maggiore comunicazione tra le parti della catena logistica e diminuzione dei problemi legati alla sicurezza. E' frutto di un'attenta procedura di verifica da parte dell'Agenzia delle Dogane e dei Monopoli italiana ed è un elemento di interesse per chi si affida ai nostri servizi. A questo si aggiunge la *Certificazione ISO 9001*, che la Bongiorno SRL ha ottenuto da molti anni e che costituisce ulteriore *garanzia di qualità per la clientela*.",
       "text2": "Consulta qui la nostra **politica qualità**."
     },
-  
-
     "sedi": {
       "title": "Le Sedi",
       "intro1": "Grazie alla presenza di proprio personale e *propri uffici in 5 paesi del Mediterraneo* possiamo gestire le spedizioni da e per il Maghreb con la competenza di chi convive le *dinamiche quotidiane sempre mutevoli di quest'area* e con la rapidità di chi ne conosce le problematiche.",
@@ -462,7 +552,7 @@
           ],
           "contactUrl": "#"
         },
-             {
+        {
           "name": "Bongiorno nel Mondo",
           "flag": "/img/flags/dz.svg",
           "description": [
@@ -471,164 +561,139 @@
           "contactUrl": "#"
         }
       ]
-    
-  
-}},
-
-
+    }
+  },
   "quote": {
     "title": "Preventivi",
     "id": "129837",
     "subtitle": "Contattaci con il form e sarai servito da un nostro commerciale al più presto.",
     "select": "Seleziona un'opzione",
     "other": "Altro",
-    
-  "fields": {
-    "companyName": "Nome azienda",
-    "isPrivate": "Sono un privato",
-    "name": "Nome e cognome",
-    "email": "Indirizzo e-mail",
-    "phone": "Numero di telefono",
-    "city": "Città",
-    "zip": "CAP",
-    "address": "Indirizzo",
-
-    "originCountry": "Paese di partenza",
-    "originOther": "Specificare paese",
-    "originCity": "Città di ritiro",
-    "originZip": "Codice postale",
-    "originAddress": "Indirizzo di ritiro",
-
-    "destinationCountry": "Paese di destinazione",
-    "destinationOther": "Specificare paese di destinazione",
-
-    "dangerousGoods": "Il trasporto include merci pericolose",
-    "goodsClass": "Classe merci (ADR)",
-
-    "estimatedWeight": "Peso stimato (kg)",
-    "estimatedVolume": "Volume stimato (m³)",
-
-    "details": "Descrizione o dettagli aggiuntivi",
-    "consent": "Acconsento al trattamento dei dati inseriti (obbligatorio, consulta qui la privacy policy)"
-  },
-
-  "privacyLink": "Privacy policy",
-
-  "placeholders": {
-    "company": "Nome dell'azienda",
-    "transport": "Es. groupage, completo, container, ecc.",
-    "details": "Inserisci qui i dettagli della spedizione...",
-    "otherCountry": "Specifica il paese",
-    "address": "Via / numero civico",
-    "city": "Città",
-    "zip": "CAP"
-  },
-
-  "submit": "Invia richiesta di preventivo",
-  "sending": "Invio in corso...",
-  "success": "Richiesta inviata con successo! Ti contatteremo presto.",
-  "error": "Errore durante l'invio. Riprova più tardi.",
-
-  "errors": {
-    "noConsent": "Devi acconsentire al trattamento dei dati per procedere."
-  },
-
-      "intro": "Dal 1985 siamo un lider nei trasporti fra Europa e Maghreb, Tunisia, Algeria e Marocco in primis, oltre a molte altre destinazioni, servendo ogni anno oltre 60 Paesi nel mondo.",
-      "features": [
-        "Tariffe chiare e senza sorprese",
-        "Uffici sul territorio in Tunisia, Algeria, Italia, Spagna e Francia",
-        "Groupage, FCL e Project Cargo",
-        "Scelta di coperture assicurative anche All Risk",
-        "Oltre 35 anni di esperienza"
-      ],
-      "cta": {
-        "quote": "Chiedi un preventivo",
-        "call": "Chiama subito"
-      }
-  },
-
-
-  "contact": {
-  "title": "Contatti",
+    "fields": {
+      "companyName": "Nome azienda",
+      "isPrivate": "Sono un privato",
+      "name": "Nome e cognome",
+      "email": "Indirizzo e-mail",
+      "phone": "Numero di telefono",
+      "city": "Città",
+      "zip": "CAP",
+      "address": "Indirizzo",
+      "originCountry": "Paese di partenza",
+      "originOther": "Specificare paese",
+      "originCity": "Città di ritiro",
+      "originZip": "Codice postale",
+      "originAddress": "Indirizzo di ritiro",
+      "destinationCountry": "Paese di destinazione",
+      "destinationOther": "Specificare paese di destinazione",
+      "dangerousGoods": "Il trasporto include merci pericolose",
+      "goodsClass": "Classe merci (ADR)",
+      "estimatedWeight": "Peso stimato (kg)",
+      "estimatedVolume": "Volume stimato (m³)",
+      "details": "Descrizione o dettagli aggiuntivi",
+      "consent": "Acconsento al trattamento dei dati inseriti (obbligatorio, consulta qui la privacy policy)"
+    },
     "privacyLink": "Privacy policy",
-
-  "address": {
-    "label": "Indirizzo",
-    "value": "Via Marsala 40, Gallarate, Varese, 21013 Italia"
-  },
-  "email": {
-    "label": "Email",
-    "value": "bongiorno@bongiornosrl.com"
-  },
-  "phone": {
-    "label": "Telefono",
-    "value": "+39 0331 776 334"
-  },
-  "form": {
-    "title": "Scrivici un messaggio",
-    "name": "Nome",
-    "email": "Email",
-    "message": "Messaggio",
-    "submit": "Invia",
+    "placeholders": {
+      "company": "Nome dell'azienda",
+      "transport": "Es. groupage, completo, container, ecc.",
+      "details": "Inserisci qui i dettagli della spedizione...",
+      "otherCountry": "Specifica il paese",
+      "address": "Via / numero civico",
+      "city": "Città",
+      "zip": "CAP"
+    },
+    "submit": "Invia richiesta di preventivo",
     "sending": "Invio in corso...",
-    "success": "Messaggio inviato!",
-    "consent": "Acconsento al trattamento dei dati inseriti (obbligatorio, consulta qui la privacy policy)",
-    "privacyLink": "Privacy policy",
-    "noConsent": "Devi acconsentire al trattamento dei dati per procedere."
-  }
-},
- 
- 
-  "footer": {
-  "legal": {
-    "title": "Legale",
-    "company": "Bongiorno Srl – P.IVA 10408830155",
-    "details": "Indirizzo: Via Marsala, 40 – 21013 Gallarate (Varese)"
-  },
-  "links": {
-    "title": "Link utili",
-    "destinations": "Destinazioni",
-    "workwithus": "Lavora con noi",
-    "about": "Chi siamo",
-    "privacy": "Privacy",
-    "contacts": "Contatti"
+    "success": "Richiesta inviata con successo! Ti contatteremo presto.",
+    "error": "Errore durante l'invio. Riprova più tardi.",
+    "errors": {
+      "noConsent": "Devi acconsentire al trattamento dei dati per procedere."
+    },
+    "intro": "Dal 1985 siamo un lider nei trasporti fra Europa e Maghreb, Tunisia, Algeria e Marocco in primis, oltre a molte altre destinazioni, servendo ogni anno oltre 60 Paesi nel mondo.",
+    "features": [
+      "Tariffe chiare e senza sorprese",
+      "Uffici sul territorio in Tunisia, Algeria, Italia, Spagna e Francia",
+      "Groupage, FCL e Project Cargo",
+      "Scelta di coperture assicurative anche All Risk",
+      "Oltre 35 anni di esperienza"
+    ],
+    "cta": {
+      "quote": "Chiedi un preventivo",
+      "call": "Chiama subito"
+    }
   },
   "contact": {
     "title": "Contatti",
-    "email": "bongiorno@bongiornosrl.com",
-    "phone": "+39 0331 776 334",
-    "address": "Via Marsala, 40 – 21013 Gallarate (VA)"
+    "privacyLink": "Privacy policy",
+    "address": {
+      "label": "Indirizzo",
+      "value": "Via Marsala 40, Gallarate, Varese, 21013 Italia"
+    },
+    "email": {
+      "label": "Email",
+      "value": "bongiorno@bongiornosrl.com"
+    },
+    "phone": {
+      "label": "Telefono",
+      "value": "+39 0331 776 334"
+    },
+    "form": {
+      "title": "Scrivici un messaggio",
+      "name": "Nome",
+      "email": "Email",
+      "message": "Messaggio",
+      "submit": "Invia",
+      "sending": "Invio in corso...",
+      "success": "Messaggio inviato!",
+      "consent": "Acconsento al trattamento dei dati inseriti (obbligatorio, consulta qui la privacy policy)",
+      "privacyLink": "Privacy policy",
+      "noConsent": "Devi acconsentire al trattamento dei dati per procedere."
+    }
   },
-  "rights": "Tutti i diritti riservati."
-},
-
-
+  "footer": {
+    "legal": {
+      "title": "Legale",
+      "company": "Bongiorno Srl – P.IVA 10408830155",
+      "details": "Indirizzo: Via Marsala, 40 – 21013 Gallarate (Varese)"
+    },
+    "links": {
+      "title": "Link utili",
+      "destinations": "Destinazioni",
+      "workwithus": "Lavora con noi",
+      "about": "Chi siamo",
+      "privacy": "Privacy",
+      "contacts": "Contatti"
+    },
+    "contact": {
+      "title": "Contatti",
+      "email": "bongiorno@bongiornosrl.com",
+      "phone": "+39 0331 776 334",
+      "address": "Via Marsala, 40 – 21013 Gallarate (VA)"
+    },
+    "rights": "Tutti i diritti riservati."
+  },
   "services": {
     "title": "Servizi",
     "intro": "Grazie alla nostra esperienza e presenza diretta nei principali paesi del Mediterraneo, offriamo una gamma completa di servizi di trasporto e logistica internazionale pensata per garantire puntualità, sicurezza e convenienza.",
-       "cards": [
+    "cards": [
       {
         "icon": "Package",
         "title": "Trasporti Groupage",
-        "href": "#groupage",
         "text": "Per l'industria, il commercio e le grandi opere abbiamo creato servizi che diano ai trasporti le migliori rese e condizioni. Perché le tue merci siano sempre in tempo."
       },
       {
         "icon": "Truck",
         "title": "Trasporti Completi",
-        "href": "#completi",
         "text": "Frequenza e transit time rapidi, disponibilità di spazio a bordo delle navi e grande varietà di container sui principali porti del Maghreb."
       },
       {
         "icon": "Cog",
         "title": "Eccezionali e Project Cargo",
-        "href": "#eccezionali",
         "text": "Trasporti che necessitano alta competenza e un attento studio di percorsi, normative, caratteristiche delle merci e dei territori."
       },
       {
         "icon": "ShieldCheck",
         "title": "Assicurazione All Risk",
-        "href": "#assicurazione",
         "text": "Per non lasciare nulla al caso. Una polizza assicurativa su richiesta che mette al riparo da ogni rischio nel corso del trasporto."
       }
     ],
@@ -673,23 +738,22 @@
           "Mettiamo a disposizione dei clienti una polizza di comprovata affidabilità, disponibile su richiesta per ogni spedizione."
         ]
       }
-    ]},
-
-    "ctaBanner": {
-      "cta_main": "La nostra presenza stabile e di lunga data sul territorio ci rende un partner solido in grado di risolvere ogni imprevisto in tempi rapidi, offrendo velocità, sicurezza e garanzia in tutti i mercati in cui operiamo.",
-       "claim":"Questo, unito al personale di grande esperienza e competenza, ci permette di offrite la massima velocità, sicurezza e garanzia in tutti i mercati in cui operiamo grazie a elevati standard operativi.",
-      "cta": {
-        "ctacontatti": "Contattaci",
-        "hrefcontatti": "/contatti",
+    ]
+  },
+  "ctaBanner": {
+    "cta_main": "La nostra presenza stabile e di lunga data sul territorio ci rende un partner solido in grado di risolvere ogni imprevisto in tempi rapidi, offrendo velocità, sicurezza e garanzia in tutti i mercati in cui operiamo.",
+    "claim": "Questo, unito al personale di grande esperienza e competenza, ci permette di offrite la massima velocità, sicurezza e garanzia in tutti i mercati in cui operiamo grazie a elevati standard operativi.",
+    "cta": {
+      "ctacontatti": "Contattaci",
+      "hrefcontatti": "/contatti",
       "ctaservizi": "Scopri di più sui servizi",
       "hrefservizi": "/servizi",
-      "contattaci": "Chiama o scrivi e verrai messo in contatto con il nostro commerciale più adatto alla tue esigenze.", 
+      "contattaci": "Chiama o scrivi e verrai messo in contatto con il nostro commerciale più adatto alla tue esigenze.",
       "parliamo": "Parliamo Italiano, Francese, Spagnolo, Inglese e Tedesco ",
       "quote": "Chiedi preventivo",
       "hrefquote": "/preventivi"
-    }},
-
-
+    }
+  },
   "about": {
     "hero": {
       "title": "Chi siamo",
@@ -709,13 +773,7 @@
     "text3": "Questa particolarità ha permesso alla nostra organizzazione di consolidarsi nei mercati del Nord Africa fino a diventare un *trasportatore di riferimento per le spedizioni in questa regione*. Non perdendo mai di vista le reali necessità degli esportatori ed importatori ed adattandosi alle realtà in evoluzione dei paesi e dei mercati tanto di destinazione come di partenza delle merci.",
     "text4": "Dopo il *consolidamento delle nostre linee* abbiamo pensato che la nostra visione del trasporto dovesse andare anche *oltre quei confini* e che questo non ci avrebbe fatto perdere la nostra identità, ma l'avrebbe, al contrario, arricchita.",
     "text5": "La *dimensione internazionale* dei nostri trasporti ci è ormai quotidianamente riconosciuta dalla clientela che, con sempre maggior frequenza, affida a noi la gestione delle sue *spedizioni nel mondo*.",
-
-
     "subtitle": "La nostra Storia",
     "sede": "La sede della Bongiorno a Gallarate, via Marsala 40, la sede centrale dell'attività."
-  
   }
-
-
-
 }

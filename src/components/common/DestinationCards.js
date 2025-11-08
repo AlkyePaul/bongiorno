@@ -4,16 +4,25 @@ import ReactMarkdown from 'react-markdown';
 import {Link} from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 
-export default function DestinationCards({ items }) {
+export default function DestinationCards({ items, Cta }) {
   const locale = useLocale();
+  // Fixed hrefs in the same order as destinations data in locale JSON
+  // Dynamic locale prefixing is handled by the custom Link component
+  const hrefs = [
+    "/destinazioni/tunisia",
+    "/destinazioni/algeria",
+    "/destinazioni/marocco",
+    "/destinazioni/libia",
+    "/destinazioni/mauritania",
+  ];
   return (
     <section className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] py-8">
       <div className="mx-auto px-4">
-        <div className="flex flex-wrap justify-center gap-6 md:gap-8 max-w-[98vw] mx-auto">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8 max-w-[100vw] mx-auto">
           {items.map((item, idx) => (
             <Link
               key={idx}
-              href={item.href}
+              href={hrefs[idx]}
               className="relative rounded-2xl overflow-hidden shadow-lg w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.5rem)] lg:w-[210px] h-72 flex items-end hover:scale-105 transition-all duration-300"
             >
             {/* Background image */}
@@ -27,9 +36,14 @@ export default function DestinationCards({ items }) {
             {/* Dark overlay */}
             <div className="absolute inset-0 bg-black/50" />
             {/* Text content */}
-            <div className="relative z-10 p-4 text-white flex flex-col justify-start h-[60%]">
+            <div className="relative z-10 p-4 text-white flex flex-col justify-start h-[80%]">
               <h3 className="text-xl font-bold mb-2">{item.title}</h3>
               <div className="text-base"><ReactMarkdown>{item.text}</ReactMarkdown></div>
+              <div className="mt-4">
+                <p href={hrefs[idx]} className="text-white underline font-bold">
+                  {Cta}
+                </p>
+              </div>
             </div>
             </Link>
           ))}

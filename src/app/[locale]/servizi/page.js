@@ -69,22 +69,28 @@ export default function ServiziPage() {
 
       {/* 🔹 Overview Grid */}
       <section className="mx-auto px-6 grid md:grid-cols-2 md:my-20 my-8 gap-10 max-w-5xl">
-        {t.raw("cards").map((card, i) => {
-          const IconComponent = icons[card.icon] || Package;
-          return (
-            <Link
-              key={i}
-              href={card.href}               // route key (not localized path)
-              className="border border-gray-200 dark:border-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition bg-white dark:hover:bg-gray-800 cursor-pointer hover:scale-105"
-            >
-              <H2>
-                <IconComponent className="text-brand-accent text-3xl" />
-                {card.title}
-              </H2>
-              <p className="leading-relaxed mb-6">{card.text}</p>
-            </Link>
-          );
-        })}
+        {(() => {
+          const cards = t.raw("cards");
+          const details = t.raw("details");
+          return cards.map((card, i) => {
+            const IconComponent = icons[card.icon] || Package;
+            const sectionId = details?.[i]?.id;
+            const href = sectionId ? `#${sectionId}` : "#";
+            return (
+              <Link
+                key={i}
+                href={href}
+                className="border border-gray-200 dark:border-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition bg-white dark:hover:bg-gray-800 cursor-pointer hover:scale-105"
+              >
+                <H2>
+                  <IconComponent className="text-brand-accent text-3xl" />
+                  {card.title}
+                </H2>
+                <p className="leading-relaxed mb-6">{card.text}</p>
+              </Link>
+            );
+          });
+        })()}
       </section>
 
       {/* 🔹 CTA */}

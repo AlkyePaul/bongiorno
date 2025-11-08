@@ -401,11 +401,10 @@
       "claim": "Since 1985 we have been connecting the main European Mediterranean ports with the Maghreb with dedication and care: primarily Tunisia, Algeria and Morocco, but also many other destinations, serving more than 60 countries around the world every year.",
       "ctas": [
         {
-          "href": "#129837",
           "label": "Get a Quote"
         },
         {
-          "href": "/contacts",
+        
           "label": "Contact us"
         }
       ]
@@ -420,36 +419,37 @@
     ],
     "destinations": {
       "title": "Destinations Transportation North Africa-Maghreb",
+      "piu":"Discover",
       "items": [
         {
           "title": "Tunisia Transportation",
           "text": "Since 1985 direct connection with major ports.",
-          "image": "/img/tunisia.webp",
-          "href": "/tunisia"
+          "image": "/img/tunisia.webp"
+          
         },
         {
           "title": "Algeria Transportation",
           "text": "Headquartered in Algiers, operations on all Algerian ports.",
-          "image": "/img/algeria.webp",
-          "href": "/algeria"
+          "image": "/img/algeria.webp"
+          
         },
         {
           "title": "Morocco Transportation",
           "text": "Established relationships for reliable and fast services.",
-          "image": "/img/marocco.webp",
-          "href": "/marocco"
+          "image": "/img/marocco.webp"
+          
         },
         {
           "title": "Libya and Mauritania",
           "text": "Established relationships for reliable and fast services.",
-          "image": "/img/libia.webp",
-          "href": "/libia"
+          "image": "/img/libia.webp"
+          
         },
         {
           "title": "World",
           "text": "Established relationships for reliable and fast services.",
-          "image": "/img/world.webp",
-          "href": "/world"
+          "image": "/img/world.webp"
+          
         }
       ]
     },
@@ -657,25 +657,21 @@
       {
         "icon": "Package",
         "title": "Groupage Transportation",
-        "href": "#groupage",
         "text": "For industry, commerce and major works, we have created services that give transportation the best yields and conditions. So that your goods are always on time."
       },
       {
         "icon": "Truck",
         "title": "Complete Transportation",
-        "href": "#complete",
         "text": "Fast frequency and transit time, availability of space on board ships, and wide variety of containers on major Maghreb ports."
       },
       {
         "icon": "Cog",
         "title": "Outstanding and Project Cargo",
-        "href": "#exceptional",
         "text": "Transportation that requires high expertise and careful study of routes, regulations, characteristics of goods and territories."
       },
       {
         "icon": "ShieldCheck",
         "title": "All Risk Insurance",
-        "href": "#insurance",
         "text": "To leave nothing to chance. An on-demand insurance policy that guards against any risk during transport."
       }
     ],

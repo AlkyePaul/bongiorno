@@ -46,7 +46,7 @@ export default function ServicesSection(props) {
         </div>
         <Link
           href="/servizi"
-          className="inline-block bg-brand-navy text-white px-6 py-3 rounded-md font-semibold shadow hover:bg-brand-petrol"
+          className="inline-block btn"
         >
           {cta.ctaservizi}
         </Link>
@@ -67,6 +67,9 @@ export default function ServicesSection(props) {
             </h3>
             <div className="text-base leading-relaxed">
               <ReactMarkdown>{service.text}</ReactMarkdown>
+              <Link href="/servizi" className="underline text-brand-accent">
+                {messages?.home?.destinations?.piu}
+              </Link>
             </div>
           </div>
         ))}

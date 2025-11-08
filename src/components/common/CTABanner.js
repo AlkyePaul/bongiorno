@@ -21,7 +21,7 @@ export default function CTABanner({ t }) {
                     {t("cta.ctacontatti")}
                   </Link>
                   <Link
-                    href={t("cta.hrefcontatti")}
+                    href="/preventivi"
 
                     className="px-6 py-3 rounded-md bg-white w-fit h-full  text-brand-navy font-medium hover:bg-gray-200  transition"
                   >

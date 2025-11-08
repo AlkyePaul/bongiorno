@@ -15,7 +15,7 @@
   --color-brand-hero: #4E6C84;
   --color-brand-navy: #0A2342;
   --color-brand-accent: #00B0E8;
-  --color-brand-dark: #1D1D25;
+  --color-brand-dark: #03162e;
   --color-brand-gray: #3a4d5c;
   --font-sans: var(--font-outfit-sans);          /* or var(--font-my-sans) */
 
@@ -71,3 +71,17 @@ em {
     0px 3px 2px rgba(0, 0, 0, 0.1),
     0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.btn-sm {
+ @apply px-4 py-2 rounded-md font-semibold bg-brand-navy text-white hover:bg-brand-accent hover:text-white shadow hover:scale-105 transition-all duration-300;
+}
+
+.btn {
+ @apply px-6 py-3 rounded-md font-semibold bg-brand-navy text-white hover:bg-brand-accent hover:text-white shadow hover:scale-105 transition-all duration-300;
+}
+
+.btn-white {
+ @apply px-6 py-3 rounded-md font-semibold bg-white text-brand-dark hover:bg-brand-accent hover:text-white shadow hover:scale-105 transition-all duration-300;
+}
+
+

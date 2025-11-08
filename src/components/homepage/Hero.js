@@ -6,6 +6,8 @@ import { useLocale } from "next-intl";
 
 export default function Hero({ title, subtitle, ctas, claim }) {
 
+  const href =  ["#quote", "/contatti"]
+
   const locale = useLocale();
   return (
     <section className="relative bg-brand-petrol text-white px-6 py-24">
@@ -34,11 +36,11 @@ export default function Hero({ title, subtitle, ctas, claim }) {
           {ctas.map((cta, i) => (
             <Link
               key={i}
-              href={cta.href}
+              href={href[i]}
                 className={
                 i === 0
-                  ? "px-6 py-3 rounded-md bg-white w-fit text-brand-dark font-semibold shadow hover:bg-gray-100"
-                  : "px-6 py-3 rounded-md bg-brand-navy w-fit text-white font-semibold shadow hover:bg-brand-dark"
+                  ? "btn-white"
+                  : "btn"
               }
             >
               {cta.label}

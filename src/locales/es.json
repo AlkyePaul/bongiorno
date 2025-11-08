@@ -401,11 +401,9 @@
       "claim": "Desde 1985 conectamos con dedicación y esmero los principales puertos europeos del Mediterráneo con el Magreb: Túnez, Argelia y Marruecos en primer lugar, pero también muchos otros destinos, sirviendo cada año a más de 60 países de todo el mundo.",
       "ctas": [
         {
-          "href": "#129837",
           "label": "Solicitar presupuesto"
         },
         {
-          "href": "/contactos",
           "label": "Póngase en contacto con nosotros"
         }
       ]
@@ -420,36 +418,37 @@
     ],
     "destinations": {
       "title": "Destinos Transporte Norte de África-Magreb",
+      "piu":"Descubre más",
       "items": [
         {
           "title": "Túnez Transporte",
           "text": "Conexión directa con los principales puertos desde 1985.",
-          "image": "/img/tunisia.webp",
-          "href": "/tunisia"
+          "image": "/img/tunisia.webp"
+          
         },
         {
           "title": "Transporte Argelia",
           "text": "Con sede en Argel, opera en todos los puertos argelinos.",
-          "image": "/img/algeria.webp",
-          "href": "/algeria"
+          "image": "/img/algeria.webp"
+          
         },
         {
           "title": "Transporte Marruecos",
           "text": "Relaciones establecidas para servicios fiables y rápidos.",
-          "image": "/img/marocco.webp",
-          "href": "/marruecos"
+          "image": "/img/marocco.webp"
+          
         },
         {
           "title": "Libia y Mauritania",
           "text": "Relaciones establecidas para servicios fiables y rápidos.",
-          "image": "/img/libia.webp",
-          "href": "/libia"
+          "image": "/img/libia.webp"
+          
         },
         {
           "title": "Mundo",
           "text": "Relaciones establecidas para servicios fiables y rápidos.",
-          "image": "/img/mundo.webp",
-          "href": "/mundo"
+          "image": "/img/mundo.webp"
+          
         }
       ]
     },

@@ -1,4 +1,5 @@
 {
+
   "news": {
     "hero": {
       "title": "Découvrez les dernières nouvelles en matière de transport maritime",
@@ -397,59 +398,53 @@
   "home": {
     "hero": {
       "title": "BONGIORNO TRANSPORT",
-      "subtitle": "Envois internationaux",
-      "claim": "Depuis 1985, nous assurons avec dévouement et attention la liaison entre les principaux ports européens de la Méditerranée et le Maghreb : la Tunisie, l'Algérie et le Maroc en premier lieu, mais aussi de nombreuses autres destinations, desservant chaque année plus de 60 pays dans le monde entier.",
+      "subtitle": "Speditions internationales",
+      "claim": "Depuis 1985 nous connectons avec dévouement et attention les principaux ports européens de la Méditerranée avec le Maghreb : Tunisie, Algérie et Maroc principalement, mais aussi de nombreuses autres destinations, desservant plus de 60 pays dans le monde chaque année.",
       "ctas": [
         {
-          "href": "#129837",
           "label": "Demande de devis"
         },
         {
-          "href": "/contacts",
           "label": "Contactez nous"
         }
       ]
     },
     "intro": [
-      "Nos services dans les ports d'Afrique du Nord sont structurés pour garantir des conditions de transport particulièrement favorables, mais surtout pour guider et aider les opérateurs dans toutes les phases qui précèdent les expéditions et les mènent à bonne fin.",
-      "C'est notre présence quotidienne sur le terrain qui nous permet de nous tenir au courant des procédures et des réglementations qui changent souvent sur ces marchés. Pour ce faire, nous avons beaucoup investi dans les structures et les personnes qui nous permettent de les gérer de manière dynamique et efficace.",
-      "Nous sommes présents en Tunisie dans les trois principaux ports. Tunis, Sousse et Sfax. En Algérie, notre bureau d'Alger gère et garantit les opérations dans tous les ports algériens. Au Maroc, nous exploitons une relation d'agence consolidée qui, au fil du temps, nous a permis de nous développer et de donner de la solidité et de la fiabilité à nos services.",
-      "Bongiorno Espagne et Bongiorno France complètent notre structure, ce qui nous permet de couvrir tous les principaux canaux de trafic qui, depuis l'Europe, se jettent dans la Méditerranée en direction des destinations nord-africaines.",
-      "Nos mots d'ordre : Ponctualité, Disponibilité et Réactivité pour faire face efficacement à toutes les éventualités.",
-      "Nous sommes prêts à être votre partenaire de confiance pour tout transport vers l'Afrique du Nord et au-delà."
+      "Nos services *dans les ports d’Afrique du Nord* sont structurés pour garantir des conditions de transport particulièrement favorables, mais surtout pour guider et *aider les opérateurs* dans toutes les phases précédant les expéditions et les mener à bien.",
+      "C’est notre *présence quotidienne sur le terrain* qui nous permet d’être toujours à jour sur les procédures et les réglementations qui changent souvent sur ces marchés. Pour atteindre cet objectif, nous avons beaucoup investi dans *les infrastructures et les personnes* qui nous permettent de les faire fonctionner de manière dynamique et efficace.",
+      "Nous sommes présents en Tunisie dans les trois principaux ports. *Tunis, Sousse et Sfax*. En Algérie, notre bureau d'Alger gère et *garantit les opérations* dans tous les ports algériens. Au Maroc, nous exploitons une relation d'agence consolidée qui, au fil du temps, nous a permis nous a permis de croître et de renforcer la *solidité et la fiabilité* à nos services.",
+      "Bongiorno *Italie*, Bongiorno *Espagne* et Bongiorno *France* complètent notre structure, nous permettant de *couvrir tous les principaux canaux de trafic* qui, de l’Europe, débouchent sur la Méditerranée en direction des destinations nord-africaines.",
+      "Nos mots d’ordre : *Ponctualité, Disponibilité et Réactivité* pour faire face efficacement à tous les imprévus possibles.",
+      "Nous sommes prêts à être votre partenaire de confiance pour chaque transport vers l’Afrique du Nord et au-delà."
     ],
     "destinations": {
       "title": "Destinations Transport Afrique du Nord-Maghreb",
+      "piu": "En savoir plus",
       "items": [
         {
           "title": "Tunisie Transport",
           "text": "Liaison directe avec les principaux ports depuis 1985.",
-          "image": "/img/tunisia.webp",
-          "href": "/tunisie"
+          "image": "/img/tunisia.webp"
         },
         {
           "title": "Transport Algérie",
           "text": "Basée à Alger, elle opère dans tous les ports algériens.",
-          "image": "/img/algeria.webp",
-          "href": "/algeria"
+          "image": "/img/algeria.webp"
         },
         {
           "title": "Transport Maroc",
           "text": "Des relations établies pour des services fiables et rapides.",
-          "image": "/img/marocco.webp",
-          "href": "/maroc"
+          "image": "/img/marocco.webp"
         },
         {
           "title": "Libye et Mauritanie",
           "text": "Des relations établies pour des services fiables et rapides.",
-          "image": "/img/libia.webp",
-          "href": "/libia"
+          "image": "/img/libia.webp"
         },
         {
           "title": "Le monde",
           "text": "Des relations établies pour des services fiables et rapides.",
-          "image": "/img/world.webp",
-          "href": "/monde"
+          "image": "/img/world.webp"
         }
       ]
     },
