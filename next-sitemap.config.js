@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 export default {
-  siteUrl: process.env.SITE_URL || 'https://www.bongiornotrasporti.it',
+  siteUrl: process.env.SITE_URL_IT || 'https://www.bongiornotrasporti.it',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   // Exclude API routes and internal pages
