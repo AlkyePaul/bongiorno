@@ -1,0 +1,36 @@
+{
+  "marocco": {
+    "center": [-6.8326, 31.7917],
+    "markers": [
+      { "label": "Casablanca", "coords": [-7.5898, 33.5731] },
+      { "label": "Tangeri", "coords": [-5.8127, 35.7595] }
+    ]
+  },
+  "algeria": {
+    "center": [2.6333, 28.0],
+    "markers": [
+      { "label": "Algeri", "coords": [3.0588, 36.7538] },
+      { "label": "Orano", "coords": [-0.6417, 35.6987] }
+    ]
+  },
+  "tunisia": {
+    "center": [10.18, 36.8],
+    "markers": []
+  },
+  "libia": {
+    "center": [13.0, 22.0],
+    "markers": [
+      { "label": "Tripoli", "coords": [13.1913, 32.8872] },
+      { "label": "Misurata", "coords": [15.1, 32.37] },
+      { "label": "Bengasi", "coords": [20.0667, 32.1167] },
+      { "label": "Nouakchott", "coords": [-15.9785, 18.0858] },
+      { "label": "Nouadhibou", "coords": [-17.0333, 20.9333] }
+    ]
+  },
+  "mondo": {
+    "center": [8.793, 45.66],
+    "markers": [
+      { "label": "Canale di Panama", "coords": [-79.8, 9.1] }
+    ]
+  }
+}

@@ -1,5 +1,4 @@
 "use client"; 
-import { useTranslations } from "next-intl";
 import ReactMarkdown from 'react-markdown';
 import H2 from "../common/H2";
 import { Package, Truck, ShieldCheck, Cog } from "lucide-react";

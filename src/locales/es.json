@@ -166,7 +166,7 @@
   "destinations": {
     "marocco": {
       "title": "Transporte Marruecos",
-      "claim": "Nuestra dedicación a Marruecos se remonta a décadas. Hemos seleccionado y reforzado con el tiempo una asociación con una realidad local que viajara en nuestra longitud de onda. Para alcanzar el objetivo común de dar a los clientes cada vez más razones para elegir nuestro servicio.",
+      "claim": "Nuestra dedicación a Marruecos está consolidada desde hace décadas. Hemos seleccionado y fortalecido en el tiempo una colaboración con una realidad local que viajaba en nuestra misma onda. Para lograr el objetivo común de dar a los clientes cada vez más motivos para elegir nuestro servicio.",
       "intro": "Ofrecemos transporte desde España, Francia e Italia a los principales puertos de Marruecos.",
       "image": "/img/dest-marocco.webp",
       "mapCoords": [
@@ -190,8 +190,8 @@
         }
       ],
       "paragraphs": [
-        "Nuestras décadas de experiencia nos permiten garantizar el mejor timing en el mercado marroquí.",
-        "Sabemos cómo la rapidez, no sólo en el transporte, sino también y sobre todo en el trabajo sobre todas las dinámicas locales, es una baza para dar a nuestros servicios de transporte marítimo una garantía de calidad.",
+        "Nuestras décadas de experiencia nos permiten garantizar el mejor momento en el mercado marroquí.",
+        "Sabemos que la rapidez, no sólo en el transporte, sino también y sobre todo en las intervenciones en todas las dinámicas locales, es una carta ganadora para dar a nuestros servicios de envío una garantía de calidad.",
         "Conocemos la importancia de la documentación que permite a todos los comerciantes llevar a buen término sus transacciones, y aconsejamos y sugerimos, incluso antes de que comience el envío, cualquier particularidad que lo haga posible."
       ],
       "servicesTitle": "Servicios Marruecos",
@@ -396,126 +396,127 @@
   },
   "home": {
     "hero": {
-      "title": "TRANSPORTE BONGIORNO",
-      "subtitle": "Envíos internacionales",
+      "title": "BONGIORNO TRANSPORTES",
+      "subtitle": "Transporte internacional",
       "claim": "Desde 1985 conectamos con dedicación y esmero los principales puertos europeos del Mediterráneo con el Magreb: Túnez, Argelia y Marruecos en primer lugar, pero también muchos otros destinos, sirviendo cada año a más de 60 países de todo el mundo.",
       "ctas": [
         {
+          "href": "#129837",
           "label": "Solicitar presupuesto"
         },
         {
+          "href": "/contactos",
           "label": "Póngase en contacto con nosotros"
         }
       ]
     },
     "intro": [
-      "Nuestros servicios en los puertos norteafricanos están estructurados para garantizar unas condiciones de transporte especialmente favorables, pero sobre todo para orientar y ayudar a los operadores en todas las fases que preceden a los envíos y llevarlos a buen término.",
-      "Es nuestra presencia diaria sobre el terreno la que nos permite estar al día de los procedimientos y normativas que cambian a menudo en estos mercados. Para lograrlo, hemos invertido mucho en las estructuras y las personas que nos permiten gestionarlos con dinamismo y eficacia.",
-      "Estamos presentes en Túnez en los tres puertos principales. Túnez, Susa y Sfax. En Argelia, nuestra oficina de Argel gestiona y garantiza las operaciones en todos los puertos argelinos. En Marruecos, explotamos una relación de agencia consolidada que, con el tiempo, nos ha permitido crecer y dar solidez y fiabilidad a nuestros servicios.",
-      "Bongiorno España y Bongiorno Francia completan nuestra estructura, lo que nos permite cubrir todos los principales canales de tráfico que, desde Europa, desembocan en el Mediterráneo camino de los destinos norteafricanos.",
-      "Nuestras consignas: puntualidad, disponibilidad y reactividad para hacer frente con eficacia a todas las contingencias posibles.",
-      "Estamos dispuestos a ser su socio de confianza para cualquier transporte al norte de África y más allá."
+      "Nuestros servicios hacia los puertos del norte de África están estructurados para garantizar unas condiciones de transporte particularmente favorables, pero sobre todo para guiar y ayudar a los operadores en todas las fases que preceden a los envíos y llevarlos a una conclusión exitosia.",
+      "Es nuestra presencia diaria en el áera lo que nos permite estar siempre actualizados sobre los procedimientos y regulaciones que cambian con frecuencia en estos mercados.  Para lograr este objetivo hemos invertido mucho en las estructuras y personas que nos permitan hacerlas funcionar de manera dinámica y eficaz.",
+      "Estamos presentes en Túnez en los tres puertos principales. Túnez, Sousse y Sfax. En Argelia, nuestra oficina de Argel gestiona y garantiza las operaciones en todos los puertos argelinos. En Marruecos aprovechamos una consolidada relación de agencia que, con el tiempo, nos ha permitido crecer y dar solidez y fiabilidad a nuestros servicios.",
+      "T.I.Bongiorno España,S.L.U. y Bongiorno France completan nuestra estructura, permitiéndonos dar cobertura a todos los principales canales de tráfico que, desde Europa, desembocan en el Mediterráneo con destino a los destinos del norte de África.",
+      "Nuestras consignas: Puntualidad, Disponibilidad y Reactividad para afrontar eficazmente todos los posibles imprevistos.",
+      "Estamos preparados para ser su socio de confianza para cualquier transporte al norte de África y más allá."
     ],
     "destinations": {
-      "title": "Destinos Transporte Norte de África-Magreb",
-      "piu":"Descubre más",
+      "title": "Destinos de Transporte Norte de África-Magreb",
       "items": [
         {
-          "title": "Túnez Transporte",
-          "text": "Conexión directa con los principales puertos desde 1985.",
-          "image": "/img/tunisia.webp"
-          
+          "title": "Transporte Túnez",
+          "text": "En nuestro ADN desde los orígenes. Nuestra línea histórica desde 1985.",
+          "image": "/img/tunisia.webp",
+          "href": "/tunisia"
         },
         {
           "title": "Transporte Argelia",
-          "text": "Con sede en Argel, opera en todos los puertos argelinos.",
-          "image": "/img/algeria.webp"
-          
+          "text": "Gran país en el que creímos e invertimos construyendo servicios a la medida.",
+          "image": "/img/algeria.webp",
+          "href": "/algeria"
         },
         {
           "title": "Transporte Marruecos",
-          "text": "Relaciones establecidas para servicios fiables y rápidos.",
-          "image": "/img/marocco.webp"
-          
+          "text": "Acompañamos tu mercancía hasta la puerta de tu cliente. Del desierto a las cumbres del Atlas.",
+          "image": "/img/marocco.webp",
+          "href": "/marruecos"
         },
         {
           "title": "Libia y Mauritania",
-          "text": "Relaciones establecidas para servicios fiables y rápidos.",
-          "image": "/img/libia.webp"
-          
+          "text": "La cobertura total del Magreb también nos lleva hasta aquí. Con el mismo cuidado y atención.",
+          "image": "/img/libia.webp",
+          "href": "/libia"
         },
         {
-          "title": "Mundo",
-          "text": "Relaciones establecidas para servicios fiables y rápidos.",
-          "image": "/img/mundo.webp"
-          
+          "title": "Transporte Mundo",
+          "text": "Gracias a nuestros partners certificados WCA llegamos a todas partes con las máximas garantías.",
+          "image": "/img/mundo.webp",
+          "href": "/mundo"
         }
       ]
     },
     "services": {
       "title": "Servicios",
       "intro": [
-        "Su confianza es el motor de nuestros transportes. Estamos deseando demostrarle que superaremos sus expectativas. Elija nuestras soluciones de transporte y descubra el verdadero significado de un servicio de envío de primera clase."
+        "Tu confianza es el motor de nuestros transportes. Esperamos poder demostrarte que superaremos tus expectativas. Elije nuestras soluciones de transporte y descubre el verdadero significado de un servicio de envío de primera clase."
       ],
       "items": [
         {
-          "title": "Transporte de grupaje",
-          "description": "Confiar en alguien que pueda gestionar envíos pequeños y medianos con el cuidado y la rapidez adecuados es vital para no interrumpir nunca su producción ni sus actividades empresariales."
+          "title": "Transporte em Grupaje",
+          "description": "Confiar en quienes saben gestionar los pequeños y medianos envíos con el cuidado y rapidez adecuados es de vital importancia para no interrumpir nunca la actividad productiva o comercial."
         },
         {
-          "title": "Transportes excepcionales y Project Cargo",
-          "description": "Un tipo de transporte que requiere no sólo profundos conocimientos técnicos, sino también un cuidadoso estudio de las rutas, la normativa y las características de las mercancías y los territorios en los que se realizan los envíos."
+          "title": "Transporte excepcional y Project Cargo",
+          "description": "Un tipo de transporte que requiere no sólo un profundo conocimiento, sino también un estudio detenido de las rutas, normativas y características de las mercancías y de los territorios en los que se realizan los envíos."
         },
         {
-          "title": "Servicios de contenedores completos",
-          "description": "Frecuencia y tiempo de tránsito muy rápidos, disponibilidad de espacio a bordo de los buques y una amplia variedad de tipos de contenedores para satisfacer las necesidades más diversas."
+          "title": "Servicios Full Containers",
+          "description": "Frecuencias y tiempos de tránsito extremadamente rápidos, disponibilidad de espacio a bordo de los barcos y una gran variedad de tipos de contenedores para satisfacer las más variadas necesidades."
         },
         {
-          "title": "Seguro a todo riesgo",
-          "description": "Para los que no quieren dejar nada al azar. Un seguro que protege de todos los riesgos durante el transporte. La clave para un envío sin contratiempos. Nuestra sólida póliza a todo riesgo está disponible previa solicitud."
+          "title": "Seguro ''Todo Riesgo''",
+          "description": "Para aquellos que nunca quieren dejar nada al azar. Una póliza de seguro que protege contra cualquier riesgo durante el transporte. La clave para una expedición pacífica. Nuestra sólida póliza “todo riesgo” está disponible previa solicitud."
         }
       ]
     },
     "content": {
-      "title": "No sólo somos transitarios",
-      "intro1": "Somos conscientes de que el mundo de la logística puede ser complejo, pero estamos aquí para hacérselo más fácil.",
-      "intro2": "¿Qué nos diferencia de los demás? Nuestra misión es garantizar que sus mercancías lleguen a su destino en perfectas condiciones y en el menor tiempo posible.",
-      "intro3": "Estamos orgullosos de haber creado, con el tiempo, servicios especializados que nos permiten gestionar los envíos al Magreb y a varias otras zonas geográficas con una estructura única y sólida.",
-      "intro4": "Desde que la mercancía sale por la puerta del exportador hasta que se pone a disposición del importador, controlamos cada paso gracias a la formación de nuestro personal, que conoce a fondo la dinámica y las operaciones que conlleva el transporte internacional. Manteniéndonos al día de las innovaciones y cambios que hacen que nuestro negocio sea cada vez más dinámico.",
-      "intro5": "Nuestro objetivo es ganarnos la confianza de nuestros clientes demostrándoles que trabajamos incansablemente por un crecimiento continuo.",
+      "title": "No somos sólo transitarios",
+      "intro1": "Entendemos que el mundo de la logística puede ser complejo, pero estamos aquí para ponértelo más fácil.",
+      "intro2": "¿Qué nos diferencia de los demás? Nuestra misión es conseguir que su mercancía llegue a su destino en perfectas condiciones y en el menor tiempo posible.",
+      "intro3": "Estamos orgullosos de haber creado, a lo largo del tiempo, servicios especializados que nos permiten gestionar los envíos al Magreb y otras zonas geográficas con una estructura única y sólida.",
+      "intro4": "Desde que la mercancía sale por la puerta del exportador hasta que se pone a disposición del importador, controlamos cada paso gracias a la formación de nuestro personal, capaz de comprender plenamente la dinámica y operativa que conlleva el transporte internacional. Mantenernos al tanto de las innovaciones y cambios que hacen cada vez más dinámico nuestro negocio.",
+      "intro5": "Nuestro objetivo es ganarnos la confianza de nuestros clientes demostrando que trabajamos incansablemente por un crecimiento continuo.",
       "blocks": [
         {
-          "title": "Somos los verdaderos protagonistas de su transporte",
-          "text1": "Elegir Bongiorno es elegir seguridad y eficacia.",
-          "text2": "Confíe en nosotros para todos sus envíos internacionales y descubra cómo hacemos del transporte de mercancías una experiencia sin complicaciones.",
-          "text3": "La cualificación como operador OEA, la participación en la red WCA y la certificación ISO 9001:2015 son una garantía de que la calidad de nuestro servicio es realmente lo que nos enorgullece ofrecer.",
-          "text4": "Para tranquilidad de nuestros clientes, también ofrecemos una póliza opcional \"Todo riesgo\", que cubre el importe total de su factura de venta. Pase lo que pase durante el transporte, siempre estará a salvo.",
+          "title": "Somos los verdaderos protagonistas de tu transporte",
+          "text1": "Elegir Bongiorno significa elegir seguridad y eficiencia.",
+          "text2": "Confía en nosotros para todos tus envíos internacionales y descubre cómo hacemos del transporte de mercancías una experiencia tranquila.",
+          "text3": "La calificación de operador OEA y la certificación ISO 9001:2015 de nuestra casa madre en Italia, además de la participación en la red WCA son garantía que nuestra calidad de servicio es verdaderamente lo que tenemos el honor de ofrecer con orgullo.",
+          "text4": "Para brindar tranquilidad a nuestros clientes, también ofrecemos una póliza opcional “Todo Riesgo”, que cubre el monto total de su factura de venta. Pase lo que pase durante el transporte, siempre estará seguro.",
           "alt": "Camiones y contenedores en la carretera"
         }
       ]
     },
     "quality": {
       "title": "Nuestra calidad, certificada y reconocida",
-      "text1": "En 2014 obtuvimos el estatus de OEA para nuestras operaciones aduaneras, lo que tiene una enorme importancia porque nos permite mayor rapidez en los envíos, más comunicación entre las partes de la cadena de suministro y menos problemas de seguridad. Es el resultado de un minucioso procedimiento de verificación por parte de la Agencia de Aduanas y Monopolios y es de interés para quienes confían en nuestros servicios. A esto se añade nuestra certificación ISO 9001, que tenemos desde hace muchos años y que es una garantía más de calidad para nuestros clientes.",
+      "text1": "La Bongiorno Italia (Bongiorno SRL) en 2014 obtuvo el estatus de OEA para operaciones aduaneras, lo que tiene una enorme importancia porque permite mayor rapidez en los envíos, más comunicación entre las partes de la cadena de suministro y menos problemas de seguridad. Es el resultado de un minucioso procedimiento de verificación por parte de la Agencia de Aduanas y Monopolios italiana y es de interés para quienes confían en nuestros servicios. A esto se añade la certificación ISO 9001, que Bongiorno SRL tiene desde hace muchos años y que es una garantía más de calidad para nuestros clientes.",
       "text2": "Consulte aquí nuestra política de calidad."
     },
     "sedi": {
-      "title": "Ubicaciones",
-      "intro1": "Gracias a la presencia de nuestro propio personal y de oficinas en 5 países mediterráneos, podemos gestionar los envíos desde y hacia el Magreb con la competencia de quien convive con la dinámica diaria siempre cambiante de esta zona y con la rapidez de quien conoce sus problemas.",
-      "intro2": "Garantizamos una intervención inmediata y directa para encontrar la mejor solución que lleve siempre a buen puerto cada envío.",
-      "intro3": "Además, la elección de socios certificados por la WCA nos permite contar con un apoyo altamente profesional y generalizado en cualquier parte del mundo. Para no dejar nada al azar.",
-      "contactLabel": "Póngase en contacto con",
+      "title": "Las Oficinas",
+      "intro1": "Gracias a la presencia de personal propio y oficinas en cinco países mediterráneos podemos gestionar los envíos hacia y desde el Magreb con la competencia de quien vive la dinámica diaria en constante cambio de esta zona y con la rapidez de quien conoce los problemas.",
+      "intro2": "Garantizamos intervenciones inmediatas y directas para encontrar la mejor solución que lleve siempre a buen puerto cada envío.",
+      "intro3": "Además, la elección de socios certificados por la WCA nos permite contar con un soporte altamente profesional y generalizado en cualquier parte del mundo. Para no dejar nada al azar.",
+      "contactLabel": "Contáctanos",
       "globalTitle": "Bongiorno en el mundo",
       "globalText": "El carácter internacional de nuestro negocio y nuestro continuo crecimiento nos han llevado a ampliar nuestros servicios más allá de las fronteras de los países en los que ya estamos establecidos y desde hace tiempo gracias al valioso apoyo y ayuda de la red de agencias que nos proporciona la Alianza Mundial del Comercio, de la que somos miembros desde 2009.",
-      "globalContact": "Póngase en contacto con",
+      "globalContact": "Contáctanos",
       "locations": [
         {
           "name": "Bongiorno Italia",
           "flag": "/img/banderas/es.svg",
           "description": [
             "Fundada en 1985, Bongiorno srl es nuestra empresa matriz.",
-            "Con sede en Gallarate, a sólo cinco minutos del aeropuerto milanés de Malpensa, es el punto de confluencia de las principales rutas de tráfico de las regiones industriales del centro-norte de Italia.",
-            "Nuestra proximidad a los principales puertos comerciales del norte del Mediterráneo nos sitúa en una posición privilegiada para garantizar una ejecución extremadamente rápida y eficaz de los mandatos de transporte."
+            "Con sede en Gallarate, a sólo 5 minutos del aeropuerto de Milán Malpensa, es el punto de confluencia de las principales líneas de tráfico procedentes de las regiones industriales del centro-norte de Italia.",
+            "La proximidad a los principales puertos comerciales del norte del Mediterráneo nos sitúa en una posición privilegiada para garantizar extrema rapidez y eficacia en la ejecución de los mandatos de transporte."
           ],
           "contactUrl": "#"
         },
@@ -523,7 +524,7 @@
           "name": "Bongiorno España",
           "flag": "/img/banderas/es.svg",
           "description": [
-            "Con sede en Barcelona y plataformas logísticas estratégicas en España y Portugal, Bongiorno España es capaz de garantizar un servicio preciso y capilar desde y hacia toda la Península Ibérica.",
+            "Con sede en Barcelona y plataformas logísticas estratégicas en España y Portugal, nuestra sede en España es capaz de garantizar un servicio preciso y extendido desde y hacia toda la Península Ibérica y representa hoy para el grupo un punto de fundamental importancia en el desarrollo del tráfico hacia el norte de África.",
             "Hoy en día, Bongiorno España representa, para el grupo, una referencia de importancia fundamental en el desarrollo del comercio hacia el norte de África."
           ],
           "contactUrl": "#"
@@ -532,36 +533,34 @@
           "name": "Bongiorno Francia",
           "flag": "/img/banderas/fr.svg",
           "description": [
-            "Estamos situados en Marsella, en la principal vía de acceso a la ciudad y a sólo 1 km del puerto, punto estratégico de la actividad marítima hacia los puertos del Magreb y de todo el Mediterráneo.",
-            "También disponemos de plataformas logísticas en las zonas más sensibles (región de París, región de Lyon, norte de Francia).",
-            "Nuestros servicios de camiones también nos permiten servir a gran parte de Alemania y a toda Bélgica y los Países Bajos."
+            "Nuestra sede se encuentra en Marsella, en la principal vía de acceso a la ciudad y a tan sólo 1 km del puerto, punto estratégico para la actividad marítima hacia los puertos del Magreb y de todo el Mediterráneo.",
+            "También disponemos de plataformas logísticas en las zonas más sensibles (Región de París, Región de Lyon, Norte de Francia). Nuestros servicios de transporte por carretera también nos permiten dar servicio a gran parte de Alemania y a todo el territorio belga y holandés."
           ],
           "contactUrl": "#"
         },
         {
-          "name": "Buenos días Túnez",
+          "name": "Bongiorno Túnez",
           "flag": "/img/banderas/tn.svg",
           "description": [
-            "Representa nuestra primera base comercial y operativa en el norte de África.",
-            "La estructura operativa de Bongiorno Túnez se considera actualmente una de las más importantes del sector del transporte en Túnez.",
-            "Disponemos de tres terminales de contenedores con depósitos aduaneros en los principales puertos tunecinos (Rades, Sousse y Sfax) que nos permiten satisfacer las necesidades de todos los operadores económicos tunecinos para cualquier tipo de transporte."
+            "Representa nuestra primera base comercial y operativa en el norte de África. La estructura operativa de la que dispone Bongiorno Túnez se considera actualmente una de las realidades más importantes del sector del transporte en Túnez.",
+            "Utilizamos tres terminales de contenedores con depósitos aduaneros en los principales puertos tunecinos (Rades, Sousse y Sfax) que nos permiten satisfacer las necesidades de todos los operadores económicos tunecinos para cualquier tipo de transporte."
           ],
           "contactUrl": "#"
         },
         {
-          "name": "Hola Argelia",
+          "name": "Bongiorno Argelia",
           "flag": "/img/banderas/dz.svg",
           "description": [
-            "Argelia es un país en pleno desarrollo económico y cada vez más presente en la escena internacional.",
-            "Por eso creamos Bongiorno Algerie a principios de 2000, convencidos de que nuestra experiencia y profesionalidad podían ser una herramienta útil y apreciada por los operadores argelinos y europeos para desarrollar sus actividades."
+            "Argelia es un país en pleno desarrollo económico y una realidad que cada vez tiene más peso en la escena internacional.",
+            "Por este motivo creamos Bongiorno Algérie a principio de los años 2000, creyendo que nuestra experiencia y profesionalidad podrían ser una herramienta útil y apreciada por los operadores argelinos y europeos para el desarrollo de sus actividades."
           ],
           "contactUrl": "#"
         },
         {
-          "name": "Bongiorno en el mundo",
+          "name": "Bongiorno en el Mundo",
           "flag": "/img/banderas/dz.svg",
           "description": [
-            "El carácter internacional de nuestra actividad y nuestro continuo crecimiento nos han llevado a ampliar nuestros servicios más allá de las fronteras de los países en los que ya estamos implantados y desde hace tiempo gracias al inestimable apoyo y ayuda de la red de agencias que nos proporciona la Alianza para el Comercio Mundial de la que somos miembros desde 2009"
+            "El carácter internacional de nuestro negocio y el continuo crecimiento nos han llevado a expandir nuestros servicios más allá de las fronteras de los países en los que ya estamos establecidos y consolidados desde hace algún tiempo gracias al valioso apoyo y ayuda de la red de agencias garantizada por el World Trade Alliance (WCA) de la que somos miembros desde 2009."
           ],
           "contactUrl": "#"
         }
@@ -569,7 +568,7 @@
     }
   },
   "quote": {
-    "title": "Citas",
+    "title": "Pide una cotización",
     "id": "129837",
     "subtitle": "Contacte con nosotros a través del formulario y será atendido por uno de nuestros comerciales lo antes posible.",
     "select": "Seleccione una opción",
@@ -580,8 +579,8 @@
       "name": "Nombre y apellidos",
       "email": "Correo electrónico",
       "phone": "Número de teléfono",
-      "city": "Ciudades",
-      "zip": "CÓDIGO POSTAL",
+      "city": "Ciudad",
+      "zip": "Código Postal",
       "address": "Dirección",
       "originCountry": "País de salida",
       "originOther": "Especifique el país",
@@ -604,8 +603,8 @@
       "details": "Introduzca aquí los datos de su envío...",
       "otherCountry": "Especifique el país",
       "address": "Calle / número",
-      "city": "Ciudades",
-      "zip": "CÓDIGO POSTAL"
+      "city": "Ciudad",
+      "zip": "Código Postal"
     },
     "submit": "Enviar solicitud de presupuesto",
     "sending": "Enviando...",
@@ -731,8 +730,7 @@
       "hrefservizi": "/servicios",
       "contattaci": "Llame o escriba y le pondremos en contacto con nuestro comercial más adecuado.",
       "parliamo": "Hablamos italiano, francés, español, inglés y alemán ",
-      "quote": "Solicitar un presupuesto",
-      "hrefquote": "/citas"
+      "quote": "Solicitar una cotización"
     }
   },
   "about": {

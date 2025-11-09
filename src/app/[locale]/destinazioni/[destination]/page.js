@@ -7,6 +7,7 @@ import { BriefcaseBusiness, MoveRight } from "lucide-react";
 import {Link} from "@/i18n/navigation";
 import H1 from "@/components/common/H1";
 import { buildMetadata } from "@/lib/seo";
+import geo from "@/data/geo.json";
 
 export function generateStaticParams() {
   const destinations = ["tunisia", "algeria", "marocco", "libia", "mauritania"];
@@ -51,6 +52,11 @@ export default async function DestinationPage({ params }) {
 
     if (!data) notFound();
 
+  // Geo lookup by route param
+  const geoEntry = geo?.[destination] || null;
+  const coordinates = Array.isArray(geoEntry?.center) ? geoEntry.center : [10.18, 36.8];
+  const markers = Array.isArray(geoEntry?.markers) ? geoEntry.markers : [];
+
   return (
     <main className="text-gray-800 dark:text-gray-200 my-26">
       {/* 🔹 Hero */}
@@ -86,7 +92,7 @@ export default async function DestinationPage({ params }) {
     <div className="relative w-full">
       {/* ✅ Maintain height ratio with aspect-ratio for smaller screens */}
       <div className="relative lg:aspect-auto lg:h-full min-h-[350px] lg:min-h-[500px] rounded-2xl overflow-hidden shadow-lg">
-        <DestinationMap coordinates={data.mapCoords} markers={data.mapMarkers} />
+        <DestinationMap coordinates={coordinates} markers={markers} />
       </div>
     </div>
   </div>

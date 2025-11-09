@@ -84,4 +84,45 @@ em {
  @apply px-6 py-3 rounded-md font-semibold bg-white text-brand-dark hover:bg-brand-accent hover:text-white shadow hover:scale-105 transition-all duration-300;
 }
 
+/* MDX/Post content tables */
+.post-content table {
+  @apply w-fit my-6 border border-gray-200 rounded-lg;
+  border-collapse: separate;
+  border-spacing: 0;
+  display: block;               /* responsive scroll on small screens */
+  overflow-x: auto;
+}
 
+.dark .post-content table {
+  @apply border-gray-700 ;
+}
+
+.post-content thead th {
+  @apply bg-gray-50 text-gray-700 font-semibold text-sm uppercase tracking-wide;
+}
+
+.dark .post-content thead th {
+  @apply bg-gray-800 text-gray-200;
+}
+
+.post-content th,
+.post-content td {
+  @apply px-4 py-3 border-b border-gray-200 text-sm text-gray-700;
+}
+
+.dark .post-content th,
+.dark .post-content td {
+  @apply border-gray-700 text-gray-200;
+}
+
+.post-content tbody tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+.dark .post-content tbody tr:nth-child(even) {
+  @apply bg-gray-900;
+}
+
+.post-content table caption {
+  @apply text-sm text-gray-500 mb-2;
+}

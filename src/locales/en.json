@@ -169,26 +169,6 @@
       "claim": "Our dedication to Morocco has been well established for decades. We selected and strengthened over time a partnership with a local entity that would travel on our wavelength. To achieve the common goal of giving customers more and more reasons to choose our service.",
       "intro": "We offer transportation from Spain, France and Italy to major ports in Morocco.",
       "image": "/img/dest-marocco.webp",
-      "mapCoords": [
-        -6.8326,
-        31.7917
-      ],
-      "mapMarkers": [
-        {
-          "name": "Casablanca",
-          "coords": [
-            -7.5898,
-            33.5731
-          ]
-        },
-        {
-          "name": "Tangier",
-          "coords": [
-            -5.8127,
-            35.7595
-          ]
-        }
-      ],
       "paragraphs": [
         "Our decades of experience allow us to guarantee the best timelines in the Moroccan market.",
         "We know how speed, not only in transportation, but also and especially in interventions on all local dynamics, are a trump card in giving our shipping services a guarantee of quality.",
@@ -209,47 +189,6 @@
       "claim": "Full coverage of the Maghreb also brings us here. With the same care and attention with regular full container services to major ports.",
       "intro": "We offer transportation from Spain, France and Italy to major Libyan and Mauritanian ports.",
       "image": "/img/dest-libia-mauritania.webp",
-      "mapCoords": [
-        13,
-        22
-      ],
-      "mapMarkers": [
-        {
-          "name": "Tripoli",
-          "coords": [
-            13.1913,
-            32.8872
-          ]
-        },
-        {
-          "name": "Measured",
-          "coords": [
-            15.1,
-            32.37
-          ]
-        },
-        {
-          "name": "Benghazi",
-          "coords": [
-            20.0667,
-            32.1167
-          ]
-        },
-        {
-          "name": "Nouakchott",
-          "coords": [
-            -15.9785,
-            18.0858
-          ]
-        },
-        {
-          "name": "Nouadhibou",
-          "coords": [
-            -17.0333,
-            20.9333
-          ]
-        }
-      ],
       "paragraphs": [
         "Our decades of experience and ISO9001-certified quality of our services enable us to guarantee fast and efficient comprehensive transportation services."
       ],
@@ -266,40 +205,6 @@
       "claim": "Thanks to our WCA partners, we arrive everywhere with the quality guaranteed by the most important and extensive network of international forwarders.",
       "intro": "Globally certified services guaranteed by our membership in the WCA network.",
       "image": "/img/dest-mondo.webp",
-      "mapCoords": [
-        8.793,
-        45.66
-      ],
-      "mapMarkers": [
-        {
-          "name": "Panama Canal",
-          "coords": [
-            -79.8,
-            9.1
-          ]
-        },
-        {
-          "name": "Singapore",
-          "coords": [
-            103.8,
-            1.35
-          ]
-        },
-        {
-          "name": "Rotterdam",
-          "coords": [
-            4.48,
-            51.92
-          ]
-        },
-        {
-          "name": "New York",
-          "coords": [
-            -74,
-            40.7
-          ]
-        }
-      ],
       "paragraphs": [],
       "servicesTitle": "Globally Certified Services",
       "services": [
@@ -316,26 +221,6 @@
       "claim": "We have been present with our own structure in the territory for many years. We know its dynamics and peculiarities. We experience regulatory changes on a daily basis and are able to take immediate action to make sure they are complied with.",
       "intro": "We offer transportation from Spain, France and Italy to the ports of Algiers, Oran and all major Algerian ports.",
       "image": "/img/dest-algeria.webp",
-      "mapCoords": [
-        2.6333,
-        28
-      ],
-      "mapMarkers": [
-        {
-          "name": "Algiers",
-          "coords": [
-            3.0588,
-            36.7538
-          ]
-        },
-        {
-          "name": "Oran",
-          "coords": [
-            -0.6417,
-            35.6987
-          ]
-        }
-      ],
       "paragraphs": [
         "The experience gained over time and the presence of its own staff in the area guarantee the quality of services and reliability of the infrastructure made available to customers.",
         "We know how speed, not only in transportation, but also and especially in interventions on all local dynamics, are a trump card in giving our shipping services a guarantee of quality.",
@@ -356,10 +241,6 @@
       "claim": "We are a point of reference in the country for transportation to and from Mediterranean Europe.",
       "intro": "Continued growth thanks to our clients whose loyalty and gratitude have given us the impetus to try to respond, with ever greater care and attention, to their expectations and requests.",
       "image": "/img/destinations/tunisia.webp",
-      "mapCoords": [
-        10.18,
-        36.8
-      ],
       "paragraphs": [
         "We offer transportation from Spain, France and Italy to the ports of Tunis, Sousse and Sfax.",
         "Our decades of experience and complete supply chain with locally owned warehouses and staff allows us to guarantee the best timing in the Tunisian market.",
@@ -550,7 +431,7 @@
           "contactUrl": "#"
         },
         {
-          "name": "Good morning Algeria",
+          "name": "Bongiorno Algeria",
           "flag": "/img/flags/dz.svg",
           "description": [
             "Algeria is a country in the midst of economic development and one that is increasingly making its presence felt on the international scene.",

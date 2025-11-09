@@ -5,6 +5,8 @@ import {Link} from "@/i18n/navigation";
 import ReactMarkdown from 'react-markdown';
 import dynamic from "next/dynamic";
 import { useLocale } from "next-intl";
+import {Earth} from "lucide-react";
+import {flagMap} from "@/lib/flagMap";
 
 export default function SediSection() {
   const t = useTranslations("home.sedi");
@@ -17,18 +19,7 @@ export default function SediSection() {
   const sedi = t.raw("locations");
 
   // Map office name to ISO 3166-1 alpha-2 for country-flag-icons
-  const nameToCode = (name = "") => {
-    const n = name.toLowerCase();
-    if (n.includes("italia")) return "IT";
-    if (n.includes("spagna")) return "ES";
-    if (n.includes("francia")) return "FR";
-    if (n.includes("tunisia")) return "TN";
-    if (n.includes("algeria")) return "DZ";
-    if (n.includes("marocco")) return "MA";
-    if (n.includes("libia")) return "LY";
-    if (n.includes("mauritania")) return "MR";
-    return "IT"; // default fallback
-  };
+  const nameToCode = flagMap;
 
   return (
     <section className="bg-white dark:bg-gray-950 md:py-20 py-8 border-t border-gray-200 dark:border-gray-800">
@@ -77,16 +68,22 @@ export default function SediSection() {
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-7 h-5 rounded-sm overflow-hidden">
                   {(() => {
+                    const isWorld = !sede.flag || sede.flag === "" || /(world|mondo|mundo|monde|global)/i.test(sede.name || "");
+                    if (isWorld) {
+                      return <Earth title="WORLD" className="w-7 h-5 text-brand-accent" />;
+                    }
                     try {
                       const { IT, ES, FR, TN, DZ, MA, LY, MR } = require('country-flag-icons/react/3x2');
                       const map = { IT, ES, FR, TN, DZ, MA, LY, MR };
-                      const code = nameToCode(sede.name);
-                      const Flag = map[code] || IT;
-                      return <Flag title={code} className="w-7 h-5" />;
-                    } catch {
-                      return (
-                        <div className="w-7 h-5 bg-gray-300 rounded-sm" aria-hidden />
+                      const code = nameToCode(sede.name, sede.flag);
+                      const Flag = map[code];
+                      return Flag ? (
+                        <Flag title={code} className="w-7 h-5" />
+                      ) : (
+                        <Earth title={code || 'WORLD'} className="w-7 h-5" />
                       );
+                    } catch {
+                      return <Earth title="WORLD" className="w-7 h-5" />;
                     }
                   })()}
                 </div>

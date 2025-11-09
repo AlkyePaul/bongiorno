@@ -169,26 +169,7 @@
       "claim": "La nostra dedicazione al Marocco è ormai consolidata da decenni. Abbiamo selezionato e rafforzato nel tempo una partnership con una realtà locale che viaggiasse sulla nostra lunghezza d'onda. Per raggiungere l'obiettivo comune di dare alla clientela sempre più ragioni per scegliere il nostro servizio.",
       "intro": "Offriamo trasporti da Spagna, Francia e Italia verso i principali porti del Marocco.",
       "image": "/img/dest-marocco.webp",
-      "mapCoords": [
-        -6.8326,
-        31.7917
-      ],
-      "mapMarkers": [
-        {
-          "name": "Casablanca",
-          "coords": [
-            -7.5898,
-            33.5731
-          ]
-        },
-        {
-          "name": "Tangeri",
-          "coords": [
-            -5.8127,
-            35.7595
-          ]
-        }
-      ],
+      
       "paragraphs": [
         "L'esperienza decennale ci permette di garantire le migliori tempistiche sul mercato marocchino.",
         "Sappiamo quanto la rapidità, non solo nel trasporto, ma anche e soprattutto negli interventi su tutte le dinamiche locali, siano una carta vincente per dare ai nostri servizi di spedizione una garanzia di qualità.",
@@ -209,47 +190,7 @@
       "claim": "La copertura totale del Maghreb ci porta anche qui. Con la stessa cura e attenzione con servizi regolari di container completi verso i principali porti.",
       "intro": "Offriamo trasporti da Spagna, Francia e Italia verso i principali porti libici e mauritani.",
       "image": "/img/dest-libia-mauritania.webp",
-      "mapCoords": [
-        13.0,
-        22.0
-      ],
-      "mapMarkers": [
-        {
-          "name": "Tripoli",
-          "coords": [
-            13.1913,
-            32.8872
-          ]
-        },
-        {
-          "name": "Misurata",
-          "coords": [
-            15.1,
-            32.37
-          ]
-        },
-        {
-          "name": "Bengasi",
-          "coords": [
-            20.0667,
-            32.1167
-          ]
-        },
-        {
-          "name": "Nouakchott",
-          "coords": [
-            -15.9785,
-            18.0858
-          ]
-        },
-        {
-          "name": "Nouadhibou",
-          "coords": [
-            -17.0333,
-            20.9333
-          ]
-        }
-      ],
+      
       "paragraphs": [
         "L'esperienza decennale e la qualità dei nostri servizi, certificata ISO9001, ci permettono di garantire servizi di trasporto completi rapidi ed efficienti."
       ],
@@ -266,40 +207,7 @@
       "claim": "Grazie ai nostri partners WCA arriviamo ovunque con la qualità garantita dal più importante e capillare network di spedizionieri internazionali.",
       "intro": "Servizi certificati a livello globale e garantiti dalla nostra adesione al network WCA.",
       "image": "/img/dest-mondo.webp",
-      "mapCoords": [
-        8.793,
-        45.66
-      ],
-      "mapMarkers": [
-        {
-          "name": "Canale di Panama",
-          "coords": [
-            -79.8,
-            9.1
-          ]
-        },
-        {
-          "name": "Singapore",
-          "coords": [
-            103.8,
-            1.35
-          ]
-        },
-        {
-          "name": "Rotterdam",
-          "coords": [
-            4.48,
-            51.92
-          ]
-        },
-        {
-          "name": "New York",
-          "coords": [
-            -74.0,
-            40.7
-          ]
-        }
-      ],
+      
       "paragraphs": [],
       "servicesTitle": "Servizi Certificati a livello Globale",
       "services": [
@@ -316,26 +224,7 @@
       "claim": "Siamo presenti con una nostra struttura sul territorio da molti anni. Ne conosciamo le dinamiche e le peculiarità. Viviamo quotidianamente le novità normative e siamo in grado di intervenire con immediatezza per fare in modo che vengano rispettate.",
       "intro": "Offriamo trasporti da Spagna, Francia e Italia verso i porti di Algeri, Orano e tutti i principali porti algerini.",
       "image": "/img/dest-algeria.webp",
-      "mapCoords": [
-        2.6333,
-        28.0
-      ],
-      "mapMarkers": [
-        {
-          "name": "Algeri",
-          "coords": [
-            3.0588,
-            36.7538
-          ]
-        },
-        {
-          "name": "Orano",
-          "coords": [
-            -0.6417,
-            35.6987
-          ]
-        }
-      ],
+      
       "paragraphs": [
         "L'esperienza maturata nel tempo e la presenza sul territorio di personale proprio garantiscono la qualità dei servizi e l'affidabilità delle infrastrutture messe a disposizione della clientela.",
         "Sappiamo quanto la rapidità, non solo nel trasporto, ma anche e soprattutto negli interventi su tutte le dinamiche locali, siano una carta vincente per dare ai nostri servizi di spedizione una garanzia di qualità.",
@@ -356,10 +245,7 @@
       "claim": "Siamo un punto di riferimento nel paese per i trasporti da e per l'Europa Mediterranea.",
       "intro": "Una continua crescita grazie ai nostri clienti che, con la loro fedeltà e riconoscenza, ci hanno dato la spinta per cercare di rispondere, con sempre maggior cura e attenzione, alle loro aspettative e richieste.",
       "image": "/img/destinations/tunisia.webp",
-      "mapCoords": [
-        10.18,
-        36.8
-      ],
+      
       "paragraphs": [
         "Offriamo trasporti da Spagna, Francia e Italia verso i porti di Tunisi, Sousse e Sfax.",
         "L'esperienza decennale e la filiera completa con magazzini di proprietà e personale locale ci permette di garantire le migliori tempistiche sul mercato tunisino.",
