@@ -84,8 +84,11 @@ export default function Footer() {
       </div>
 
       {/* 🔻 Bottom bar */}
-      <div className="border-t border-white/10 py-6 text-center text-xs text-gray-500">
+      <div className="border-t border-white/10 pt-6 text-center text-xs text-gray-500">
         © {new Date().getFullYear()} Bongiorno SRL — {t("rights")}
+      </div>
+      <div className=" pt-3 pb-6 text-center text-xs text-gray-500">
+        Made by <a href="https://www.linkedin.com/in/paolo-confalonieri-digital" target="_blank" className="font-semibold" rel="noopener noreferrer">Paolo Confalonieri</a>
       </div>
     </footer>
   );

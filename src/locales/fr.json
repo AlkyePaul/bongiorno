@@ -272,7 +272,7 @@
     "destinations": "Destinations",
     "scopri": "Découvrir",
     "contacts": "Contact",
-    "about": "A propos de nous",
+    "about": "Qui sommes-nous",
     "news": "Actualités",
     "mondo": "Le monde",
     "tunisia": "Tunisie",
@@ -516,7 +516,7 @@
       "title": "Liens utiles",
       "destinations": "Destinations",
       "workwithus": "Travailler avec nous",
-      "about": "A propos de nous",
+      "about": "Qui sommes-nous",
       "privacy": "Vie privée",
       "contacts": "Contact"
     },
@@ -601,8 +601,8 @@
     ]
   },
   "ctaBanner": {
-    "cta_main": "Notre présence stable et de longue date sur le territoire fait de nous un partenaire solide, capable de résoudre rapidement tout événement imprévu, en offrant rapidité, sécurité et garantie sur tous les marchés où nous opérons.",
-    "claim": "Ceci, combiné à notre personnel hautement expérimenté et compétent, nous permet d'offrir un maximum de rapidité, de sûreté et de sécurité sur tous les marchés où nous opérons grâce à nos normes opérationnelles élevées.",
+    "cta_main": "Notre présence stable et historique sur la région fait de nous un partenaire solide, capable de résoudre rapidement tout imprévu.",
+    "claim": "Ceci, combiné à un personnel hautement expérimenté et compétent, nous permet d'offrir une vitesse, une sécurité et une garantie maximales sur tous les marchés dans lesquels nous opérons grâce à des normes opérationnelles élevées.",
     "cta": {
       "ctacontatti": "Contactez nous",
       "hrefcontatti": "/contacts",
@@ -616,7 +616,7 @@
   },
   "about": {
     "hero": {
-      "title": "A propos de nous",
+      "title": "Qui sommes-nous",
       "subtitle": "Nous assurons le transport international depuis 1985, ce qui garantit efficacité et fiabilité.",
       "alt": "Siège et logistique Bongiorno"
     },
@@ -628,12 +628,12 @@
       "employees_prefix": "Plus de",
       "employees_label": "employés dans 5 pays"
     },
-    "text1": "Fruit d'une grande intuition de notre fondateur et président : lire en Tunisie le grand potentiel et les affinités qui nous unissent et investir sur ceux-ci.",
-    "text2": "Dès le début de notre activité, nous avons suivi une politique de spécialisation, en consacrant toutes nos ressources techniques et humaines précisément au marché tunisien et, dans un deuxième temps, à l'ensemble du Maghreb.",
-    "text3": "Cette particularité a permis à notre organisation de se consolider sur les marchés nord-africains au point de devenir un transporteur de référence pour les expéditions dans cette région. Nous ne perdons jamais de vue les besoins réels des exportateurs et des importateurs et nous nous adaptons aux réalités changeantes des pays et des marchés de destination et de départ des marchandises.",
-    "text4": "Après la consolidation de nos lignes, nous avons estimé que notre vision du transport devait également dépasser ces frontières et que cela ne nous ferait pas perdre notre identité, mais au contraire l'enrichirait.",
-    "text5": "La dimension internationale de nos transports est aujourd'hui reconnue quotidiennement par nos clients qui, de plus en plus fréquemment, nous confient la gestion de leurs expéditions à travers le monde. Après la consolidation de nos lignes, il nous a semblé que notre vision du transport devait également dépasser ces frontières et que cela ne nous ferait pas perdre notre identité, mais au contraire l'enrichirait.",
-    "text6": "La dimension internationale de nos transports est aujourd'hui reconnue quotidiennement par nos clients, qui nous confient de plus en plus la gestion de leurs expéditions à travers le monde.",
+    "text1": "L’histoire de notre entreprise a commencé à Gallarate en 1985. Le résultat d’une grande intuition de notre fondateur et Président : lire *le grand potentiel* et les affinités de la Tunisie qui nous unissent et investir dans ceux-ci.",
+    "text2": "Depuis le début de notre activité, nous avons suivi une politique de spécialisation, consacrant toutes les ressources techniques et humaines au marché tunisien et, dans un second temps, à l’ensemble du Maghreb.",
+    "text3": "Cette particularité a permis à notre organisation de se consolider sur *les marchés nord-africains* pour devenir un transporteur de référence pour les expéditions dans cette région et ne jamais perdre de vue *les besoins réels des exportateurs et des importateurs* et s’adapter aux réalités évolutives des pays et des marchés de destination et de départ des marchandises.",
+    "text4": "*Après la consolidation* de nos lignes, nous avons pensé que notre vision du transport devait également dépasser ces frontières et que cela ne nous ferait pas perdre notre identité, mais au contraire l’enrichirait.",
+   
+    "text5": "*La dimension internationale de nos transports* est désormais reconnue au quotidien par nos clients qui, de plus en plus fréquemment, nous confient la gestion de leurs expéditions à travers le monde.",
     "subtitle": "Notre histoire",
     "sede": "Le siège social de Bongiorno à Gallarate, Via Marsala 40, est le siège de l'entreprise."
   },
