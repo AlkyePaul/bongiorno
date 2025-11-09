@@ -108,7 +108,10 @@ export default async function NewsPage({ params }) {
 
           {/* Secondary article preview */}
           {secondary && (
-            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl shadow-sm p-6">
+            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl shadow-sm p-6 flex gap-2">
+             <div  className="lg:w-3/4 md:w-1/2">
+            
+           
               <h3 className="text-2xl font-semibold mb-3 text-brand-navy">
                 {secondary.title}
               </h3>
@@ -130,6 +133,16 @@ export default async function NewsPage({ params }) {
                 {t('featured.readMore')}
               </Link>
             </div>
+<div className=" hidden md:block md:w-1/2 lg:w-1/4">
+              <Image
+                src={secondary.image}
+                alt={secondary.title}
+                width={500}
+                height={500}
+                className="object-cover w-full min-h-[150px] rounded-xl object-center "
+              />
+              </div>
+              </div>
           )}
         </div>
 
