@@ -278,7 +278,7 @@
   "home": {
     "hero": {
       "title": "BONGIORNO TRANSPORTS",
-      "subtitle": "International Shipping",
+      "subtitle": "International Shipments",
       "claim": "Since 1985 we have been connecting the main European Mediterranean ports with the Maghreb with dedication and care: primarily Tunisia, Algeria and Morocco, but also many other destinations, serving more than 60 countries around the world every year.",
       "ctas": [
         {
@@ -291,12 +291,12 @@
       ]
     },
     "intro": [
-      "Our services on the North African ports are structured to ensure particularly favorable transport conditions, but above all to guide and help operators in all phases preceding shipments and bringing them to a successful conclusion.",
-      "It is our daily presence on the ground that allows us to stay up-to-date on the procedures and regulations that are often changing in these markets. To achieve this, we have invested heavily in the structures and people that enable us to run them dynamically and effectively.",
-      "We are present in Tunisia in the three main ports. Tunis, Sousse and Sfax. In Algeria, our office in Algiers manages and guarantees operations on all Algerian ports. In Morocco we put to good use a well-established agency relationship that, over time, has made us grow and give solidity and reliability to our services.",
-      "Bongiorno Spain and Bongiorno France complete our structure allowing us to give coverage to all the main traffic channels that, from Europe, flow into the Mediterranean en route to North African destinations.",
-      "Our watchwords: Punctuality, Availability and Responsiveness to effectively cope with all possible contingencies as well.",
-      "We are ready to be your trusted partner for any transportation to North Africa and beyond."
+      "Our services in the ports of North Africa are structured to ensure particularly favorable transport conditions, but above all to guide and assist operators in all phases preceding shipments and leading them to success.",
+      "It is our daily presence on the ground that allows us to always be up to date with procedures and regulations that often change in these markets. To achieve this goal, we have heavily invested in the infrastructure and the people who enable us to operate dynamically and effectively.",
+      "We are present in Tunisia at the three main ports: Tunis, Sousse, and Sfax. In Algeria, our Algiers office manages and ensures the operation of all Algerian ports. In Morocco, we benefit from a consolidated agency relationship that, over time, has allowed us to grow and strengthen the solidity and reliability of our services.",
+      "Bongiorno Spain and Bongiorno France complete our structure, allowing us to cover all the main traffic channels that, from Europe, flow into the Mediterranean towards North African destinations.",
+      "Our watchwords: Punctuality, Availability, and Reactivity to effectively face all possible contingencies.",
+      "We are ready to be your trusted partner for every transport to North Africa and beyond."
     ],
     "destinations": {
       "title": "Destinations Transportation North Africa-Maghreb",
@@ -304,31 +304,31 @@
       "items": [
         {
           "title": "Tunisia Transportation",
-          "text": "Since 1985 direct connection with major ports.",
+          "text": "In our DNA from the beginning. Our historic line since 1985.",
           "image": "/img/tunisia.webp"
           
         },
         {
           "title": "Algeria Transportation",
-          "text": "Headquartered in Algiers, operations on all Algerian ports.",
+          "text": "Great country in which we believed and invested by building tailor-made services.",
           "image": "/img/algeria.webp"
           
         },
         {
           "title": "Morocco Transportation",
-          "text": "Established relationships for reliable and fast services.",
+          "text": "We escort your goods to the door of your client. From the desert to the peaks of the Atlas.",
           "image": "/img/marocco.webp"
           
         },
         {
           "title": "Libya and Mauritania",
-          "text": "Established relationships for reliable and fast services.",
+          "text": "The total coverage of the Maghreb also brings us here. With the same care and attention.",
           "image": "/img/libia.webp"
           
         },
         {
           "title": "World",
-          "text": "Established relationships for reliable and fast services.",
+          "text": "Thanks to our WCA-certified partners, we reach everywhere with the highest guarantees.",
           "image": "/img/mondo.webp"
           
         }
