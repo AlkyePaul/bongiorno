@@ -52,6 +52,7 @@ export function canonicalUrl(locale, pathOrRouteKey = '', params = undefined) {
 export function buildMetadata({locale, route, params, title, description, image = '/og/default.jpg'}) {
   const canonical = canonicalUrl(locale, route, params);
   return {
+    metadataBase: new URL(BASE_DOMAIN),
     title,
     description,
     alternates: {
@@ -70,11 +71,3 @@ export function buildMetadata({locale, route, params, title, description, image 
   };
 }
 
-module.exports = {
-  BASE_DOMAIN,
-  PATH_PREFIX,
-  buildUrl,
-  languageAlternates,
-  canonicalUrl,
-  buildMetadata,
-};

@@ -533,50 +533,55 @@
     "intro": "Grâce à notre expérience et à notre présence directe dans les principaux pays méditerranéens, nous offrons une gamme complète de services de transport international et de logistique conçus pour garantir la ponctualité, la sécurité et la commodité.",
     "cards": [
       {
-        "icon": "Paquet",
+        "icon": "Package",
         "title": "Transport de groupage",
         "href": "#groupage",
-        "text": "Pour l'industrie, le commerce et les grands travaux, nous avons créé des services qui offrent au transport les meilleurs rendements et conditions. Pour que vos marchandises soient toujours livrées à temps."
+        "text": "Pour l’industrie, le commerce et les grands travaux, nous avons créé des services qui offrent les meilleures performances et conditions de transport"
       },
       {
-        "icon": "Camion",
+        "icon": "Truck",
         "title": "Transports complets",
         "href": "#complete",
-        "text": "Fréquence et temps de transit rapides, disponibilité d'espace à bord des navires et grande variété de conteneurs dans les principaux ports du Maghreb."
+        "text": "Fréquence et temps de transit rapides, disponibilité d'espace à bord des navires et grande variété de types de conteneurs dans les principaux ports du Maghreb."
       },
       {
         "icon": "Cog",
         "title": "Cargaison exceptionnelle et cargaison de projet",
         "href": "#exceptionnel",
-        "text": "Transport qui nécessite une grande compétence et une étude approfondie des itinéraires, des réglementations, des caractéristiques des marchandises et des territoires."
+        "text": "Transports nécessitant une haute compétence et une étude attentive des itinéraires, des réglementations, et des caractéristiques des marchandises et des territoires."
       },
       {
         "icon": "ShieldCheck",
         "title": "Assurance tous risques",
         "href": "#Assurance",
-        "text": "Pour ne rien laisser au hasard. Une police d'assurance à la demande protège contre tous les risques pendant le transport."
+        "text": " Pour ne rien laisser au hasard. Une police d’assurance sur demande qui couvre tous les risques durant le transport."
       }
     ],
     "details": [
       {
         "id": "groupage",
-        "icon": "Paquet",
+        "icon": "Package",
         "title": "Transport de groupage",
         "paragraphs": [
-          "Un vaste réseau de transporteurs routiers couvrant l'ensemble de l'Europe permet aux marchandises d'arriver dans nos centres de collecte dans les meilleurs délais et avec les meilleures garanties de qualité.",
-          "Nous utilisons des zones logistiques modernes avec des véhicules et du personnel très efficaces, équipés de systèmes de sécurité modernes et prêts à s'adapter aux besoins les plus divers.",
-          "En tant qu'opérateurs économiques agréés en Italie, nous effectuons les opérations douanières directement dans les centres de collecte, avec notre propre personnel et en temps réel.",
-          "La régularité et la fréquence de nos services nous permettent d'offrir une variété unique de solutions sur les marchés du Maghreb."
+          "Un réseau dense d’opérateurs routiers couvrant tout le territoire européen assure que les marchandises arrivent à nos centres de collecte dans les meilleurs délais et avec les meilleures garanties de qualité.",
+          "Nous disposons de zones logistiques modernes, équipées de véhicules et de personnel très efficaces et dotées de systèmes de sécurité modernes, prêtes à s’adapter aux besoins les plus divers.",
+          "Nous gérons, avec la qualification des opérateurs AEO en Italie, les opérations douanières directement dans les centres de collecte, avec notre personnel et avec une dynamique en temps réel. Avec la conscience de l’importance de chaque document.",
+          "La régularité et la fréquence de nos services, avec la possibilité de rejoindre également les ports secondaires du Maghreb, nous permettent d’offrir à nos clients une variété de services unique sur ces marchés. Choisissez Bongiorno pour un service de transport qui dépasse les attentes et vous accompagne partout où vous en avez besoin. Contactez-nous pour découvrir comment nous pouvons optimiser vos expéditions et atteindre de nouveaux marchés en toute confiance. Notre expérience et notre dévouement seront toujours à vos côtés."
         ]
       },
       {
-        "id": "combinaisons",
-        "icon": "Camion",
+        "id": "complete",
+        "icon": "Truck",
         "title": "Transports complets",
         "paragraphs": [
-          "Nous sommes conscients que le succès d'une expédition dépend de nombreuses variables, et notre spécialisation fait de nous le partenaire idéal pour toutes les éventualités.",
-          "Du choix du transporteur maritime à la disponibilité des équipements, rien n'est laissé au hasard.",
-          "Nous avons investi des ressources considérables pour rendre chaque composant plus efficace afin de garantir une fiabilité maximale et une livraison rapide."
+          "Nous sommes conscients que le succès d’une expédition dépend de nombreuses variables et notre spécialisation dans ce domaine fait de nous le partenaire idéal pour toute éventualité.",
+
+"Le souci du détail, du choix du transporteur maritime idéal au marché jusqu’à la fiabilité des services et la disponibilité des équipements. Rien n’est laissé au hasard.",
+
+"Nous avons consacré de grandes ressources pour essayer de gérer de manière toujours plus efficace tous les composants qui confèrent à notre transport une fiabilité maximale.",
+
+"Donc, si vous recherchez un service de transport de conteneurs ou de remorques complètes fiable et efficace, nous sommes là pour vous. Pour transporter vos marchandises rapidement et en toute sécurité."
+
         ]
       },
       {
@@ -584,9 +589,15 @@
         "icon": "Cog",
         "title": "Transport exceptionnel et cargaison de projet",
         "paragraphs": [
-          "Un type de transport qui exige une grande compétence et une étude minutieuse des itinéraires, des réglementations et des caractéristiques des marchandises.",
-          "Nous évaluons toutes les éventualités afin de nous assurer qu'aucun problème technique ou bureaucratique n'affecte le résultat.",
-          "Nous travaillons avec les partenaires routiers et maritimes les plus fiables pour garantir une sécurité maximale."
+          "Un type de transport qui nécessite non seulement une compétence approfondie mais aussi une étude attentive des itinéraires, des réglementations et des caractéristiques des marchandises et des territoires d’expédition.",
+
+          "Considérer toutes les éventualités pour vous assurer que des obstacles techniques ou bureaucratiques n’affectent pas le résultat. ",
+
+          "Choisir les partenaires routiers et maritimes les plus fiables et adaptés aux pays à traverser. ",
+
+          "Les garanties que nous offrons aux clients sur ces transports délicats. Pour livrer en toute sécurité les marchandises qui nous sont confiées"
+
+
         ]
       },
       {
@@ -594,15 +605,14 @@
         "icon": "ShieldCheck",
         "title": "Assurance tous risques",
         "paragraphs": [
-          "Nous considérons la couverture All Risk comme un outil extrêmement important, une garantie qui protège contre tous les risques possibles lors d'une opération de transport.",
-          "Nous fournissons à nos clients une politique éprouvée, disponible sur demande pour chaque envoi."
+          "Nous considérons la couverture \"Tous Risques\" comme un outil de grande importance. C’est une police d’assurance qui permet de se protéger contre tous les éléments de risque qui pourraient survenir au cours d’un transport. Pour ces raisons, nous avons une police d’assurance de fiabilité éprouvée que nous mettons à la disposition des clients qui en font la demande explicite."
         ]
       }
     ]
   },
   "ctaBanner": {
     "cta_main": "Notre présence stable et historique sur la région fait de nous un partenaire solide, capable de résoudre rapidement tout imprévu.",
-    "claim": "Ceci, combiné à un personnel hautement expérimenté et compétent, nous permet d'offrir une vitesse, une sécurité et une garantie maximales sur tous les marchés dans lesquels nous opérons grâce à des normes opérationnelles élevées.",
+    "claim": "Ceci, combiné à un personnel hautement expérimenté et compétent, nous permet d'offrir une vitesse, une sécurité et une garantie maximales sur tous les marchés dans lesquels nous opérons grâce à des normes opérationnelles élevées. ",
     "cta": {
       "ctacontatti": "Contactez nous",
       "hrefcontatti": "/contacts",
