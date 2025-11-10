@@ -35,9 +35,35 @@ export default async function NewsPage({ params }) {
   // 📰 Get all articles with locale availability info
   const articles = getAllArticlesWithLocales(locale);
 
-  const featured = articles[0];
-  const secondary = articles[1];
-  const others = articles.slice(2);
+  // Determine featured and secondary by priority
+  const pickByPriority = (list) => {
+    if (!Array.isArray(list) || list.length === 0) return { featured: undefined, secondary: undefined, others: [] };
+
+    // Prefer explicit labels
+    const byLabel = {
+      featured: list.find((a) => a?.priority === 'featured'),
+      secondary: list.find((a) => a?.priority === 'secondary')
+    };
+
+    // Numeric priorities: higher number = higher priority
+    const numeric = list
+      .map((a, idx) => ({ a, idx, n: typeof a.priority === 'number' ? a.priority : null }))
+      .filter((x) => x.n !== null)
+      .sort((x, y) => y.n - x.n);
+
+    let featured = byLabel.featured || (numeric[0]?.a);
+    let secondary = byLabel.secondary || (numeric.find((x) => x.a !== featured)?.a);
+
+    // Fallbacks by date order
+    if (!featured) featured = list[0];
+    if (!secondary) secondary = list.find((a) => a !== featured);
+
+    // Others: keep date order, exclude chosen
+    const others = list.filter((a) => a !== featured && a !== secondary);
+    return { featured, secondary, others };
+  };
+
+  const { featured, secondary, others } = pickByPriority(articles);
 
   return (
     <main className="text-gray-800 dark:text-gray-200">

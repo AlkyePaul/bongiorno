@@ -14,7 +14,7 @@ export default function HomepageContent() {
         <H2>
           {t("title")}
         </H2>
-        <div className="space-y-4  text-gray-700 dark:text-gray-300 leading-relaxed">
+        <div className="space-y-4  text-lg  text-gray-700 dark:text-gray-300 leading-relaxed">
           <ReactMarkdown>{t("intro1")}</ReactMarkdown>
           <ReactMarkdown>{t("intro2")}</ReactMarkdown>
           <ReactMarkdown>{t("intro3")}</ReactMarkdown>
