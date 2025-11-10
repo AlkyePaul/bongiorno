@@ -337,67 +337,64 @@
     "services": {
       "title": "Services",
       "intro": [
-        "Your trust is the engine of our transportation. We look forward to proving to you that we can exceed your expectations. Choose our transportation solutions and discover the true meaning of first-class shipping service."
+        "Your trust is the engine of our transports. We look forward to proving to you that we can exceed your expectations. Choose our transport solutions and discover the true meaning of a first-class shipping service."
       ],
       "items": [
         {
-          "title": "Groupage Transportation",
-          "description": "Relying on those who can handle small and medium-sized shipments with the right care and speed is vital so that production or business activities are never interrupted."
+          "title": "Groupage Transport",
+          "description": "Trusting those who know how to handle small and medium shipments with the right care and speed is vital to never interrupting productive or commercial activity."
         },
         {
           "title": "Exceptional Transport and Project Cargo",
-          "description": "A type of transportation that requires, not only deep expertise, but also careful study of routes, regulations and characteristics of goods and territories of execution of shipments."
+          "description": "A type of transport that requires not only deep competence but also careful study of routes, regulations, and the characteristics of goods and territories of execution."
         },
         {
           "title": "Full Containers Services",
-          "description": "Extremely fast frequency and transit time, availability of space on board ships, and a wide variety of container types to meet a wide variety of needs."
+          "description": "Extremely fast frequency and transit time, availability of space on board ships, and a wide variety of container types to meet the most diverse needs."
         },
         {
           "title": "All Risks Insurance",
-          "description": "For those who never want to leave anything to chance. An insurance policy that guards against any risk during transport. The key to a peaceful shipment. Our solid all risks policy is available upon request."
+          "description": "For those who never want to leave anything to chance. An insurance policy on request that protects against all risks during transport. The key to a serene shipment. Our robust all-risks policy is available on request."
         }
       ]
     },
     "content": {
       "title": "We are not just freight forwarders",
-      "intro1": "We understand that the world of logistics can be complex, but we are here to make it easy for you.",
-      "intro2": "What makes us different from others? Our mission is to ensure that your goods arrive at their destination in perfect condition and in the shortest possible time.",
-      "intro3": "We are proud to have created, over time, specialized services that enable us to handle shipments to the Maghreb and several other geographic areas with a single, solid structure.",
-      "intro4": "From the time the goods leave the exporter's door to the time they are made available to the importer, we control every step thanks to the training of our staff, who are able to fully understand the dynamics and operations involved in an international transport. Staying abreast of the innovations and changes that make our business increasingly dynamic.",
-      "intro5": "Our goal is to earn the trust of our customers by showing them that we work tirelessly for continued growth.",
+      "intro1": "We understand that the world of logistics can be complex, but we are here to make everything simpler for you.",
+      "intro2": "What makes us different from others? Our mission is to ensure that your goods arrive at their destination in perfect condition and as quickly as possible.",
+      "intro3": "We are proud to have created, over time, specialized services that allow us to manage shipments in the Maghreb and various other geographical areas with a unique and solid structure.",
+      "intro4": "From the moment the goods leave the exporter’s door until they are made available to the importer, we monitor every step thanks to the training of our staff, capable of deeply understanding the dynamics and operations that an international transport entails. Keeping up with the innovations and changes that make our activity increasingly dynamic.",
+      "intro5": "Our goal is to earn the trust of our clients by showing them that we work tirelessly for continuous growth.",
       "blocks": [
         {
-          "title": "We are the real stars of your transportation",
+          "title": "We are the true protagonists of your transports",
           "text1": "Choosing Bongiorno means choosing safety and efficiency.",
           "text2": "Rely on us for all your international shipments and discover how we make freight transportation a serene experience.",
-          "text3": "AEO operator qualification, participation in the WCA network and ISO 9001:2015 certification are a guarantee that our quality of service is indeed what we are proud to offer.",
-          "text4": "To provide peace of mind for our customers, we also offer an optional \"All Risks\" policy, which covers the full amount of your sales invoice. No matter what happens in transit, you will always be safe.",
-          "alt": "Trucks and containers on the road"
+          "text3": "The AEO operator qualification and ISO 9001:2015 certification of our italian headquarters,  together with our participation in the WCA network, are guarantees that our quality of service is truly what we are proud to offer.",
+          "text4": "To ensure maximum peace of mind for our clients, we also offer an optional “All Risks” policy, which covers the entire amount of your sales invoice. No matter what happens during transport, you will always be safe.",
+          "alt": "Bongiorno headquarters"
         }
       ]
     },
     "quality": {
       "title": "Our quality, certified and recognized",
-      "text1": "In 2014, we obtained AEO status for our customs operations, which is of enormous importance because it allows us greater speed in shipments, greater communication between parts of the supply chain and decreased security issues. It is the result of a careful verification procedure by the Customs and Monopolies Agency and is an element of interest to those who rely on our services. Add to this our ISO 9001 Certification, which has been obtained for many years now and is a further guarantee of quality for customers.",
+      "text1": "In 2014, we obtained AEO status for our customs operations, which is of enormous importance because it allows us greater speed in shipments, greater communication between parts of the supply chain and decreased security issues. It is the result of a careful verification procedure by the italian Customs and Monopolies Agency and is an element of interest to those who rely on our services. Add to this our ISO 9001 Certification, which has been obtained for many years now and is a further guarantee of quality for customers.",
       "text2": "See our quality policy here."
     },
     "sedi": {
       "title": "Locations",
-      "intro1": "Thanks to the presence of our own staff and offices in 5 Mediterranean countries, we can handle shipments to and from the Maghreb with the expertise of those who live with the ever-changing daily dynamics of this area and with the speed of those who know the issues.",
-      "intro2": "We guarantee immediate and direct interventions to find the best solution that will always bring every shipment to a successful conclusion.",
+      "intro1": "Thanks to the presence of our own staff and offices in 5 Mediterranean countries, we can handle shipments to and from the Maghreb with the expertise of those who live with the the constantly evolving daily dynamics of this area and with the speed of those who know the issues.",
+      "intro2": "We guarantee immediate and direct interventions to always find the best solution that ensures each shipment is successfully completed. Additionally, choosing WCA-certified partners allows us to have highly professional and widespread support around the world, ensuring nothing is left to chance.",
       "intro3": "In addition, choosing WCA-certified partners enables us to be able to have highly professional and widespread support anywhere in the world. So that nothing is left to chance.",
       "contactLabel": "Contact",
-      "globalTitle": "Bongiorno in the world",
-      "globalText": "The international nature of our business and continued growth have led us to expand our services beyond the borders of the countries where we are already established and long established thanks to the invaluable support and help of the agency network guaranteed by the World Trade Alliance, of which we have been a member since 2009.",
-      "globalContact": "Contact",
       "locations": [
         {
           "name": "Bongiorno Italy",
           "flag": "/img/flags/en.svg",
           "description": [
-            "Founded in 1985, Bongiorno Ltd. is our parent company.",
+            "Founded in 1985, Bongiorno SRL. is our parent company.",
             "Based in Gallarate, just 5 minutes from Milan Malpensa Airport, it is a confluence point for major traffic lines from the industrial regions of north-central Italy.",
-            "Our proximity to the main commercial ports in the northern Mediterranean puts us in a privileged position to ensure extreme speed and efficiency in the execution of transportation mandates."
+            "Our proximity to the main commercial ports in the northern Mediterranean puts us in a privileged position to ensure extreme speed and effectiveness in executing transport mandates."
           ],
           "contactUrl": "#"
         },
@@ -405,8 +402,8 @@
           "name": "Bongiorno Spain",
           "flag": "/img/flags/es.svg",
           "description": [
-            "Headquartered in Barcelona and with strategic logistics platforms in Spain and Portugal, Bongiorno Spain is able to ensure accurate and extensive service to and from the entire Iberian Peninsula.",
-            "Bongiorno Spain is, today, a key reference for the group in the development of trade to North Africa."
+            "Headquartered in Barcelona and with strategic logistics platforms in Spain and Portugal, Bongiorno Spain is able to ensure thorough and precise service throughout the Iberian Peninsula.",
+            "Bongiorno Spain is, today, a crucial reference in developing traffic towards North Africa."
           ],
           "contactUrl": "#"
         },
@@ -414,9 +411,8 @@
           "name": "Bongiorno France",
           "flag": "/img/flags/fr.svg",
           "description": [
-            "We are based in Marseille, on the main access road to the city and only 1 km from the port, a strategic point of maritime activity to ports in the Maghreb and throughout the Mediterranean.",
-            "We also have logistics platforms in the most sensitive areas (Paris Region, Lyon Region, Northern France).",
-            "Our truck services also enable us to serve much of Germany and the entire Belgian and Dutch territories."
+            "Our office is in Marseille, located on the main access route to the city and just 1 km from the port, a strategic point for maritime activity towards the ports of the Maghreb and the entire Mediterranean.",
+            "We also have logistic platforms in the most sensitive areas (Paris Region, Lyon Region, Northern France). Our trucking services additionally cover a large part of Germany and the entire Belgian and Dutch territories."
           ],
           "contactUrl": "#"
         },
@@ -424,9 +420,8 @@
           "name": "Bongiorno Tunisia",
           "flag": "/img/flags/tn.svg",
           "description": [
-            "It represents our first commercial and operational base in North Africa.",
-            "The operational structure that Bongiorno Tunisia has is currently considered to be one of the most important in the transport sector in Tunisia.",
-            "We make use of three container terminals with warehouses under customs in the main Tunisian ports (Rades, Sousse, and Sfax) that allow us to meet the needs of all Tunisian economic operators for any type of transport."
+            "Represents our first commercial and operational base in North Africa.", "The operational structure available to Bongiorno Tunisia is considered one of the most significant realities in the Tunisian transport sector.",
+            "We utilize three container terminals with bonded warehouses in the main Tunisian ports (Rades, Sousse, and Sfax) that allow us to meet the needs of all Tunisian economic operators for any type of transport."
           ],
           "contactUrl": "#"
         },
@@ -434,8 +429,8 @@
           "name": "Bongiorno Algeria",
           "flag": "/img/flags/dz.svg",
           "description": [
-            "Algeria is a country in the midst of economic development and one that is increasingly making its presence felt on the international scene.",
-            "For this reason, we created Bongiorno Algerie in early 2000, believing that our experience and professionalism could be a useful and appreciated tool for Algerian and European operators to develop their businesses."
+            "Algeria is a country in full economic development and a reality that increasingly asserts its significance on the international scene.",
+            "For this reason, in the early 2000s, we established Bongiorno Algeria, believing that our experience and professionalism could be a useful and appreciated tool by Algerian and European operators for their business development."
           ],
           "contactUrl": "#"
         },
@@ -443,7 +438,7 @@
           "name": "Bongiorno in the World",
           "flag": "/img/flags/dz.svg",
           "description": [
-            "The international nature of our business and continued growth have led us to expand our services beyond the borders of the countries where we are already established and long established thanks to the invaluable support and help of the agency network guaranteed by the World Trade Alliance of which we have been a member since 2009"
+            "The international nature of our business and our continuous growth have led us to expand our services beyond the borders of the countries where we are already well-established over time, thanks to the precious support and assistance of the agency network guaranteed by the World Trade Alliance of which we have been members since 2009."
           ],
           "contactUrl": "#"
         }
@@ -600,8 +595,8 @@
     ]
   },
   "ctaBanner": {
-    "cta_main": "Our stable and long-standing presence in the area makes us a solid partner capable of solving any unforeseen event quickly, offering speed, security and guarantee in all the markets in which we operate.",
-    "claim": "This, combined with our highly experienced and knowledgeable staff, enables us to offer maximum speed, safety and assurance in all the markets in which we operate through high operational standards.",
+    "cta_main": "We guarantee immediate and direct interventions to always find the best solution for successful shipping.",
+    "claim": "Additionally, choosing WCA-certified partners allows us to provide highly professional and widespread support around the world. To leave nothing to chance.",
     "cta": {
       "ctacontatti": "Contact us",
       "hrefcontatti": "/contacts",
@@ -627,12 +622,14 @@
       "employees_prefix": "More than",
       "employees_label": "employees in 5 countries"
     },
-    "text1": "In 1985 in Gallarate the story of our company began.Fruit of a great intuition of our founder and president: to read in Tunisia the great potential and affinities that unite us and invest in those.",
-    "text2": "We have, since the beginning of our activity followed a policy of specialization, dedicating all technical and human resources precisely to the Tunisian market and, in a second phase, to the entire Maghreb.",
-    "text3": "This particularity has allowed our organization to consolidate itself in North African markets to the point of becoming a carrier of reference for shipments in this region. Never losing sight of the real needs of exporters and importers and adapting to the changing realities of the countries and markets of both destination and departure of goods.",
-    "text4": "After the consolidation of our lines, we felt that our vision of transportation should also go beyond those boundaries and that this would not cause us to lose our identity but would, on the contrary, enrich it.",
-    "text5": "The international dimension of our transports is now recognized on a daily basis by our customers who, with increasing frequency, entrust us with the management of their shipments around the world. After the consolidation of our lines we felt that our vision of transportation should also go beyond those borders and that this would not make us lose our identity, but would, on the contrary, enrich it.",
-    "text6": "The international dimension of our transports is now recognized on a daily basis by customers who, with increasing frequency, entrust us with the management of their shipments around the world.",
+    "text1": "In 1985, the story of our company began in Gallarate. It was the result of a great insight by our founder and President: recognizing the significant potential in Tunisia and the affinities that bind us, and investing in them.",
+    "text2": "From the very beginning of our operations, we followed a policy of specialization, dedicating all our technical and human resources specifically to the Tunisian market and, in a second phase, to the entire Maghreb region.",
+    "text3": "This approach has allowed our organization to consolidate itself in North African markets, becoming a key carrier for shipments to this region. We have always stayed focused on the actual needs of exporters and importers, adapting to the evolving realities of both the destination and origin markets of the goods.",
+
+    "text4": "After consolidating our routes, we believed that our vision of transportation should extend beyond these borders, and that this would not diminish our identity but, on the contrary, enrich it.",
+   
+    "text5": "The international dimension of our transport services is now recognized daily by our clients, who increasingly trust us with the management of their shipments worldwide",
+ 
     "subtitle": "Our History",
     "sede": "Bongiorno's headquarters in Gallarate, 40 Marsala Street, the headquarters of the business."
   },
