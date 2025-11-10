@@ -27,8 +27,8 @@ export default function Dropdowns({ label, items }) {
             initial={{ opacity: 0, y: -5 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -5 }}
-            transition={{ duration: 0.15 }}
-            className="absolute left-0 mt-2 border-t flex flex-col bg-white rounded-b-md shadow-lg min-w-[180px] p-2"
+            transition={{ duration: 0.15 }}            
+            className="absolute left-0 mt-2 border-t flex flex-col bg-white rounded-b-md shadow-lg min-w-[180px] p-2 max-w-[90vw] max-h-[70vh] z-50"
           >
             {items.map((sub) => (
               <Link
