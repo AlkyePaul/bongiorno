@@ -384,7 +384,7 @@
     "services": "Servicios",
     "destinations": "Destinos",
     "scopri": "Descubre",
-    "contacts": "Póngase en contacto con",
+    "contacts": "Contactos",
     "about": "Quiénes somos",
     "news": "Noticias",
     "mondo": "Mundo",
@@ -406,7 +406,7 @@
         },
         {
           "href": "/contactos",
-          "label": "Póngase en contacto con nosotros"
+          "label": "Contáctanos"
         }
       ]
     },
@@ -638,10 +638,10 @@
       "workwithus": "Trabaja con nosotros",
       "about": "Quiénes somos",
       "privacy": "Privacidad",
-      "contacts": "Póngase en contacto con"
+      "contacts": "Contactos"
     },
     "contact": {
-      "title": "Póngase en contacto con",
+      "title": "Contactos",
       "email": "bongiorno@bongiornosrl.com",
       "phone": "+39 0331 776 334",
       "address": "Via Marsala, 40 - 21013 Gallarate (VA)"
@@ -731,7 +731,7 @@
     "cta_main": "Nuestra presencia estable y duradera en el territorio nos convierte en un socio sólido capaz de resolver con rapidez cualquier imprevisto, ofreciendo rapidez, seguridad y garantía en todos los mercados en los que operamos.",
     "claim": "Esto, combinado con nuestro personal altamente experimentado y competente, nos permite ofrecer la máxima rapidez, seguridad y protección en todos los mercados en los que operamos gracias a nuestras estrictas normas de funcionamiento.",
     "cta": {
-      "ctacontatti": "Póngase en contacto con nosotros",
+      "ctacontatti": "Contáctanos",
       "hrefcontatti": "/contactos",
       "ctaservizi": "Más información sobre los servicios",
       "hrefservizi": "/servicios",
@@ -764,7 +764,7 @@
     "sede": "Sede de Bongiorno en Gallarate, Via Marsala 40, sede de la empresa."
   },
   "contact": {
-    "title": "Póngase en contacto con",
+    "title": "Contáctanos",
     "address": {
       "label": "Dirección",
       "value": "Via Marsala 40, Gallarate, Varese, 21013 Italia"
