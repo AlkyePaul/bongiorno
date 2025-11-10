@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
-import Header from '@/components/header/Header';
+import HeaderSSR from '@/components/Header/HeaderSSR';
 import Footer from '@/components/footer/Footer';
 import CookieConsent from "@/components/common/CookieConsent";
 import { generateLocaleParams } from '@/lib/locales';
@@ -24,7 +24,7 @@ export default async function LocaleLayout({ children, params }) {
   
         <NextIntlClientProvider locale={locale} messages={messages}>
         
-          <Header />
+          <HeaderSSR />
           {children}
           <Footer />
            <CookieConsent />

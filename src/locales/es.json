@@ -46,7 +46,7 @@
         "id": "objeto-propósito",
         "heading": "Objeto del tratamiento y finalidad",
         "content": [
-          "Tratamos sus datos de identificación personal (por ejemplo, nombre, apellidos y correo electrónico) -en lo sucesivo denominados \"datos\"- facilitados por usted para atender su solicitud en la sección \"Contacte con nosotros\" del sitio web y en la sección \"Presupuestos\"."
+          "Tratamos sus datos de identificación personal (por ejemplo, nombre, apellidos y correo electrónico) -en lo sucesivo denominados \"datos\"- facilitados por usted para atender su solicitud en la sección \"Contacte con nosotros\" del sitio web y en la sección \"Cotizaciones\"."
         ]
       },
       {
@@ -159,7 +159,7 @@
   },
   "common": {
     "company": "Bongiorno SRL",
-    "preventivo": "Solicitar presupuesto",
+    "preventivo": "Solicitar cotización",
     "back_news": "Volver a las noticias",
     "fallback_notice": "Este artículo aún no está disponible en este idioma. Se muestra la versión italiana."
   },
@@ -376,7 +376,7 @@
         "Tiempos de tránsito muy rápidos",
         "Seguro a todo riesgo a petición"
       ],
-      "cta": "Solicitar un presupuesto"
+      "cta": "Solicita una cotización"
     }
   },
   "nav": {
@@ -402,7 +402,7 @@
       "ctas": [
         {
           "href": "#129837",
-          "label": "Solicitar presupuesto"
+          "label": "Solicita una cotización"
         },
         {
           "href": "/contactos",
@@ -606,7 +606,7 @@
       "city": "Ciudad",
       "zip": "Código Postal"
     },
-    "submit": "Enviar solicitud de presupuesto",
+    "submit": "Enviar solicitud de cotización",
     "sending": "Enviando...",
     "success": "¡Solicitud enviada con éxito! En breve nos pondremos en contacto con usted.",
     "error": "Error al enviar. Vuelva a intentarlo más tarde.",
@@ -617,12 +617,12 @@
     "features": [
       "Tarifas claras y sin sorpresas",
       "Oficinas locales en Túnez, Argelia, Italia, España y Francia",
-      "Grupaje, FCL y carga de proyecto",
+      "Grupaje, FCL y Project Cargo",
       "Elección de cobertura de seguro, incluido Todo Riesgo",
       "Más de 35 años de experiencia"
     ],
     "cta": {
-      "quote": "Solicitar un presupuesto",
+      "quote": "Solicita una cotización",
       "call": "Llama ahora"
     }
   },
@@ -653,60 +653,66 @@
     "intro": "Gracias a nuestra experiencia y presencia directa en los principales países mediterráneos, ofrecemos una gama completa de servicios de transporte internacional y logística diseñados para garantizar puntualidad, seguridad y comodidad.",
     "cards": [
       {
-        "icon": "Paquete",
+        "icon": "Package",
         "title": "Transporte de grupaje",
         "href": "#Grupo",
-        "text": "Para la industria, el comercio y las grandes obras hemos creado servicios que ofrecen al transporte los mejores rendimientos y condiciones. Para que sus mercancías lleguen siempre a tiempo."
+        "text": "Para la industria, el comercio y las grandes obras hemos creado servicios que ofrecen al transporte los mejores rendimientos y condiciones. Para que tus mercancías lleguen siempre a tiempo."
       },
       {
-        "icon": "Camión",
+        "icon": "Truck",
         "title": "Transportes completos",
         "href": "#completo",
-        "text": "Frecuencia y tiempos de tránsito rápidos, disponibilidad de espacio a bordo de los buques y gran variedad de contenedores en los principales puertos del Magreb."
+        "text": "Rapidez en frecuencias y tiempos de tránsito, disponibilidad de espacio a bordo de barcos y gran variedad de contenedores en los principales puertos del Magreb."
       },
       {
         "icon": "Cog",
-        "title": "Carga excepcional y de proyecto",
+        "title": "Transporte excepcional y Projet Cargo",
         "href": "#excepcional",
-        "text": "Transporte que requiere una gran competencia y un estudio minucioso de las rutas, la normativa, las características de las mercancías y los territorios."
+        "text": "Transporte que requiere alta especialización y estudio cuidadoso de rutas, normativas, características de mercancías y territorios."
       },
       {
         "icon": "ShieldCheck",
         "title": "Seguro a todo riesgo",
         "href": "#seguros",
-        "text": "Para no dejar nada al azar. Un seguro a la carta protege de todos los riesgos durante el transporte."
+        "text": "Para no dejar nada al azar. Una póliza de seguro bajo petición que protege contra cualquier riesgo durante el transporte."
       }
     ],
     "details": [
       {
         "id": "agrupamiento",
-        "icon": "Paquete",
+        "icon": "Package",
         "title": "Transporte de grupaje",
         "paragraphs": [
-          "Una amplia red de operadores por carretera que cubre toda Europa garantiza que las mercancías lleguen a nuestros centros de recogida en el menor tiempo posible y con las mejores garantías de calidad.",
-          "Disponemos de modernas áreas logísticas con vehículos y personal altamente eficientes, equipados con modernos sistemas de seguridad y preparados para adaptarse a las necesidades más diversas.",
-          "Gestionamos, como operadores OEA en Italia, las operaciones aduaneras directamente en los centros de recogida, con nuestro propio personal y en tiempo real.",
-          "La regularidad y frecuencia de nuestros servicios nos permite ofrecer una variedad de soluciones única en los mercados del Magreb."
+       
+"Una amplia red de operadores de carreteras que cubre todo el territorio europeo garantiza que las mercancías lleguen a nuestros centros de recogida en el menor tiempo posible y con las mejores garantías de calidad.",
+"Disponemos de modernas áreas logísticas equipadas con vehículos y personal altamente eficientes y equipadas con modernos sistemas de seguridad, listas para adaptarse a las más diversas necesidades.",
+"Gestionamos, como operadores OEA en Italia, las operaciones aduaneras directamente en los centros de recogida, con nuestro personal y con dinámica en tiempo real. Somos conscientes de la importancia de cada documento.",
+"La regularidad y frecuencia de nuestros servicios, con la posibilidad de llegar también a puertos secundarios del Magreb, nos permite ofrecer a los clientes una variedad de servicios única en estos mercados.",
+"Elije Bongiorno para un servicio de transporte que supere sus expectativas y le acompañe donde lo necesite. Contáctanos para descubrir cómo podemos ayudarlo a optimizar us envíos y llegar a nuevos mercados con confianza. ¡Nuestra experiencia y dedicación estarán siempre a tu lado!"
         ]
       },
       {
         "id": "trajes",
-        "icon": "Camión",
+        "icon": "Truck",
         "title": "Transportes completos",
         "paragraphs": [
-          "Somos conscientes de que el éxito de una expedición depende de muchas variables, y nuestra especialización nos convierte en el socio ideal para cualquier eventualidad.",
-          "Desde la elección del transportista marítimo hasta la disponibilidad de equipos, nada se deja al azar.",
-          "Hemos invertido grandes recursos en hacer más eficiente cada componente para garantizar la máxima fiabilidad y una entrega rápida."
+       "Somos conscientes de que el éxito de una expedición depende de muchas variables y nuestra especialización en este campo nos convierte en el socio ideal para afrontar cualquier eventualidad.",
+       "Atención al detalle, desde la elección del transportista marítimo ideal según el mercado hasta la confiabilidad de los servicios y la disponibilidad de equipos. Nada se deja al azar.",
+       "Hemos dedicado grandes recursos para intentar gestionar de una manera cada vez más eficiente todos los componentes que dotan a nuestro transporte de la máxima fiabilidad.",
+       "Entonces, si estás buscando un servicio de transporte de contenedores o remolques completos confiable y eficiente, estamos aquí para ayudarte. Para transportar tus mercancías de forma rápida y segura."
+
+
         ]
       },
       {
         "id": "excepcional",
         "icon": "Cog",
-        "title": "Transporte excepcional y carga de proyectos",
+        "title": "Transporte excepcional y Project Cargo",
         "paragraphs": [
-          "Un tipo de transporte que requiere una gran competencia y un estudio minucioso de las rutas, la normativa y las características de las mercancías.",
-          "Evaluamos todas las eventualidades para garantizar que ningún contratiempo técnico o burocrático afecte al resultado.",
-          "Trabajamos con los socios marítimos y por carretera más fiables para garantizar la máxima seguridad."
+        " Un tipo de transporte que requiere no sólo un profundo conocimiento, sino también un estudio detenido de las rutas, normativas, características de las mercancías y los territorios en los que se realizan los envíos. Considerar todas las eventualidades para asegurarse de que los obstáculos técnicos o burocráticos no afecten el resultado.",
+"Elegir los socios terrestres y marítimos más fiables y adecuados para los países que se desean cruzar. Las garantías que ofrecemos a los clientes en estos delicados transportes. Entregar con seguridad los bienes que nos han sido confiados."
+
+
         ]
       },
       {
@@ -714,8 +720,9 @@
         "icon": "ShieldCheck",
         "title": "Seguro a todo riesgo",
         "paragraphs": [
-          "Consideramos que la cobertura a todo riesgo es una herramienta extremadamente importante, una garantía que protege contra todos los riesgos posibles durante una operación de transporte.",
-          "Proporcionamos a los clientes una póliza probada, disponible a petición para cada envío."
+         "Consideramos que la cobertura “Todo Riesgo” es una herramienta de enorme importancia. Una garantía que permite protegerse de todos aquellos elementos de riesgo que pudieran presentarse durante el transporte.", 
+         
+         "Por estos motivos contamos con una póliza de fiabilidad contrastada que ponemos a disposición de los clientes que así lo soliciten expresamente."
         ]
       }
     ]
