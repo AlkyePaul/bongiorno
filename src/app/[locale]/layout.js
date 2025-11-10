@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
-import HeaderSSR from '@/components/Header/HeaderSSR';
+import HeaderSSR from '@/components/header/HeaderSSR';
 import Footer from '@/components/footer/Footer';
 import CookieConsent from "@/components/common/CookieConsent";
 import { generateLocaleParams } from '@/lib/locales';
