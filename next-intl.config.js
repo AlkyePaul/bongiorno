@@ -1,6 +1,6 @@
 // next-intl.config.js
 export default {
-  locales: ['es', 'en', 'it'],
-  defaultLocale: 'es',
+  locales: ['it', 'es', 'en', 'fr'],
+  defaultLocale: 'it',
   localePrefix: 'as-needed'
 };

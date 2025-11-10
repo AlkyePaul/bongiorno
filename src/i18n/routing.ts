@@ -4,7 +4,7 @@ import {defineRouting} from 'next-intl/routing';
 export const routing = defineRouting({
   locales: ['it', 'es', 'en', 'fr'],
   defaultLocale: 'it',
-  localePrefix: 'always',            // ← important for foldered URLs
+  localePrefix: 'as-needed',            // Serve default locale at '/' without redirect
   pathnames: {
     '/': { it: '/', es: '/', en: '/', fr: '/' },
     '/chi-siamo': { it: '/chi-siamo', es: '/quienes-somos', en: '/about', fr: '/a-propos' },
