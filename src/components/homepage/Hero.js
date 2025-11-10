@@ -26,7 +26,7 @@ export default function Hero({ title, subtitle, ctas, claim }) {
 
       {/* Contenido */}
       <div className="relative z-10 container mx-auto px-6 py-22 text-left max-w-4xl">
-        <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight uppercase">
+        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight uppercase">
           {title}
         </h1>
         <h2 className="mt-4 text-2xl md:text-3xl font-medium">{subtitle}</h2>
