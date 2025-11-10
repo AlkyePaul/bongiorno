@@ -41,7 +41,7 @@ export default async function HeaderSSR() {
         </Link>
 
         {/* CENTER LINKS */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8 min-w-0">
           {navLinks.map((link) => {
             if (link.key === 'destinazioni' || link.key === 'scopri') {
               return (
@@ -68,7 +68,7 @@ export default async function HeaderSSR() {
         </div>
 
         {/* Mobile: language switcher + hamburger */}
-        <div className="lg:hidden flex items-center gap-2">
+        <div className="lg:hidden flex items-center gap-2 min-w-0">
           <LanguageSwitcher />
           <MobileMenu navLinks={navLinks} quoteLabel={quoteLabel} />
         </div>

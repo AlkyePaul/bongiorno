@@ -1,5 +1,5 @@
 "use client";
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import {Link} from '@/i18n/navigation';
 import {AnimatePresence, motion} from 'framer-motion';
 import {IoMenu} from 'react-icons/io5';
@@ -11,6 +11,19 @@ export default function MobileMenu({ navLinks, quoteLabel }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [destOpen, setDestOpen] = useState(false);
   const [scopriOpen, setScopriOpen] = useState(false);
+
+  // Lock body scroll when menu is open
+  useEffect(() => {
+    if (!menuOpen) return;
+    const prevOverflow = document.body.style.overflow;
+    const prevTouchAction = document.body.style.touchAction;
+    document.body.style.overflow = 'hidden';
+    document.body.style.touchAction = 'none';
+    return () => {
+      document.body.style.overflow = prevOverflow || '';
+      document.body.style.touchAction = prevTouchAction || '';
+    };
+  }, [menuOpen]);
 
   const handleSubMenuToggle = (key) => {
     if (key === 'destinazioni') {
@@ -44,10 +57,12 @@ export default function MobileMenu({ navLinks, quoteLabel }) {
             <div
               className="absolute inset-0 bg-black/50"
               onClick={() => setMenuOpen(false)}
+              onWheel={(e) => e.preventDefault()}
+              onTouchMove={(e) => e.preventDefault()}
             />
             {/* Drawer panel */}
             <motion.aside
-              className="absolute right-0 top-0 h-full w-80 max-w-[85%] bg-white text-gray-800 shadow-xl flex flex-col"
+              className="absolute right-0 top-0 h-full w-80 max-w-[85%] bg-white text-gray-800 shadow-xl flex flex-col overscroll-y-contain"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
