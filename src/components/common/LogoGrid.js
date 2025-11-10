@@ -4,11 +4,11 @@ import Link from "next/link";
 export default function LogoGrid(grayscale, scale) {
 
   const logos = [
-    { src: "/img/logos/AEO.webp", alt: "AEO", href: "#" },
-    { src: "/img/logos/wca.webp", alt: "WCA", href: "#" },
-    { src: "/img/logos/fedespedi.webp", alt: "Fedespedi", href: "#" },
+    { src: "/img/logos/AEO.webp", alt: "AEO" },
+    { src: "/img/logos/wca.webp", alt: "WCA" },
+    { src: "/img/logos/fedespedi.webp", alt: "Fedespedi"},
     { src: "/img/logos/iso9001.webp", alt: "ISO 9001:2015", href: PDF_RINA },
-    { src: "/img/logos/igln.webp", alt: "IGLN", href: "#" }
+    { src: "/img/logos/igln.webp", alt: "IGLN"}
   ];
     return (
  
@@ -25,7 +25,7 @@ export default function LogoGrid(grayscale, scale) {
                 sizes="160px"
                 className={`object-contain ${grayscale ? "" : "grayscale hover:grayscale-0"} ${scale ? "" : "hover:scale-115"}`}
               />
-              <Link href={logo.href} target="_blank" className="absolute inset-0" />
+              {logo.href && <Link href={logo.href} target="_blank" className="absolute inset-0" />}
             </div>
           ))}
         </div>

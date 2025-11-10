@@ -5,6 +5,7 @@ import {AnimatePresence, motion} from 'framer-motion';
 import {IoMenu} from 'react-icons/io5';
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 import { IoClose } from 'react-icons/io5';
+import { createPortal } from 'react-dom';
 
 
 export default function MobileMenu({ navLinks, quoteLabel }) {
@@ -46,9 +47,9 @@ export default function MobileMenu({ navLinks, quoteLabel }) {
       </button>
 
       <AnimatePresence>
-        {menuOpen && (
+        {menuOpen && createPortal(
           <motion.div
-            className="fixed inset-0 z-50"
+            className="fixed inset-0 z-modal"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -153,8 +154,8 @@ export default function MobileMenu({ navLinks, quoteLabel }) {
                 </li>
               </ul>
             </motion.aside>
-          </motion.div>
-        )}
+          </motion.div>, document.body)
+        }
       </AnimatePresence>
     </div>
   );

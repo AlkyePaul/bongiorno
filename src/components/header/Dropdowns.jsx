@@ -45,6 +45,7 @@ export default function Dropdowns({ label, items }) {
       <AnimatePresence>
         {open && createPortal(
           <motion.div
+            className="z-dropdown"
             initial={{ opacity: 0, y: -5 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -5 }}
