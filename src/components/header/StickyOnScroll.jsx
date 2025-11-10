@@ -10,7 +10,7 @@ export default function StickyOnScroll({children}) {
   }, []);
 
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <div className={scrolled ? 'mt-14' : 'mt-20'} />
       <header
         className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 shadow-lg ${
