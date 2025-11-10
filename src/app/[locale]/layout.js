@@ -26,7 +26,7 @@ export default async function LocaleLayout({ children, params }) {
   
         <NextIntlClientProvider locale={locale} messages={messages}>
         
-          <Header />
+          <HeaderSSR />
           {children}
           <Footer />
            <CookieConsent />
