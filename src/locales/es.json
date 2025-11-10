@@ -265,7 +265,7 @@
       "title": "El transporte en el mundo",
       "claim": "Gracias a nuestros socios de WCA llegamos a todas partes con la calidad garantizada por la mayor y más extensa red de transitarios internacionales.",
       "intro": "Servicios con certificación mundial garantizados por nuestra pertenencia a la red WCA.",
-      "image": "/img/dest-mondo.webp",
+      "image": "/img/mondo.webp",
       "mapCoords": [
         8.793,
         45.66
@@ -448,7 +448,7 @@
         {
           "title": "Transporte Mundo",
           "text": "Gracias a nuestros partners certificados WCA llegamos a todas partes con las máximas garantías.",
-          "image": "/img/mundo.webp",
+          "image": "/img/mondo.webp",
           "href": "/mundo"
         }
       ]

@@ -207,7 +207,7 @@
       "title": "Les transports dans le monde",
       "claim": "Grâce à nos partenaires WCA, nous arrivons partout avec la qualité garantie par le plus grand et le plus vaste réseau de transitaires internationaux.",
       "intro": "Des services certifiés au niveau mondial, garantis par notre appartenance au réseau WCA.",
-      "image": "/img/dest-mondo.webp",
+      "image": "/img/mondo.webp",
       
       "paragraphs": [],
       "servicesTitle": "Services certifiés au niveau mondial",
@@ -330,7 +330,7 @@
         {
           "title": "Le monde",
           "text": "Grâce à nos partenaires certifiés WCA, nous atteignons partout avec les garanties maximales.",
-          "image": "/img/world.webp"
+          "image": "/img/mondo.webp"
         }
       ]
     },
