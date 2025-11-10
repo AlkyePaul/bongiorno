@@ -546,7 +546,7 @@
       },
       {
         "icon": "Cog",
-        "title": "Cargaison exceptionnelle et cargaison de projet",
+        "title": "Transports exceptionnels et Project Cargo",
         "href": "#exceptionnel",
         "text": "Transports nécessitant une haute compétence et une étude attentive des itinéraires, des réglementations, et des caractéristiques des marchandises et des territoires."
       },
@@ -587,7 +587,7 @@
       {
         "id": "exceptionnel",
         "icon": "Cog",
-        "title": "Transport exceptionnel et cargaison de projet",
+        "title": "Transports exceptionnels et Project Cargo",
         "paragraphs": [
           "Un type de transport qui nécessite non seulement une compétence approfondie mais aussi une étude attentive des itinéraires, des réglementations et des caractéristiques des marchandises et des territoires d’expédition.",
 
