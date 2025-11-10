@@ -68,7 +68,7 @@ export default function ServiziPage() {
       </section>
 
       {/* 🔹 Overview Grid */}
-      <section className="mx-auto px-6 grid md:grid-cols-2 md:my-20 my-8 gap-10 max-w-5xl">
+      <section className="mx-auto px-4 grid md:grid-cols-2 md:my-20 my-8 gap-10 max-w-5xl">
         {(() => {
           const cards = t.raw("cards");
           const details = t.raw("details");
@@ -80,7 +80,7 @@ export default function ServiziPage() {
               <Link
                 key={i}
                 href={href}
-                className="border border-gray-200 dark:border-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition bg-white dark:hover:bg-gray-800 cursor-pointer hover:scale-105"
+                className=" p-6 rounded-md shadow-sm hover:shadow-md transition bg-white dark:hover:bg-gray-800 cursor-pointer hover:scale-105"
               >
                 <H2>
                   <IconComponent className="text-brand-accent text-3xl" />

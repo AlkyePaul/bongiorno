@@ -9,6 +9,7 @@ import { useMessages } from "next-intl";
 export default function ServicesSection(props) {
   const messages = useMessages();
   const svc = messages?.home?.services || {};
+  const details = messages?.services?.details || [];
   const locale = useLocale();
 
   const cta = messages?.ctaBanner.cta || {};
@@ -17,7 +18,6 @@ export default function ServicesSection(props) {
   const intro = props?.intro ?? (Array.isArray(svc?.intro) ? svc.intro : []);
   const items = props?.services ?? (Array.isArray(svc?.items) ? svc.items : []);
 
-
   const iconSet = [
     <Package key="i0" size={32} />,
     <Cog key="i1" size={32} />,
@@ -25,11 +25,22 @@ export default function ServicesSection(props) {
     <ShieldCheck key="i3" size={32} />
   ];
 
-  const services = items.map((s, i) => ({
-    title: s?.title || "",
-    text: s?.description || "",
-    icon: iconSet[i % iconSet.length]
-  }));
+  const services = items.map((s, i) => {
+    const sectionId = details?.[i]?.id;
+    const href = sectionId
+      ? { pathname: '/servizi', hash: sectionId }
+      : { pathname: '/servizi' };
+    return {
+      title: s?.title || "",
+      text: s?.description || "",
+      icon: iconSet[i % iconSet.length],
+      href
+    };
+  });
+
+  const firstSectionHref = details?.[0]?.id
+    ? { pathname: '/servizi', hash: details[0].id }
+    : { pathname: '/servizi' };
 
   return (
     <section className="container max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 ">
@@ -44,7 +55,7 @@ export default function ServicesSection(props) {
           ))}
         </div>
         <Link
-          href="/servizi"
+          href={firstSectionHref}
           className="inline-block btn"
         >
           {cta.ctaservizi}
@@ -56,7 +67,7 @@ export default function ServicesSection(props) {
         {services.map((service, i) => (
           <div
             key={i}
-            className="bg-white rounded-md shadow-md text-brand-dark p-6 hover:shadow-lg transition"
+            className="bg-white rounded-md shadow-xl text-brand-dark p-6 hover:shadow-lg transition"
           >
             <div className="text-brand-accent mb-4">
               {service.icon}
@@ -66,7 +77,7 @@ export default function ServicesSection(props) {
             </h3>
             <div className="text-base leading-relaxed">
               <ReactMarkdown>{service.text}</ReactMarkdown>
-              <Link href="/servizi" className="underline text-brand-accent">
+              <Link href={service.href} className="underline text-brand-accent">
                 {messages?.home?.destinations?.piu}
               </Link>
             </div>
