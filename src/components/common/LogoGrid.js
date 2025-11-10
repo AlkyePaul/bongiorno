@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function LogoGrid(grayscale, scale) {
 
   const logos = [
-    { src: "/img/logos/aeo.webp", alt: "AEO" },
+    { src: "/img/logos/AEO.webp", alt: "AEO" },
     { src: "/img/logos/wca.webp", alt: "WCA" },
     { src: "/img/logos/fedespedi.webp", alt: "Fedespedi" },
     { src: "/img/logos/iso9001.webp", alt: "ISO 9001:2015" },
