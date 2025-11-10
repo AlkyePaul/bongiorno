@@ -112,7 +112,7 @@ export default function CookieConsent() {
 
       {/* Banner */}
       {visible && (
-        <div className="fixed bottom-4 inset-x-4 z-50 flex justify-center">
+        <div className="fixed bottom-4 inset-x-4 z-50 flex justify-center max-w-[100vw]">
           <div className="max-w-4xl w-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-lg p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <div className="flex-1 text-base text-gray-700 dark:text-gray-300">
               <p className="font-semibold">{t("title")}</p>
