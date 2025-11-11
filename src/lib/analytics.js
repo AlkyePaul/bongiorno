@@ -3,6 +3,39 @@
 
 export const GTAG_ID = "G-Q51H75E0XB";
 export const GTM_ID = "GTM-NBW927RM";
+export const CONSENT_DEFAULTS = {
+  ad_storage: "denied",
+  analytics_storage: "denied",
+  functionality_storage: "denied",
+  personalization_storage: "denied",
+  security_storage: "granted",
+};
+export function setDefaultConsent() {
+  if (typeof window === "undefined") return;
+  window.dataLayer = window.dataLayer || [];
+  if (!window.gtag) {
+    window.gtag = function () { window.dataLayer.push(arguments); };
+  }
+  if (!window.__consent_default_pushed) {
+    window.gtag('consent', 'default', { ...CONSENT_DEFAULTS });
+    window.__consent_default_pushed = true;
+    console.log("[analytics] Consent default set", CONSENT_DEFAULTS);
+  }
+}
+export function updateConsentFromPrefs(prefs) {
+  if (typeof window === "undefined") return;
+  window.dataLayer = window.dataLayer || [];
+  if (!window.gtag) {
+    window.gtag = function () { window.dataLayer.push(arguments); };
+  }
+  const update = {
+    ...CONSENT_DEFAULTS,
+    analytics_storage: prefs?.analytics ? 'granted' : 'denied',
+    ad_storage: prefs?.marketing ? 'granted' : 'denied',
+  };
+  window.gtag('consent', 'update', update);
+  console.log("[analytics] Consent updated from prefs", update);
+}
 
 // load a script by URL and return a promise that resolves when loaded
 export function loadScript(src, { async = true, id } = {}) {
@@ -43,6 +76,7 @@ export async function enableGTag() {
     return;
   }
   console.log("[analytics] enabling gtag", GTAG_ID);
+  setDefaultConsent();
   await loadScript(`https://www.googletagmanager.com/gtag/js?id=${GTAG_ID}`, { async: true, id: `gtag-js-${GTAG_ID}` });
 
   window.dataLayer = window.dataLayer || [];
@@ -71,6 +105,7 @@ export async function enableGTM() {
   }
 
   window.dataLayer = window.dataLayer || [];
+  setDefaultConsent();
   window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
 
   const src = `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`;

@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react";
 import { getCookie, setCookie } from "cookies-next";
 import { useTranslations, useLocale } from "next-intl";
-import { enableGTag, enableGTM } from "@/lib/analytics";
+import { enableGTag, enableGTM, setDefaultConsent, updateConsentFromPrefs } from "@/lib/analytics";
 import { Cog } from "lucide-react";
 import {Link} from "@/i18n/navigation";
 
@@ -25,32 +25,28 @@ export default function CookieConsent() {
   const COOKIE_MAX_AGE = 60 * 60 * 24 * 180; // 6 months
 
   useEffect(() => {
-    // read cookie preferences
+    setDefaultConsent();
     const raw = getCookie(COOKIE_NAME);
     try {
       if (raw) {
         const parsed = typeof raw === "string" ? JSON.parse(raw) : raw;
         console.log("[consent] loaded prefs:", parsed);
         setPrefs((p) => ({ ...p, ...parsed }));
-        // enable previously allowed categories right away
+        updateConsentFromPrefs(parsed);
         if (parsed.analytics) {
-          // analytics -> Google Analytics (gtag) only
           enableGTag().catch(console.error);
         }
         if (parsed.marketing) {
-          // marketing -> Google Tag Manager (and other marketing tags) only
           enableGTM().catch(console.error);
         }
         setVisible(false);
         setShowFab(true);
       } else {
-        // no cookie yet -> show banner
         setVisible(true);
         setShowFab(false);
         console.log("[consent] no prefs found -> showing banner");
       }
     } catch (err) {
-      // malformed cookie -> reset
       setVisible(true);
       setShowFab(false);
       console.error("cookie parse error", err);
@@ -66,13 +62,11 @@ export default function CookieConsent() {
     setShowFab(true);
     console.log("[consent] saved prefs:", toStore);
 
-    // Activate requested services based on categories
+    updateConsentFromPrefs(toStore);
     if (toStore.analytics) {
-      // analytics -> GA only
       enableGTag().catch(console.error);
     }
     if (toStore.marketing) {
-      // marketing -> GTM (and future marketing scripts)
       enableGTM().catch(console.error);
     }
   }
