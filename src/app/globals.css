@@ -70,7 +70,7 @@ section[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
 
 
 .post-content h3, h4 {
- @apply text-lg font-extrabold mb-3 pt-3 text-brand-navy flex items-center gap-2;
+ @apply text-lg font-extrabold mb-3 pt-3 text-brand-navy;
 }
 
 em {
