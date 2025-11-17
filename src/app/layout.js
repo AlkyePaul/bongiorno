@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Geist, Geist_Mono, Outfit } from "next/font/google";
-import { routing } from "@/i18n/routing";
+import { routing } from "../i18n/routing";
 
 
 const geistSans = Geist({

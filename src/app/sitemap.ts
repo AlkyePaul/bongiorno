@@ -15,15 +15,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const { locales, pathnames, defaultLocale } = routing;
 
-  // 1️⃣ **STATIC PAGES**
-  for (const route in pathnames) {
-    const definition = pathnames[route];
+  // 1️⃣ **STATIC PAGES** (explicit to avoid issues with enumeration)
+  const staticRoutes = [
+    "/",
+    "/chi-siamo",
+    "/servizi",
+    "/contatti",
+    "/preventivi",
+    "/privacy",
+    "/news"
+  ] as const;
 
-    // Skip dynamic routes here (handled below)
-    if (route.includes("[post]") || route.includes("[destination]")) continue;
-
+  for (const baseRoute of staticRoutes) {
+    const definition = pathnames[baseRoute];
+    // If routing definition is missing for some reason, fall back to the base route
     for (const locale of locales) {
-      const localizedPath = definition[locale] || definition[defaultLocale];
+      const localizedPath = definition?.[locale] ?? definition?.[defaultLocale] ?? baseRoute;
 
       const url =
         locale === defaultLocale
@@ -33,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       // 🔥 Build all hreflangs
       const alternates: Record<string, string> = {};
       for (const alt of locales) {
-        const altPath = definition[alt] || definition[defaultLocale];
+        const altPath = definition?.[alt] ?? definition?.[defaultLocale] ?? baseRoute;
         alternates[alt] =
           alt === defaultLocale
             ? `${BASE_URL}${altPath}`
@@ -45,9 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: lastmod,
         changeFrequency: "daily",
         priority: 0.8,
-        alternates: {
-          languages: alternates,
-        },
+        alternates: { languages: alternates },
       });
     }
   }

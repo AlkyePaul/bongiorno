@@ -9,11 +9,16 @@ const nextConfig = {
     ignoreBuildErrors: true
   },
   images: {
-  unoptimized: true,
-},
+    unoptimized: true,
+  },
 
   experimental: {
     serverActions: {}
+  },
+  async rewrites() {
+    return [
+      { source: '/', destination: '/it' }
+    ];
   }
 };
 

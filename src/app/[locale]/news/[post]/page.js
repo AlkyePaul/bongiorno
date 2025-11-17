@@ -11,6 +11,7 @@ import LanguageBadges from "@/components/news/LanguageBadges";
 import { getTranslations } from "next-intl/server";
 import { generateLocaleParams } from '@/lib/locales';
 import { buildMetadata } from '@/lib/seo';
+import PostIndex from '@/components/news/PostIndex';
 
 
 export async function generateStaticParams() {
@@ -27,6 +28,7 @@ export async function generateStaticParams() {
     allPosts.map((post) => ({ locale, post }))
   );
 }
+
 
 export async function generateMetadata({ params }) {
   const { locale, post } = await params;
@@ -49,6 +51,7 @@ export default async function NewsPostPage({ params }) {
   const { locale, post } = await params;
   const t = await getTranslations({ locale, namespace: 'news' });
   const tCommon = await getTranslations({ locale, namespace: 'common' });
+  const index = tCommon('index');
 
   // Get article with locale information
   const article = getArticleWithLocales(post, locale);
@@ -63,7 +66,7 @@ export default async function NewsPostPage({ params }) {
   return (
     <main className="text-gray-800 dark:text-gray-200">
       {/* 🔹 Hero */}
-      <section className="relative w-full h-[60vh] flex items-center justify-center">
+      <section className="relative w-full min-h-[60vh] flex items-center justify-center">
         <Image
           src={image}
           alt={title}
@@ -72,7 +75,7 @@ export default async function NewsPostPage({ params }) {
           className="object-cover brightness-75"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-gray-950/90 via-gray-900/70 to-transparent z-10" />
-        <div className="relative z-20 text-left container mx-auto px-6">
+        <div className="relative z-20 text-left mx-auto px-6 py-10  ">
           <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-md">
             {title}
           </h1>
@@ -88,6 +91,7 @@ export default async function NewsPostPage({ params }) {
               variant="compact"
             />
           </div>
+          <PostIndex indice={data.indice} index={index} />
         </div>
       </section>
     
@@ -95,6 +99,7 @@ export default async function NewsPostPage({ params }) {
       {/* 🔹 Content */}
       <section className="max-w-5xl mx-auto px-6 py-10 max-w-4xl space-y-5 prose dark:prose-invert post-content">
           <PostMeta {...data} />
+          
         <MDXRemote
           source={content}
           components={{

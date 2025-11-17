@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import {usePathname} from 'next/navigation';
 import {LOCALES} from '@/lib/locales';
-import Header from '@/components/header/Header';
+
 
 export default function NotFound() {
   const pathname = usePathname() || '/';

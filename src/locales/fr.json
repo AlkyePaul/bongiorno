@@ -159,6 +159,7 @@
     }
   },
   "common": {
+    "index": "Index",
     "company": "Bongiorno SRL",
     "preventivo": "Demande de devis",
     "back_news": "Retour aux actualités",

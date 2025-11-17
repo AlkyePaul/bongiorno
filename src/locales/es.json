@@ -158,6 +158,7 @@
     }
   },
   "common": {
+    "index": "Índice",
     "company": "Bongiorno SRL",
     "preventivo": "Solicitar cotización",
     "back_news": "Volver a las noticias",

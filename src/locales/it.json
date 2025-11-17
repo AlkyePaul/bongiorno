@@ -1,5 +1,6 @@
 {
   "common": {
+    "index": "Indice",
     "company": "Bongiorno SRL",
     "preventivo": "Richiedi Preventivo",
     "back_news": "Torna alle notizie",

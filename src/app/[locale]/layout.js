@@ -5,7 +5,7 @@ import Footer from '@/components/footer/Footer';
 import CookieConsent from "@/components/common/CookieConsent";
 import { generateLocaleParams } from '@/lib/locales';
 
-import Header from '@/components/header/Header';
+
 
 
 export function generateStaticParams() {

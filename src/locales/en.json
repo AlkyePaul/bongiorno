@@ -158,6 +158,7 @@
     }
   },
   "common": {
+    "index":"Index",
     "company": "Bongiorno SRL",
     "preventivo": "Get a Quote",
     "back_news": "Back to the news",

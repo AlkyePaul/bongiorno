@@ -49,8 +49,28 @@ body {
   margin-bottom: 2rem;
 }
 
+.post-content ul {
+  @apply mb-2 ml-6;
+  list-style-type: disc !important;
+  
+}
+.post-content ol {
+  @apply mb-2 ml-6;
+  list-style-type: decimal !important;
+  
+}
+.post-content li {
+  @apply mb-2;
+  
+}
+/* Apply scroll margin to all headings */
+section[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
+  scroll-margin-top: 90px; /* Adjust to match your sticky header height */
+}
+
+
 .post-content h3, h4 {
- @apply text-xl font-semibold mb-3 pt-3 text-brand-navy flex items-center gap-2;
+ @apply text-lg font-extrabold mb-3 pt-3 text-brand-navy flex items-center gap-2;
 }
 
 em {
@@ -84,6 +104,13 @@ em {
 .btn-white {
  @apply px-6 py-3 w-fit rounded-md font-semibold bg-white text-brand-dark hover:bg-brand-accent hover:text-white shadow hover:scale-105 transition-all duration-300;
 }
+
+
+.post-content h2{
+ @apply text-2xl font-semibold mb-3 pt-3 text-brand-navy flex items-center gap-2;
+}
+
+
 
 /* MDX/Post content tables */
 .post-content table {
