@@ -91,7 +91,7 @@ export default async function NewsPostPage({ params }) {
               variant="compact"
             />
           </div>
-          <PostIndex indice={data.indice} index={index} />
+         {data.indice && <PostIndex indice={data.indice} index={index} />}
         </div>
       </section>
     
