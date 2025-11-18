@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/destinazioni/trasporti-:slug",
+      "destination": "/destinazioni/:slug",
+      "permanent": true
+    }
+  ]
+}
