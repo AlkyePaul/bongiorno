@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import ReactMarkdown from 'react-markdown';
-import { useTranslations } from "next-intl";
 import DestinationMap from "@/components/maps/DestinationMap";
 import { BriefcaseBusiness, MoveRight } from "lucide-react";
 import {Link} from "@/i18n/navigation";
@@ -122,8 +121,8 @@ export default async function DestinationPage({ params }) {
   </aside>
 </section>
 
-<section className="max-w-4xl mx-auto md:py-20 py-12 ">
-        <div className="space-y-4">
+<section className="max-w-4xl mx-auto md:py-20 py-12  ">
+        <div className="space-y-4 mx-4">
             {data.paragraphs?.map((p, i) => (
               <div
                 key={i}

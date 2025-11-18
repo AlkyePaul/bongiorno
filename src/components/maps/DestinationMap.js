@@ -6,10 +6,10 @@ import { MAP_STYLE } from "@/constants/constants";
 
 export default function DestinationMap({
   coordinates = [10.18, 36.8],
-  zoom = 4,
+  zoom = 6,
   markers = [],
   padding = 60,
-  maxZoom = 10,
+  maxZoom = 6,
   maintainCenter = true,
 }) {
   const mapContainer = useRef(null);
@@ -30,8 +30,6 @@ export default function DestinationMap({
     // 🔹 ensure resize once visible
     setTimeout(() => map.resize(), 100);
 
-    // main marker
-    new maplibregl.Marker({ color: "#41c7f3" }).setLngLat(coordinates).addTo(map);
 
     // additional markers
     markers.forEach((m) =>

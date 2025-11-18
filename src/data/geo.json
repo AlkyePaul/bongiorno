@@ -1,36 +1,48 @@
 {
   "marocco": {
-    "center": [-6.8326, 31.7917],
+    "center": [-7.5898, 33.5731], 
     "markers": [
       { "label": "Casablanca", "coords": [-7.5898, 33.5731] },
       { "label": "Tangeri", "coords": [-5.8127, 35.7595] }
     ]
   },
+
   "algeria": {
-    "center": [2.6333, 28.0],
+    "center": [3.0588, 36.7538],
     "markers": [
       { "label": "Algeri", "coords": [3.0588, 36.7538] },
       { "label": "Orano", "coords": [-0.6417, 35.6987] }
     ]
   },
+
   "tunisia": {
-    "center": [10.18, 36.8],
-    "markers": []
+    "center": [10.1658, 36.8188], 
+    "markers": [
+      { "label": "Tunisi", "coords": [10.1658, 36.8188] },
+      { "label": "Porto di Rades", "coords": [10.2351, 36.7921] },
+      { "label": "Sfax", "coords": [10.7600, 34.7400] },
+      { "label": "Sousse", "coords": [10.6360, 35.8256] },
+      { "label": "Bizerte", "coords": [9.8739, 37.2744] }
+    ]
   },
+
   "libia": {
-    "center": [13.0, 22.0],
+    "center": [10.1913, 28.8872],
     "markers": [
       { "label": "Tripoli", "coords": [13.1913, 32.8872] },
-      { "label": "Misurata", "coords": [15.1, 32.37] },
+      { "label": "Misurata", "coords": [15.0900, 32.3700] },
       { "label": "Bengasi", "coords": [20.0667, 32.1167] },
       { "label": "Nouakchott", "coords": [-15.9785, 18.0858] },
       { "label": "Nouadhibou", "coords": [-17.0333, 20.9333] }
     ]
   },
+
   "mondo": {
-    "center": [8.793, 45.66],
+    "center": [9.1900, 45.4642], 
     "markers": [
-      { "label": "Canale di Panama", "coords": [-79.8, 9.1] }
+      { "label": "Milano", "coords": [9.1900, 45.4642] },
+      { "label": "Canale di Panama", "coords": [-79.8, 9.1] },
+      { "label": "Hong Kong", "coords": [114.1694, 22.3193] }
     ]
   }
 }
