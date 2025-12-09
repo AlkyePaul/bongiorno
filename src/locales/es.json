@@ -24,109 +24,130 @@
       "fr": "Français"
     }
   },
+  
   "privacy": {
     "title": "Política de privacidad",
-    "lastUpdated": " Última actualización: 28/04/2024",
+    "lastUpdated": "Última actualización: 09/12/2025",
     "controller": {
       "name": "Bongiorno Srl",
       "piva": "10408830155",
-      "address": "Via Marsala, 40 - 21013 Gallarate (Varese)",
-      "email": "bongiorno@bongiornosrl.com"
+      "address": "Via del Gonfalone 4, 20123 Milano (MI) – Sede Secundaria: Via Marsala 40/c, 21013 Gallarate (VA)",
+      "email": "bongiornosrl@bongiornosrl.com",
+      "pec": "bongiornosrl@legalmail.it"
     },
     "sections": [
       {
-        "id": "introducción",
-        "heading": "Información sobre protección de datos",
-        "subtitle": "De conformidad con los artículos 13 y 14 del GDPR 2016/679",
+        "id": "intro",
+        "heading": "Información conforme al art. 13 del GDPR",
+        "subtitle": "Reglamento UE 2016/679 y D.Lgs. 196/2003",
         "content": [
-          "Las empresas Bongiorno Srl - PIVA 10408830155 - Dirección: Via Marsala, 40 - 21013 Gallarate (Varese) le informan que sus datos serán tratados de las siguientes maneras."
+          "Le informamos que sus datos personales serán tratados conforme a la normativa en materia de protección de datos personales, Reglamento UE 2016/679 (“GDPR”) y D. Lgs. 196/2003 y ss.mm.ii. (“Código de Privacidad”)."
         ]
       },
       {
-        "id": "objeto-propósito",
-        "heading": "Objeto del tratamiento y finalidad",
+        "id": "dpo",
+        "heading": "Data Protection Officer (DPO)",
         "content": [
-          "Tratamos sus datos de identificación personal (por ejemplo, nombre, apellidos y correo electrónico) -en lo sucesivo denominados \"datos\"- facilitados por usted para atender su solicitud en la sección \"Contacte con nosotros\" del sitio web y en la sección \"Cotizaciones\"."
+          "La Empresa ha designado un Data Protection Officer (DPO), que puede ser contactado en la siguiente dirección de correo electrónico:",
+          "luca.confalonieri@bongiornosrl.com"
         ]
       },
       {
-        "id": "base jurídica",
-        "heading": "Base jurídica",
-        "list": [
-          "Ejecución de un contrato o medidas precontractuales;",
-          "Cumplimiento de una obligación legal;",
-          "Interés legítimo del Titular."
-        ]
-      },
-      {
-        "id": "métodos-duración",
-        "heading": "Modalidades y duración del tratamiento",
+        "id": "data-categories",
+        "heading": "Categorías de datos personales tratados",
         "content": [
-          "El tratamiento de sus datos personales se lleva a cabo de conformidad con lo dispuesto en la legislación aplicable en materia de protección de datos.",
-          "Puede consistir en la recogida, registro, organización, almacenamiento, consulta, tratamiento, modificación, selección, extracción, comparación, utilización, interconexión, bloqueo, comunicación, supresión y destrucción de datos.",
-          "Sus datos son objeto de tratamiento tanto en papel como electrónico y/o automatizado. Se tratarán de acuerdo con los principios de corrección, licitud, transparencia y protección de su intimidad y sus derechos.",
-          "Se tratarán durante toda la duración de la relación contractual y también posteriormente para el cumplimiento de todas las obligaciones legales."
-        ]
-      },
-      {
-        "id": "acceso a datos",
-        "heading": "Acceso a los datos",
-        "content": [
-          "Sus datos podrán ser accesibles para los fines descritos anteriormente:"
+          "Serán objeto de tratamiento las siguientes categorías de datos:"
         ],
         "list": [
-          "A los empleados y colaboradores del Responsable del Tratamiento en todas sus sedes operativas y logísticas, dentro y fuera de la UE, en su calidad de responsables y/o encargados internos del tratamiento y/o administradores de sistemas; empleados del área administrativa; empleados del área comercial; empleados del área operativa.",
-          "A sujetos externos a nuestra estructura (por ejemplo, proveedores de los servidores que alojan el sitio y de nuestras telecomunicaciones), con los que se han estipulado acuerdos precisos sobre las medidas que deben adoptarse para garantizar la seguridad de los datos que se les confían; en cualquier caso, los datos se tratarán exclusivamente para la consecución de los fines mencionados."
+          "Datos personales de personas físicas que contactan con la Empresa a través del sitio web u otros canales para solicitar cotizaciones o informaciones.",
+          "Datos societarios de sujetos distintos de personas físicas involucrados en solicitudes o gestión de envíos.",
+          "Datos relativos a los bienes a enviar.",
+          "Datos relativos a los lugares de recogida y entrega.",
+          "Datos relativos a la idoneidad de los medios de transporte y de los conductores para envíos sujetos a autorizaciones/restricciones específicas (por ejemplo mercancías ADR/IMO, fuera de gálibo).",
+          "Datos de las personas de contacto para cotización, encargos de envío, solicitudes de información, facturación, pagos, gestión de impagos y contestaciones.",
+          "Datos necesarios para satisfacer exigencias de transporte, aduanas y obligaciones administrativas requeridas por Autoridades Públicas, Aduanas, Transportistas, Navieras, Compañías Aéreas, Agentes de Aduanas, Compañías Aseguradoras, Bancos, Auxiliares del transporte y Fuerzas del Orden, tanto nacionales como de la UE y extra-UE."
         ]
       },
       {
-        "id": "comunicación de datos",
-        "heading": "Comunicación de datos",
+        "id": "legal-basis",
+        "heading": "Finalidades y bases jurídicas del tratamiento",
         "content": [
-          "El responsable del tratamiento sólo podrá comunicar sus datos a efectos de la presente nota informativa a las partes para las que la comunicación sea obligatoria por ley."
+          "El tratamiento se realiza exclusivamente para la consecución de las finalidades indicadas por el Responsable.",
+          "La base jurídica del tratamiento se fundamenta en:"
+        ],
+        "list": [
+          "Consentimiento;",
+          "Ejecución de medidas precontractuales/contractuales de las que el interesado es parte;",
+          "Cumplimiento de obligaciones legales a las que está sujeto el Responsable;",
+          "Salvaguardia de los intereses vitales del interesado o de otra persona física;",
+          "Ejecución de una misión de interés público o asociada al ejercicio de poderes públicos;",
+          "Persecución del interés legítimo del Responsable o de terceros."
         ]
       },
       {
-        "id": "localización-transferencia",
-        "heading": "Lugar de tratamiento y transferencia de los datos",
+        "id": "methods",
+        "heading": "Modalidades del tratamiento",
         "content": [
-          "Sus datos se encuentran en el domicilio social. Cualquier transferencia, debida a circunstancias para las que sea obligatorio por ley y/o para el cumplimiento de los fines antes mencionados, se llevará a cabo protegiendo plenamente sus intereses."
+          "El tratamiento puede realizarse con o sin el uso de herramientas manuales, informáticas y telemáticas.",
+          "Se adoptan medidas adecuadas para garantizar la seguridad y confidencialidad de los datos, conforme a los requisitos legales.",
+          "Durante el tratamiento no se aplicará ningún proceso de toma de decisiones automatizado."
         ]
       },
       {
-        "id": "retención",
-        "heading": "Tiempo de almacenamiento",
+        "id": "data-provision",
+        "heading": "Provisión de los datos personales",
         "content": [
-          "Salvo que manifieste expresamente su deseo de suprimirlos, sus datos personales se conservarán mientras sean necesarios para los fines legítimos para los que fueron recogidos y, en todo caso, para el cumplimiento de obligaciones legales."
+          "La provisión de datos personales es estrictamente necesaria para las finalidades indicadas.",
+          "La negativa total o parcial a proporcionar los datos puede impedir la ejecución del servicio de envío."
         ]
       },
       {
-        "id": "derechos",
+        "id": "data-communication",
+        "heading": "Comunicación de los datos personales",
+        "content": [
+          "Para la consecución de las finalidades indicadas, los datos personales podrán ser comunicados a:"
+        ],
+        "list": [
+          "Personal autorizado conforme al art. 29 del GDPR y art. 2-quaterdecies del Código de Privacidad;",
+          "Empresas terceras designadas como Encargados del tratamiento conforme al art. 28 del GDPR."
+        ],
+        "content_after_list": [
+          "El interesado puede solicitar información adicional escribiendo al DPO a los contactos indicados."
+        ]
+      },
+      {
+        "id": "transfer",
+        "heading": "Transferencia de datos al extranjero",
+        "content": [
+          "Los datos personales podrán ser transferidos a países de la UE, extra-UE u organizaciones internacionales dependiendo del servicio solicitado.",
+          "En caso de transferencia a países extra-UE, el interesado otorga autorización expresa como excepción a los arts. 45 y ss. GDPR, en función de las exigencias y localización territorial relacionada con la ejecución del encargo."
+        ]
+      },
+      {
+        "id": "rights",
         "heading": "Derechos del interesado",
         "content": [
-          "Como interesado, puede ejercer los derechos que le confieren los artículos 15 a 22 del RGPD, entre otros:"
+          "El interesado tiene derecho a ejercer en cualquier momento los derechos previstos por los arts. 15–22 del GDPR, entre ellos:"
         ],
         "list": [
-          "Derecho de rectificación;",
-          "Derecho al olvido;",
-          "Derecho a la limitación del tratamiento;",
-          "Derecho a la portabilidad de los datos;",
-          "Derecho de oposición;",
-          "Derecho a presentar una reclamación ante la Autoridad de Supervisión."
-        ],
-        "links": [
-          {
-            "label": "Autoridad de Protección de Datos",
-            "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/4535524"
-          }
+          "Acceso a los datos personales y a la información sobre finalidades, categorías de datos, destinatarios y periodo de conservación;",
+          "Rectificación de datos inexactos o integración de datos incompletos;",
+          "Supresión de los datos en los casos previstos por el GDPR;",
+          "Limitación del tratamiento;",
+          "Portabilidad de los datos a otro Responsable;",
+          "Revocación del consentimiento sin perjuicio de la licitud del tratamiento previo;",
+          "Oposición al tratamiento conforme al art. 21 GDPR;",
+          "Derecho a presentar una reclamación ante la Autoridad de Protección de Datos (www.garanteprivacy.it)."
         ]
       },
       {
-        "id": "cómo hacer ejercicio",
-        "heading": "Modalidades de ejercicio de los derechos",
+        "id": "how-to-exercise",
+        "heading": "Modalidades para ejercer los derechos",
         "content": [
-          "Puede ejercer sus derechos en cualquier momento enviando un correo electrónico a la dirección",
-          "bongiorno@bongiornosrl.com"
+          "El interesado puede ejercer sus derechos escribiendo al Responsable o al DPO a los contactos indicados en la presente política.",
+          "Email del Responsable: bongiornosrl@bongiornosrl.com",
+          "PEC: bongiornosrl@legalmail.it",
+          "Email del DPO: luca.confalonieri@bongiornosrl.com"
         ]
       }
     ]

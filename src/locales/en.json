@@ -24,113 +24,135 @@
       "fr": "Français"
     }
   },
+
   "privacy": {
-    "title": "Privacy policy",
-    "lastUpdated": " Last updated: 04/28/2024",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: 09/12/2025",
     "controller": {
       "name": "Bongiorno Srl",
       "piva": "10408830155",
-      "address": "Via Marsala, 40 - 21013 Gallarate (Varese)",
-      "email": "bongiorno@bongiornosrl.com"
+      "address": "Via del Gonfalone 4, 20123 Milan (MI) – Secondary Office: Via Marsala 40/c, 21013 Gallarate (VA)",
+      "email": "bongiornosrl@bongiornosrl.com",
+      "pec": "bongiornosrl@legalmail.it"
     },
     "sections": [
       {
         "id": "intro",
-        "heading": "Data protection information",
-        "subtitle": "Pursuant to Articles 13 and 14 of GDPR 2016/679.",
+        "heading": "Information pursuant to Art. 13 GDPR",
+        "subtitle": "EU Regulation 2016/679 and Legislative Decree 196/2003",
         "content": [
-          "The companies Bongiorno Srl - PIVA 10408830155 - Address: Via Marsala, 40 - 21013 Gallarate (Varese) inform you that your data will be processed in the following ways."
+          "We inform you that your personal data will be processed in compliance with the applicable data protection legislation, EU Regulation 2016/679 (“GDPR”) and Legislative Decree 196/2003 as amended (“Privacy Code”)."
         ]
       },
       {
-        "id": "object-purpose",
-        "heading": "Subject of processing and purpose",
+        "id": "dpo",
+        "heading": "Data Protection Officer (DPO)",
         "content": [
-          "We process your personal identifying information (e.g., first name, last name, and e-mail) - hereafter \"data\" - that you have provided in order to fulfill your request in the \"Contact Us\" section of the site and in the \"Quotes\" section."
+          "The Company has appointed a Data Protection Officer (DPO), who can be contacted at the following email address:",
+          "luca.confalonieri@bongiornosrl.com"
+        ]
+      },
+      {
+        "id": "data-categories",
+        "heading": "Categories of personal data processed",
+        "content": [
+          "The following categories of data will be processed:"
+        ],
+        "list": [
+          "Personal data of individuals who contact the Company through the website or other channels to request quotations or information.",
+          "Corporate data of entities other than individuals involved in shipping requests or shipment management.",
+          "Data relating to goods to be shipped.",
+          "Data relating to pick-up and delivery locations.",
+          "Data concerning the suitability of transport vehicles and drivers for shipments requiring specific authorizations/restrictions (e.g., ADR/IMO goods, oversized loads).",
+          "Contact person data for quotations, shipping assignments, information requests, invoicing, payments, management of outstanding amounts and disputes.",
+          "Data required to fulfil transport, customs or administrative obligations requested by Public Authorities, Customs, Carriers, Shipping Lines, Airlines, Customs Brokers, Insurance Companies, Banks, Transport Auxiliaries and Law Enforcement, both nationally, within the EU, and outside the EU."
         ]
       },
       {
         "id": "legal-basis",
-        "heading": "Legal Basis",
-        "list": [
-          "Execution of a contract or pre-contractual measures;",
-          "Fulfilling a legal obligation;",
-          "Legitimate interest of the Owner."
-        ]
-      },
-      {
-        "id": "methods-duration",
-        "heading": "Mode and duration of treatment",
+        "heading": "Purposes and legal basis of the processing",
         "content": [
-          "The processing of your personal data is carried out in the manner prescribed by current data protection regulations.",
-          "It may consist of the collection, recording, organization, storage, consultation, processing, modification, selection, extraction, comparison, use, interconnection, blocking, communication, deletion and destruction of data.",
-          "Your data are subject to both paper and electronic and/or automated processing. They will be processed in accordance with the principles of fairness, lawfulness, transparency and protection of your privacy and rights.",
-          "They will be processed for the duration of the contractual relationship and also thereafter for the fulfillment of all legal requirements."
-        ]
-      },
-      {
-        "id": "data-access",
-        "heading": "Data access",
-        "content": [
-          "Your data may be made accessible for the purposes described above:"
+          "Personal data is processed exclusively for the purposes indicated by the Data Controller.",
+          "The legal basis of the processing is:"
         ],
         "list": [
-          "To employees and collaborators of the Data Controller in all its operational and logistical locations, within and outside the EU, in their capacity as internal data processors and/or system administrators; administrative area employees; commercial area employees; operational area employees.",
-          "To subjects outside our structure (e.g. suppliers of the servers that host the site and our telecommunications), with whom precise agreements have been made on the measures to be taken to ensure the security of the data entrusted to them; in any case, the data will be processed exclusively for the pursuit of the above-mentioned purposes."
+          "Consent;",
+          "Execution of pre-contractual/contractual measures of which the data subject is a party;",
+          "Compliance with legal obligations to which the Data Controller is subject;",
+          "Protection of vital interests of the data subject or another natural person;",
+          "Performance of a task carried out in the public interest or in the exercise of official authority;",
+          "Pursuit of the legitimate interest of the Data Controller or third parties."
+        ]
+      },
+      {
+        "id": "methods",
+        "heading": "Methods of processing",
+        "content": [
+          "Processing may be carried out with or without the use of manual, IT or electronic tools.",
+          "Appropriate measures are adopted to ensure the security and confidentiality of the data, in compliance with legal requirements.",
+          "No automated decision-making processes will be used during processing."
+        ]
+      },
+      {
+        "id": "data-provision",
+        "heading": "Provision of personal data",
+        "content": [
+          "Providing personal data is strictly necessary for the purposes indicated.",
+          "Total or partial refusal to provide the data may result in the impossibility of performing the shipping service."
         ]
       },
       {
         "id": "data-communication",
-        "heading": "Disclosure of data",
+        "heading": "Communication of personal data",
         "content": [
-          "The Data Controller may communicate your data for the purposes of this policy only to those for whom communication is required by law."
+          "For the purposes indicated above, personal data may be communicated to:"
+        ],
+        "list": [
+          "Authorized personnel pursuant to Art. 29 GDPR and Art. 2-quaterdecies of the Privacy Code;",
+          "Third-party companies appointed as Data Processors pursuant to Art. 28 GDPR."
+        ],
+        "content_after_list": [
+          "Data subjects may request additional information by writing to the DPO at the contacts provided."
         ]
       },
       {
-        "id": "location-transfer",
-        "heading": "Place of data processing and transfer",
+        "id": "transfer",
+        "heading": "Transfer of data abroad",
         "content": [
-          "Your data is located at the registered office. Any transfers, due to circumstances for which it is mandatory by law and/or for the fulfillment of the aforementioned purposes, will be carried out in the full protection of your interests."
-        ]
-      },
-      {
-        "id": "retention",
-        "heading": "Storage time",
-        "content": [
-          "Unless you explicitly express your desire to remove them, your personal data will be kept as long as necessary with respect to the legitimate purposes for which they were collected and, in any case, for the fulfillment of legal obligations."
+          "Personal data may be transferred to EU countries, non-EU countries or international organizations depending on the service requested.",
+          "In the event of transfers to non-EU countries, the data subject provides explicit authorization as an exception to Arts. 45 et seq. GDPR, due to the operational needs and territorial context related to the execution of the assignment."
         ]
       },
       {
         "id": "rights",
         "heading": "Rights of the data subject",
         "content": [
-          "As a data subject, you may exercise the rights enshrined in Articles 15-22 GDPR, including:"
+          "The data subject may exercise at any time the rights provided for in Arts. 15–22 GDPR, including:"
         ],
         "list": [
-          "Right of rectification;",
-          "Right to be forgotten;",
-          "Right to limitation of processing;",
-          "Right to data portability;",
-          "Right of opposition;",
-          "Right to file a complaint with the Guarantor Authority."
-        ],
-        "links": [
-          {
-            "label": "Data Protection Authority",
-            "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/4535524"
-          }
+          "Access to personal data and information on purposes, categories of data, recipients and retention period;",
+          "Rectification of inaccurate data or completion of incomplete data;",
+          "Erasure of data in the cases provided by GDPR;",
+          "Restriction of processing;",
+          "Data portability to another Data Controller;",
+          "Withdrawal of consent without prejudice to the lawfulness of processing based on consent before the withdrawal;",
+          "Objection to processing pursuant to Art. 21 GDPR;",
+          "Right to lodge a complaint with the Data Protection Authority (www.garanteprivacy.it)."
         ]
       },
       {
         "id": "how-to-exercise",
-        "heading": "Ways of exercising rights",
+        "heading": "How to exercise your rights",
         "content": [
-          "You may exercise your rights at any time by sending an email to:",
-          "bongiorno@bongiornosrl.com"
+          "The data subject may exercise their rights by writing to the Data Controller or the DPO at the contacts indicated in this policy.",
+          "Data Controller Email: bongiornosrl@bongiornosrl.com",
+          "PEC: bongiornosrl@legalmail.it",
+          "DPO Email: luca.confalonieri@bongiornosrl.com"
         ]
       }
     ]
-  },
+  }
+,
   "cookies": {
     "title": "We use cookies 🍪",
     "text": "We use technical cookies and, with prior consent, analytics cookies to improve your experience.",

@@ -25,109 +25,130 @@
       "fr": "Français"
     }
   },
+
   "privacy": {
     "title": "Politique de confidentialité",
-    "lastUpdated": " Dernière mise à jour : 28/04/2024",
+    "lastUpdated": "Dernière mise à jour : 09/12/2025",
     "controller": {
       "name": "Bongiorno Srl",
       "piva": "10408830155",
-      "address": "Via Marsala, 40 - 21013 Gallarate (Varese)",
-      "email": "bongiorno@bongiornosrl.com"
+      "address": "Via del Gonfalone 4, 20123 Milan (MI) – Siège secondaire : Via Marsala 40/c, 21013 Gallarate (VA)",
+      "email": "bongiornosrl@bongiornosrl.com",
+      "pec": "bongiornosrl@legalmail.it"
     },
     "sections": [
       {
         "id": "intro",
-        "heading": "Informations sur la protection des données",
-        "subtitle": "Conformément aux articles 13 et 14 du GDPR 2016/679",
+        "heading": "Information conformément à l’art. 13 du RGPD",
+        "subtitle": "Règlement UE 2016/679 et D.Lgs. 196/2003",
         "content": [
-          "Les sociétés Bongiorno Srl - PIVA 10408830155 - Adresse : Via Marsala, 40 - 21013 Gallarate (Varese) vous informe que vos données seront traitées de la manière suivante."
+          "Nous vous informons que vos données personnelles seront traitées conformément à la législation en matière de protection des données personnelles, Règlement UE 2016/679 (“RGPD”) et Décret législatif 196/2003 et modifications successives (“Code de la vie privée”)."
         ]
       },
       {
-        "id": "objet-objectif",
-        "heading": "Objet du traitement et finalité",
+        "id": "dpo",
+        "heading": "Data Protection Officer (DPO)",
         "content": [
-          "Nous traitons les données d'identification personnelle (par exemple, le prénom, le nom et l'adresse électronique) - ci-après dénommées \"données\" - que vous nous avez fournies afin de répondre à votre demande dans la section \"Contactez-nous\" du site web et dans la section \"Devis\"."
+          "La Société a désigné un Data Protection Officer (DPO), joignable à l’adresse email suivante :",
+          "luca.confalonieri@bongiornosrl.com"
         ]
       },
       {
-        "id": "base juridique",
-        "heading": "Base juridique",
-        "list": [
-          "Exécution d'un contrat ou de mesures précontractuelles ;",
-          "Exécution d'une obligation légale ;",
-          "Intérêt légitime du titulaire."
-        ]
-      },
-      {
-        "id": "méthodes-durée",
-        "heading": "Modalités et durée du traitement",
+        "id": "data-categories",
+        "heading": "Catégories de données personnelles traitées",
         "content": [
-          "Le traitement de vos données personnelles est effectué conformément aux dispositions de la législation applicable en matière de protection des données.",
-          "Elle peut consister en la collecte, l'enregistrement, l'organisation, le stockage, la consultation, le traitement, la modification, la sélection, l'extraction, la comparaison, l'utilisation, l'interconnexion, le blocage, la communication, l'effacement et la destruction des données.",
-          "Vos données font l'objet d'un traitement sur papier et d'un traitement électronique et/ou automatisé. Elles seront traitées conformément aux principes d'exactitude, de licéité, de transparence et de protection de votre vie privée et de vos droits.",
-          "Elles seront traitées pendant toute la durée de la relation contractuelle et, par la suite, pour l'exécution de toutes les obligations légales."
-        ]
-      },
-      {
-        "id": "accès aux données",
-        "heading": "Accès aux données",
-        "content": [
-          "Vos données peuvent être rendues accessibles aux fins décrites ci-dessus :"
+          "Les catégories de données suivantes feront l’objet d’un traitement :"
         ],
         "list": [
-          "Aux employés et collaborateurs du contrôleur dans tous ses sites opérationnels et logistiques, à l'intérieur et à l'extérieur de l'UE, en leur qualité de responsables et/ou de responsables internes du traitement des données et/ou d'administrateurs de systèmes ; aux employés du secteur administratif ; aux employés du secteur commercial ; aux employés du secteur opérationnel.",
-          "à des sujets extérieurs à notre structure (par exemple les fournisseurs des serveurs qui hébergent le site et nos télécommunications), avec lesquels des accords précis ont été stipulés sur les mesures à prendre pour garantir la sécurité des données qui leur sont confiées ; dans tous les cas, les données seront traitées exclusivement pour la poursuite des finalités susmentionnées."
+          "Données personnelles des personnes physiques contactant la Société via le site ou d’autres canaux pour demander des devis ou des informations.",
+          "Données d’entreprise des sujets autres que des personnes physiques impliqués dans les demandes ou la gestion d’expéditions.",
+          "Données relatives aux marchandises à expédier.",
+          "Données relatives aux lieux d’enlèvement et de livraison.",
+          "Données concernant l’aptitude des moyens de transport et des conducteurs pour les expéditions soumises à autorisations/restrictions spécifiques (ex. marchandises ADR/IMO, hors gabarit).",
+          "Données des personnes de contact pour les devis, les mandats d’expédition, les demandes d’informations, la facturation, les paiements, la gestion des impayés et les contestations.",
+          "Données nécessaires pour répondre aux obligations de transport, douanières et administratives requises par les Autorités Publiques, Douanes, Transporteurs, Compagnies maritimes, Compagnies aériennes, Transitaires, Assureurs, Banques, Auxiliaires du transport et Forces de l’Ordre, tant au niveau national que dans l’UE et hors UE."
         ]
       },
       {
-        "id": "communication de données",
-        "heading": "Communication de données",
+        "id": "legal-basis",
+        "heading": "Finalités et bases juridiques du traitement",
         "content": [
-          "Le contrôleur des données ne peut communiquer vos données aux fins de la présente note d'information qu'aux parties pour lesquelles la communication est obligatoire en vertu de la loi."
+          "Le traitement est effectué uniquement pour atteindre les finalités indiquées par le Responsable du traitement.",
+          "La base juridique du traitement repose sur :"
+        ],
+        "list": [
+          "Consentement ;",
+          "Exécution de mesures précontractuelles/contractuelles dont la personne concernée est partie ;",
+          "Respect d’obligations légales auxquelles le Responsable est soumis ;",
+          "Sauvegarde des intérêts vitaux de la personne concernée ou d’une autre personne physique ;",
+          "Exécution d’une mission d’intérêt public ou relevant de l’exercice de l’autorité publique ;",
+          "Poursuite de l’intérêt légitime du Responsable ou de tiers."
         ]
       },
       {
-        "id": "localisation-transfert",
-        "heading": "Lieu de traitement et de transfert des données",
+        "id": "methods",
+        "heading": "Modalités du traitement",
         "content": [
-          "Vos données sont localisées au siège social. Tout transfert, dû à des circonstances pour lesquelles il est obligatoire en vertu de la loi et/ou pour la réalisation des objectifs susmentionnés, sera effectué dans le respect total de vos intérêts."
+          "Le traitement peut être réalisé avec ou sans l’aide d’outils manuels, informatiques ou télématiques.",
+          "Toutes les mesures appropriées sont adoptées pour garantir la sécurité et la confidentialité des données, conformément aux obligations légales.",
+          "Aucun processus de décision automatisé ne sera utilisé pendant le traitement."
         ]
       },
       {
-        "id": "rétention",
-        "heading": "Durée de stockage",
+        "id": "data-provision",
+        "heading": "Fourniture des données personnelles",
         "content": [
-          "Sauf si vous exprimez explicitement votre souhait de les supprimer, vos données personnelles seront conservées aussi longtemps qu'elles sont nécessaires aux fins légitimes pour lesquelles elles ont été collectées et, en tout état de cause, pour l'exécution d'obligations légales."
+          "La fourniture des données personnelles est strictement nécessaire pour atteindre les finalités indiquées.",
+          "Le refus total ou partiel de fournir les données peut entraîner l’impossibilité d’exécuter le service d’expédition."
         ]
       },
       {
-        "id": "droits",
+        "id": "data-communication",
+        "heading": "Communication des données personnelles",
+        "content": [
+          "Pour atteindre les finalités indiquées, les données personnelles pourront être communiquées à :"
+        ],
+        "list": [
+          "Personnel autorisé conformément à l’art. 29 du RGPD et à l’art. 2-quaterdecies du Code de la vie privée ;",
+          "Sociétés tierces désignées en tant que Responsables du traitement conformément à l’art. 28 du RGPD."
+        ],
+        "content_after_list": [
+          "La personne concernée peut demander des informations supplémentaires en écrivant au DPO aux contacts indiqués."
+        ]
+      },
+      {
+        "id": "transfer",
+        "heading": "Transfert de données à l’étranger",
+        "content": [
+          "Les données personnelles peuvent être transférées vers des pays de l’UE, hors UE ou vers des organisations internationales, en fonction du service demandé.",
+          "En cas de transfert vers des pays hors UE, la personne concernée accorde une autorisation expresse, constituant une dérogation aux art. 45 et suivants du RGPD, en raison des exigences et de la localisation territoriale liées à l’exécution du mandat."
+        ]
+      },
+      {
+        "id": "rights",
         "heading": "Droits de la personne concernée",
         "content": [
-          "En tant que personne concernée, vous pouvez exercer vos droits en vertu des articles 15 à 22 du GDPR, y compris :"
+          "La personne concernée a le droit d’exercer à tout moment les droits prévus aux art. 15–22 du RGPD, notamment :"
         ],
         "list": [
-          "Droit de rectification ;",
-          "Droit à l'oubli ;",
-          "Droit à la limitation du traitement ;",
-          "Droit à la portabilité des données ;",
-          "Droit d'opposition ;",
-          "Droit de déposer une plainte auprès de l'autorité de surveillance."
-        ],
-        "links": [
-          {
-            "label": "Autorité de protection des données",
-            "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/4535524"
-          }
+          "Accès aux données personnelles et aux informations sur les finalités, les catégories de données, les destinataires et la durée de conservation ;",
+          "Rectification des données inexactes ou intégration des données incomplètes ;",
+          "Suppression des données dans les cas prévus par le RGPD ;",
+          "Limitation du traitement ;",
+          "Portabilité des données vers un autre Responsable ;",
+          "Retrait du consentement sans préjudice de la licéité du traitement antérieur ;",
+          "Opposition au traitement conformément à l’art. 21 du RGPD ;",
+          "Droit d’introduire une réclamation auprès de l’Autorité de protection des données (www.garanteprivacy.it)."
         ]
       },
       {
-        "id": "comment faire de l'exercice",
-        "heading": "Modalités d'exercice des droits",
+        "id": "how-to-exercise",
+        "heading": "Modalités d’exercice des droits",
         "content": [
-          "Vous pouvez exercer vos droits à tout moment en envoyant un e-mail à l'adresse :",
-          "bongiorno@bongiornosrl.com"
+          "La personne concernée peut exercer ses droits en écrivant au Responsable du traitement ou au DPO aux contacts indiqués dans la présente politique.",
+          "Email du Responsable : bongiornosrl@bongiornosrl.com",
+          "PEC : bongiornosrl@legalmail.it",
+          "Email du DPO : luca.confalonieri@bongiornosrl.com"
         ]
       }
     ]

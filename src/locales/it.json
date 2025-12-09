@@ -31,113 +31,135 @@
       "fr": "Français"
     }
   },
+  
   "privacy": {
     "title": "Privacy policy",
-    "lastUpdated": " Ultimo aggiornamento: 28/04/2024",
+    "lastUpdated": "Ultimo aggiornamento: 09/12/2025",
     "controller": {
       "name": "Bongiorno Srl",
       "piva": "10408830155",
-      "address": "Via Marsala, 40 – 21013 Gallarate (Varese)",
-      "email": "bongiorno@bongiornosrl.com"
+      "address": "Via del Gonfalone 4, 20123 Milano (M– Sede Secondaria: Via Marsala 40/c, 21013 Gallarate (VA)",
+      "email": "bongiornosrl@bongiornosrl.com",
+      "pec": "bongiornosrl@legalmail.it"
     },
     "sections": [
       {
         "id": "intro",
-        "heading": "Informativa in materia di protezione dei dati",
-        "subtitle": "Ai sensi degli artt. 13 e 14 del GDPR 2016/679",
+        "heading": "Informativa ai sensi dell’art. 13 GDPR",
+        "subtitle": "Regolamento UE 2016/679 e D.Lgs. 196/2003",
         "content": [
-          "Le società Bongiorno Srl – PIVA 10408830155 – Indirizzo: Via Marsala, 40 – 21013 Gallarate (Varese) La informano che i Suoi dati saranno trattati nelle seguenti modalità."
+          "La informiamo che i Suoi dati personali saranno trattati nel rispetto della normativa in materia di protezione dei dati personali, Regolamento UE 2016/679 (“GDPRe D. Lgs. 196/2003 e ss.mm.ii. (“Codice Privacy”)."
         ]
       },
       {
-        "id": "object-purpose",
-        "heading": "Oggetto del trattamento e finalità",
+        "id": "dpo",
+        "heading": "Data Protection Officer (DPO)",
         "content": [
-          "Trattiamo i Suoi dati personali identificativi (ad esempio, nome, cognome ed e-mail) – in seguito “dati” – da Lei comunicati per espletare la Sua richiesta nella sezione del sito “Contattaci” e nella sezione “Preventivi”."
+          "La Società ha designato un Data Protection Officer (DPO), contattabile al seguente indirizzo email:",
+          "luca.confalonieri@bongiornosrl.com"
+        ]
+      },
+      {
+        "id": "data-categories",
+        "heading": "Categorie di dati personali trattati",
+        "content": [
+          "Saranno oggetto di trattamento le seguenti categorie di dati:"
+        ],
+        "list": [
+          "Dati anagrafici personali delle persone fisiche che contattano la Società tramite il sito o altri canali per richiedere quotazioni o informazioni.",
+          "Dati societari dei soggetti diversi dalle persone fisiche coinvolti nelle attività di richiesta o gestione delle spedizioni.",
+          "Dati relativi ai beni da spedire.",
+          "Dati relativi ai luoghi di ritiro e consegna.",
+          "Dati relativi all’idoneità dei mezzi di trasporto e dei conducenti per spedizioni soggette ad autorizzazioni/restrizioni (es. merci ADR/IMO, fuori sagoma).",
+          "Dati delle persone di contatto per quotazione, incarichi di spedizione, richieste informative, fatturazione, pagamenti, gestione insoluti, contestazioni.",
+          "Dati necessari per adempiere esigenze di trasporto, doganali e amministrative richieste da Autorità Pubbliche, Dogane, Autotrasportatori, Compagnie di navigazione, Compagnie Aeree, Spedizionieri Doganali, Compagnie assicurative, Banche, Ausiliari del trasporto, Forze dell’Ordine, sia in ambito nazionale che UE ed extra-UE."
         ]
       },
       {
         "id": "legal-basis",
-        "heading": "Base giuridica",
-        "list": [
-          "Esecuzione di un contratto o di misure precontrattuali;",
-          "Adempimento di un obbligo di legge;",
-          "Interesse legittimo del Titolare."
-        ]
-      },
-      {
-        "id": "methods-duration",
-        "heading": "Modalità e durata del trattamento",
+        "heading": "Finalità e basi giuridiche del trattamento",
         "content": [
-          "Il trattamento dei Suoi dati personali è realizzato secondo le modalità previste dalla normativa vigente in materia di protezione dei dati.",
-          "Può consistere nella raccolta, registrazione, organizzazione, conservazione, consultazione, elaborazione, modificazione, selezione, estrazione, raffronto, utilizzo, interconnessione, blocco, comunicazione, cancellazione e distruzione dei dati.",
-          "I Suoi dati sono sottoposti a trattamento sia cartaceo sia elettronico e/o automatizzato. Saranno oggetto di trattamento improntato ai principi di correttezza, liceità, trasparenza e di tutela della Sua riservatezza e dei Suoi diritti.",
-          "Verranno trattati per tutta la durata del rapporto contrattuale e anche successivamente per l'espletamento di tutti gli adempimenti di legge."
-        ]
-      },
-      {
-        "id": "data-access",
-        "heading": "Accesso ai dati",
-        "content": [
-          "I Suoi dati potranno essere resi accessibili per le finalità descritte precedentemente:"
+          "Il trattamento è condotto unicamente per il perseguimento delle finalità indicate dal Titolare.",
+          "La base giuridica del trattamento è rappresentata da:"
         ],
         "list": [
-          "A dipendenti e collaboratori del Titolare in tutte le sue sedi operative e logistiche, dentro e fuori la UE, nella loro qualità di incaricati e/o responsabili interni del trattamento e/o amministratori di sistema; addetti area amministrativa; addetti area commerciale; addetti area operativa.",
-          "A soggetti esterni alla nostra struttura (ad esempio fornitori dei server che ospitano il sito e le nostre telecomunicazioni), con i quali sono stati stipulati precisi accordi sulle misure da adottare per garantire la sicurezza dei dati a loro affidati; in ogni caso i dati saranno trattati esclusivamente per il perseguimento delle finalità suindicate."
+          "Consenso;",
+          "Esecuzione di misure precontrattuali/contrattuali di cui l’interessato è parte;",
+          "Adempimento di obblighi di legge cui è soggetto il Titolare;",
+          "Salvaguardia degli interessi vitali dell’interessato o di altre persone fisiche;",
+          "Esecuzione di un compito di interesse pubblico o connesso all’esercizio di pubblici poteri;",
+          "Perseguimento del legittimo interesse del Titolare o di terzi."
+        ]
+      },
+      {
+        "id": "methods",
+        "heading": "Modalità del trattamento",
+        "content": [
+          "Il trattamento può essere svolto con o senza l’ausilio di strumenti manuali, informatici e telematici.",
+          "È adottata ogni misura idonea a garantire la sicurezza e la riservatezza dei dati, nel rispetto degli obblighi di legge.",
+          "Durante il trattamento non viene applicato alcun processo decisionale automatizzato."
+        ]
+      },
+      {
+        "id": "data-provision",
+        "heading": "Conferimento dei dati personali",
+        "content": [
+          "Il conferimento dei dati personali è strettamente necessario al perseguimento delle finalità indicate.",
+          "L’eventuale rifiuto totale o parziale di fornire i dati può comportare l’impossibilità di eseguire l’attività di spedizione."
         ]
       },
       {
         "id": "data-communication",
-        "heading": "Comunicazione dei dati",
+        "heading": "Comunicazione dei dati personali",
         "content": [
-          "Il Titolare potrà comunicare i Suoi dati per le finalità della presente informativa esclusivamente ai soggetti per i quali la comunicazione sia obbligatoria per legge."
+          "Per il perseguimento delle finalità sopra indicate, i dati personali potranno essere comunicati a:"
+        ],
+        "list": [
+          "Personale autorizzato ai sensi dell’art. 29 GDPR e dell’art. 2-quaterdecies del Codice Privacy;",
+          "Società terze nominate Responsabili del trattamento ai sensi dell’art. 28 GDPR."
+        ],
+        "content_after_list": [
+          "L’interessato può richiedere ulteriori informazioni scrivendo al DPO ai recapiti indicati."
         ]
       },
       {
-        "id": "location-transfer",
-        "heading": "Luogo di trattamento e trasferimento dei dati",
+        "id": "transfer",
+        "heading": "Trasferimento dei dati all’estero",
         "content": [
-          "I Suoi dati sono ubicati presso la sede legale. Eventuali trasferimenti, dovuti a circostanze per le quali sia obbligatorio per legge e/o per l'espletamento delle finalità suddette, saranno eseguiti nella piena tutela dei Suoi interessi."
-        ]
-      },
-      {
-        "id": "retention",
-        "heading": "Tempo di conservazione",
-        "content": [
-          "A meno che Lei non esprima esplicitamente la volontà di rimuoverli, i Suoi dati personali saranno conservati fino a quando necessari rispetto alle legittime finalità per le quali sono stati raccolti e, in ogni caso, per l'adempimento degli obblighi di legge."
+          "I dati personali potranno essere trasferiti in Paesi UE, extra-UE o organizzazioni internazionali, in funzione del servizio richiesto.",
+          "In caso di trasferimento verso Paesi extra-UE, l’interessato fornisce espressa autorizzazione, quale deroga agli artt. 45 e ss. GDPR, in ragione delle esigenze e dell'ubicazione territoriale legata all’esecuzione dell’incarico."
         ]
       },
       {
         "id": "rights",
         "heading": "Diritti dell'interessato",
         "content": [
-          "Nella Sua qualità di interessato potrà esercitare i diritti sanciti agli artt. 15–22 GDPR, tra cui:"
+          "L’interessato ha diritto di esercitare in qualunque momento i diritti previsti dagli artt. 15–22 GDPR, tra cui:"
         ],
         "list": [
-          "Diritto di rettifica;",
-          "Diritto all'oblio;",
-          "Diritto di limitazione del trattamento;",
-          "Diritto alla portabilità dei dati;",
-          "Diritto di opposizione;",
-          "Diritto di proporre reclamo all'Autorità Garante."
-        ],
-        "links": [
-          {
-            "label": "Garante per la protezione dei dati personali",
-            "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/4535524"
-          }
+          "Accesso ai dati personali e informazioni sulle finalità, categorie di dati, destinatari e periodo di conservazione;",
+          "Rettifica dei dati inesatti o integrazione dei dati incompleti;",
+          "Cancellazione dei dati nei casi previsti dal GDPR;",
+          "Limitazione del trattamento;",
+          "Portabilità dei dati verso altro Titolare;",
+          "Revoca del consenso, senza pregiudicare la liceità del trattamento precedente;",
+          "Opposizione al trattamento ai sensi dell’art. 21 GDPR;",
+          "Diritto di proporre reclamo al Garante Privacy (www.garanteprivacy.it)."
         ]
       },
       {
         "id": "how-to-exercise",
         "heading": "Modalità di esercizio dei diritti",
         "content": [
-          "Potrà in qualsiasi momento esercitare i Suoi diritti inviando una mail all'indirizzo:",
-          "bongiorno@bongiornosrl.com"
+          "L’interessato può esercitare i propri diritti scrivendo al Titolare o al DPO ai recapiti indicati nella presente informativa.",
+          "Email Titolare: bongiornosrl@bongiornosrl.com",
+          "PEC: bongiornosrl@legalmail.it",
+          "Email DPO: luca.confalonieri@bongiornosrl.com"
         ]
       }
     ]
   },
+
   "cookies": {
     "title": "Usiamo i cookie 🍪",
     "text": "Utilizziamo cookie tecnici e, previo consenso, cookie di analisi per migliorare la tua esperienza.",
@@ -378,7 +400,7 @@
     },
     "quality": {
       "title": "La nostra qualità, certificata e riconosciuta",
-      "text1": "La Bongiorno Italia (Bongiorno SRL) dal 2014 ha ottenuto lo *status di AEO per la operatività doganale* che riveste enorme importanza perché ci consente una *maggiore velocità nelle spedizioni*, maggiore comunicazione tra le parti della catena logistica e diminuzione dei problemi legati alla sicurezza. E' frutto di un'attenta procedura di verifica da parte dell'Agenzia delle Dogane e dei Monopoli italiana ed è un elemento di interesse per chi si affida ai nostri servizi. A questo si aggiunge la *Certificazione ISO 9001*, che la Bongiorno SRL ha ottenuto da molti anni e che costituisce ulteriore *garanzia di qualità per la clientela*.",
+      "text1": "La Bongiorno Italia (Bongiorno SRdal 2014 ha ottenuto lo *status di AEO per la operatività doganale* che riveste enorme importanza perché ci consente una *maggiore velocità nelle spedizioni*, maggiore comunicazione tra le parti della catena logistica e diminuzione dei problemi legati alla sicurezza. E' frutto di un'attenta procedura di verifica da parte dell'Agenzia delle Dogane e dei Monopoli italiana ed è un elemento di interesse per chi si affida ai nostri servizi. A questo si aggiunge la *Certificazione ISO 9001*, che la Bongiorno SRL ha ottenuto da molti anni e che costituisce ulteriore *garanzia di qualità per la clientela*.",
       "text2": "Consulta qui la nostra **politica qualità**."
     },
     "sedi": {
@@ -426,7 +448,7 @@
           "description": [
             "Rappresenta la nostra prima base commerciale ed operativa nel Nord Africa.",
             "La struttura operativa di cui la Bongiorno Tunisia dispone è considerata attualmente come una delle più importanti realtà nel settore dei trasporti in Tunisia.",
-            "Ci avvaliamo di tre terminal containers con magazzini sotto dogana nei principali porti tunisini (Rades, Sousse e Sfax) che ci permettono di soddisfare le esigenze di tutti gli operatori economici tunisini per qualsiasi tipologia di trasporto."
+            "Ci avvaliamo di tre terminal containers con magazzini sotto dogana nei principali porti tunisini (Rades, Sousse e Sfache ci permettono di soddisfare le esigenze di tutti gli operatori economici tunisini per qualsiasi tipologia di trasporto."
           ],
           "contactUrl": "#"
         },
