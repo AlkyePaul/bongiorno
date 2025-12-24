@@ -18,10 +18,10 @@ export default function StickyOnScroll({ children }) {
   }, []);
 
   return (
-    <header
+   <header
       className={`
-        fixed top-0 left-0 right-0 z-[60] w-full transition-all duration-300 shadow-lg
-        ${scrolled ? "bg-white/90 backdrop-blur-md py-2" : "bg-white py-4"}
+        fixed top-0 left-0 right-0 z-[60] w-full transition-all duration-300 shadow-lg bg-white
+        ${scrolled ? "py-2" : "py-6"}
         text-black
       `}
     >
