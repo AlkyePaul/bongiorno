@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import {Link} from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import H2 from "@/components/common/H2";
 import { ArrowLeft } from "lucide-react";
@@ -17,7 +17,7 @@ import PostIndex from '@/components/news/PostIndex';
 export async function generateStaticParams() {
   const fs = await import('fs');
   const path = await import('path');
-  
+
   const locales = generateLocaleParams().map(p => p.locale);
   const allPosts = fs.default
     .readdirSync(path.default.join(process.cwd(), "content/news/it"))
@@ -55,16 +55,16 @@ export default async function NewsPostPage({ params }) {
 
   // Get article with locale information
   const article = getArticleWithLocales(post, locale);
-  
+
   // If article doesn't exist at all → 404
   if (!article) notFound();
-  
+
   const { content, data, availableLocales, isFallback } = article;
   const title = data.title;
   const image = data.image;
 
   return (
-    <main className="text-gray-800 dark:text-gray-200">
+    <main className="text-gray-800">
       {/* 🔹 Hero */}
       <section className="relative w-full min-h-[60vh] flex items-center justify-center">
         <Image
@@ -85,21 +85,21 @@ export default async function NewsPostPage({ params }) {
             </p>
           )}
           <div className="mt-4">
-            <LanguageBadges 
+            <LanguageBadges
               availableLocales={availableLocales}
               currentLocale={locale}
               variant="compact"
             />
           </div>
-         {data.indice && <PostIndex indice={data.indice} index={index} />}
+          {data.indice && <PostIndex indice={data.indice} index={index} />}
         </div>
       </section>
-    
+
 
       {/* 🔹 Content */}
-      <section className="max-w-5xl mx-auto px-6 py-10 max-w-4xl space-y-5 prose dark:prose-invert post-content">
-          <PostMeta {...data} />
-          
+      <section className="max-w-5xl mx-auto px-6 py-10 max-w-4xl space-y-5 prose post-content">
+        <PostMeta {...data} />
+
         <MDXRemote
           source={content}
           components={{
@@ -111,7 +111,7 @@ export default async function NewsPostPage({ params }) {
                 width={800}
                 height={500}
                 className="rounded-xl shadow-lg mx-auto my-8"
-                 
+
               />
             ),
             H2,

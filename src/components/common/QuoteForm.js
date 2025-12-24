@@ -115,7 +115,7 @@ export default function QuoteForm() {
       <div className="mx-auto md:px-6 max-w-4xl">
         <form
           onSubmit={handleSubmit}
-          className="space-y-6 bg-white dark:bg-gray-950 p-8 rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm"
+          className="space-y-6 bg-white p-8 rounded-xl border border-gray-200 shadow-sm"
         >
           {/* 🏢 Azienda o privato */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -127,7 +127,7 @@ export default function QuoteForm() {
                 value={form.companyName}
                 onChange={handleChange}
                 placeholder={t("placeholders.company")}
-                className="w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+                className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
               />
             </div>
 
@@ -138,7 +138,7 @@ export default function QuoteForm() {
                 name="isPrivate"
                 checked={form.isPrivate}
                 onChange={handleChange}
-                className="h-5 w-5 mr-2 rounded border-gray-300 dark:border-gray-700 text-brand-accent focus:ring-brand-accent"
+                className="h-5 w-5 mr-2 rounded border-gray-300 text-brand-accent focus:ring-brand-accent"
               />
               <label htmlFor="isPrivate">{t("fields.isPrivate")}</label>
             </div>
@@ -153,7 +153,7 @@ export default function QuoteForm() {
               value={form.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+              className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
             />
           </div>
 
@@ -167,7 +167,7 @@ export default function QuoteForm() {
                 value={form.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+                className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
               />
             </div>
 
@@ -178,7 +178,7 @@ export default function QuoteForm() {
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+                className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
               />
             </div>
           </div>
@@ -191,7 +191,7 @@ export default function QuoteForm() {
               value={form.originCountry}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+              className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
             >
               <option value="">{t("select")}</option>
               {sendCountries.map((c) => (
@@ -205,7 +205,7 @@ export default function QuoteForm() {
                 placeholder={t("placeholders.otherCountry")}
                 value={form.originOther}
                 onChange={handleChange}
-                className="mt-2 w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+                className="mt-2 w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
               />
             )}
           </div>
@@ -218,7 +218,7 @@ export default function QuoteForm() {
               placeholder={t("fields.city")}
               value={form.originCity}
               onChange={handleChange}
-              className="px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+              className="px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
             />
             <input
               type="text"
@@ -226,7 +226,7 @@ export default function QuoteForm() {
               placeholder={t("fields.zip")}
               value={form.originZip}
               onChange={handleChange}
-              className="px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+              className="px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
             />
             <input
               type="text"
@@ -234,7 +234,7 @@ export default function QuoteForm() {
               placeholder={t("fields.address")}
               value={form.originAddress}
               onChange={handleChange}
-              className="px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+              className="px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
             />
           </div>
 
@@ -246,7 +246,7 @@ export default function QuoteForm() {
               value={form.destinationCountry}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+              className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
             >
               <option value="">{t("select")}</option>
               {receiveCountries.map((c) => (
@@ -260,7 +260,7 @@ export default function QuoteForm() {
                 placeholder={t("placeholders.otherCountry")}
                 value={form.destinationOther}
                 onChange={handleChange}
-                className="mt-2 w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+                className="mt-2 w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
               />
             )}
           </div>
@@ -273,7 +273,7 @@ export default function QuoteForm() {
               name="dangerousGoods"
               checked={form.dangerousGoods}
               onChange={handleChange}
-              className="h-5 w-5 rounded border-gray-300 dark:border-gray-700 text-brand-accent focus:ring-brand-accent"
+              className="h-5 w-5 rounded border-gray-300 text-brand-accent focus:ring-brand-accent"
             />
             <label htmlFor="dangerousGoods">{t("fields.dangerousGoods")}</label>
           </div>
@@ -285,7 +285,7 @@ export default function QuoteForm() {
                 name="goodsClass"
                 value={form.goodsClass}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+                className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
               >
                 <option value="">{t("select")}</option>
                 {adrClasses.map((c) => (
@@ -303,7 +303,7 @@ export default function QuoteForm() {
               placeholder={t("fields.estimatedWeight")}
               value={form.estimatedWeight}
               onChange={handleChange}
-              className="px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+              className="px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
             />
             <input
               type="text"
@@ -311,7 +311,7 @@ export default function QuoteForm() {
               placeholder={t("fields.estimatedVolume")}
               value={form.estimatedVolume}
               onChange={handleChange}
-              className="px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+              className="px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
             />
           </div>
 
@@ -323,7 +323,7 @@ export default function QuoteForm() {
               rows={4}
               value={form.details}
               onChange={handleChange}
-              className="w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+              className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
             ></textarea>
           </div>
 
@@ -336,9 +336,9 @@ export default function QuoteForm() {
               checked={form.consent}
               onChange={handleChange}
               required
-              className="mt-1 h-5 w-5 rounded border-gray-300 dark:border-gray-700 text-brand-accent focus:ring-brand-accent"
+              className="mt-1 h-5 w-5 rounded border-gray-300 text-brand-accent focus:ring-brand-accent"
             />
-            <label htmlFor="consent" className="text-base text-gray-700 dark:text-gray-300">
+            <label htmlFor="consent" className="text-base text-gray-700">
               {t("fields.consent")}{" "}
               <Link href="/privacy" locale={locale} className="underline text-brand-accent hover:text-brand-accent/80">
                 {t("privacyLink")}

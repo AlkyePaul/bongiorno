@@ -1,19 +1,19 @@
 "use client";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import {Link} from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import ReactMarkdown from 'react-markdown';
 import dynamic from "next/dynamic";
 import { useLocale } from "next-intl";
-import {Earth} from "lucide-react";
-import {flagMap} from "@/lib/flagMap";
+import { Earth } from "lucide-react";
+import { flagMap } from "@/lib/flagMap";
 
 export default function SediSection() {
   const t = useTranslations("home.sedi");
   const cta = useTranslations("ctaBanner");
   const locale = useLocale();
 
- const BongiornoMap = dynamic(() => import("../maps/BongiornoMap"), { ssr: false });
+  const BongiornoMap = dynamic(() => import("../maps/BongiornoMap"), { ssr: false });
 
   // 🏢 Each office entry defined in translations
   const sedi = t.raw("locations");
@@ -22,38 +22,38 @@ export default function SediSection() {
   const nameToCode = flagMap;
 
   return (
-    <section className="bg-white dark:bg-gray-950 md:py-20 py-8 border-t border-gray-200 dark:border-gray-800">
+    <section className="bg-white md:py-20 py-8 border-t border-gray-200">
       <div className="container mx-auto px-6 space-y-16">
         {/* 🏷️ Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             {t("title")}
           </h2>
-          <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+          <div className="text-lg text-gray-700 leading-relaxed">
             <ReactMarkdown>{t("intro1")}</ReactMarkdown>
           </div>
-          <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+          <div className="text-lg text-gray-700 leading-relaxed">
             <ReactMarkdown>{t("intro2")}</ReactMarkdown>
           </div>
-          <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+          <div className="text-lg text-gray-700 leading-relaxed">
             <ReactMarkdown>{t("intro3")}</ReactMarkdown>
           </div>
-               <div className="mb-6 flex flex-col items-center  justify-center w-full mx-auto">
-                <Link
-                  href="/contatti"
-                  className="inline-block px-4 py-2 mb-6 text-base font-medium rounded-md bg-brand-accent text-white hover:bg-brand-accent/90 transition"
-                >
-                  {t("contactLabel")}
-                </Link>
+          <div className="mb-6 flex flex-col items-center  justify-center w-full mx-auto">
+            <Link
+              href="/contatti"
+              className="inline-block px-4 py-2 mb-6 text-base font-medium rounded-md bg-brand-accent text-white hover:bg-brand-accent/90 transition"
+            >
+              {t("contactLabel")}
+            </Link>
 
-                <div className="text-lg text-gray-700 dark:text-gray-300"><ReactMarkdown>{cta("cta.contattaci")}</ReactMarkdown></div>
-                <div className="text-lg text-gray-700 dark:text-gray-300"><ReactMarkdown>{cta("cta.parliamo")}</ReactMarkdown></div>
-              </div>
+            <div className="text-lg text-gray-700"><ReactMarkdown>{cta("cta.contattaci")}</ReactMarkdown></div>
+            <div className="text-lg text-gray-700"><ReactMarkdown>{cta("cta.parliamo")}</ReactMarkdown></div>
+          </div>
 
         </div>
-         
 
-        <div className="w-full h-[480px] rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800">
+
+        <div className="w-full h-[480px] rounded-xl overflow-hidden border border-gray-200">
           <BongiornoMap padding={80} />
         </div>
 
@@ -62,7 +62,7 @@ export default function SediSection() {
           {sedi.map((sede, i) => (
             <div
               key={i}
-              className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition flex flex-col"
+              className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition flex flex-col"
             >
               {/* Flag + Name */}
               <div className="flex items-center gap-3 mb-4">
@@ -87,13 +87,13 @@ export default function SediSection() {
                     }
                   })()}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-xl font-semibold text-gray-900">
                   {sede.name}
                 </h3>
               </div>
 
               {/* Description */}
-              <div className="flex-1 space-y-3 text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+              <div className="flex-1 space-y-3 text-base text-gray-700 leading-relaxed">
                 {sede.description.map((p, idx) => (
                   <ReactMarkdown key={idx}>{p}</ReactMarkdown>
                 ))}
@@ -112,7 +112,7 @@ export default function SediSection() {
           ))}
         </div>
 
-     
+
       </div>
     </section>
   );

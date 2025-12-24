@@ -17,18 +17,18 @@ export async function generateMetadata(props) {
   });
 }
 export default async function Preventivi({ params }) {
-   const { locale } = await params;
-   const t = await getTranslations({ locale, namespace: 'quote' });
-   const messages = (await import(`@/locales/${locale}.json`)).default;
-   const features = Array.isArray(messages?.quote?.features) ? messages.quote.features : [];
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'quote' });
+  const messages = (await import(`@/locales/${locale}.json`)).default;
+  const features = Array.isArray(messages?.quote?.features) ? messages.quote.features : [];
 
-    return (
+  return (
     <>
-    <main className="text-gray-800 bg-gray-50 dark:bg-gray-900 dark:text-gray-200 py-20 px-6">
+      <main className="text-gray-800 bg-gray-50 py-20 px-6">
         <section className="mb-12 max-w-4xl mx-auto">
-        <H1 className="">
+          <H1 className="">
             {t("title")}
-          </H1> 
+          </H1>
 
           <p className="text-lg leading-relaxed mb-8">{t("intro")}</p>
 
@@ -37,12 +37,12 @@ export default async function Preventivi({ params }) {
               <li key={index}>{feature}</li>
             ))}
           </ul>
-          </section>
-          <section className="max-w-3xl mx-auto">
-    <FromPreventivi />
-    </section>
-    </main>
+        </section>
+        <section className="max-w-3xl mx-auto">
+          <FromPreventivi />
+        </section>
+      </main>
 
-</>
-    );
+    </>
+  );
 }

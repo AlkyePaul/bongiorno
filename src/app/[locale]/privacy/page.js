@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
-import {Link} from "@/i18n/navigation";
-import H1  from "@/components/common/H1";
+import { Link } from "@/i18n/navigation";
+import H1 from "@/components/common/H1";
 import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata(props) {
@@ -22,12 +22,12 @@ export default function PrivacyPage() {
   const sections = t.raw("sections") || [];
 
   return (
-    <main className="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 py-20 px-6">
+    <main className="bg-gray-50 text-gray-800 py-20 px-6">
       <section className="max-w-4xl mx-auto space-y-8">
         {/* Header */}
         <header>
           <H1 >{t("title")}</H1>
-          <p className="text-base text-gray-500 dark:text-gray-400">
+          <p className="text-base text-gray-500">
             {t("lastUpdated")}
           </p>
 
@@ -47,7 +47,7 @@ export default function PrivacyPage() {
           </div>
         </header>
 
-        <hr className="border-gray-300 dark:border-gray-700 my-8" />
+        <hr className="border-gray-300 my-8" />
 
         {/* Sections */}
         <div className="space-y-12">
@@ -57,7 +57,7 @@ export default function PrivacyPage() {
                 {section.heading}
               </h2>
               {section.subtitle && (
-                <p className="text-base text-gray-500 dark:text-gray-400 mb-3">
+                <p className="text-base text-gray-500 mb-3">
                   {section.subtitle}
                 </p>
               )}
@@ -92,7 +92,7 @@ export default function PrivacyPage() {
                 </div>
               )}
 
-              <hr className="border-gray-200 dark:border-gray-700 mt-8" />
+              <hr className="border-gray-200 mt-8" />
             </article>
           ))}
         </div>

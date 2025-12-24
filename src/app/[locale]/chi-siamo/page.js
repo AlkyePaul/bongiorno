@@ -29,7 +29,7 @@ export default async function ChiSiamoPage({ params }) {
   const yearsActive = new Date().getFullYear() - 1985;
 
   return (
-    <main className="text-gray-800 dark:text-gray-200 overflow-hidden">
+    <main className="text-gray-800 overflow-hidden">
       {/* 🔹 Hero Section */}
       <section className="relative w-full min-h-[80vh] flex items-center justify-center overflow-hidden">
         {/* Background Layer */}
@@ -78,7 +78,7 @@ export default async function ChiSiamoPage({ params }) {
       {/* 🔹 About Section */}
       <section className="relative mx-auto lg:bg-[linear-gradient(to_left,_white_45%,_#f3f4f6_45%)] py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6">
-       
+
 
           {/* Right Text */}
           <div className="max-w-xl">
@@ -90,28 +90,28 @@ export default async function ChiSiamoPage({ params }) {
             ))}
           </div>
 
-         <div className="mx-auto flex flex-col gap-12">
+          <div className="mx-auto flex flex-col gap-12">
 
-  <div className="relative w-[400px] h-[300px] overflow-hidden rounded-2xl shadow-lg">
-    <Image
-      src="/img/sede.webp"
-      alt={t("hero.alt")}
-      fill
-      className="object-cover"
-    />
-  </div>
-<p className="text-center italic max-w-[300px] text-base">{t("sede")}</p>
-  <div className="relative w-[400px] h-[400px] overflow-hidden rounded-2xl shadow-lg">
-    <BongiornoMap />
-  </div>
-</div>
+            <div className="relative w-[400px] h-[300px] overflow-hidden rounded-2xl shadow-lg">
+              <Image
+                src="/img/sede.webp"
+                alt={t("hero.alt")}
+                fill
+                className="object-cover"
+              />
+            </div>
+            <p className="text-center italic max-w-[300px] text-base">{t("sede")}</p>
+            <div className="relative w-[400px] h-[400px] overflow-hidden rounded-2xl shadow-lg">
+              <BongiornoMap />
+            </div>
+          </div>
 
 
         </div>
       </section>
 
       {/* 🔹 CTA + Sedi */}
-      <CTABanner t={(k)=>tCta(k)} />
+      <CTABanner t={(k) => tCta(k)} />
       <SediSection />
     </main>
   );

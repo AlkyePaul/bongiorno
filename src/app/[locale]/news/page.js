@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {Link} from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import H1 from "@/components/common/H1";
 import H2 from "@/components/common/H2";
 import { User, Calendar, FolderOpen } from "lucide-react";
@@ -66,7 +66,7 @@ export default async function NewsPage({ params }) {
   const { featured, secondary, others } = pickByPriority(articles);
 
   return (
-    <main className="text-gray-800 dark:text-gray-200">
+    <main className="text-gray-800">
       {/* 🔹 HERO SECTION */}
       <section className="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
@@ -93,7 +93,7 @@ export default async function NewsPage({ params }) {
         <div className="lg:col-span-2 space-y-10">
           {/* Featured article */}
           {featured && (
-            <div className="rounded-2xl overflow-hidden shadow-lg bg-white dark:bg-gray-900">
+            <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
               <Image
                 src={featured.image}
                 alt={featured.title}
@@ -113,13 +113,13 @@ export default async function NewsPage({ params }) {
                   <span className="flex items-center gap-1">
                     <FolderOpen className="w-4 h-4" /> {featured.category}
                   </span>
-                  <LanguageBadges 
-                    availableLocales={featured.availableLocales} 
+                  <LanguageBadges
+                    availableLocales={featured.availableLocales}
                     currentLocale={locale}
                     variant="compact"
                   />
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-6">
+                <p className="text-gray-700 mb-6">
                   {featured.excerpt}
                 </p>
                 <Link
@@ -134,46 +134,46 @@ export default async function NewsPage({ params }) {
 
           {/* Secondary article preview */}
           {secondary && (
-            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl shadow-sm p-6 flex gap-2">
-             <div  className="lg:w-3/4 md:w-1/2">
-            
-           
-              <h3 className="text-2xl font-semibold mb-3 text-brand-navy">
-                {secondary.title}
-              </h3>
-              <div className="flex items-center gap-3 text-base text-gray-500 mb-2 flex-wrap">
-                <span>{secondary.date} | {secondary.category}</span>
-                <LanguageBadges 
-                  availableLocales={secondary.availableLocales} 
-                  currentLocale={locale}
-                  variant="compact"
+            <div className="bg-gray-50 rounded-xl shadow-sm p-6 flex gap-2">
+              <div className="lg:w-3/4 md:w-1/2">
+
+
+                <h3 className="text-2xl font-semibold mb-3 text-brand-navy">
+                  {secondary.title}
+                </h3>
+                <div className="flex items-center gap-3 text-base text-gray-500 mb-2 flex-wrap">
+                  <span>{secondary.date} | {secondary.category}</span>
+                  <LanguageBadges
+                    availableLocales={secondary.availableLocales}
+                    currentLocale={locale}
+                    variant="compact"
+                  />
+                </div>
+                <p className="text-gray-700 mb-4 line-clamp-3">
+                  {secondary.excerpt}
+                </p>
+                <Link
+                  href={`/news/${secondary.slug}`}
+                  className="text-brand-accent hover:underline"
+                >
+                  {t('featured.readMore')}
+                </Link>
+              </div>
+              <div className=" hidden md:block md:w-1/2 lg:w-1/4">
+                <Image
+                  src={secondary.image}
+                  alt={secondary.title}
+                  width={500}
+                  height={500}
+                  className="object-cover w-full min-h-[150px] rounded-xl object-center "
                 />
               </div>
-              <p className="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">
-                {secondary.excerpt}
-              </p>
-              <Link
-                href={`/news/${secondary.slug}`}
-                className="text-brand-accent hover:underline"
-              >
-                {t('featured.readMore')}
-              </Link>
             </div>
-<div className=" hidden md:block md:w-1/2 lg:w-1/4">
-              <Image
-                src={secondary.image}
-                alt={secondary.title}
-                width={500}
-                height={500}
-                className="object-cover w-full min-h-[150px] rounded-xl object-center "
-              />
-              </div>
-              </div>
           )}
         </div>
 
         {/* RIGHT — Sidebar “All News” */}
-        <aside className="flex flex-col gap-4 bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-md">
+        <aside className="flex flex-col gap-4 bg-white rounded-2xl p-8 shadow-md">
           <h3 className="text-xl font-semibold mb-4 text-brand-navy">
             {t('sidebar.title')}
           </h3>

@@ -49,7 +49,7 @@ export default function ContattiClient() {
   };
 
   return (
-    <main className="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 py-20 px-6 antialiased">
+    <main className="bg-gray-50 text-gray-800 py-20 px-6 antialiased">
       <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-16 items-start">
         {/* Left: Contact Info */}
         <div className="space-y-8">
@@ -84,7 +84,7 @@ export default function ContattiClient() {
         </div>
 
         {/* Right: Form */}
-        <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-md">
+        <div className="bg-white p-8 rounded-2xl shadow-md">
           <h2 className="text-2xl font-semibold mb-6">{t("form.title")}</h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
@@ -98,7 +98,7 @@ export default function ContattiClient() {
                 value={form.name}
                 onChange={handleChange}
                 required
-                className="w-full border border-gray-300 dark:border-gray-600 rounded-md p-3 bg-gray-50 dark:bg-gray-900"
+                className="w-full border border-gray-300 rounded-md p-3 bg-gray-50"
               />
             </div>
             <div>
@@ -112,7 +112,7 @@ export default function ContattiClient() {
                 value={form.email}
                 onChange={handleChange}
                 required
-                className="w-full border border-gray-300 dark:border-gray-600 rounded-md p-3 bg-gray-50 dark:bg-gray-900"
+                className="w-full border border-gray-300 rounded-md p-3 bg-gray-50"
               />
             </div>
             <div>
@@ -126,7 +126,7 @@ export default function ContattiClient() {
                 value={form.message}
                 onChange={handleChange}
                 required
-                className="w-full border border-gray-300 dark:border-gray-600 rounded-md p-3 bg-gray-50 dark:bg-gray-900"
+                className="w-full border border-gray-300 rounded-md p-3 bg-gray-50"
               />
             </div>
             <div className="flex items-start gap-3">
@@ -137,9 +137,9 @@ export default function ContattiClient() {
                 checked={form.consent}
                 onChange={handleChange}
                 required
-                className="mt-1 h-5 w-5 rounded border-gray-300 dark:border-gray-700 text-brand-accent focus:ring-brand-accent"
+                className="mt-1 h-5 w-5 rounded border-gray-300 text-brand-accent focus:ring-brand-accent"
               />
-              <label htmlFor="consent" className="text-base text-gray-700 dark:text-gray-300">
+              <label htmlFor="consent" className="text-base text-gray-700">
                 {t("form.consent")} {" "}
                 <Link href="/privacy" className="underline text-brand-accent hover:text-brand-accent/80">
                   {t("form.privacyLink")}
@@ -154,14 +154,14 @@ export default function ContattiClient() {
               {status === "sending"
                 ? t("form.sending")
                 : status === "success"
-                ? t("form.success")
-                : t("form.submit")}
+                  ? t("form.success")
+                  : t("form.submit")}
             </button>
             {status === "error" && (
-              <p className="text-red-600 dark:text-red-400 text-base mt-2">❌ {f("error")}</p>
+              <p className="text-red-600 text-base mt-2">❌ {f("error")}</p>
             )}
             {status === "success" && (
-              <p className="text-green-600 dark:text-green-400 text-base mt-2">✅ {f("success")}</p>
+              <p className="text-green-600 text-base mt-2">✅ {f("success")}</p>
             )}
           </form>
         </div>

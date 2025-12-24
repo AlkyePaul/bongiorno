@@ -1,17 +1,17 @@
 // app/[locale]/servizi/page.jsx
 import React from "react";
 import Image from "next/image";
-import {useTranslations} from "next-intl";
-import {Link, getPathname} from "@/i18n/navigation";
-import {Package, Truck, ShieldCheck, Cog} from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link, getPathname } from "@/i18n/navigation";
+import { Package, Truck, ShieldCheck, Cog } from "lucide-react";
 import ReactMarkdown from 'react-markdown';
 
 import H1 from "@/components/common/H1";
 import H2 from "@/components/common/H2";
 import CTABanner from "@/components/common/CTABanner";
 
-import {buildMetadata} from "@/lib/seo";
-import {generateLocaleParams} from "@/lib/locales";   // centralized locale generator
+import { buildMetadata } from "@/lib/seo";
+import { generateLocaleParams } from "@/lib/locales";   // centralized locale generator
 
 // 🔹 Pre-generate pages for all locales (so /es/servicios, /en/services, etc. exist)
 export function generateStaticParams() {
@@ -25,7 +25,7 @@ export async function generateMetadata(props) {
   const params = await props.params;
   // Resolve the translated pathname for debugging
   try {
-    const localizedPath = getPathname({href: '/servizi', locale: params.locale});
+    const localizedPath = getPathname({ href: '/servizi', locale: params.locale });
     console.log('[servizi] generateMetadata locale=', params.locale, 'translatedPath=', localizedPath);
   } catch (e) {
     console.log('[servizi] getPathname error', e);
@@ -45,10 +45,10 @@ export async function generateMetadata(props) {
 export default function ServiziPage() {
   const t = useTranslations("services");
   const t2 = useTranslations("ctaBanner");
-  const icons = {Package, Truck, ShieldCheck, Cog};
+  const icons = { Package, Truck, ShieldCheck, Cog };
 
   return (
-    <main className="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 py-20 px-6 antialiased">
+    <main className="bg-gray-50 text-gray-800 py-20 px-6 antialiased">
       {/* 🔹 Hero */}
       <section className="mx-auto max-w-5xl">
         <div className="flex items-center flex-col md:flex-row gap-12 items-start">
@@ -80,7 +80,7 @@ export default function ServiziPage() {
               <Link
                 key={i}
                 href={href}
-                className=" p-6 rounded-md shadow-sm hover:shadow-md transition bg-white dark:hover:bg-gray-800 cursor-pointer hover:scale-105"
+                className=" p-6 rounded-md shadow-sm hover:shadow-md transition bg-white cursor-pointer hover:scale-105"
               >
                 <H2>
                   <IconComponent className="text-brand-accent text-3xl" />
@@ -111,12 +111,12 @@ export default function ServiziPage() {
             {item.paragraphs.map((p, j) => (
               <div
                 key={j}
-                className="text-lg leading-relaxed mb-4 text-gray-700 dark:text-gray-300"
+                className="text-lg leading-relaxed mb-4 text-gray-700"
               >
                 <ReactMarkdown>{p}</ReactMarkdown>
               </div>
             ))}
-            <hr className="h-[2px] my-4 bg-gray-200 border-0 md:my-10 dark:bg-gray-700" />
+            <hr className="h-[2px] my-4 bg-gray-200 border-0 md:my-10" />
           </article>
         ))}
       </section>

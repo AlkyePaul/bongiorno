@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import ReactMarkdown from 'react-markdown';
 import LogoGrid from "../common/LogoGrid";
-import {Link} from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { PDF_QUALITY } from "@/constants/constants";
 
 export default function QualitySection() {
@@ -12,19 +12,19 @@ export default function QualitySection() {
 
 
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 md:py-20 py-8 border-t border-gray-200 dark:border-gray-800">
+    <section className="bg-gray-50 md:py-20 py-8 border-t border-gray-200">
       <div className="container mx-auto px-6 text-center">
         {/* 🏷️ Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
           {t("title")}
         </h2>
 
         {/* 🏢 Logos grid */}
-        <LogoGrid scale={true} grayscale={false}/>
+        <LogoGrid scale={true} grayscale={false} />
         {/*
 
         {/* 📝 Text */}
-        <div className="max-w-3xl mx-auto text-lg text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+        <div className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed space-y-4">
           <ReactMarkdown>{t("text1")}</ReactMarkdown>
           <Link className="text-brand-accent hover:underline" href={PDF_QUALITY} target="_blank"><ReactMarkdown>{t("text2")}</ReactMarkdown></Link>
         </div>

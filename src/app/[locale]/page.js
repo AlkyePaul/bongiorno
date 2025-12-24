@@ -30,8 +30,8 @@ export async function generateMetadata(props) {
 export default function HomePage() {
   const messages = useMessages();
   const home = messages?.home || {};
-    const quote = messages?.quote || {};
-  
+  const quote = messages?.quote || {};
+
 
   const title = home?.hero?.title || '';
   const subtitle = home?.hero?.subtitle || '';
@@ -43,9 +43,9 @@ export default function HomePage() {
 
   const serviceItems = Array.isArray(home?.services?.items) ? home.services.items : [];
   const iconSet = [
-    <Package key="i0" size={32} />, 
-    <Landmark key="i1" size={32} />, 
-    <Truck key="i2" size={32} />, 
+    <Package key="i0" size={32} />,
+    <Landmark key="i1" size={32} />,
+    <Truck key="i2" size={32} />,
     <ShieldCheck key="i3" size={32} />
   ];
   const services = serviceItems.map((s, i) => ({
@@ -55,45 +55,45 @@ export default function HomePage() {
   }));
 
   const ctas = home?.hero?.ctas || [];
-  
+
 
   return (
     <main>
       <Hero title={title} subtitle={subtitle} ctas={ctas} claim={claim} />
-      
+
       <section className=" px-4 lg:px-0 mx-auto md:py-12 py-8">
-   <section className=" max-w-4xl mx-auto">
-<Intro>{home.intro}</Intro>
+        <section className=" max-w-4xl mx-auto">
+          <Intro>{home.intro}</Intro>
 
-      </section>
-         <section className=" px-4 lg:px-0 max-w-4xl mx-auto md:py-12 py-8">
-  <H2>{home?.destinations?.title || ''}</H2>
-      <DestinationCards items={destinations} Cta={piuCta}/>
-      </section>
+        </section>
+        <section className=" px-4 lg:px-0 max-w-4xl mx-auto md:py-12 py-8">
+          <H2>{home?.destinations?.title || ''}</H2>
+          <DestinationCards items={destinations} Cta={piuCta} />
+        </section>
 
-      <section className="mx-auto lg:bg-[linear-gradient(to_right,_white_55%,_#f3f4f6_55%)] md:py-12 py-8">
-        <ServicesSection/>
-      </section>
-           <section className="mx-auto lg:bg-[linear-gradient(to_left,_white_55%,_#f3f4f6_55%)] md:py-12 py-8">
-        <HomepageContent/>
-      </section>
-      <section className="mx-auto">
-        <QualitySection/>
-      </section>
-      <section className="mx-auto">
-        <SediSection/>
-      </section>
-       <section id="quote" className="grid grid-cols-1 lg:grid-cols-[40%_60%] max-w-6xl mx-auto rounded-2xl bg-gray-50 dark:bg-gray-900 md:py-12 py-8 md:py-12 px-4">
-      <div className="mx-auto lg:px-24 lg:py-4 px-4">
-        
-        <H2>{quote.title}</H2>
-        <p className="text-lg text-gray-700 dark:text-gray-300 mb-10">
-          {quote.subtitle}
-        </p>
-      
-        </div>
-        <FromPreventivi/>
-      </section>
+        <section className="mx-auto lg:bg-[linear-gradient(to_right,_white_55%,_#f3f4f6_55%)] md:py-12 py-8">
+          <ServicesSection />
+        </section>
+        <section className="mx-auto lg:bg-[linear-gradient(to_left,_white_55%,_#f3f4f6_55%)] md:py-12 py-8">
+          <HomepageContent />
+        </section>
+        <section className="mx-auto">
+          <QualitySection />
+        </section>
+        <section className="mx-auto">
+          <SediSection />
+        </section>
+        <section id="quote" className="grid grid-cols-1 lg:grid-cols-[40%_60%] max-w-6xl mx-auto rounded-2xl bg-gray-50 md:py-12 py-8 md:py-12 px-4">
+          <div className="mx-auto lg:px-24 lg:py-4 px-4">
+
+            <H2>{quote.title}</H2>
+            <p className="text-lg text-gray-700 mb-10">
+              {quote.subtitle}
+            </p>
+
+          </div>
+          <FromPreventivi />
+        </section>
       </section>
     </main>
   );

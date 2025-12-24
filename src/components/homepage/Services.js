@@ -1,8 +1,8 @@
-"use client"; 
+"use client";
 import ReactMarkdown from 'react-markdown';
 import H2 from "../common/H2";
 import { Package, Truck, ShieldCheck, Cog } from "lucide-react";
-import {Link} from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import { useMessages } from "next-intl";
 
@@ -49,7 +49,7 @@ export default function ServicesSection(props) {
         <H2>
           {title}
         </H2>
-        <div className="text-lg text-gray-700 dark:text-gray-300 space-y-4 mb-6 leading-relaxed">
+        <div className="text-lg text-gray-700 space-y-4 mb-6 leading-relaxed">
           {intro.map((p, i) => (
             <ReactMarkdown key={i}>{p}</ReactMarkdown>
           ))}
