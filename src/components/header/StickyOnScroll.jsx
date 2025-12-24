@@ -21,7 +21,7 @@ export default function StickyOnScroll({ children }) {
    <header
       className={`
         fixed top-0 left-0 right-0 z-[60] w-full transition-all duration-300 shadow-lg bg-white
-        ${scrolled ? "py-2" : "py-6"}
+        ${scrolled ? "pt-2 pb-0" : "pt-3 pb-1"}
         text-black
       `}
     >

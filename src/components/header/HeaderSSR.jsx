@@ -50,12 +50,13 @@ export default async function HeaderSSR() {
       <StickyOnScroll>
         <nav className="max-w-[100vw] mx-auto px-6 flex items-center justify-between relative">
           {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0">
+          <Link href="/" className="flex items-center shrink-0 md:max-w-[100px] max-h-[80px]">
             <Image
-              src="/img/logo.webp"
+              src="/img/cut-logo-named.webp"
               alt="Logo Bongiorno"
-              width={70}
-              height={70}
+              width={100}
+              height={80}
+              className="logo"
               priority
             />
           </Link>
