@@ -23,6 +23,7 @@ export default async function HeaderSSR() {
     { href: "/destinazioni/algeria", label: tNav("algeria") },
     { href: "/destinazioni/marocco", label: tNav("marocco") },
     { href: "/destinazioni/libia", label: tNav("libia") },
+   
     { href: "/destinazioni/mondo", label: tNav("mondo") },
   ];
 
