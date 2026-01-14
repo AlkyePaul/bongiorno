@@ -30,11 +30,7 @@ export default function Footer() {
                 {t("links.destinations")}
               </Link>
             </li>
-            <li>
-              <Link href="/lavora-con-noi" className="hover:text-white transition">
-                {t("links.workwithus")}
-              </Link>
-            </li>
+         
             <li>
               <Link href="/chi-siamo" className="hover:text-white transition">
                 {t("links.about")}

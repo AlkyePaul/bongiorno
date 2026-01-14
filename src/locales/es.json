@@ -277,7 +277,7 @@
       ],
       "servicesTitle": "Servicios para Libia y Mauritania",
       "services": [
-        "Servicios regulares en contenedores llenos",
+        "Servicios regulares en contenedores completos",
         "Transporte semanal a los puertos de Trípoli, Misurata y Bengasi, Nuakchot y Nuadibú.",
         "Posibilidad de cargar mercancías peligrosas y cargas excepcionales",
         "Seguro a todo riesgo a petición"
@@ -327,7 +327,7 @@
       "services": [
         "Garantía de servicio de la red WCA",
         "OEA y cualificación de operador de calidad ISO 9001",
-        "Salidas regulares en contenedores llenos y grupaje",
+        "Salidas regulares en contenedores completos y grupaje",
         "Posibilidad de transportar Project Cargo, mercancías peligrosas y cargas excepcionales",
         "Utilización de vectores regulares de primera importancia y fiabilidad",
         "Seguro a todo riesgo a petición"
@@ -383,7 +383,7 @@
         36.8
       ],
       "paragraphs": [
-        "Ofrecemos transporte desde España, Francia e Italia a los puertos de Túnez, Susa y Sfax.",
+        "Ofrecemos transporte desde España, Francia e Italia a los puertos de Túnez, Susse y Sfax.",
         "Nuestras décadas de experiencia y nuestra completa cadena de suministro, con almacenes propios y personal local, nos permiten garantizar los mejores plazos en el mercado tunecino.",
         "La experiencia adquirida a lo largo del tiempo y la presencia de personal propio en la zona garantizan la calidad de los servicios y la fiabilidad de la infraestructura puesta a disposición de los clientes.",
         "Sabemos cómo la rapidez, no sólo en el transporte, sino también y sobre todo en el trabajo sobre todas las dinámicas locales, es una baza para dar a nuestros servicios de transporte marítimo una garantía de calidad.",
@@ -391,7 +391,7 @@
       ],
       "servicesTitle": "Servicios Túnez",
       "services": [
-        "Servicios quincenales de grupaje a Túnez, Susa y Sfax",
+        "Servicios quincenales de grupaje a Túnez, Susse y Sfax",
         "Servicios multisemanales en contenedores y remolques completos a los principales puertos tunecinos",
         "Posibilidad de cargar mercancías peligrosas completas y en grupaje, material rodante y cargas excepcionales",
         "Posibilidad de entregas puerta a puerta en todo Túnez",
@@ -413,8 +413,8 @@
     "tunisia": "Túnez",
     "algeria": "Argelia",
     "marocco": "Marruecos",
-    "libia": "Libia",
-    "mauritania": "Mauritania"
+    "libia": "Libia y Mauritanie",
+    "mauritania": "Mauritanie"
   },
   "home": {
     "hero": {
@@ -780,8 +780,7 @@
     "text2": "Desde el inicio de nuestra actividad, hemos seguido una política de especialización, dedicando todos nuestros recursos técnicos y humanos precisamente al mercado tunecino y, en una segunda fase, a todo el Magreb.",
     "text3": "Esta particularidad ha permitido a nuestra organización consolidarse en los mercados norteafricanos hasta el punto de convertirse en un transportista de referencia para los envíos en esta región. Sin perder nunca de vista las necesidades reales de exportadores e importadores y adaptándonos a las realidades cambiantes de los países y mercados tanto de destino como de salida de las mercancías.",
     "text4": "Tras la consolidación de nuestras líneas, pensamos que nuestra visión del transporte también debía traspasar esos límites y que ello no nos haría perder nuestra identidad, sino que, por el contrario, la enriquecería.",
-    "text5": "La dimensión internacional de nuestros transportes es ahora reconocida a diario por nuestros clientes que, cada vez con mayor frecuencia, nos confían la gestión de sus envíos por todo el mundo. Tras la consolidación de nuestras líneas, consideramos que nuestra visión del transporte debía traspasar también esas fronteras y que ello no nos haría perder nuestra identidad, sino que, por el contrario, la enriquecería.",
-    "text6": "La dimensión internacional de nuestros transportes es reconocida a diario por nuestros clientes, que nos confían cada vez más la gestión de sus envíos por todo el mundo.",
+    "text5": "La dimensión internacional de nuestros transportes es ahora reconocida a diario por nuestros clientes que, cada vez con mayor frecuencia, nos confían la gestión de sus envíos por todo el mundo.",
     "subtitle": "Nuestra historia",
     "sede": "Sede de Bongiorno en Gallarate, Via Marsala 40, sede de la empresa."
   },
