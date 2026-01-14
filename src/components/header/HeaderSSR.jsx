@@ -12,8 +12,8 @@ import MobileMenu from "./MobileMenu";
  * Server-rendered navigation header with client dropdowns and language switcher.
  * Translations and locale data resolved server-side for better SEO and hydration.
  */
-export default async function HeaderSSR() {
-  const locale = await getLocale();
+export default async function HeaderSSR({ locale: localeFromProps } = {}) {
+  const locale = localeFromProps || await getLocale();
   const tNav = await getTranslations({ locale, namespace: "nav" });
   const tCommon = await getTranslations({ locale, namespace: "common" });
 
