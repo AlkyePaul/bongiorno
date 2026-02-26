@@ -1,10 +1,16 @@
 // /src/lib/seo.js (JS)
 import {routing} from '@/i18n/routing';
 
-const BASE_DOMAIN = 'https://bongiornotrasporti.it';
+// Use a single canonical host (with www) consistent with sitemap
+const BASE_DOMAIN = 'https://www.bongiornotrasporti.it';
 
-// locale → "/it", "/es", ...
-const PATH_PREFIX = routing.locales.reduce((acc, l) => ({...acc, [l]: `/${l}`}), {});
+// Helper: for default locale (it) no prefix, for others use "/{locale}"
+const { defaultLocale } = routing;
+
+function getLocalePrefix(locale) {
+  if (locale === defaultLocale) return '';
+  return `/${locale}`;
+}
 
 function normalizePath(p = '') { return p && !p.startsWith('/') ? `/${p}` : (p || ''); }
 
@@ -30,7 +36,7 @@ export function buildUrl(locale, pathOrRouteKey = '', params = undefined) {
     ? resolveLocalizedPath(pathOrRouteKey, locale, params)
     : pathOrRouteKey;
 
-  const prefix = PATH_PREFIX[locale] || '';
+  const prefix = getLocalePrefix(locale);
   const normalized = normalizePath(slug);
   return `${BASE_DOMAIN}${prefix}${normalized}`;
 }
