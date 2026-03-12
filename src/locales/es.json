@@ -800,6 +800,7 @@
     },
     "form": {
       "title": "Escríbenos un mensaje",
+       "privacyLink": "Política de privacidad",
       "name": "Nombre",
       "email": "Correo electrónico",
       "message": "Mensaje",

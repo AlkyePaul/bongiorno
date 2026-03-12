@@ -671,6 +671,7 @@
       "value": "+39 0331 776 334"
     },
     "form": {
+         "privacyLink": "Privacy policy",
       "title": "Write us a message",
       "name": "Name",
       "email": "Email",

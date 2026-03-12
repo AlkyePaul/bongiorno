@@ -35,17 +35,16 @@ export async function POST(req) {
 
     if (!res.ok) throw new Error("Zapier hook failed");
 
-    // Send auto-reply and storage copy in parallel (non-blocking)
-    Promise.allSettled([
+    // Send auto-reply and storage copy in parallel (must await on Vercel serverless)
+    const emailResults = await Promise.allSettled([
       sendAutoReply(data),
       sendStorageCopy(data),
-    ]).then((results) => {
-      results.forEach((result, i) => {
-        if (result.status === "rejected") {
-          const label = i === 0 ? "Auto-reply" : "Storage copy";
-          console.error(`❌ ${label} email failed:`, result.reason);
-        }
-      });
+    ]);
+    emailResults.forEach((result, i) => {
+      if (result.status === "rejected") {
+        const label = i === 0 ? "Auto-reply" : "Storage copy";
+        console.error(`❌ ${label} email failed:`, result.reason);
+      }
     });
 
     return NextResponse.json({ success: true });
