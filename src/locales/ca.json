@@ -1,0 +1,796 @@
+{
+  "news": {
+    "hero": {
+      "title": "Últimes notícies sobre transport marítim",
+      "subtitle": "Descobriu informació exclusiva i actualitzada sobre el transport marítim internacional, amb especial atenció a Europa i al Nord d'Àfrica."
+    },
+    "featured": {
+      "readMore": "Seguir llegint"
+    },
+    "sidebar": {
+      "title": "Articles recents"
+    },
+    "meta": {
+      "title": "Últimes notícies | Bongiorno Transport",
+      "description": "Conegueu les últimes notícies i perspectives sobre transport internacional, logística i cadena de subministrament."
+    }
+  },
+  "privacy": {
+    "title": "Política de privadesa",
+    "lastUpdated": "Darrera actualització: 09/12/2025",
+    "controller": {
+      "name": "Bongiorno Srl",
+      "piva": 10408830155,
+      "address": "Via del Gonfalone 4, 20123 Milano (MI) — Seu Secundària: Via Marsala 40/c, 21013 Gallarate (VA)",
+      "email": "bongiornosrl@bongiornosrl.com",
+      "pec": "bongiornosrl@legalmail.it"
+    },
+    "sections": [
+      {
+        "id": "intro",
+        "heading": "Informació d'acord amb l'art. 13 del GDPR",
+        "subtitle": "Reglament UE 2016/679 i D.Lgs. 196/2003",
+        "content": [
+          "Us informem que les vostres dades personals seran tractades d'acord amb la normativa en matèria de protecció de dades personals, Reglament UE 2016/679 («GDPR») i D. Lgs. 196/2003 i ss.mm.ii. («Codi de Privadesa»)."
+        ]
+      },
+      {
+        "id": "dpo",
+        "heading": "Data Protection Officer (DPO)",
+        "content": [
+          "L'Empresa ha designat un Data Protection Officer (DPO), que pot ser contactat a la següent adreça de correu electrònic:",
+          "luca.confalonieri@bongiornosrl.com"
+        ]
+      },
+      {
+        "id": "data-categories",
+        "heading": "Categories de dades personals tractades",
+        "content": [
+          "Seran objecte de tractament les categories de dades següents:"
+        ],
+        "list": [
+          "Dades personals de persones físiques que contacten amb l'empresa a través del lloc web o altres canals per sol·licitar cotitzacions o informacions.",
+          "Dades societàries de subjectes diferents de persones físiques involucrades en sol·licituds o gestió d'enviaments.",
+          "Dades relatives als béns a enviar.",
+          "Dades relatives als llocs de recollida i entrega.",
+          "Dades relatives a la idoneïtat dels mitjans de transport i dels conductors per a enviaments subjectes a autoritzacions/restriccions específiques (per exemple mercaderies ADR/IMO, fora de gàlib).",
+          "Dades de les persones de contacte per a la cotització, els encàrrecs d'enviament, les sol·licituds d'informació, la facturació, els pagaments, la gestió d'impagaments i les contestacions.",
+          "Dades necessàries per satisfer exigències de transport, duanes i obligacions administratives requerides per Autoritats Públiques, Duanes, Transportistes, Navilieres, Companyies Aèries, Agents de Duanes, Companyies Asseguradores, Bancs, Auxiliars del transport i Forces de l'Ordre, tant nacionals com de la UE i extra-UE."
+        ]
+      },
+      {
+        "id": "legal-basis",
+        "heading": "Finalitats i bases jurídiques del tractament",
+        "content": [
+          "El tractament es fa exclusivament per a la consecució de les finalitats indicades pel Responsable.",
+          "La base jurídica del tractament es fonamenta en:"
+        ],
+        "list": [
+          "Consentiment;",
+          "Execució de mesures precontractuals/contractuals de què l'interessat és part;",
+          "Compliment d'obligacions legals a què està subjecte el responsable;",
+          "Salvaguarda dels interessos vitals de l'interessat o d'una altra persona física;",
+          "Execució d'una missió d'interès públic o associada a l'exercici de poders públics;",
+          "Persecució de l'interès legítim del Responsable o de tercers."
+        ]
+      },
+      {
+        "id": "methods",
+        "heading": "Modalitats del tractament",
+        "content": [
+          "El tractament es pot fer amb l'ús d'eines manuals, informàtiques i telemàtiques o sense.",
+          "S'adopten mesures adequades per garantir la seguretat i la confidencialitat de les dades, d'acord amb els requisits legals.",
+          "Durant el tractament no s'aplica cap procés de presa de decisions automatitzat."
+        ]
+      },
+      {
+        "id": "data-provision",
+        "heading": "Provisió de les dades personals",
+        "content": [
+          "La provisió de dades personals és estrictament necessària per a les finalitats indicades.",
+          "La negativa total o parcial a proporcionar dades pot impedir l'execució del servei d'enviament."
+        ]
+      },
+      {
+        "id": "data-communication",
+        "heading": "Comunicació de les dades personals",
+        "content": [
+          "Per a la consecució de les finalitats indicades, les dades personals podran ser comunicades a:"
+        ],
+        "list": [
+          "Personal autoritzat d'acord amb l'art. 29 del GDPR i art. 2-quaterdecies del Codi de Privadesa;",
+          "Empreses terceres designades com a Encarregats del tractament conforme a l'art. 28 del GDPR."
+        ],
+        "content_after_list": [
+          "L'interessat pot sol·licitar informació addicional escrivint al DPO els contactes indicats."
+        ]
+      },
+      {
+        "id": "transfer",
+        "heading": "Transferència de dades a l'estranger",
+        "content": [
+          "Les dades personals es poden transferir a països de la UE, extra-UE o organitzacions internacionals depenent del servei sol·licitat.",
+          "En cas de transferència a països extra-UE, l'interessat atorga autorització expressa com a excepció als arts. 45 i seg. GDPR, en funció de les exigències i la localització territorial relacionada amb l'execució de l'encàrrec."
+        ]
+      },
+      {
+        "id": "rights",
+        "heading": "Drets de l'interessat",
+        "content": [
+          "L'interessat té dret a exercir en qualsevol moment els drets previstos pels arts. 15–22 del GDPR, entre ells:"
+        ],
+        "list": [
+          "Accés a les dades personals i a la informació sobre finalitats, categories de dades, destinataris i període de conservació;",
+          "Rectificació de dades inexactes o integració de dades incompletes;",
+          "Supressió de les dades en els casos previstos pel GDPR;",
+          "Limitació del tractament;",
+          "Portabilitat de les dades a un altre Responsable;",
+          "Revocació del consentiment sense perjudici de la licitud del tractament previ;",
+          "Oposició al tractament d'acord amb l'art. 21 GDPR;",
+          "Dret a presentar una reclamació davant de l'Autoritat de Protecció de Dades (www.garanteprivacy.it)."
+        ]
+      },
+      {
+        "id": "how-to-exercise",
+        "heading": "Modalitats per exercir els drets",
+        "content": [
+          "L'interessat pot exercir els seus drets escrivint al Responsable o al DPO els contactes indicats a la present política.",
+          "Email del Responsable: bongiornosrl@bongiornosrl.com",
+          "PEC: bongiornosrl@legalmail.it",
+          "Email del DPO: luca.confalonieri@bongiornosrl.com"
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Utilitzem cookies \uD83C\uDF6A",
+    "text": "Utilitzem galetes tècniques i, previ consentiment, analítiques per millorar la seva experiència.",
+    "privacyLink": "Política de privadesa",
+    "accept": "Acceptar-ho tot",
+    "decline": "Rebutjar",
+    "customize": "Personalitzi",
+    "customizeTitle": "Preferències de cookies",
+    "customizeText": "Trieu les categories de galetes que voleu autoritzar.",
+    "cancel": "Cancel·la",
+    "save": "Desar preferències",
+    "categories": {
+      "essential": {
+        "title": "Essencials",
+        "desc": "Cookies necessàries per al funcionament del lloc."
+      },
+      "analytics": {
+        "title": "Analítica",
+        "desc": "Galetes que ens ajuden a comprendre l'ús del lloc (Google Analytics)."
+      },
+      "marketing": {
+        "title": "Màrqueting",
+        "desc": "Cookies utilitzades per a campanyes publicitàries i remàrqueting."
+      }
+    }
+  },
+  "common": {
+    "index": "Índex",
+    "company": "Bongiorno SRL",
+    "preventivo": "Sol·licitar cotització",
+    "back_news": "Tornar a les notícies",
+    "fallback_notice": "Aquest article encara no està disponible en aquest idioma. Se'n mostra la versió italiana."
+  },
+  "destinations": {
+    "marocco": {
+      "title": "Transport Marroc",
+      "claim": "La nostra dedicació al Marroc està consolidada des de fa dècades. Hem seleccionat i enfortit en el temps una col·laboració amb una realitat local que viatjava a la nostra mateixa ona. Per aconseguir l'objectiu comú de donar als clients cada vegada més motius per triar el nostre servei.",
+      "intro": "Oferim transport des d'Espanya, França i Itàlia als ports principals del Marroc.",
+      "image": "/img/dest-marocco.webp",
+      "mapCoords": [
+        "-144.46.00",
+        "162.57.00"
+      ],
+      "mapMarkers": [
+        {
+          "name": "Casablanca",
+          "coords": [
+            "-105.18.00",
+            "128.31.00"
+          ]
+        },
+        {
+          "name": "Tànger",
+          "coords": [
+            "-140.27.00",
+            "161.35.00"
+          ]
+        }
+      ],
+      "paragraphs": [
+        "Les nostres dècades d'experiència ens permeten garantir el millor moment al mercat marroquí.",
+        "Sabem que la rapidesa, no només en el transport, sinó també i sobretot en les intervencions a totes les dinàmiques locals, és una carta guanyadora per donar als nostres serveis d'enviament una garantia de qualitat.",
+        "Coneixem la importància de la documentació que permet a tots els comerciants dur a terme les seves transaccions, i aconsellem i suggerim, fins i tot abans que comenci l'enviament, qualsevol particularitat que ho faci possible."
+      ],
+      "servicesTitle": "Serveis Marroc",
+      "services": [
+        "Serveis regulars de grupatge per mar a Casablanca",
+        "Possibilitat de carregar mercaderies perilloses completes i en grupatge, material rodant i càrregues excepcionals",
+        "Possibilitat de lliuraments a domicili a tot el Marroc",
+        "Transport setmanal als ports de Tànger i Casablanca",
+        "Temps de trànsit molt ràpids",
+        "Assegurança a tot risc a petició"
+      ]
+    },
+    "libia": {
+      "title": "Transport Líbia i Mauritània",
+      "claim": "La cobertura total del Magrib també ens porta aquí. Amb la mateixa cura i atenció, amb serveis regulars de contenidors complets als principals ports.",
+      "intro": "Oferim transport des d'Espanya, França i Itàlia als principals ports libis i mauritans.",
+      "image": "/img/dest-líbia-mauritània.webp",
+      "mapCoords": [
+        13,
+        22
+      ],
+      "mapMarkers": [
+        {
+          "name": "Trípoli",
+          "coords": [
+            "44.53.00",
+            "179.52.00"
+          ]
+        },
+        {
+          "name": "Mesura",
+          "coords": [
+            15.1,
+            "32.37.00"
+          ]
+        },
+        {
+          "name": "Bengasi",
+          "coords": [
+            "31.07.00",
+            "51.27.00"
+          ]
+        },
+        {
+          "name": "Nouakchott",
+          "coords": [
+            "-178.05.00",
+            "32.18.00"
+          ]
+        },
+        {
+          "name": "Nouadhibou",
+          "coords": [
+            "-22.33.00",
+            "175.33.00"
+          ]
+        }
+      ],
+      "paragraphs": [
+        "Les nostres dècades d'experiència i qualitat dels nostres serveis, certificats segons la norma ISO9001, ens permeten garantir uns serveis de transport complets, ràpids i eficaços."
+      ],
+      "servicesTitle": "Serveis per a Líbia i Mauritània",
+      "services": [
+        "Serveis regulars en contenidors complets",
+        "Transport setmanal als ports de Trípoli, Misurata i Bengasi, Nouakchott i Nuadibú.",
+        "Possibilitat de carregar mercaderies perilloses i càrregues excepcionals",
+        "Assegurança a tot risc a petició"
+      ]
+    },
+    "mondo": {
+      "title": "El transport al món",
+      "claim": "Gràcies als nostres socis de WCA arribem a tot arreu amb la qualitat garantida per la més gran i més extensa xarxa de transitaris internacionals.",
+      "intro": "Serveis amb certificació mundial garantits per la nostra pertinença a la xarxa WCA.",
+      "image": "/img/mondo.webp",
+      "mapCoords": [
+        21.13,
+        "46.06.00"
+      ],
+      "mapMarkers": [
+        {
+          "name": "Canal de Panamà",
+          "coords": [
+            -79.8,
+            9.1
+          ]
+        },
+        {
+          "name": "Singapur",
+          "coords": [
+            103.8,
+            1.35
+          ]
+        },
+        {
+          "name": "Rotterdam",
+          "coords": [
+            4.48,
+            "52.32.00"
+          ]
+        },
+        {
+          "name": "Nova York",
+          "coords": [
+            -74,
+            40.7
+          ]
+        }
+      ],
+      "servicesTitle": "Serveis amb certificació mundial",
+      "services": [
+        "Garantia de servei de la xarxa WCA",
+        "OEA i qualificació d'operador de qualitat ISO 9001",
+        "Sortides regulars en contenidors complets i grupatge",
+        "Possibilitat de transportar Project Càrrec, mercaderies perilloses i càrregues excepcionals",
+        "Utilització de vectors regulars de primera importància i fiabilitat",
+        "Assegurança a tot risc a petició"
+      ]
+    },
+    "algeria": {
+      "title": "Transport Algèria",
+      "claim": "Tenim la nostra pròpia estructura a la zona des de fa molts anys. En coneixem la dinàmica i les peculiaritats. Vivim diàriament els canvis normatius i som capaços de prendre mesures immediates per garantir-ne el compliment.",
+      "intro": "Oferim transport des d'Espanya, França i Itàlia als ports d'Alger, Orà i tots els principals ports algerians.",
+      "image": "/img/dest-algeria.webp",
+      "mapCoords": [
+        "107.33.00",
+        28
+      ],
+      "mapMarkers": [
+        {
+          "name": "Algèria",
+          "coords": [
+            12.48,
+            "161.38.00"
+          ]
+        },
+        {
+          "name": "Orà",
+          "coords": [
+            "-106.57.00",
+            "151.27.00"
+          ]
+        }
+      ],
+      "paragraphs": [
+        "L'experiència adquirida al llarg del temps i la presència de personal propi a la zona garanteixen la qualitat dels serveis i la fiabilitat de la infraestructura posada a la disposició dels clients.",
+        "Sabem com la rapidesa, no només en el transport, sinó també i sobretot a la feina sobre totes les dinàmiques locals, és una carta per donar als nostres serveis de transport marítim una garantia de qualitat.",
+        "Coneixem la importància de la documentació que permet a tots els comerciants dur a terme les seves transaccions, i aconsellem i suggerim, fins i tot abans que comenci l'enviament, qualsevol particularitat que ho faci possible."
+      ],
+      "servicesTitle": "Serveis Algèria",
+      "services": [
+        "Serveis regulars de grupatge per mar a Alger i Orà",
+        "Serveis regulars de contenidors a tots els ports algerians",
+        "Possibilitat de carregar mercaderies perilloses completes i en grupatge, material rodant i càrregues excepcionals",
+        "Possibilitat de lliuraments porta a porta a tota Algèria",
+        "Temps de trànsit molt ràpids",
+        "Assegurança a tot risc a petició"
+      ]
+    },
+    "tunisia": {
+      "title": "Tunísia Transport",
+      "claim": "Som un punt de referència al país per al transport cap a i des de l'Europa mediterrània.",
+      "intro": "Un creixement continu gràcies als nostres clients que, amb la seva fidelitat i gratitud, ens han donat l'impuls necessari per intentar satisfer les seves expectatives i exigències amb una cura i una atenció cada vegada més grans.",
+      "image": "/img/destinacions/tunisia.webp",
+      "mapCoords": [
+        10.18,
+        36.8
+      ],
+      "paragraphs": [
+        "Oferim transport des d'Espanya, França i Itàlia als ports de Tunísia, Susse i Sfax.",
+        "Les nostres dècades d'experiència i la nostra completa cadena de subministrament, amb magatzems propis i personal local, ens permeten garantir els millors terminis al mercat tunisià.",
+        "L'experiència adquirida al llarg del temps i la presència de personal propi a la zona garanteixen la qualitat dels serveis i la fiabilitat de la infraestructura posada a la disposició dels clients.",
+        "Sabem com la rapidesa, no només en el transport, sinó també i sobretot a la feina sobre totes les dinàmiques locals, és una carta per donar als nostres serveis de transport marítim una garantia de qualitat.",
+        "Coneixem la importància de la documentació que permet a tots els comerciants dur a terme les seves transaccions, i aconsellem i suggerim, fins i tot abans que comenci l'enviament, qualsevol particularitat que ho faci possible."
+      ],
+      "servicesTitle": "Serveis Tunísia",
+      "services": [
+        "Serveis quinzenals de grupatge a Tunísia, Susse i Sfax",
+        "Serveis multisetmanals en contenidors i remolcs complets als principals ports tunisians",
+        "Possibilitat de carregar mercaderies perilloses completes i en grupatge, material rodant i càrregues excepcionals",
+        "Possibilitat de lliuraments porta a porta a tot Tunísia",
+        "Temps de trànsit molt ràpids",
+        "Assegurança a tot risc a petició"
+      ],
+      "cta": "Demana una cotització"
+    }
+  },
+  "nav": {
+    "home": "Inici",
+    "services": "Serveis",
+    "destinations": "Destinacions",
+    "scopri": "Descobreix",
+    "contacts": "Contactes",
+    "about": "Qui som",
+    "news": "Notícies",
+    "mondo": "Món",
+    "tunisia": "Tunísia",
+    "algeria": "Algèria",
+    "marocco": "Marroc",
+    "libia": "Líbia i Mauritània",
+    "mauritania": "Mauritània"
+  },
+  "home": {
+    "hero": {
+      "title": "BONGIORN TRANSPORTS",
+      "subtitle": "Transport internacional",
+      "claim": "Des de 1985 connectem amb dedicació i cura els principals ports europeus de la Mediterrània amb el Magrib: Tunísia, Algèria i el Marroc en primer lloc, però també moltes altres destinacions, servint cada any a més de 60 països de tot el món.",
+      "ctas": [
+        {
+          "href": "#129837",
+          "label": "Demana una cotització"
+        },
+        {
+          "href": "/contactes",
+          "label": "Contacta'ns"
+        }
+      ]
+    },
+    "intro": [
+      "Els nostres serveis cap als ports del nord d'Àfrica estan estructurats per garantir unes condicions de transport particularment favorables, però sobretot per guiar i ajudar els operadors en totes les fases que precedeixen els enviaments i portar-los a una conclusió d'èxit.",
+      "És la nostra presència diària a l'àrea el que ens permet estar sempre actualitzats sobre els procediments i les regulacions que canvien amb freqüència en aquests mercats. Per assolir aquest objectiu hem invertit molt en les estructures i persones que ens permetin fer-les funcionar de manera dinàmica i eficaç.",
+      "Estem presents a Tunísia als tres ports principals. Tunísia, Sousse i Sfax. A Algèria, la nostra oficina d'Alger gestiona i garanteix les operacions a tots els ports algerians. Al Marroc aprofitem una relació d'agència consolidada que, amb el temps, ens ha permès créixer i donar solidesa i fiabilitat als nostres serveis.",
+      "T.I.Bongiorno Espanya,S.L.U. i Bongiorno France completen la nostra estructura, permetent donar cobertura a tots els principals canals de trànsit que, des d'Europa, desemboquen a la Mediterrània amb destinació a les destinacions del nord d'Àfrica.",
+      "Les nostres consignes: Puntualitat, Disponibilitat i Reactivitat per afrontar eficaçment tots els possibles imprevistos.",
+      "Estem preparats per ser el vostre soci de confiança per a qualsevol transport al nord d'Àfrica i més enllà."
+    ],
+    "destinations": {
+      "title": "Destinacions de Transport Nord d'Àfrica-Magreb",
+      "items": [
+        {
+          "title": "Transport Tunísia",
+          "text": "Al nostre ADN des dels orígens. La nostra línia històrica des del 1985.",
+          "image": "/img/tunisia.webp",
+          "href": "/tunisia"
+        },
+        {
+          "title": "Transport Algèria",
+          "text": "Gran país on creiem i invertim construint serveis a mida.",
+          "image": "/img/algeria.webp",
+          "href": "/algiria"
+        },
+        {
+          "title": "Transport Marroc",
+          "text": "Acompanyem la teva mercaderia fins a la porta del teu client. Del desert als cims de l'Atlas.",
+          "image": "/img/marocco.webp",
+          "href": "/marroc"
+        },
+        {
+          "title": "Líbia i Mauritània",
+          "text": "La cobertura total del Magrib també ens porta fins aquí. Amb la mateixa cura i atenció.",
+          "image": "/img/libia.webp",
+          "href": "/líbia"
+        },
+        {
+          "title": "Transport Món",
+          "text": "Gràcies als nostres partners certificats WCA arribem a tot arreu amb les màximes garanties.",
+          "image": "/img/mondo.webp",
+          "href": "/món"
+        }
+      ]
+    },
+    "services": {
+      "title": "Serveis",
+      "intro": [
+        "La teva confiança és el motor dels nostres transports. Esperem poder demostrar-te que superarem les teves expectatives. Trieu les nostres solucions de transport i descobriu el veritable significat d'un servei d'enviament de primera classe."
+      ],
+      "items": [
+        {
+          "title": "Transport en Grupatge",
+          "description": "Confiar en els que saben gestionar els petits i mitjans enviaments amb la cura i la rapidesa adequats és de vital importància per no interrompre mai l'activitat productiva o comercial."
+        },
+        {
+          "title": "Transport excepcional i Project Càrrec",
+          "description": "Un tipus de transport que requereix no només un profund coneixement, sinó també un estudi detingut de les rutes, normatives i característiques de les mercaderies i dels territoris on es realitzen els enviaments."
+        },
+        {
+          "title": "Serveis Full Containers",
+          "description": "Freqüències i temps de trànsit extremadament ràpids, disponibilitat d'espai a bord dels vaixells i una gran varietat de tipus de contenidors per satisfer les necessitats més variades."
+        },
+        {
+          "title": "Segur ''Tot Risc''",
+          "description": "Per a aquells que mai no volen deixar res a l'atzar. Una pòlissa de seguretat que protegeix contra qualsevol risc durant el transport. La clau per a una expedició pacífica. La nostra sòlida pòlissa «tot risc» està disponible prèvia sol·licitud."
+        }
+      ]
+    },
+    "content": {
+      "title": "No som només transitaris",
+      "intro1": "Entenem que el món de la logística pot ser complex, però som aquí per posar-t'ho més fàcil.",
+      "intro2": "Què ens diferencia dels altres? La nostra missió és aconseguir que la seva mercaderia arribi a destinació en perfectes condicions i en el menor temps possible.",
+      "intro3": "Estem orgullosos d'haver creat al llarg del temps serveis especialitzats que ens permeten gestionar els enviaments al Magrib i altres zones geogràfiques amb una estructura única i sòlida.",
+      "intro4": "Des que la mercaderia surt per la porta de l'exportador fins que es posa a la disposició de l'importador, controlem cada pas gràcies a la formació del nostre personal, capaç de comprendre plenament la dinàmica i operativa que comporta el transport internacional. Mantenir-nos al corrent de les innovacions i canvis que fan cada cop més dinàmic el nostre negoci.",
+      "intro5": "El nostre objectiu és guanyar-nos la confiança dels nostres clients demostrant que treballem incansablement per un creixement continu.",
+      "blocks": [
+        {
+          "title": "Som els veritables protagonistes del teu transport",
+          "text1": "Escollir Bongiorno significa triar seguretat i eficiència.",
+          "text2": "Confia en nosaltres per a tots els teus enviaments internacionals i descobreix com fem del transport de mercaderies una experiència tranquil·la.",
+          "text3": "La qualificació d'operador OEA i la certificació ISO 9001:2015 de casa mare a Itàlia, a més de la participació a la xarxa WCA són garantia que la nostra qualitat de servei és veritablement el que tenim l'honor d'oferir amb orgull.",
+          "text4": "Per brindar tranquil·litat als nostres clients, també oferim una pòlissa opcional «Tot Risc», que cobreix la suma total de la factura de venda. Passi el que passi durant el transport, sempre estarà segur.",
+          "alt": "Camions i contenidors a la carretera"
+        }
+      ]
+    },
+    "quality": {
+      "title": "La nostra qualitat, certificada i reconeguda",
+      "text1": "La Bongiorno Italia (Bongiorno SRL) el 2014 va obtenir l'estatus d'OEA per a operacions duaneres, cosa que té una enorme importància perquè permet més rapidesa en els enviaments, més comunicació entre les parts de la cadena de subministrament i menys problemes de seguretat. És el resultat d'un procediment minuciós de verificació per part de l'Agència de Duanes i Monopolis italiana i és d'interès per als qui confien en els nostres serveis. A això s'hi afegeix la certificació ISO 9001, que Bongiorno SRL té des de fa molts anys i que és una garantia més de qualitat per als nostres clients.",
+      "text2": "Consulteu aquí la nostra política de qualitat."
+    },
+    "sedi": {
+      "title": "Les Oficines",
+      "intro1": "Gràcies a la presència de personal propi i oficines a cinc països mediterranis podem gestionar els enviaments cap a i des del Magrib amb la competència de qui viu la dinàmica diària en canvi constant d'aquesta zona i amb la rapidesa de qui coneix els problemes.",
+      "intro2": "Garantim intervencions immediates i directes per trobar la millor solució que porti sempre a bon port cada enviament.",
+      "intro3": "A més, l'elecció de socis certificats per la WCA ens permet comptar amb un suport altament professional i generalitzat a qualsevol lloc del món. Per no deixar res a l'atzar.",
+      "contactLabel": "Contacta'ns",
+      "globalTitle": "Bongiorn al món",
+      "globalText": "El caràcter internacional del nostre negoci i el nostre creixement continu ens han portat a ampliar els nostres serveis més enllà de les fronteres dels països on ja estem establerts i des de fa temps gràcies al valuós suport i ajuda de la xarxa d'agències que ens proporciona l'Aliança Mundial del Comerç, de la qual som membres des del 2009.",
+      "globalContact": "Contacta'ns",
+      "locations": [
+        {
+          "name": "Bongiorno Itàlia",
+          "flag": "/img/banderes/ca.svg",
+          "description": [
+            "Fundada el 1985, Bongiorno srl és la nostra empresa matriu.",
+            "Amb seu a Gallarate, a 5 minuts de l'aeroport de Milà Malpensa, és el punt de confluència de les principals línies de trànsit procedents de les regions industrials del centre-nord d'Itàlia.",
+            "La proximitat als principals ports comercials del nord de la Mediterrània ens situa en una posició privilegiada per garantir una rapidesa i una eficàcia extrema en l'execució dels mandats de transport."
+          ],
+          "contactUrl": "#"
+        },
+        {
+          "name": "Bongiorno Espanya",
+          "flag": "/img/banderes/ca.svg",
+          "description": [
+            "Amb seu a Barcelona i plataformes logístiques estratègiques a Espanya i Portugal, la nostra seu a Espanya és capaç de garantir un servei precís i extens des de i cap a tota la Península Ibèrica i representa avui per al grup un punt de importància fonamental en el desenvolupament del trànsit cap al nord d'Àfrica.",
+            "Avui dia, Bongiorno Espanya representa, per al grup, una referència fonamental en el desenvolupament del comerç cap al nord d'Àfrica."
+          ],
+          "contactUrl": "#"
+        },
+        {
+          "name": "Bongiorno França",
+          "flag": "/img/banderes/fr.svg",
+          "description": [
+            "La nostra seu es troba a Marsella, a la principal via d'accés a la ciutat i a 1 km del port, punt estratègic per a l'activitat marítima cap als ports del Magrib i de tota la Mediterrània.",
+            "També disposem de plataformes logístiques a les zones més sensibles (Regió de París, Regió de Lió, Nord de França). Els nostres serveis de transport per carretera també ens permeten donar servei a gran part d'Alemanya i tot el territori belga i holandès."
+          ],
+          "contactUrl": "#"
+        },
+        {
+          "name": "Bongiorno Tunísia",
+          "flag": "/img/banderes/tn.svg",
+          "description": [
+            "Representa la nostra primera base comercial i operativa al nord d'Àfrica. L'estructura operativa de què disposa Bongiorno Tunísia es considera actualment una de les realitats més importants del sector del transport a Tunísia.",
+            "Utilitzem tres terminals de contenidors amb dipòsits duaners als principals ports tunisians (Rades, Sousse i Sfax) que ens permeten satisfer les necessitats de tots els operadors econòmics tunisians per a qualsevol tipus de transport."
+          ],
+          "contactUrl": "#"
+        },
+        {
+          "name": "Bongiorno Algèria",
+          "flag": "/img/banderes/dz.svg",
+          "description": [
+            "Algèria és un país en ple desenvolupament econòmic i una realitat que cada cop té més pes a l'escena internacional.",
+            "Per això creem Bongiorno Algérie a principis dels anys 2000, creient que la nostra experiència i professionalitat podrien ser una eina útil i apreciada pels operadors algerians i europeus per al desenvolupament de les seves activitats."
+          ],
+          "contactUrl": "#"
+        },
+        {
+          "name": "Bongiorn al Món",
+          "flag": "/img/banderes/dz.svg",
+          "description": [
+            "El caràcter internacional del nostre negoci i el creixement continu ens han portat a expandir els nostres serveis més enllà de les fronteres dels països on ja estem establerts i consolidats des de fa algun temps gràcies al valuós suport i ajuda de la xarxa d'agències garantida pel World Trade Alliance (WCA) de la qual som membres des del 2009."
+          ],
+          "contactUrl": "#"
+        }
+      ]
+    }
+  },
+  "quote": {
+    "title": "Demana una cotització",
+    "id": "129837",
+    "subtitle": "Contacti amb nosaltres a través del formulari i serà atès per un dels nostres comercials al més aviat possible.",
+    "select": "Seleccioneu una opció",
+    "other": "Més",
+    "fields": {
+      "companyName": "Nom de l'empresa",
+      "isPrivate": "Sóc un particular",
+      "name": "Nom i cognoms",
+      "email": "Correu electrònic",
+      "phone": "Número de telèfon",
+      "city": "Ciutat",
+      "zip": "Codi postal",
+      "address": "Direcció",
+      "originCountry": "País de sortida",
+      "originOther": "Especifiqueu el país",
+      "originCity": "Ciutat de retir",
+      "originZip": "Codi postal",
+      "originAddress": "Adreça de recollida",
+      "destinationCountry": "País de destinació",
+      "destinationOther": "Especifiqueu el país de destinació",
+      "dangerousGoods": "El transport inclou mercaderies perilloses",
+      "goodsClass": "Classe de mercaderia (ADR)",
+      "estimatedWeight": "Pes estimat (kg)",
+      "estimatedVolume": "Volum estimat (m³)",
+      "details": "Descripció o detalls addicionals",
+      "consent": "Autoritzo el tractament de les meves dades (obligatori, vegeu la política de privadesa aquí)"
+    },
+    "privacyLink": "Política de privadesa",
+    "placeholders": {
+      "company": "Nom de l'empresa",
+      "transport": "Per exemple, grupatge, complet, contenidor, etc.",
+      "details": "Introduïu aquí les dades del vostre enviament...",
+      "otherCountry": "Especifiqueu el país",
+      "address": "Carrer / número",
+      "city": "Ciutat",
+      "zip": "Codi postal"
+    },
+    "submit": "Enviar sol·licitud de cotització",
+    "sending": "Enviant...",
+    "success": "Sol·licitud enviada amb èxit! En breu ens posarem en contacte amb vostè.",
+    "error": "Error en enviar. Torneu-ho a provar més tard.",
+    "errors": {
+      "noConsent": "Heu de donar el vostre consentiment al tractament de les vostres dades per poder continuar."
+    },
+    "intro": "Des del 1985 som líders en el transport entre Europa i el Magrib, principalment Tunísia, Algèria i el Marroc, així com molts altres destins, prestant servei a més de 60 països de tot el món cada any.",
+    "features": [
+      "Tarifes clares i sense sorpreses",
+      "Oficines locals a Tunísia, Algèria, Itàlia, Espanya i França",
+      "Grupatge, FCL i Project Càrrec",
+      "Elecció de cobertura d'assegurança, inclòs Tot Risc",
+      "Més de 35 anys d'experiència"
+    ],
+    "cta": {
+      "quote": "Demana una cotització",
+      "call": "Truca ara"
+    }
+  },
+  "footer": {
+    "legal": {
+      "title": "Legal",
+      "company": "Bongiorno Srl - IVA 10408830155",
+      "details": "Adreça: Via Marsala, 40 - 21013 Gallarate (Varese)"
+    },
+    "links": {
+      "title": "Enllaços útils",
+      "destinations": "Destinacions",
+      "workwithus": "Treballa amb nosaltres",
+      "about": "Qui som",
+      "privacy": "Privadesa",
+      "contacts": "Contactes"
+    },
+    "contact": {
+      "title": "Contactes",
+      "email": "bongiorno@bongiornosrl.com",
+      "phone": "+39 0331 776 334",
+      "address": "Via Marsala, 40 - 21013 Gallarate (VA)"
+    },
+    "rights": "Tots els drets reservats."
+  },
+  "services": {
+    "title": "Serveis",
+    "intro": "Gràcies a la nostra experiència i presència directa als principals països mediterranis, oferim una gamma completa de serveis de transport internacional i logística dissenyats per garantir puntualitat, seguretat i comoditat.",
+    "cards": [
+      {
+        "icon": "Package",
+        "title": "Transport de grupatge",
+        "href": "#Grup",
+        "text": "Per a la indústria, el comerç i les grans obres hem creat serveis que ofereixen al transport els millors rendiments i condicions. Perquè les teves mercaderies arribin sempre a temps."
+      },
+      {
+        "icon": "Truck",
+        "title": "Transports complets",
+        "href": "#complet",
+        "text": "Rapidesa en freqüències i temps de trànsit, disponibilitat d'espai a bord de vaixells i gran varietat de contenidors als principals ports del Magrib."
+      },
+      {
+        "icon": "Cog",
+        "title": "Transport excepcional i Projet Càrrec",
+        "href": "#excepcional",
+        "text": "Transport que requereix alta especialització i estudi acurat de rutes, normatives, característiques de mercaderies i territoris."
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": "Segur a tot risc",
+        "href": "#assegurances",
+        "text": "Per no deixar res a l'atzar. Una pòlissa d'assegurança a petició que protegeix contra qualsevol risc durant el transport."
+      }
+    ],
+    "details": [
+      {
+        "id": "agrupament",
+        "icon": "Package",
+        "title": "Transport de grupatge",
+        "paragraphs": [
+          "Una àmplia xarxa d'operadors de carreteres que cobreix tot el territori europeu garanteix que les mercaderies arribin als nostres deixalleries en el menor temps possible i amb les millors garanties de qualitat.",
+          "Disposem de modernes àrees logístiques equipades amb vehicles i personal altament eficients i equipades amb moderns sistemes de seguretat, llestes per adaptar-se a les necessitats més diverses.",
+          "Gestionem, com a operadors OEA a Itàlia, les operacions duaneres directament als centres de recollida, amb el nostre personal i amb dinàmica en temps real. Som conscients de la importància de cada document.",
+          "La regularitat i la freqüència dels nostres serveis, amb la possibilitat d'arribar també a ports secundaris del Magrib, ens permet oferir als clients una varietat de serveis única en aquests mercats.",
+          "Trieu Bongiorno per a un servei de transport que superi les vostres expectatives i us acompanyi on ho necessiteu. Contacta'ns per descobrir com podem ajudar-lo a optimitzar els enviaments i arribar a nous mercats amb confiança. La nostra experiència i dedicació estaran sempre al vostre costat!"
+        ]
+      },
+      {
+        "id": "vestits",
+        "icon": "Truck",
+        "title": "Transports complets",
+        "paragraphs": [
+          "Som conscients que l'èxit d'una expedició depèn de moltes variables i la nostra especialització en aquest camp ens converteix en el soci ideal per afrontar qualsevol eventualitat.",
+          "Atenció al detall, des de l'elecció del transportista marítim ideal segons el mercat fins a la confiança dels serveis i la disponibilitat d'equips. Res no es deixa a l'atzar.",
+          "Hem dedicat grans recursos per intentar gestionar d'una manera cada cop més eficient tots els components que doten el nostre transport de la màxima fiabilitat.",
+          "Aleshores, si estàs buscant un servei de transport de contenidors o remolcs complets fiable i eficient, estem aquí per ajudar-te. Per transportar les teves mercaderies de manera ràpida i segura."
+        ]
+      },
+      {
+        "id": "excepcional",
+        "icon": "Cog",
+        "title": "Transport excepcional i Project Càrrec",
+        "paragraphs": [
+          "Un tipus de transport que requereix no només un profund coneixement, sinó també un estudi detingut de les rutes, normatives, característiques de les mercaderies i els territoris on es realitzen els enviaments. Considereu totes les eventualitats per assegurar-vos que els obstacles tècnics o burocràtics no afectin el resultat.",
+          "Triar els socis terrestres i marítims més fiables i adequats per als països que es volen creuar. Les garanties que oferim als clients en aquests transports delicats. Lliurar amb seguretat els béns que ens han estat confiats."
+        ]
+      },
+      {
+        "id": "assegurança",
+        "icon": "ShieldCheck",
+        "title": "Segur a tot risc",
+        "paragraphs": [
+          "Considerem que la cobertura «Tot Risc» és una eina d'enorme importància. Una garantia que permet protegir-se de tots aquells elements de risc que es puguin presentar durant el transport.",
+          "Per aquests motius comptem amb una pòlissa de fiabilitat contrastada que posem a disposició dels clients que així ho sol·licitin expressament."
+        ]
+      }
+    ]
+  },
+  "ctaBanner": {
+    "cta_main": "La nostra presència estable i duradora al territori ens converteix en un soci sòlid capaç de resoldre amb rapidesa qualsevol imprevist, oferint rapidesa, seguretat i garantia en tots els mercats on operem.",
+    "claim": "Això, combinat amb el nostre personal altament experimentat i competent, ens permet oferir la màxima rapidesa, seguretat i protecció a tots els mercats on operem gràcies a les nostres estrictes normes de funcionament.",
+    "cta": {
+      "ctacontatti": "Contacta'ns",
+      "hrefcontatti": "/contactes",
+      "ctaservizi": "Més informació sobre els serveis",
+      "hrefservizi": "/serveis",
+      "contattaci": "Truqueu o escriviu i us posarem en contacte amb el nostre comercial més adequat.",
+      "parliamo": "Parlem italià, francès, espanyol, anglès i alemany",
+      "quote": "Sol·licitar una cotització"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Qui som",
+      "subtitle": "Portem gestionant el transport internacional des del 1985, garantint eficàcia i fiabilitat.",
+      "alt": "Seu i logística Bongiorno"
+    },
+    "counters": {
+      "transports_prefix": "Més enllà de",
+      "transports_label": "transports a l'any",
+      "years_prefix": "Actiu des",
+      "years_label": "anys",
+      "employees_prefix": "Més de",
+      "employees_label": "empleats a 5 països"
+    },
+    "text1": "El 1985, a Gallarate, va començar la història de la nostra empresa, fruit d'una gran intuïció del nostre fundador i president: llegir a Tunísia el gran potencial i les afinitats que ens uneixen i invertir-hi.",
+    "text2": "Des de l'inici de la nostra activitat, hem seguit una política d'especialització dedicant tots els nostres recursos tècnics i humans precisament al mercat tunisià i, en una segona fase, a tot el Magrib.",
+    "text3": "Aquesta particularitat ha permès a la nostra organització consolidar-se als mercats nord-africans fins al punt de convertir-se en un transportista de referència per als enviaments en aquesta regió. Sense perdre mai de vista les necessitats reals d'exportadors i importadors i adaptant-nos a les realitats canviants dels països i dels mercats tant de destinació com de sortida de les mercaderies.",
+    "text4": "Després de la consolidació de les nostres línies, pensem que la nostra visió del transport també havia de traspassar aquests límits i que això no ens faria perdre la nostra identitat, sinó que, per contra, l'enriquiria.",
+    "text5": "La dimensió internacional dels nostres transports és ara reconeguda diàriament pels nostres clients que, cada cop amb més freqüència, ens confien la gestió dels seus enviaments per tot el món.",
+    "subtitle": "La nostra història",
+    "sede": "Seu de Bongiorno a Gallarate, Via Marsala 40, seu de l'empresa."
+  },
+  "contact": {
+    "title": "Contacta'ns",
+    "address": {
+      "label": "Direcció",
+      "value": "Via Marsala 40, Gallarate, Varese, 21013 Itàlia"
+    },
+    "email": {
+      "label": "Correu electrònic",
+      "value": "bongiorno@bongiornosrl.com"
+    },
+    "phone": {
+      "label": "Telèfon",
+      "value": "+39 0331 776 334"
+    },
+    "form": {
+      "title": "Escriu-nos un missatge",
+      "name": "Nom",
+      "email": "Correu electrònic",
+      "message": "Missatge",
+      "submit": "Enviar",
+      "sending": "Enviant...",
+      "success": "Missatge enviat.",
+      "consent": "Autoritzo el tractament de les meves dades (obligatori, vegeu la política de privadesa aquí)",
+      "noConsent": "Heu de donar el vostre consentiment al tractament de les vostres dades per poder continuar."
+    }
+  }
+}

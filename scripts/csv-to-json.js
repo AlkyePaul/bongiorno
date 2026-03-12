@@ -108,8 +108,8 @@ function csvToJson() {
     console.log('🚀 Iniciando conversión de CSV a JSON...');
     
     // Rutas de los archivos
-    const csvPath = path.join(__dirname, '../de-translations.csv');
-    const outputPath = path.join(__dirname, '../src/locales/de.json');
+    const csvPath = path.join(__dirname, '../ca-translations.csv');
+    const outputPath = path.join(__dirname, '../src/locales/ca.json');
     
     // Verificar si existe el archivo CSV
     if (!fs.existsSync(csvPath)) {

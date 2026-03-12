@@ -8,8 +8,23 @@ const locales = [
   { code: 'it', label: 'IT' },
   { code: 'en', label: 'EN' },
   { code: 'es', label: 'ES' },
-  { code: 'fr', label: 'FR' }
+  { code: 'fr', label: 'FR' },
+  { code: 'ca', label: 'CA' }
 ];
+
+// Senyera flag (4 red stripes on gold) for Catalan
+function Senyera({ title, className }) {
+  return (
+    <svg viewBox="0 0 3 2" className={className} role="img" aria-label={title}>
+      {title && <title>{title}</title>}
+      <rect width="3" height="2" fill="#FCDD09" />
+      <rect y="0.222" width="3" height="0.222" fill="#DA121A" />
+      <rect y="0.667" width="3" height="0.222" fill="#DA121A" />
+      <rect y="1.111" width="3" height="0.222" fill="#DA121A" />
+      <rect y="1.556" width="3" height="0.222" fill="#DA121A" />
+    </svg>
+  );
+}
 
 export default function LanguageSwitcher() {
   const [open, setOpen] = useState(false);
@@ -36,7 +51,7 @@ export default function LanguageSwitcher() {
             const { GB } = require('country-flag-icons/react/3x2');
             const { ES } = require('country-flag-icons/react/3x2');
             const { FR } = require('country-flag-icons/react/3x2');
-            const map = { it: IT, en: GB, es: ES, fr: FR };
+            const map = { it: IT, en: GB, es: ES, fr: FR, ca: Senyera };
             const Flag = map[locale] || IT;
             return <Flag title={locale.toUpperCase()} className="w-5 h-5" />;
           })()}
@@ -65,7 +80,7 @@ export default function LanguageSwitcher() {
                       const { GB } = require('country-flag-icons/react/3x2');
                       const { ES } = require('country-flag-icons/react/3x2');
                       const { FR } = require('country-flag-icons/react/3x2');
-                      const map = { it: IT, en: GB, es: ES, fr: FR };
+                      const map = { it: IT, en: GB, es: ES, fr: FR, ca: Senyera };
                       const Flag = map[l.code] || IT;
                       return <Flag title={l.label} className="w-5 h-5" />;
                     })()}

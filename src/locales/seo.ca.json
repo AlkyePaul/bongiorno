@@ -1,0 +1,56 @@
+{
+  "siteName": "Bongiorno Transport",
+  "defaults": {
+    "description": "Solucions logístiques fiables a Europa i el nord d'Àfrica.",
+    "images": {
+      "home": "/og/home.jpg",
+      "news": "/og/news.jpg",
+      "privacy": "/og/privacy.jpg",
+      "contatti": "/og/contatti.jpg",
+      "preventivi": "/og/preventivi.jpg",
+      "about": "/og/chi-siamo.jpg",
+      "destinationsBase": "/og/destinations/",
+      "newsBase": "/og/news/"
+    }
+  },
+  "home": {
+    "title": "Enviaments internacionals Europa-Nord d'Àfrica | Bongiorno",
+    "description": "Transport i logística amb presència directa al Magreb i xarxa europea.",
+    "image": "/og/home.jpg"
+  },
+  "news": {
+    "title": "Últimes notícies | Bongiorno Transport",
+    "description": "Notícies i perspectives sobre transport i logística.",
+    "image": "/og/news.jpg"
+  },
+  "newsPost": {
+    "titleTemplate": "{postTitle} | Bongiorno",
+    "descriptionFallback": "Perspectiva sobre transport i logística.",
+    "imageBase": "/og/news/"
+  },
+  "destinations": {
+    "titleTemplate": "Transport {nom} | Bongiorno Transport",
+    "descriptionTemplate": "{introOrClaim}",
+    "imageBase": "/og/destinations/"
+  },
+  "contact": {
+    "title": "Contactes - Bongiorno Transport",
+    "description": "Contacteu-nos per obtenir informació i pressupostos.",
+    "image": "/og/contatti.jpg"
+  },
+  "quote": {
+    "title": "Sol·licitud de pressupost | Bongiorno Transport",
+    "description": "Pressupostos ràpids per als vostres transports internacionals.",
+    "image": "/og/preventivi.jpg"
+  },
+  "privacy": {
+    "title": "Política de privadesa | Bongiorno Transport",
+    "description": "Informació sobre el tractament de dades personals.",
+    "image": "/og/privacy.jpg"
+  },
+  "about": {
+    "title": "Qui som | Bongiorno Transport",
+    "description": "La nostra història, valors i presència internacional.",
+    "image": "/og/chi-siamo.jpg"
+  }
+}

@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-const LOCALES = ['it', 'es', 'en', 'fr'];
+const LOCALES = ['it', 'es', 'en', 'fr', 'ca'];
 
 /**
  * Get all available locales for a specific article slug

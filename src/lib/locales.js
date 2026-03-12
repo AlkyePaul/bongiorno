@@ -1,4 +1,4 @@
-export const LOCALES = ['it', 'es', 'en', 'fr'];
+export const LOCALES = ['it', 'es', 'en', 'fr', 'ca'];
 
 export function generateLocaleParams() {
   console.log('LOCALES', LOCALES);

@@ -31,10 +31,17 @@ function resolveLocalizedPath(routeKey, locale, params = {}) {
 
 // Build absolute URL: domain + /{locale} + localized slug
 export function buildUrl(locale, pathOrRouteKey = '', params = undefined) {
-  // if caller passed a route key, resolve; if passed a raw path, use as-is
-  const slug = params
-    ? resolveLocalizedPath(pathOrRouteKey, locale, params)
-    : pathOrRouteKey;
+  // Decide if this looks like a route key present in routing.pathnames
+  const hasRouteMapping = routing.pathnames?.[pathOrRouteKey];
+
+  let slug;
+  if (hasRouteMapping) {
+    // Use the centralized i18n routing map (works for static and dynamic routes)
+    slug = resolveLocalizedPath(pathOrRouteKey, locale, params || {});
+  } else {
+    // Fallback: treat pathOrRouteKey as a raw path, optionally filling params
+    slug = params ? fillParams(pathOrRouteKey, params) : pathOrRouteKey;
+  }
 
   const prefix = getLocalePrefix(locale);
   const normalized = normalizePath(slug);

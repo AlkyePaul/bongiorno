@@ -5,11 +5,26 @@ import { GB } from 'country-flag-icons/react/3x2';
 import { ES } from 'country-flag-icons/react/3x2';
 import { FR } from 'country-flag-icons/react/3x2';
 
+// Senyera flag (4 red stripes on gold) for Catalan
+function Senyera({ className }) {
+  return (
+    <svg viewBox="0 0 3 2" className={className} role="img" aria-label="CA">
+      <title>CA</title>
+      <rect width="3" height="2" fill="#FCDD09" />
+      <rect y="0.222" width="3" height="0.222" fill="#DA121A" />
+      <rect y="0.667" width="3" height="0.222" fill="#DA121A" />
+      <rect y="1.111" width="3" height="0.222" fill="#DA121A" />
+      <rect y="1.556" width="3" height="0.222" fill="#DA121A" />
+    </svg>
+  );
+}
+
 const LOCALE_FLAGS = {
   it: { Flag: IT, label: 'IT' },
   es: { Flag: ES, label: 'ES' },
   en: { Flag: GB, label: 'EN' },
   fr: { Flag: FR, label: 'FR' },
+  ca: { Flag: Senyera, label: 'CA' },
 };
 
 const LOCALE_NAMES = {
@@ -17,6 +32,7 @@ const LOCALE_NAMES = {
   es: 'Español',
   en: 'English',
   fr: 'Français',
+  ca: 'Català',
 };
 
 /**
@@ -27,7 +43,7 @@ export default function LanguageBadges({ availableLocales, currentLocale, varian
     return null;
   }
 
-  const allLocales = ['it', 'es', 'en', 'fr'];
+  const allLocales = ['it', 'es', 'en', 'fr', 'ca'];
 
   if (variant === 'compact') {
     // Small badges showing available languages

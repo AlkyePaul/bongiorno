@@ -1,5 +1,6 @@
 // /src/app/api/contact/route.js
 import { NextResponse } from "next/server";
+import { sendAutoReply, sendStorageCopy } from "@/lib/contactAutoReply";
 
 export async function POST(req) {
   try {
@@ -23,7 +24,7 @@ export async function POST(req) {
       source: "bongiorno web - " + data.locale,
       date: `${dd}/${mm}/${yyyy}`,
       time: `${HH}:${min}`,
-    
+
     };
 
     const res = await fetch(zapierHook, {
@@ -33,6 +34,20 @@ export async function POST(req) {
     });
 
     if (!res.ok) throw new Error("Zapier hook failed");
+
+    // Send auto-reply and storage copy in parallel (non-blocking)
+    Promise.allSettled([
+      sendAutoReply(data),
+      sendStorageCopy(data),
+    ]).then((results) => {
+      results.forEach((result, i) => {
+        if (result.status === "rejected") {
+          const label = i === 0 ? "Auto-reply" : "Storage copy";
+          console.error(`❌ ${label} email failed:`, result.reason);
+        }
+      });
+    });
+
     return NextResponse.json({ success: true });
   } catch (err) {
     console.error("❌ Contact form error:", err);
