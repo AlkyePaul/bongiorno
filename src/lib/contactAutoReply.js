@@ -43,8 +43,8 @@ function wrapEmail(bodyContent, locale = "it") {
         Tel: +39 0331 776 334
       </p>
       <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;" />
-      <div style="margin: 0 auto; text-align: center;">
-        <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+      <div style="margin: 0;">
+        <table cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td bgcolor="#ffffff" style="background-color: #ffffff; padding: 10px;">
               <img src="${LOGO_URL}" alt="Bongiorno Trasporti" width="100" style="display: block; max-width: 200px; height: auto;" />
