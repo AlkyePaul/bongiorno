@@ -788,6 +788,8 @@
       "message": "Missatge",
       "submit": "Enviar",
       "sending": "Enviant...",
+      "privacyLink": "Política de privadesa",
+
       "success": "Missatge enviat.",
       "consent": "Autoritzo el tractament de les meves dades (obligatori, vegeu la política de privadesa aquí)",
       "noConsent": "Heu de donar el vostre consentiment al tractament de les vostres dades per poder continuar."
