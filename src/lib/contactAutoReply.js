@@ -16,7 +16,7 @@ export function createTransporter() {
   });
 }
 
-const PRIVACY_LINK = `<a href="http://www.bongiornosrl.com/privacy" style="color: #1a3c6e;">www.bongiornosrl.com/privacy</a>`;
+const PRIVACY_LINK = `<a href="https://bongiornotrasporti.it/privacy" style="color: #1a3c6e;">bongiornotrasporti.it/privacy</a>`;
 
 const PRIVACY_FOOTERS = {
   it: `Le informazioni contenute in questo messaggio sono riservate e ad uso esclusivo del destinatario. La diffusione, distribuzione e/o la copiatura del documento trasmesso da parte di qualsiasi soggetto diverso dal destinatario è proibita, sia ai sensi dell'art. 616 c.p., sia ai sensi del D.Lgs. 196/2003 e ss.mm.ii. (D.Lgs. 101/2018) e del Regolamento Europeo 679/2016 (GDPR). Nell'eventualità che questo messaggio Le fosse pervenuto per errore, La invitiamo ad eliminarlo senza copiarlo e a non inoltrarlo a terzi, dandocene gentilmente comunicazione. Grazie. Protezione dei dati personali: La informiamo che il suo indirizzo è stato incluso nella banca dati della Bongiorno srl e viene utilizzato per fini istituzionali. Attraverso il seguente link (${PRIVACY_LINK}), è possibile prendere visione dell'informativa resa dal nostro sito web istituzionale, la stessa contiene i dati di contatto del Titolare del trattamento e del Responsabile della Protezione dei Dati (RPD/DPO), nonché le modalità attraverso le quali vengono trattati i Suoi dati e le altre informazioni utili.`,
