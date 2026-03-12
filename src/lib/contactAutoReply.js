@@ -34,7 +34,7 @@ function wrapEmail(bodyContent) {
       <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
         <tr>
           <td bgcolor="#ffffff" style="background-color: #ffffff; padding: 10px;">
-            <img src="${LOGO_URL}" alt="Bongiorno Trasporti" width="200" style="display: block; max-width: 200px; height: auto;" />
+            <img src="${LOGO_URL}" alt="Bongiorno Trasporti" width="100" style="display: block; max-width: 200px; height: auto;" />
           </td>
         </tr>
       </table>
