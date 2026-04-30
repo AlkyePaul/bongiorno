@@ -5,37 +5,28 @@ import { sendAutoReply, sendStorageCopy } from "@/lib/contactAutoReply";
 export async function POST(req) {
   try {
     const data = await req.json();
-    const zapierHook = process.env.ZAPIER_HOOK_URL;
 
     if (!data.email || !data.name) {
       return NextResponse.json({ success: false, error: "Missing required fields" }, { status: 400 });
     }
 
-    // ➕ Tag di tipo per differenziare nel foglio Zapier
-    const now = new Date();
-    const dd = String(now.getDate()).padStart(2, "0");
-    const mm = String(now.getMonth() + 1).padStart(2, "0");
-    const yyyy = String(now.getFullYear());
-    const HH = String(now.getHours()).padStart(2, "0");
-    const min = String(now.getMinutes()).padStart(2, "0");
+    const appApiUrl = process.env.INTERNAL_APP_API_URL;
+    const appApiKey = process.env.INTERNAL_APP_API_KEY;
 
-    const payload = {
-      ...data,
-      source: "bongiorno web - " + data.locale,
-      date: `${dd}/${mm}/${yyyy}`,
-      time: `${HH}:${min}`,
-
-    };
-
-    const res = await fetch(zapierHook, {
+    const res = await fetch(`${appApiUrl}/api/leads/ingest`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
+      headers: {
+        "Content-Type": "application/json",
+        "X-API-Key": appApiKey,
+      },
+      body: JSON.stringify(data),
     });
 
-    if (!res.ok) throw new Error("Zapier hook failed");
+    if (!res.ok) {
+      const body = await res.text();
+      throw new Error(`App ingest failed (${res.status}): ${body}`);
+    }
 
-    // Send auto-reply and storage copy in parallel (must await on Vercel serverless)
     const emailResults = await Promise.allSettled([
       sendAutoReply(data),
       sendStorageCopy(data),
