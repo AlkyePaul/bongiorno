@@ -83,7 +83,7 @@ export default function HomePage() {
         <section className="mx-auto">
           <SediSection />
         </section>
-        <section id="quote" className="grid grid-cols-1 lg:grid-cols-[40%_60%] max-w-6xl mx-auto rounded-2xl bg-gray-50 md:py-12 py-8 md:py-12 px-4">
+        <section id="quote" className="grid grid-cols-1 lg:grid-cols-[40%_60%] max-w-6xl mx-auto rounded-2xl bg-gray-50 shadow-md border border-gray-200 md:py-12 py-8 md:py-12 px-4">
           <div className="mx-auto lg:px-24 lg:py-4 px-4">
 
             <H2>{quote.title}</H2>
