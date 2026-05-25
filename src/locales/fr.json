@@ -669,8 +669,40 @@
     "subtitle": "Notre histoire",
     "sede": "Le siège social de Bongiorno à Gallarate, Via Marsala 40, est le siège de l'entreprise."
   },
+  "jobs": {
+    "title": "Travailler avec nous",
+    "subtitle": "Rejoignez l'équipe Bongiorno. Découvrez les postes ouverts et postulez.",
+    "openPositions": "Postes ouverts",
+    "noPositions": "Il n'y a actuellement aucun poste ouvert. N'hésitez pas à nous envoyer une candidature spontanée.",
+    "location": "Lieu",
+    "type": "Type",
+    "fullTime": "Temps plein",
+    "positions": [
+      {
+        "title": "Commercial",
+        "location": "Gallarate (VA), Italie",
+        "type": "fullTime",
+        "description": "Nous recherchons un professionnel commercial pour rejoindre notre équipe au siège de Gallarate. Le candidat idéal développera et gérera le portefeuille clients, en promouvant nos services de transport international vers le Maghreb et au-delà."
+      }
+    ],
+    "form": {
+      "title": "Envoyez votre candidature",
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "message": "Présentez-vous brièvement et indiquez le poste souhaité",
+      "submit": "Envoyer la candidature",
+      "sending": "Envoi...",
+      "success": "Candidature envoyée avec succès ! Nous vous contacterons bientôt.",
+      "error": "Erreur lors de l'envoi. Veuillez réessayer plus tard.",
+      "consent": "Je consens au traitement de mes données à des fins de recrutement (obligatoire, voir la politique de confidentialité ici)",
+      "privacyLink": "Politique de confidentialité",
+      "noConsent": "Vous devez consentir au traitement de vos données pour pouvoir continuer."
+    }
+  },
   "contact": {
     "title": "Contact",
+    "jobsNotice": "Vous voulez travailler chez nous ? Visitez notre page Travailler avec nous",
     "address": {
       "label": "Adresse",
       "value": "Via Marsala 40, Gallarate, Varese, 21013 Italie"

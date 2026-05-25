@@ -531,8 +531,40 @@
       "call": "Chiama subito"
     }
   },
+  "jobs": {
+    "title": "Lavora con noi",
+    "subtitle": "Entra a far parte del team Bongiorno. Scopri le posizioni aperte e candidati.",
+    "openPositions": "Posizioni aperte",
+    "noPositions": "Al momento non ci sono posizioni aperte. Inviaci comunque la tua candidatura spontanea.",
+    "location": "Sede",
+    "type": "Tipo",
+    "fullTime": "Tempo pieno",
+    "positions": [
+      {
+        "title": "Commerciale",
+        "location": "Gallarate (VA), Italia",
+        "type": "fullTime",
+        "description": "Cerchiamo una figura commerciale da inserire nel nostro team presso la sede di Gallarate. Il candidato ideale si occuperà di sviluppare e gestire il portafoglio clienti, promuovendo i nostri servizi di trasporto internazionale verso il Maghreb e oltre."
+      }
+    ],
+    "form": {
+      "title": "Invia la tua candidatura",
+      "name": "Nome e cognome",
+      "email": "Email",
+      "phone": "Telefono",
+      "message": "Presentati brevemente e indica la posizione di interesse",
+      "submit": "Invia candidatura",
+      "sending": "Invio in corso...",
+      "success": "Candidatura inviata con successo! Ti contatteremo al più presto.",
+      "error": "Errore durante l'invio. Riprova più tardi.",
+      "consent": "Acconsento al trattamento dei dati inseriti ai fini della selezione del personale (obbligatorio, consulta qui la privacy policy)",
+      "privacyLink": "Privacy policy",
+      "noConsent": "Devi acconsentire al trattamento dei dati per procedere."
+    }
+  },
   "contact": {
     "title": "Contatti",
+    "jobsNotice": "Vuoi lavorare con noi? Visita la nostra pagina Lavora con noi",
     "privacyLink": "Privacy policy",
     "address": {
       "label": "Indirizzo",

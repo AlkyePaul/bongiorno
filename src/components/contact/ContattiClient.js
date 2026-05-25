@@ -81,6 +81,13 @@ export default function ContattiClient() {
               </div>
             </div>
           </div>
+
+          {/* Jobs Notice */}
+          <div className="mt-8 p-4 bg-brand-accent/5 border border-brand-accent/20 rounded-lg">
+            <Link href="/lavora" className="text-brand-accent hover:underline font-medium">
+              {t("jobsNotice")} →
+            </Link>
+          </div>
         </div>
 
         {/* Right: Form */}

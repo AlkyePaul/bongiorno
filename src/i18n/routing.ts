@@ -13,6 +13,8 @@ export const routing = defineRouting({
     '/preventivi':{ it: '/preventivi',es: '/presupuestos',  en: '/estimates',fr: '/devis', ca: '/pressupostos' },
     '/privacy':   { it: '/privacy',   es: '/privacidad',    en: '/privacy',  fr: '/confidentialite', ca: '/privadesa' },
     '/news':      { it: '/news',      es: '/noticias',      en: '/news',     fr: '/actualites', ca: '/noticies' },
+        '/lavora':      { it: '/lavora',      es: '/trabajos',      en: '/jobs',     fr: '/travailler-avec-nous', ca: '/treballa-amb-nosaltres' },
+
     '/news/[post]': {
       it: '/news/[post]',
       es: '/noticias/[post]',

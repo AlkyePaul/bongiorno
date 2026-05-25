@@ -52,5 +52,10 @@
     "title": "About Us | Bongiorno Transportation",
     "description": "Our history, values and international presence.",
     "image": "/og/chi-siamo.jpg"
+  },
+  "lavora": {
+    "title": "Work with us | Bongiorno Transportation",
+    "description": "Discover job opportunities at Bongiorno Transportation. Join our team.",
+    "image": "/og/lavora.jpg"
   }
 }

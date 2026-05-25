@@ -52,5 +52,10 @@
     "title": "A propos de nous | Bongiorno Transport",
     "description": "Notre histoire, nos valeurs et notre présence internationale.",
     "image": "/og/chi-siamo.jpg"
+  },
+  "lavora": {
+    "title": "Travailler avec nous | Bongiorno Transport",
+    "description": "Découvrez les opportunités d'emploi chez Bongiorno Transport. Rejoignez notre équipe.",
+    "image": "/og/lavora.jpg"
   }
 }
