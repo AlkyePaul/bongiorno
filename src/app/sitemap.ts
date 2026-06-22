@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/chi-siamo",
     "/servizi",
     "/contatti",
+    "/lavora",
     "/preventivi",
     "/privacy",
     "/news"

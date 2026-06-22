@@ -5,26 +5,26 @@ import { sendAutoReply, sendStorageCopy } from "@/lib/contactAutoReply";
 export async function POST(req) {
   try {
     const data = await req.json();
+    const internalAppUrl = process.env.INTERNAL_APP_API_URL;
+    const internalAppKey = process.env.INTERNAL_APP_API_KEY;
 
     if (!data.email || !data.name) {
       return NextResponse.json({ success: false, error: "Missing required fields" }, { status: 400 });
     }
 
-    const appApiUrl = process.env.INTERNAL_APP_API_URL;
-    const appApiKey = process.env.INTERNAL_APP_API_KEY;
-
-    const res = await fetch(`${appApiUrl}/api/leads/ingest`, {
+    // Send lead to internal app (replaces Zapier)
+    const res = await fetch(`${internalAppUrl}/api/leads/ingest`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-API-Key": appApiKey,
+        "X-API-Key": internalAppKey,
       },
       body: JSON.stringify(data),
     });
 
     if (!res.ok) {
-      const body = await res.text();
-      throw new Error(`App ingest failed (${res.status}): ${body}`);
+      const errBody = await res.json().catch(() => ({}));
+      throw new Error(errBody.error || "Internal app ingest failed");
     }
 
     const emailResults = await Promise.allSettled([
@@ -34,13 +34,13 @@ export async function POST(req) {
     emailResults.forEach((result, i) => {
       if (result.status === "rejected") {
         const label = i === 0 ? "Auto-reply" : "Storage copy";
-        console.error(`❌ ${label} email failed:`, result.reason);
+        console.error(`${label} email failed:`, result.reason);
       }
     });
 
     return NextResponse.json({ success: true });
   } catch (err) {
-    console.error("❌ Contact form error:", err);
+    console.error("Contact form error:", err);
     return NextResponse.json({ success: false, error: err.message }, { status: 500 });
   }
 }

@@ -656,8 +656,40 @@
     "subtitle": "Our History",
     "sede": "Bongiorno's headquarters in Gallarate, 40 Marsala Street, the headquarters of the business."
   },
+  "jobs": {
+    "title": "Work with us",
+    "subtitle": "Join the Bongiorno team. Discover open positions and apply.",
+    "openPositions": "Open positions",
+    "noPositions": "There are currently no open positions. Feel free to send us a spontaneous application.",
+    "location": "Location",
+    "type": "Type",
+    "fullTime": "Full-time",
+    "positions": [
+      {
+        "title": "Sales Representative",
+        "location": "Gallarate (VA), Italy",
+        "type": "fullTime",
+        "description": "We are looking for a sales professional to join our team at the Gallarate headquarters. The ideal candidate will develop and manage the client portfolio, promoting our international transport services to the Maghreb and beyond."
+      }
+    ],
+    "form": {
+      "title": "Submit your application",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Briefly introduce yourself and indicate the position of interest",
+      "submit": "Submit application",
+      "sending": "Sending...",
+      "success": "Application submitted successfully! We will contact you soon.",
+      "error": "Error while submitting. Please try again later.",
+      "consent": "I consent to the processing of my data for recruitment purposes (mandatory, see privacy policy here)",
+      "privacyLink": "Privacy policy",
+      "noConsent": "You must consent to data processing to proceed."
+    }
+  },
   "contact": {
     "title": "Contact",
+    "jobsNotice": "Want to work with us? Visit our Work with us page",
     "address": {
       "label": "Address",
       "value": "Via Marsala 40, Gallarate, Varese, 21013 Italy"

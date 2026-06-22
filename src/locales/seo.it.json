@@ -60,5 +60,10 @@
     "title": "Chi siamo | Bongiorno Trasporti",
     "description": "La nostra storia, i valori e la presenza internazionale.",
     "image": "/og/chi-siamo.jpg"
+  },
+  "lavora": {
+    "title": "Lavora con noi | Bongiorno Trasporti",
+    "description": "Scopri le opportunità di lavoro presso Bongiorno Trasporti. Entra nel nostro team.",
+    "image": "/og/lavora.jpg"
   }
 }

@@ -767,8 +767,40 @@
     "subtitle": "La nostra història",
     "sede": "Seu de Bongiorno a Gallarate, Via Marsala 40, seu de l'empresa."
   },
+  "jobs": {
+    "title": "Treballa amb nosaltres",
+    "subtitle": "Forma part de l'equip Bongiorno. Descobreix les posicions obertes i postula.",
+    "openPositions": "Posicions obertes",
+    "noPositions": "Actualment no hi ha posicions obertes. Envia'ns la teva candidatura espontània.",
+    "location": "Seu",
+    "type": "Tipus",
+    "fullTime": "Temps complet",
+    "positions": [
+      {
+        "title": "Comercial",
+        "location": "Gallarate (VA), Itàlia",
+        "type": "fullTime",
+        "description": "Busquem un professional comercial per incorporar-se al nostre equip a la seu de Gallarate. El candidat ideal s'encarregarà de desenvolupar i gestionar la cartera de clients, promovent els nostres serveis de transport internacional cap al Magrib i més enllà."
+      }
+    ],
+    "form": {
+      "title": "Envia la teva candidatura",
+      "name": "Nom complet",
+      "email": "Correu electrònic",
+      "phone": "Telèfon",
+      "message": "Presenta't breument i indica la posició d'interès",
+      "submit": "Enviar candidatura",
+      "sending": "Enviant...",
+      "success": "Candidatura enviada amb èxit! Ens posarem en contacte amb tu aviat.",
+      "error": "Error en enviar. Torneu-ho a provar més tard.",
+      "consent": "Autoritzo el tractament de les meves dades amb fins de selecció de personal (obligatori, vegeu la política de privadesa aquí)",
+      "privacyLink": "Política de privadesa",
+      "noConsent": "Heu de donar el vostre consentiment al tractament de les vostres dades per poder continuar."
+    }
+  },
   "contact": {
     "title": "Contacta'ns",
+    "jobsNotice": "Busques feina? Visita la nostra pàgina Treballa amb nosaltres",
     "address": {
       "label": "Direcció",
       "value": "Via Marsala 40, Gallarate, Varese, 21013 Itàlia"

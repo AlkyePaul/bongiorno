@@ -52,5 +52,10 @@
     "title": "Qui som | Bongiorno Transport",
     "description": "La nostra història, valors i presència internacional.",
     "image": "/og/chi-siamo.jpg"
+  },
+  "lavora": {
+    "title": "Treballa amb nosaltres | Bongiorno Transport",
+    "description": "Descobreix les oportunitats de treball a Bongiorno Transport. Uneix-te al nostre equip.",
+    "image": "/og/lavora.jpg"
   }
 }
