@@ -14,6 +14,8 @@ export function generateStaticParams() {
     { locale: "it", destination: dest },
     { locale: "en", destination: dest },
     { locale: "es", destination: dest },
+    { locale: "fr", destination: dest },
+    { locale: "ca", destination: dest },
   ]);
 }
 
@@ -40,8 +42,8 @@ export async function generateMetadata(props) {
   });
 }
 
-export default async function DestinationPage({ params }) {
-  const { locale, destination } = params;
+export default async function DestinationPage(props) {
+  const { locale, destination } = await props.params;
 
   const messages = (await import(`@/locales/${locale}.json`)).default;
   const data = messages?.destinations?.[destination];

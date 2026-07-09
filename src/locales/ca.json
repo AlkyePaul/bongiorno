@@ -13,7 +13,8 @@
     "meta": {
       "title": "Últimes notícies | Bongiorno Transport",
       "description": "Conegueu les últimes notícies i perspectives sobre transport internacional, logística i cadena de subministrament."
-    }
+    },
+    "fallbackNotice": "Aquest article encara no està disponible en aquest idioma. Es mostra la versió italiana."
   },
   "privacy": {
     "title": "Política de privadesa",
