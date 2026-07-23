@@ -86,16 +86,14 @@ export default function QuoteForm() {
     "Germania",
     "Polonia",
     "Repubblica Ceca",
-    t("other"),
   ];
 
-    const receiveCountries = [
+  const receiveCountries = [
     "Tunisia",
     "Algeria",
     "Marocco",
     "Libia",
     "Mauritania",
-    t("other"),
   ];
 
   const adrClasses = [
@@ -197,8 +195,9 @@ export default function QuoteForm() {
               {sendCountries.map((c) => (
                 <option key={c} value={c}>{c}</option>
               ))}
+              <option value="other">{t("other")}</option>
             </select>
-            {form.originCountry === t("other") && (
+            {form.originCountry === "other" && (
               <input
                 type="text"
                 name="originOther"
@@ -252,8 +251,9 @@ export default function QuoteForm() {
               {receiveCountries.map((c) => (
                 <option key={c} value={c}>{c}</option>
               ))}
+              <option value="other">{t("other")}</option>
             </select>
-            {form.destinationCountry === t("other") && (
+            {form.destinationCountry === "other" && (
               <input
                 type="text"
                 name="destinationOther"
