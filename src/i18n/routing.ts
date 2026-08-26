@@ -14,6 +14,7 @@ export const routing = defineRouting({
     '/privacy':   { it: '/privacy',   es: '/privacidad',    en: '/privacy',  fr: '/confidentialite', ca: '/privadesa' },
     '/news':      { it: '/news',      es: '/noticias',      en: '/news',     fr: '/actualites', ca: '/noticies' },
         '/lavora':      { it: '/lavora',      es: '/trabajos',      en: '/jobs',     fr: '/travailler-avec-nous', ca: '/treballa-amb-nosaltres' },
+    '/quote-test':  { it: '/quote-test',  es: '/quote-test',    en: '/quote-test', fr: '/quote-test', ca: '/quote-test' },
 
     '/news/[post]': {
       it: '/news/[post]',
