@@ -125,8 +125,6 @@ export default function QuoteFormTest() {
     goodsClass: "",
     goodsValue: "",
     insureGoods: false,
-    estimatedWeight: "",
-    estimatedVolume: "",
     details: "",
     consent: false,
   });
@@ -206,8 +204,6 @@ export default function QuoteFormTest() {
         goodsClass: "",
         goodsValue: "",
         insureGoods: false,
-        estimatedWeight: "",
-        estimatedVolume: "",
         details: "",
         consent: false,
       });
@@ -506,36 +502,6 @@ export default function QuoteFormTest() {
               onChange={handleChange}
               className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
             />
-          </div>
-
-          {/* ── Weight & Volume ── */}
-          <div className="grid md:grid-cols-2 gap-4">
-            <div>
-              <label className="block text-base font-medium mb-1">
-                {t("fields.estimatedWeight")}
-              </label>
-              <input
-                type="text"
-                name="estimatedWeight"
-                value={form.estimatedWeight}
-                onChange={handleChange}
-                placeholder={t("fields.estimatedWeight")}
-                className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
-              />
-            </div>
-            <div>
-              <label className="block text-base font-medium mb-1">
-                {t("fields.estimatedVolume")}
-              </label>
-              <input
-                type="text"
-                name="estimatedVolume"
-                value={form.estimatedVolume}
-                onChange={handleChange}
-                placeholder={t("fields.estimatedVolume")}
-                className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
-              />
-            </div>
           </div>
 
           {/* ── Dangerous Goods ── */}
