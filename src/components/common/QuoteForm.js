@@ -8,9 +8,6 @@ import CountryPicker from "./CountryPicker";
 const shipmentTypes = [
   {
     id: "pacco",
-    label: "Pacco singolo",
-    desc: "60×60 cm o inferiore",
-    hint: "Descrivi il contenuto del pacco e le dimensioni esatte.",
     svg: (
       <svg viewBox="0 0 80 80" className="w-16 h-16 mx-auto" fill="none" stroke="currentColor" strokeWidth="2">
         <rect x="18" y="28" width="44" height="36" rx="3" />
@@ -23,9 +20,6 @@ const shipmentTypes = [
   },
   {
     id: "pacchi",
-    label: "Più pacchi",
-    desc: "Colli multipli",
-    hint: "Quanti pacchi devi spedire? Indica dimensioni e peso di ciascuno.",
     svg: (
       <svg viewBox="0 0 80 80" className="w-16 h-16 mx-auto" fill="none" stroke="currentColor" strokeWidth="2">
         <rect x="8" y="34" width="32" height="28" rx="2" />
@@ -40,9 +34,6 @@ const shipmentTypes = [
   },
   {
     id: "pallet",
-    label: "Pallet",
-    desc: "Pallet con scatole",
-    hint: "Quanti pallet devi spedire? Indica peso e altezza di ciascuno.",
     svg: (
       <svg viewBox="0 0 80 80" className="w-16 h-16 mx-auto" fill="none" stroke="currentColor" strokeWidth="2">
         {/* pallet base */}
@@ -59,9 +50,6 @@ const shipmentTypes = [
   },
   {
     id: "container",
-    label: "Container",
-    desc: "Container intero",
-    hint: "Che tipo di container ti serve? (20', 40', 40'HC, ecc.)",
     svg: (
       <svg viewBox="0 0 80 80" className="w-16 h-16 mx-auto" fill="none" stroke="currentColor" strokeWidth="2">
         <rect x="6" y="24" width="68" height="38" rx="3" />
@@ -79,9 +67,6 @@ const shipmentTypes = [
   },
   {
     id: "veicolo",
-    label: "Auto / Moto",
-    desc: "Veicolo",
-    hint: "Che veicolo devi spedire? Indica marca, modello e se è funzionante.",
     svg: (
       <svg viewBox="0 0 80 80" className="w-16 h-16 mx-auto" fill="none" stroke="currentColor" strokeWidth="2">
         {/* car body */}
@@ -100,9 +85,6 @@ const shipmentTypes = [
   },
   {
     id: "speciale",
-    label: "Speciale",
-    desc: "Fuori sagoma / Project cargo",
-    hint: "Descrivi l'oggetto da spedire, dimensioni e peso approssimativi.",
     svg: (
       <svg viewBox="0 0 80 80" className="w-16 h-16 mx-auto" fill="none" stroke="currentColor" strokeWidth="2">
         {/* wind turbine blade */}
@@ -270,7 +252,9 @@ export default function QuoteFormTest() {
   ];
 
   const selectedType = shipmentTypes.find((s) => s.id === form.shipmentType);
-  const detailsHint = selectedType?.hint || t("placeholders.details");
+  const detailsHint = form.shipmentType
+    ? t(`shipmentHints.${form.shipmentType}`)
+    : t("placeholders.details");
 
   return (
     <section>
@@ -426,7 +410,7 @@ export default function QuoteFormTest() {
           {/* ── Shipment Type Visual Selector ── */}
           <div>
             <label className="block text-lg font-semibold mb-4">
-              Cosa devi spedire?
+              {t("fields.shipmentQuestion")}
             </label>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
               {shipmentTypes.map((item) => (
@@ -449,10 +433,7 @@ export default function QuoteFormTest() {
                     {item.svg}
                   </div>
                   <span className="text-sm font-semibold leading-tight text-center">
-                    {item.label}
-                  </span>
-                  <span className="text-[11px] text-gray-400 leading-tight text-center">
-                    {item.desc}
+                    {t(`shipmentTypes.${item.id}`)}
                   </span>
                   {form.shipmentType === item.id && (
                     <span className="absolute top-2 right-2 w-5 h-5 bg-brand-accent rounded-full flex items-center justify-center">
@@ -473,9 +454,9 @@ export default function QuoteFormTest() {
           {/* ── Details textarea with contextual hint ── */}
           <div>
             <label className="block text-base font-medium mb-1">
-              {selectedType
-                ? `Dettagli – ${selectedType.label}`
-                : "Dettagli della spedizione"}
+              {form.shipmentType
+                ? `${t("fields.detailsFor")} – ${t(`shipmentTypes.${form.shipmentType}`)}`
+                : t("fields.detailsGeneric")}
             </label>
             <textarea
               name="details"
@@ -527,7 +508,7 @@ export default function QuoteFormTest() {
           <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label className="block text-base font-medium mb-1">
-                Valore della merce
+                {t("fields.goodsValue")}
               </label>
               <select
                 name="goodsValue"
@@ -553,7 +534,7 @@ export default function QuoteFormTest() {
                 className="h-5 w-5 mr-2 rounded border-gray-300 text-brand-accent focus:ring-brand-accent"
               />
               <label htmlFor="insureGoods" className="font-medium">
-                Vuoi assicurare la merce?
+                {t("fields.insureGoods")}
               </label>
             </div>
           </div>

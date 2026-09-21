@@ -478,6 +478,22 @@
     "subtitle": "Contattaci con il form e sarai servito da un nostro commerciale al più presto.",
     "select": "Seleziona un'opzione",
     "other": "Altro",
+    "shipmentTypes": {
+      "pacco": "Pacco singolo",
+      "pacchi": "Più pacchi / colli",
+      "pallet": "Pallet con merce",
+      "container": "Container completo",
+      "veicolo": "Rotabili",
+      "speciale": "Speciale / Project cargo"
+    },
+    "shipmentHints": {
+      "pacco": "Descrivi il contenuto del pacco e le dimensioni esatte.",
+      "pacchi": "Quanti pacchi devi spedire? Indica dimensioni e peso di ciascuno.",
+      "pallet": "Quanti pallet devi spedire? Indica peso e altezza di ciascuno.",
+      "container": "Che tipo di container ti serve? (20', 40', 40'HC, ecc.)",
+      "veicolo": "Che veicolo devi spedire? Indica marca, modello e se è funzionante.",
+      "speciale": "Descrivi l'oggetto da spedire, dimensioni e peso approssimativi."
+    },
     "fields": {
       "companyName": "Nome azienda",
       "isPrivate": "Sono un privato",
@@ -494,6 +510,11 @@
       "originAddress": "Indirizzo di ritiro",
       "destinationCountry": "Paese di destinazione",
       "destinationOther": "Specificare paese di destinazione",
+      "shipmentQuestion": "Cosa devi spedire?",
+      "goodsValue": "Valore della merce",
+      "insureGoods": "Vuoi assicurare la merce?",
+      "detailsFor": "Dettagli",
+      "detailsGeneric": "Dettagli della spedizione",
       "dangerousGoods": "Il trasporto include merci pericolose",
       "goodsClass": "Classe merci (ADR)",
       "estimatedWeight": "Peso stimato (kg)",

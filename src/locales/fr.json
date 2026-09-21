@@ -475,6 +475,22 @@
     "subtitle": "Contactez-nous avec le formulaire et vous serez servi par notre commercial dès que possible.",
     "select": "Sélectionner une option",
     "other": "Plus d'informations",
+    "shipmentTypes": {
+      "pacco": "Colis unique",
+      "pacchi": "Plusieurs colis",
+      "pallet": "Palette avec marchandise",
+      "container": "Conteneur complet",
+      "veicolo": "Roulant",
+      "speciale": "Spécial / Project cargo"
+    },
+    "shipmentHints": {
+      "pacco": "Décrivez le contenu du colis et ses dimensions exactes.",
+      "pacchi": "Combien de colis ? Indiquez les dimensions et le poids de chacun.",
+      "pallet": "Combien de palettes ? Indiquez le poids et la hauteur de chacune.",
+      "container": "Quel type de conteneur ? (20', 40', 40'HC, etc.)",
+      "veicolo": "Quel véhicule souhaitez-vous expédier ? Indiquez marque, modèle et s'il roule.",
+      "speciale": "Décrivez l'objet, dimensions et poids approximatifs."
+    },
     "fields": {
       "companyName": "Nom de l'entreprise",
       "isPrivate": "Je suis un particulier",
@@ -491,6 +507,11 @@
       "originAddress": "Adresse de la collection",
       "destinationCountry": "Pays de destination",
       "destinationOther": "Préciser le pays de destination",
+      "shipmentQuestion": "Que devez-vous expédier ?",
+      "goodsValue": "Valeur de la marchandise",
+      "insureGoods": "Souhaitez-vous assurer la marchandise ?",
+      "detailsFor": "Détails",
+      "detailsGeneric": "Détails de l'expédition",
       "dangerousGoods": "Le transport comprend des marchandises dangereuses",
       "goodsClass": "Classe de marchandises (ADR)",
       "estimatedWeight": "Poids estimé (kg)",

@@ -595,6 +595,22 @@
     "subtitle": "Contacte con nosotros a través del formulario y será atendido por uno de nuestros comerciales lo antes posible.",
     "select": "Seleccione una opción",
     "other": "Más",
+    "shipmentTypes": {
+      "pacco": "Paquete individual",
+      "pacchi": "Varios paquetes",
+      "pallet": "Palé con mercancía",
+      "container": "Contenedor completo",
+      "veicolo": "Rodantes",
+      "speciale": "Especial / Project cargo"
+    },
+    "shipmentHints": {
+      "pacco": "Describe el contenido del paquete y las dimensiones exactas.",
+      "pacchi": "¿Cuántos paquetes? Indica dimensiones y peso de cada uno.",
+      "pallet": "¿Cuántos palés? Indica peso y altura de cada uno.",
+      "container": "¿Qué tipo de contenedor necesitas? (20', 40', 40'HC, etc.)",
+      "veicolo": "¿Qué vehículo necesitas enviar? Indica marca, modelo y si funciona.",
+      "speciale": "Describe el objeto, dimensiones y peso aproximados."
+    },
     "fields": {
       "companyName": "Nombre de la empresa",
       "isPrivate": "Soy un particular",
@@ -611,6 +627,11 @@
       "originAddress": "Dirección de recogida",
       "destinationCountry": "País de destino",
       "destinationOther": "Especifique el país de destino",
+      "shipmentQuestion": "¿Qué necesitas enviar?",
+      "goodsValue": "Valor de la mercancía",
+      "insureGoods": "¿Deseas asegurar la mercancía?",
+      "detailsFor": "Detalles",
+      "detailsGeneric": "Detalles del envío",
       "dangerousGoods": "El transporte incluye mercancías peligrosas",
       "goodsClass": "Clase de mercancía (ADR)",
       "estimatedWeight": "Peso estimado (kg)",

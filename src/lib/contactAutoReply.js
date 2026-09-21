@@ -180,6 +180,9 @@ const FIELD_LABELS = {
   estimatedVolume: "Volume stimato / Estimated volume",
   details: "Dettagli / Details",
   message: "Messaggio / Message",
+  shipmentType: "Tipo spedizione / Shipment type",
+  goodsValue: "Valore merce / Goods value",
+  insureGoods: "Assicurazione / Insurance",
 };
 
 const EXCLUDED_FIELDS = ["consent", "type", "locale", "source", "date", "time"];

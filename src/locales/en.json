@@ -474,6 +474,22 @@
     "subtitle": "Contact us with the form and you will be served by one of our sales people as soon as possible.",
     "select": "Select an option",
     "other": "More",
+    "shipmentTypes": {
+      "pacco": "Single package",
+      "pacchi": "Multiple packages",
+      "pallet": "Pallet with goods",
+      "container": "Full container",
+      "veicolo": "Rolling stock",
+      "speciale": "Special / Project cargo"
+    },
+    "shipmentHints": {
+      "pacco": "Describe the contents and exact dimensions of the package.",
+      "pacchi": "How many packages? Indicate dimensions and weight of each.",
+      "pallet": "How many pallets? Indicate weight and height of each.",
+      "container": "What type of container do you need? (20', 40', 40'HC, etc.)",
+      "veicolo": "What vehicle do you need to ship? Indicate make, model, and whether it runs.",
+      "speciale": "Describe the object, approximate dimensions and weight."
+    },
     "fields": {
       "companyName": "Company name",
       "isPrivate": "I am a private person",
@@ -490,6 +506,11 @@
       "originAddress": "Pickup address",
       "destinationCountry": "Country of destination",
       "destinationOther": "Specify country of destination",
+      "shipmentQuestion": "What do you need to ship?",
+      "goodsValue": "Goods value",
+      "insureGoods": "Do you want to insure the goods?",
+      "detailsFor": "Details",
+      "detailsGeneric": "Shipment details",
       "dangerousGoods": "Transportation includes dangerous goods",
       "goodsClass": "Freight Class (ADR)",
       "estimatedWeight": "Estimated weight (kg)",

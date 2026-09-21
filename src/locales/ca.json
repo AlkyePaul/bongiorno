@@ -585,6 +585,22 @@
     "subtitle": "Contacti amb nosaltres a través del formulari i serà atès per un dels nostres comercials al més aviat possible.",
     "select": "Seleccioneu una opció",
     "other": "Més",
+    "shipmentTypes": {
+      "pacco": "Paquet individual",
+      "pacchi": "Diversos paquets",
+      "pallet": "Palé amb mercaderia",
+      "container": "Contenidor complet",
+      "veicolo": "Rodants",
+      "speciale": "Especial / Project cargo"
+    },
+    "shipmentHints": {
+      "pacco": "Descriu el contingut del paquet i les dimensions exactes.",
+      "pacchi": "Quants paquets? Indica dimensions i pes de cadascun.",
+      "pallet": "Quants palés? Indica pes i alçada de cadascun.",
+      "container": "Quin tipus de contenidor necessites? (20', 40', 40'HC, etc.)",
+      "veicolo": "Quin vehicle necessites enviar? Indica marca, model i si funciona.",
+      "speciale": "Descriu l'objecte, dimensions i pes aproximats."
+    },
     "fields": {
       "companyName": "Nom de l'empresa",
       "isPrivate": "Sóc un particular",
@@ -601,6 +617,11 @@
       "originAddress": "Adreça de recollida",
       "destinationCountry": "País de destinació",
       "destinationOther": "Especifiqueu el país de destinació",
+      "shipmentQuestion": "Què necessites enviar?",
+      "goodsValue": "Valor de la mercaderia",
+      "insureGoods": "Vols assegurar la mercaderia?",
+      "detailsFor": "Detalls",
+      "detailsGeneric": "Detalls de l'enviament",
       "dangerousGoods": "El transport inclou mercaderies perilloses",
       "goodsClass": "Classe de mercaderia (ADR)",
       "estimatedWeight": "Pes estimat (kg)",
