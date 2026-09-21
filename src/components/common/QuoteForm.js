@@ -121,6 +121,9 @@ export default function QuoteFormTest() {
     destinationCountry: "",
     destinationCountryCode: "",
     destinationOther: "",
+    destinationCity: "",
+    destinationZip: "",
+    destinationAddress: "",
     dangerousGoods: false,
     goodsClass: "",
     goodsValue: "",
@@ -200,6 +203,9 @@ export default function QuoteFormTest() {
         destinationCountry: "",
         destinationCountryCode: "",
         destinationOther: "",
+        destinationCity: "",
+        destinationZip: "",
+        destinationAddress: "",
         dangerousGoods: false,
         goodsClass: "",
         goodsValue: "",
@@ -433,6 +439,34 @@ export default function QuoteFormTest() {
               placeholder={t("placeholders.searchDestination")}
               required
               name="destinationCountry"
+            />
+          </div>
+
+          {/* ── Destination details ── */}
+          <div className="grid md:grid-cols-3 gap-4">
+            <input
+              type="text"
+              name="destinationCity"
+              placeholder={t("fields.city")}
+              value={form.destinationCity}
+              onChange={handleChange}
+              className="px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
+            />
+            <input
+              type="text"
+              name="destinationZip"
+              placeholder={t("fields.zip")}
+              value={form.destinationZip}
+              onChange={handleChange}
+              className="px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
+            />
+            <input
+              type="text"
+              name="destinationAddress"
+              placeholder={t("fields.address")}
+              value={form.destinationAddress}
+              onChange={handleChange}
+              className="px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
             />
           </div>
 
