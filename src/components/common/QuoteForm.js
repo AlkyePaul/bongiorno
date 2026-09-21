@@ -101,13 +101,6 @@ const shipmentTypes = [
   },
 ];
 
-const goodsValueRanges = [
-  "Meno di 6.000 €",
-  "Tra 6.000 € e 20.000 €",
-  "Tra 20.000 € e 50.000 €",
-  "Maggiore di 50.000 €",
-];
-
 export default function QuoteFormTest() {
   const t = useTranslations("quote");
   const locale = useLocale();
@@ -120,11 +113,13 @@ export default function QuoteFormTest() {
     email: "",
     phone: "",
     originCountry: "",
+    originCountryCode: "",
     originOther: "",
     originCity: "",
     originZip: "",
     originAddress: "",
     destinationCountry: "",
+    destinationCountryCode: "",
     destinationOther: "",
     dangerousGoods: false,
     goodsClass: "",
@@ -137,18 +132,46 @@ export default function QuoteFormTest() {
   });
 
   const [status, setStatus] = useState("idle");
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setForm((prev) => ({ ...prev, [name]: type === "checkbox" ? checked : value }));
+    if (name === "companyName" || name === "isPrivate") {
+      setErrors((prev) => ({ ...prev, companyOrPrivate: undefined }));
+    }
+    if (name === "goodsValue") {
+      setErrors((prev) => ({ ...prev, goodsValue: undefined }));
+    }
   };
 
   const selectShipmentType = (id) => {
     setForm((prev) => ({ ...prev, shipmentType: id }));
+    setErrors((prev) => ({ ...prev, shipmentType: undefined }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const newErrors = {};
+    if (!form.companyName.trim() && !form.isPrivate) {
+      newErrors.companyOrPrivate = t("errors.companyOrPrivate");
+    }
+    if (!form.shipmentType) {
+      newErrors.shipmentType = t("errors.shipmentTypeRequired");
+    }
+    if (!form.goodsValue) {
+      newErrors.goodsValue = t("errors.goodsValueRequired");
+    }
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      const firstErrorKey = Object.keys(newErrors)[0];
+      const el = document.querySelector(`[data-error="${firstErrorKey}"]`);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
+    setErrors({});
+
     if (!form.consent) {
       alert(t("errors.noConsent"));
       return;
@@ -171,11 +194,13 @@ export default function QuoteFormTest() {
         email: "",
         phone: "",
         originCountry: "",
+        originCountryCode: "",
         originOther: "",
         originCity: "",
         originZip: "",
         originAddress: "",
         destinationCountry: "",
+        destinationCountryCode: "",
         destinationOther: "",
         dangerousGoods: false,
         goodsClass: "",
@@ -239,16 +264,23 @@ export default function QuoteFormTest() {
     pin("Libya"), pin("Mauritania"),
   ];
 
+  const goodsValueRanges = [
+    t("goodsValueRange1"),
+    t("goodsValueRange2"),
+    t("goodsValueRange3"),
+    t("goodsValueRange4"),
+  ];
+
   const adrClasses = [
-    "Classe 1 – Esplosivi",
-    "Classe 2 – Gas",
-    "Classe 3 – Liquidi infiammabili",
-    "Classe 4 – Solidi infiammabili",
-    "Classe 5 – Sostanze comburenti e perossidi organici",
-    "Classe 6 – Tossiche e infettive",
-    "Classe 7 – Radioattive",
-    "Classe 8 – Corrosive",
-    "Classe 9 – Varie sostanze pericolose",
+    t("adrClass1"),
+    t("adrClass2"),
+    t("adrClass3"),
+    t("adrClass4"),
+    t("adrClass5"),
+    t("adrClass6"),
+    t("adrClass7"),
+    t("adrClass8"),
+    t("adrClass9"),
   ];
 
   const selectedType = shipmentTypes.find((s) => s.id === form.shipmentType);
@@ -266,31 +298,36 @@ export default function QuoteFormTest() {
           {/* ═══ 1. CONTACT & GENERAL INFO ═══ */}
 
           {/* ── Company / Private ── */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <label className="block text-base font-medium mb-1">
-                {t("fields.companyName")}
-              </label>
-              <input
-                type="text"
-                name="companyName"
-                value={form.companyName}
-                onChange={handleChange}
-                placeholder={t("placeholders.company")}
-                className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
-              />
+          <div data-error="companyOrPrivate">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-base font-medium mb-1">
+                  {t("fields.companyName")}
+                </label>
+                <input
+                  type="text"
+                  name="companyName"
+                  value={form.companyName}
+                  onChange={handleChange}
+                  placeholder={t("placeholders.company")}
+                  className={`w-full px-4 py-2 rounded-md bg-gray-100 border ${errors.companyOrPrivate ? "border-red-500" : "border-gray-300"}`}
+                />
+              </div>
+              <div className="flex items-center mt-6">
+                <input
+                  id="isPrivate"
+                  type="checkbox"
+                  name="isPrivate"
+                  checked={form.isPrivate}
+                  onChange={handleChange}
+                  className="h-5 w-5 mr-2 rounded border-gray-300 text-brand-accent focus:ring-brand-accent"
+                />
+                <label htmlFor="isPrivate">{t("fields.isPrivate")}</label>
+              </div>
             </div>
-            <div className="flex items-center mt-6">
-              <input
-                id="isPrivate"
-                type="checkbox"
-                name="isPrivate"
-                checked={form.isPrivate}
-                onChange={handleChange}
-                className="h-5 w-5 mr-2 rounded border-gray-300 text-brand-accent focus:ring-brand-accent"
-              />
-              <label htmlFor="isPrivate">{t("fields.isPrivate")}</label>
-            </div>
+            {errors.companyOrPrivate && (
+              <p className="text-red-500 text-sm mt-1">{errors.companyOrPrivate}</p>
+            )}
           </div>
 
           {/* ── Name ── */}
@@ -348,11 +385,11 @@ export default function QuoteFormTest() {
             </label>
             <CountryPicker
               value={form.originCountry}
-              onChange={(country) =>
-                setForm((prev) => ({ ...prev, originCountry: country, originOther: "" }))
+              onChange={(country, code) =>
+                setForm((prev) => ({ ...prev, originCountry: country, originCountryCode: code, originOther: "" }))
               }
               pinned={sendCountries}
-              placeholder="Cerca paese di partenza..."
+              placeholder={t("placeholders.searchOrigin")}
               required
               name="originCountry"
             />
@@ -393,11 +430,11 @@ export default function QuoteFormTest() {
             </label>
             <CountryPicker
               value={form.destinationCountry}
-              onChange={(country) =>
-                setForm((prev) => ({ ...prev, destinationCountry: country, destinationOther: "" }))
+              onChange={(country, code) =>
+                setForm((prev) => ({ ...prev, destinationCountry: country, destinationCountryCode: code, destinationOther: "" }))
               }
               pinned={receiveCountries}
-              placeholder="Cerca paese di destinazione..."
+              placeholder={t("placeholders.searchDestination")}
               required
               name="destinationCountry"
             />
@@ -408,11 +445,11 @@ export default function QuoteFormTest() {
           {/* ═══ 3. SHIPMENT TYPE & GOODS DETAILS ═══ */}
 
           {/* ── Shipment Type Visual Selector ── */}
-          <div>
+          <div data-error="shipmentType">
             <label className="block text-lg font-semibold mb-4">
               {t("fields.shipmentQuestion")}
             </label>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div className={`grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 ${errors.shipmentType ? "ring-2 ring-red-500 rounded-xl p-1" : ""}`}>
               {shipmentTypes.map((item) => (
                 <button
                   key={item.id}
@@ -449,6 +486,9 @@ export default function QuoteFormTest() {
                 </button>
               ))}
             </div>
+            {errors.shipmentType && (
+              <p className="text-red-500 text-sm mt-1">{errors.shipmentType}</p>
+            )}
           </div>
 
           {/* ── Details textarea with contextual hint ── */}
@@ -466,6 +506,36 @@ export default function QuoteFormTest() {
               onChange={handleChange}
               className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
             />
+          </div>
+
+          {/* ── Weight & Volume ── */}
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-base font-medium mb-1">
+                {t("fields.estimatedWeight")}
+              </label>
+              <input
+                type="text"
+                name="estimatedWeight"
+                value={form.estimatedWeight}
+                onChange={handleChange}
+                placeholder={t("fields.estimatedWeight")}
+                className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
+              />
+            </div>
+            <div>
+              <label className="block text-base font-medium mb-1">
+                {t("fields.estimatedVolume")}
+              </label>
+              <input
+                type="text"
+                name="estimatedVolume"
+                value={form.estimatedVolume}
+                onChange={handleChange}
+                placeholder={t("fields.estimatedVolume")}
+                className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
+              />
+            </div>
           </div>
 
           {/* ── Dangerous Goods ── */}
@@ -505,7 +575,7 @@ export default function QuoteFormTest() {
          
 
           {/* ── Goods Value & Insurance ── */}
-          <div className="grid md:grid-cols-2 gap-4">
+          <div data-error="goodsValue" className="grid md:grid-cols-2 gap-4">
             <div>
               <label className="block text-base font-medium mb-1">
                 {t("fields.goodsValue")}
@@ -514,7 +584,8 @@ export default function QuoteFormTest() {
                 name="goodsValue"
                 value={form.goodsValue}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded-md bg-gray-100 border border-gray-300"
+                required
+                className={`w-full px-4 py-2 rounded-md bg-gray-100 border ${errors.goodsValue ? "border-red-500" : "border-gray-300"}`}
               >
                 <option value="">{t("select")}</option>
                 {goodsValueRanges.map((r) => (
@@ -523,6 +594,9 @@ export default function QuoteFormTest() {
                   </option>
                 ))}
               </select>
+              {errors.goodsValue && (
+                <p className="text-red-500 text-sm mt-1">{errors.goodsValue}</p>
+              )}
             </div>
             <div className="flex items-center mt-6">
               <input

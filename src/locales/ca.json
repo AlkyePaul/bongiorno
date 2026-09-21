@@ -408,7 +408,7 @@
   },
   "home": {
     "hero": {
-      "title": "BONGIORN TRANSPORTS",
+      "title": "BONGIORNO TRANSPORTS",
       "subtitle": "Transport internacional",
       "claim": "Des de 1985 connectem amb dedicació i cura els principals ports europeus de la Mediterrània amb el Magrib: Tunísia, Algèria i el Marroc en primer lloc, però també moltes altres destinacions, servint cada any a més de 60 països de tot el món.",
       "ctas": [
@@ -634,6 +634,8 @@
       "company": "Nom de l'empresa",
       "transport": "Per exemple, grupatge, complet, contenidor, etc.",
       "details": "Introduïu aquí les dades del vostre enviament...",
+      "searchOrigin": "Cercar país de sortida...",
+      "searchDestination": "Cercar país de destinació...",
       "otherCountry": "Especifiqueu el país",
       "address": "Carrer / número",
       "city": "Ciutat",
@@ -644,8 +646,24 @@
     "success": "Sol·licitud enviada amb èxit! En breu ens posarem en contacte amb vostè.",
     "error": "Error en enviar. Torneu-ho a provar més tard.",
     "errors": {
-      "noConsent": "Heu de donar el vostre consentiment al tractament de les vostres dades per poder continuar."
+      "noConsent": "Heu de donar el vostre consentiment al tractament de les vostres dades per poder continuar.",
+      "companyOrPrivate": "Introdueix el nom de l'empresa o selecciona 'Sóc un particular'",
+      "shipmentTypeRequired": "Selecciona un tipus d'enviament",
+      "goodsValueRequired": "Selecciona el valor de la mercaderia"
     },
+    "goodsValueRange1": "Menys de 6.000 €",
+    "goodsValueRange2": "Entre 6.000 € i 20.000 €",
+    "goodsValueRange3": "Entre 20.000 € i 50.000 €",
+    "goodsValueRange4": "Més de 50.000 €",
+    "adrClass1": "Classe 1 – Explosius",
+    "adrClass2": "Classe 2 – Gasos",
+    "adrClass3": "Classe 3 – Líquids inflamables",
+    "adrClass4": "Classe 4 – Sòlids inflamables",
+    "adrClass5": "Classe 5 – Substàncies comburents i peròxids orgànics",
+    "adrClass6": "Classe 6 – Tòxiques i infeccioses",
+    "adrClass7": "Classe 7 – Radioactives",
+    "adrClass8": "Classe 8 – Corrosives",
+    "adrClass9": "Classe 9 – Diverses substàncies perilloses",
     "intro": "Des del 1985 som líders en el transport entre Europa i el Magrib, principalment Tunísia, Algèria i el Marroc, així com molts altres destins, prestant servei a més de 60 països de tot el món cada any.",
     "features": [
       "Tarifes clares i sense sorpreses",
