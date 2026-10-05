@@ -156,6 +156,17 @@
           "PEC: bongiornosrl@legalmail.it",
           "Email DPO: luca.confalonieri@bongiornosrl.com"
         ]
+      },
+      {
+        "id": "cookies-tech",
+        "heading": "Cookie e tecnologie di tracciamento",
+        "content": [
+          "Il sito utilizza cookie tecnici e, previo consenso, cookie analitici e di marketing. Per i dettagli sulle categorie, le finalità e le modalità di gestione del consenso, consultare il banner cookie presente sul sito.",
+          "Cookie tecnici ed essenziali: necessari al funzionamento del sito (es. preferenze lingua, sessione). Non richiedono consenso.",
+          "Cookie analitici (Google Analytics): utilizzati per analizzare l'utilizzo del sito in forma aggregata. Attivati solo con consenso alla categoria 'Analitici'.",
+          "Cookie di marketing (Google Tag Manager, Google Ads): utilizzati per misurare l'efficacia delle campagne pubblicitarie. Attivati solo con consenso alla categoria 'Marketing'.",
+          "Cookie di attribuzione campagne (_bt_attr): cookie first-party utilizzato per conservare temporaneamente i dati di attribuzione della visita proveniente da campagne pubblicitarie (es. identificativo campagna, gruppo annunci, parola chiave, dispositivo, landing page), al fine di collegare una richiesta di contatto alla relativa campagna. Non contiene dati personali dell'utente. Durata: 30 giorni. Categoria: Marketing. Impostato solo con consenso alla categoria 'Marketing'."
+        ]
       }
     ]
   },
@@ -448,7 +459,7 @@
           "description": [
             "Rappresenta la nostra prima base commerciale ed operativa nel Nord Africa.",
             "La struttura operativa di cui la Bongiorno Tunisia dispone è considerata attualmente come una delle più importanti realtà nel settore dei trasporti in Tunisia.",
-            "Ci avvaliamo di tre terminal containers con magazzini sotto dogana nei principali porti tunisini (Rades, Sousse e Sfache ci permettono di soddisfare le esigenze di tutti gli operatori economici tunisini per qualsiasi tipologia di trasporto."
+            "Ci avvaliamo di tre terminal containers con magazzini sotto dogana nei principali porti tunisini (Rades, Sousse e Sfax ci permettono di soddisfare le esigenze di tutti gli operatori economici tunisini per qualsiasi tipologia di trasporto."
           ],
           "contactUrl": "#"
         },

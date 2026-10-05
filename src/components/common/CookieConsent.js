@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { getCookie, setCookie } from "cookies-next";
 import { useTranslations, useLocale } from "next-intl";
 import { enableGTag, enableGTM, setDefaultConsent, updateConsentFromPrefs } from "@/lib/analytics";
+import { persistIfConsented } from "@/lib/attribution";
 import { Cog } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 
@@ -68,6 +69,8 @@ export default function CookieConsent() {
     }
     if (toStore.marketing) {
       enableGTM().catch(console.error);
+      // Persist any in-memory attribution to cookie now that consent is granted
+      persistIfConsented();
     }
   }
 

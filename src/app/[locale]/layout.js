@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import HeaderSSR from '@/components/header/HeaderSSR';
 import Footer from '@/components/footer/Footer';
 import CookieConsent from "@/components/common/CookieConsent";
+import AttributionProvider from "@/components/common/AttributionProvider";
 import { generateLocaleParams } from '@/lib/locales';
 
 
@@ -25,7 +26,7 @@ export default async function LocaleLayout({ children, params }) {
   return (
   
         <NextIntlClientProvider locale={locale} messages={messages}>
-        
+          <AttributionProvider />
           <HeaderSSR locale={locale} />
           {children}
           <Footer />

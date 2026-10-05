@@ -149,10 +149,20 @@
           "PEC: bongiornosrl@legalmail.it",
           "DPO Email: luca.confalonieri@bongiornosrl.com"
         ]
+      },
+      {
+        "id": "cookies-tech",
+        "heading": "Cookies and tracking technologies",
+        "content": [
+          "This website uses technical cookies and, with prior consent, analytics and marketing cookies. For details on categories, purposes and consent management, see the cookie banner on the site.",
+          "Technical and essential cookies: necessary for the website to function (e.g. language preferences, session). No consent required.",
+          "Analytics cookies (Google Analytics): used to analyze website usage in aggregate form. Activated only with consent to the 'Analytics' category.",
+          "Marketing cookies (Google Tag Manager, Google Ads): used to measure the effectiveness of advertising campaigns. Activated only with consent to the 'Marketing' category.",
+          "Campaign attribution cookie (_bt_attr): first-party cookie used to temporarily store attribution data from advertising campaign visits (e.g. campaign ID, ad group, keyword, device, landing page), in order to link a contact request to the relevant campaign. Does not contain personal user data. Duration: 30 days. Category: Marketing. Set only with consent to the 'Marketing' category."
+        ]
       }
     ]
-  }
-,
+  },
   "cookies": {
     "title": "We use cookies 🍪",
     "text": "We use technical cookies and, with prior consent, analytics cookies to improve your experience.",

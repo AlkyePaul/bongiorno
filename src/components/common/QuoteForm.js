@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import CountryPicker from "./CountryPicker";
+import { getStoredAttribution } from "@/lib/attribution";
 
 const shipmentTypes = [
   {
@@ -180,10 +181,14 @@ export default function QuoteFormTest() {
 
     setStatus("sending");
     try {
+      // Attach Google Ads / UTM attribution if available.
+      // This is invisible to the user — no form fields are added.
+      const attribution = getStoredAttribution() || null;
+
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, type: "preventivo", locale }),
+        body: JSON.stringify({ ...form, type: "preventivo", locale, attribution }),
       });
       if (!res.ok) throw new Error();
 

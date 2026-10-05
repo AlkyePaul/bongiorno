@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { Mail, Phone, MapPin } from "lucide-react";
 import H1 from "@/components/common/H1";
 import { Link } from "@/i18n/navigation";
+import { getStoredAttribution } from "@/lib/attribution";
 
 export default function ContattiClient() {
   const t = useTranslations("contact");
@@ -34,10 +35,12 @@ export default function ContattiClient() {
     }
     setStatus("sending");
     try {
+      const attribution = getStoredAttribution() || null;
+
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, type: "generale", locale }),
+        body: JSON.stringify({ ...form, type: "generale", locale, attribution }),
       });
       if (!res.ok) throw new Error("Failed to send");
       setStatus("success");
