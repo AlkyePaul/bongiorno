@@ -158,7 +158,8 @@
           "Technical and essential cookies: necessary for the website to function (e.g. language preferences, session). No consent required.",
           "Analytics cookies (Google Analytics): used to analyze website usage in aggregate form. Activated only with consent to the 'Analytics' category.",
           "Marketing cookies (Google Tag Manager, Google Ads): used to measure the effectiveness of advertising campaigns. Activated only with consent to the 'Marketing' category.",
-          "Campaign attribution cookie (_bt_attr): first-party cookie used to temporarily store attribution data from advertising campaign visits (e.g. campaign ID, ad group, keyword, device, landing page), in order to link a contact request to the relevant campaign. Does not contain personal user data. Duration: 30 days. Category: Marketing. Set only with consent to the 'Marketing' category."
+          "Campaign attribution cookie (_bt_attr): first-party cookie used to temporarily store attribution data from advertising campaign visits (e.g. campaign ID, ad group, keyword, device, landing page), in order to link a contact request to the relevant campaign. Does not contain personal user data. Duration: 30 days. Category: Marketing. Set only with consent to the 'Marketing' category.",
+          "Related technical data: when you submit a contact or quote request form, technical data related to your visit may be associated with the data you entered, such as: advertising campaign identifier, ad group, keyword, match type, device type, ad network, Google Ads geographical identifier, landing page, and acquisition date. This data does not contain personal information and is used solely to evaluate the effectiveness of advertising campaigns and improve our service."
         ]
       }
     ]
@@ -526,7 +527,7 @@
       "estimatedWeight": "Estimated weight (kg)",
       "estimatedVolume": "Estimated volume (m³)",
       "details": "Description or additional details",
-      "consent": "I consent to the processing of data entered (mandatory, see privacy policy here)"
+      "consent": "I consent to the processing of data entered and related technical data (mandatory, see privacy policy here)"
     },
     "privacyLink": "Privacy policy",
     "placeholders": {
@@ -760,7 +761,7 @@
       "submit": "Send",
       "sending": "Sending out...",
       "success": "Message sent!",
-      "consent": "I consent to the processing of data entered (mandatory, see privacy policy here)",
+      "consent": "I consent to the processing of data entered and related technical data (mandatory, see privacy policy here)",
       "noConsent": "You must consent to data processing to proceed."
     }
   }

@@ -149,7 +149,8 @@
           "Cookies tècniques i essencials: necessàries per al funcionament del lloc (ex. preferències d'idioma, sessió). No requereixen consentiment.",
           "Cookies analítiques (Google Analytics): utilitzades per analitzar l'ús del lloc de forma agregada. Activades només amb el consentiment a la categoria 'Analítiques'.",
           "Cookies de màrqueting (Google Tag Manager, Google Ads): utilitzades per mesurar l'eficàcia de les campanyes publicitàries. Activades només amb el consentiment a la categoria 'Màrqueting'.",
-          "Cookie d'atribució de campanya (_bt_attr): cookie first-party utilitzada per conservar temporalment les dades d'atribució d'una visita provinent de campanyes publicitàries (ex. identificador de campanya, grup d'anuncis, paraula clau, dispositiu, pàgina d'aterratge), per vincular una sol·licitud de contacte amb la campanya corresponent. No conté dades personals de l'usuari. Durada: 30 dies. Categoria: Màrqueting. S'estableix només amb el consentiment a la categoria 'Màrqueting'."
+          "Cookie d'atribució de campanya (_bt_attr): cookie first-party utilitzada per conservar temporalment les dades d'atribució d'una visita provinent de campanyes publicitàries (ex. identificador de campanya, grup d'anuncis, paraula clau, dispositiu, pàgina d'aterratge), per vincular una sol·licitud de contacte amb la campanya corresponent. No conté dades personals de l'usuari. Durada: 30 dies. Categoria: Màrqueting. S'estableix només amb el consentiment a la categoria 'Màrqueting'.",
+          "Dades tècniques associades: quan l'usuari envia un formulari de contacte o sol·licitud de pressupost, a les dades introduïdes es poden associar dades tècniques relatives a la visita, com ara: identificador de campanya publicitària, grup d'anuncis, paraula clau, tipus de concordança, tipus de dispositiu, xarxa publicitària, identificador geogràfic Google Ads, pàgina d'aterratge i data d'adquisició. Aquestes dades no contenen informació personal i s'utilitzen exclusivament per avaluar l'eficàcia de les campanyes publicitàries i millorar el servei."
         ]
       }
     ]
@@ -638,7 +639,7 @@
       "estimatedWeight": "Pes estimat (kg)",
       "estimatedVolume": "Volum estimat (m³)",
       "details": "Descripció o detalls addicionals",
-      "consent": "Autoritzo el tractament de les meves dades (obligatori, vegeu la política de privadesa aquí)"
+      "consent": "Autoritzo el tractament de les meves dades i de les dades tècniques associades (obligatori, vegeu la política de privadesa aquí)"
     },
     "privacyLink": "Política de privadesa",
     "placeholders": {
@@ -874,7 +875,7 @@
       "privacyLink": "Política de privadesa",
 
       "success": "Missatge enviat.",
-      "consent": "Autoritzo el tractament de les meves dades (obligatori, vegeu la política de privadesa aquí)",
+      "consent": "Autoritzo el tractament de les meves dades i de les dades tècniques associades (obligatori, vegeu la política de privadesa aquí)",
       "noConsent": "Heu de donar el vostre consentiment al tractament de les vostres dades per poder continuar."
     }
   }

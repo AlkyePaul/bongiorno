@@ -159,7 +159,8 @@
           "Cookies techniques et essentiels : nécessaires au fonctionnement du site (ex. préférences de langue, session). Pas de consentement requis.",
           "Cookies analytiques (Google Analytics) : utilisés pour analyser l'utilisation du site de manière agrégée. Activés uniquement avec le consentement à la catégorie 'Analytiques'.",
           "Cookies marketing (Google Tag Manager, Google Ads) : utilisés pour mesurer l'efficacité des campagnes publicitaires. Activés uniquement avec le consentement à la catégorie 'Marketing'.",
-          "Cookie d'attribution de campagne (_bt_attr) : cookie first-party utilisé pour conserver temporairement les données d'attribution d'une visite provenant de campagnes publicitaires (ex. identifiant campagne, groupe d'annonces, mot-clé, appareil, page d'atterrissage), afin de relier une demande de contact à la campagne correspondante. Ne contient pas de données personnelles de l'utilisateur. Durée : 30 jours. Catégorie : Marketing. Défini uniquement avec le consentement à la catégorie 'Marketing'."
+          "Cookie d'attribution de campagne (_bt_attr) : cookie first-party utilisé pour conserver temporairement les données d'attribution d'une visite provenant de campagnes publicitaires (ex. identifiant campagne, groupe d'annonces, mot-clé, appareil, page d'atterrissage), afin de relier une demande de contact à la campagne correspondante. Ne contient pas de données personnelles de l'utilisateur. Durée : 30 jours. Catégorie : Marketing. Défini uniquement avec le consentement à la catégorie 'Marketing'.",
+          "Données techniques associées : lorsque vous soumettez un formulaire de contact ou de demande de devis, des données techniques relatives à votre visite peuvent être associées aux données saisies, telles que : identifiant de campagne publicitaire, groupe d'annonces, mot-clé, type de correspondance, type d'appareil, réseau publicitaire, identifiant géographique Google Ads, page d'atterrissage et date d'acquisition. Ces données ne contiennent pas d'informations personnelles et sont utilisées uniquement pour évaluer l'efficacité des campagnes publicitaires et améliorer notre service."
         ]
       }
     ]
@@ -528,7 +529,7 @@
       "estimatedWeight": "Poids estimé (kg)",
       "estimatedVolume": "Volume estimé (m³)",
       "details": "Description ou détails supplémentaires",
-      "consent": "Je consens au traitement de mes données (obligatoire, voir la politique de confidentialité ici)"
+      "consent": "Je consens au traitement de mes données saisies et des données techniques associées (obligatoire, voir la politique de confidentialité ici)"
     },
     "privacyLink": "Politique de confidentialité",
     "placeholders": {
@@ -774,7 +775,7 @@
       "submit": "Envoyer",
       "sending": "Envoi...",
       "success": "Message envoyé !",
-      "consent": "Je consens au traitement de mes données (obligatoire, voir la politique de confidentialité ici)",
+      "consent": "Je consens au traitement de mes données saisies et des données techniques associées (obligatoire, voir la politique de confidentialité ici)",
       "noConsent": "Vous devez consentir au traitement de vos données pour pouvoir continuer."
     }
   }
